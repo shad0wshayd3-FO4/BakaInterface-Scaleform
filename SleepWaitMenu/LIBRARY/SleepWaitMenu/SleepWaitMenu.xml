@@ -1,0 +1,201 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="SleepWaitMenu/SleepWaitMenu" itemID="5f97b696-00000049" linkageExportForAS="true" linkageClassName="SleepWaitMenu" lastModified="1603784071">
+  <timeline>
+    <DOMTimeline name="SleepWaitMenu">
+      <layers>
+        <DOMLayer name="NumHours" color="#908283" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="Value_tf" width="42" height="49.75" isSelectable="false" renderAsHTML="true" lineType="multiline">
+                  <matrix>
+                    <Matrix tx="939" ty="477"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>1</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" rotation="true" lineHeight="49.75" size="38" face="$MAIN_Font_Bold*" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="HoursL" color="#8DDB43" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="Function_tf" width="106" height="36.7" isSelectable="false" renderAsHTML="true" lineType="multiline">
+                  <matrix>
+                    <Matrix tx="829" ty="484"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>$hours</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="right" aliasText="false" rotation="true" lineHeight="36.7" size="28" bitmapSize="560" face="$MAIN_Font_Bold*" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="HoursR" color="#A947D3" locked="true" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="HoursLabel_tf" width="106" height="36.7" isSelectable="false" renderAsHTML="true" lineType="multiline">
+                  <matrix>
+                    <Matrix tx="985" ty="484"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>$hours</characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" rotation="true" lineHeight="36.7" size="28" bitmapSize="560" face="$MAIN_Font_Bold*" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="CurrentTime" color="#09BDC1" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="CurrentTime_tf" width="340.85" height="34.05" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix a="1.66748046875" d="1.66729736328125" tx="675.85" ty="378.35"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>Current Time</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" rotation="true" lineHeight="29.5" size="22.5" bitmapSize="450" face="$MAIN_Font_Bold*" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="ArrowDown" color="#F161D9" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="SleepWaitMenu/HeaderArrow" name="DownArrow_mc" centerPoint3DX="966.35" centerPoint3DY="541.75">
+                  <matrix>
+                    <Matrix a="0" b="1.14199829101562" c="-1.14212036132812" d="0" tx="962" ty="533"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="ArrowUp" color="#F6F39D" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="SleepWaitMenu/HeaderArrow" name="UpArrow_mc" centerPoint3DX="966.35" centerPoint3DY="478.75">
+                  <matrix>
+                    <Matrix a="0" b="-1.14199829101562" c="1.14212036132812" d="0" tx="962" ty="470"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="ButtonHintBar" color="#AB72EB" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="BSButtonHintBar/BSButtonHintBar" name="ButtonHintBar_mc">
+                  <matrix>
+                    <Matrix tx="960" ty="580"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.65" y="16"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Box_Top" color="#2EC7BB" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="SleepWaitMenu/Border/SleepWaitMenu_BoxUpper" name="UpperBracket_mc" centerPoint3DX="908.8" centerPoint3DY="448.3">
+                  <matrix>
+                    <Matrix tx="802.5" ty="445"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Box_Bottom" color="#D428BA" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="SleepWaitMenu/Border/SleepWaitMenu_BoxLower" name="LowerBracket_mc" centerPoint3DX="908.8" centerPoint3DY="558.3">
+                  <matrix>
+                    <Matrix tx="802.5" ty="555"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Border" color="#88F25D" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="SleepWaitMenu/Border/SleepWaitMenu_Border" name="BGRect_mc" centerPoint3DX="865.95" centerPoint3DY="475.3">
+                  <matrix>
+                    <Matrix a="1.03921508789062" d="0.833328247070312" tx="695" ty="365"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="0.05" y="0.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="FadeInBG" color="#5976C3" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="SleepWaitMenu/FadeInBG/FadeInBGRect" name="FadeInBackground_mc" selected="true" centerPoint3DX="646.4" centerPoint3DY="404">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

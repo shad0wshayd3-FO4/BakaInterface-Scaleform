@@ -1,0 +1,72 @@
+<DOMDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" backgroundColor="#00FFFF" width="1920" height="1080" currentTimeline="1" xflVersion="2.971" creatorInfo="Adobe Animate" platform="Windows" versionInfo="Saved by Animate Windows 19.2 build 408" majorVersion="19" minorVersion="2" buildNumber="408" viewAngle3D="75.9690363138218" vanishingPoint3DX="960" vanishingPoint3DY="540" nextSceneIdentifier="2" playOptionsPlayLoop="false" playOptionsPlayPages="false" playOptionsPlayFrameActions="false" autoSaveHasPrompted="true" filetypeGUID="DD0DDBBF-5BEF-45B2-9F24-A3048D2A676F" fileGUID="92568C22857AF3409EC4791D77304072">
+     <folders>
+          <DOMFolderItem name="_Fonts" itemID="5f97b53c-00000018" isExpanded="true"/>
+          <DOMFolderItem name="BSButtonHintBar" itemID="5f97bce9-000000d1" isExpanded="true"/>
+          <DOMFolderItem name="SleepWaitMenu" itemID="5f97bcba-0000007e" isExpanded="true"/>
+          <DOMFolderItem name="SleepWaitMenu/Border" itemID="5f97bcc3-00000082" isExpanded="true"/>
+          <DOMFolderItem name="SleepWaitMenu/FadeInBG" itemID="5f97bcaf-0000007c" isExpanded="true"/>
+     </folders>
+     <fonts>
+          <DOMFontItem name="_Fonts/$MAIN_Font_Bold" itemID="5f97b537-00000014" linkageImportForRS="true" linkageExportInFirstFrame="false" linkageClassName="$MAIN_Font_Bold" linkageURL="fonts_en.swf" font="RobotoCondensed-Bold" size="0" id="5" sourceLastImported="1603773171" embedRanges="9999"/>
+          <DOMFontItem name="_Fonts/$Controller_Buttons_inverted" itemID="5f97a2f3-0000002b" linkageImportForRS="true" linkageExportInFirstFrame="false" linkageClassName="$Controller_Buttons_inverted" linkageURL="fonts_en.swf" font="ControllerButtons-Bold" size="0" id="3" sourceLastImported="1603773171" embedRanges="9999"/>
+          <DOMFontItem name="_Fonts/$MAIN_Font" itemID="5f97b537-00000012" linkageImportForRS="true" linkageExportInFirstFrame="false" linkageClassName="$MAIN_Font" linkageURL="fonts_en.swf" font="RobotoCondensed-Regular" size="0" id="1" sourceLastImported="1603777847"/>
+     </fonts>
+     <symbols>
+          <Include href="BSButtonHintBar/BSButtonHint.xml" itemID="5f97bd11-0000010a" lastModified="1603781750"/>
+          <Include href="BSButtonHintBar/BSButtonHintBar.xml" itemID="5f97bcf2-000000d9" lastModified="1603781809"/>
+          <Include href="BSButtonHintBar/BSButtonHintIcon.xml" itemID="5f97b5ad-00000047" lastModified="1603781761"/>
+          <Include href="BSButtonHintBar/BSButtonHintIconHolder.xml" itemID="5f97b590-00000043" lastModified="1603778123"/>
+          <Include href="BSButtonHintBar/ButtonHintBracketL.xml" itemID="5f97b5a4-00000046" lastModified="1603781718"/>
+          <Include href="BSButtonHintBar/ButtonHintBracketR.xml" itemID="5f97b5a0-00000045" lastModified="1603781729"/>
+          <Include href="SleepWaitMenu/Border/SleepWaitMenu_Border.xml" loadImmediate="false" itemID="5f97b932-00000053" lastModified="1603780634"/>
+          <Include href="SleepWaitMenu/Border/SleepWaitMenu_BoxLower.xml" loadImmediate="false" itemID="5f97b945-00000056" lastModified="1603781004"/>
+          <Include href="SleepWaitMenu/Border/SleepWaitMenu_BoxUpper.xml" loadImmediate="false" itemID="5f97b93f-00000055" lastModified="1603780990"/>
+          <Include href="SleepWaitMenu/FadeInBG/FadeInBGRect.xml" itemID="5f97ba30-00000062" lastModified="1603782228"/>
+          <Include href="SleepWaitMenu/FadeInBG/FadeInBGRect_base.xml" loadImmediate="false" itemID="5f97b9a7-00000059" lastModified="1603779081"/>
+          <Include href="SleepWaitMenu/HeaderArrow.xml" itemID="5f97b8fb-0000004c" lastModified="1603782060"/>
+          <Include href="SleepWaitMenu/SleepWaitMenu.xml" itemID="5f97b696-00000049" lastModified="1603784071"/>
+     </symbols>
+     <timelines>
+          <DOMTimeline name="Scene 1">
+               <layers>
+                    <DOMLayer name="Layer 1" color="#BEC4D2" current="true" isSelected="true">
+                         <frames>
+                              <DOMFrame index="0" keyMode="9728">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="SleepWaitMenu/SleepWaitMenu" name="Menu_mc" selected="true" centerPoint3DX="646.4" centerPoint3DY="404">
+                                             <transformationPoint>
+                                                  <Point/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+               </layers>
+          </DOMTimeline>
+     </timelines>
+     <scripts/>
+     <PrinterSettings/>
+     <publishHistory>
+          <PublishItem publishSize="18334" publishTime="1603784004"/>
+          <PublishItem publishSize="18336" publishTime="1603783584"/>
+          <PublishItem publishSize="18336" publishTime="1603783440"/>
+          <PublishItem publishSize="18334" publishTime="1603783375"/>
+          <PublishItem publishSize="17258" publishTime="1603782907"/>
+          <PublishItem publishSize="17258" publishTime="1603782806"/>
+          <PublishItem publishSize="17256" publishTime="1603782279"/>
+          <PublishItem publishSize="17283" publishTime="1603782250"/>
+          <PublishItem publishSize="17283" publishTime="1603782232"/>
+          <PublishItem publishSize="17204" publishTime="1603782168"/>
+          <PublishItem publishSize="17207" publishTime="1603782074"/>
+          <PublishItem publishSize="17212" publishTime="1603782033"/>
+          <PublishItem publishSize="17212" publishTime="1603781978"/>
+          <PublishItem publishSize="17208" publishTime="1603781911"/>
+          <PublishItem publishSize="17206" publishTime="1603781831"/>
+          <PublishItem publishSize="17210" publishTime="1603781691"/>
+          <PublishItem publishSize="17210" publishTime="1603781684"/>
+          <PublishItem publishSize="17204" publishTime="1603781222"/>
+          <PublishItem publishSize="17199" publishTime="1603780943"/>
+          <PublishItem publishSize="17168" publishTime="1603780813"/>
+     </publishHistory>
+</DOMDocument>
