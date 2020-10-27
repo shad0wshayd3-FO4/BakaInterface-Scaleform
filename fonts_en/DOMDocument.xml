@@ -1,0 +1,34 @@
+<DOMDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" backgroundColor="#333333" width="1280" height="720" currentTimeline="1" xflVersion="2.971" creatorInfo="Adobe Animate" platform="Windows" versionInfo="Saved by Animate Windows 19.2 build 408" majorVersion="19" minorVersion="2" buildNumber="408" vanishingPoint3DX="640" vanishingPoint3DY="360" sharedLibraryURL="fonts_en.swf" nextSceneIdentifier="2" playOptionsPlayLoop="false" playOptionsPlayPages="false" playOptionsPlayFrameActions="false" autoSaveHasPrompted="true" filetypeGUID="DD0DDBBF-5BEF-45B2-9F24-A3048D2A676F" fileGUID="CD9E1D53C69D4942A4D5B751E9D299E4">
+     <folders>
+          <DOMFolderItem name="_Fonts" itemID="5f97a2fc-00000035" isExpanded="true"/>
+     </folders>
+     <fonts>
+          <DOMFontItem name="_Fonts/$DebugTextFont" itemID="5f97a3f9-00000039" linkageExportForAS="true" linkageExportForRS="true" linkageClassName="$DebugTextFont" linkageURL="fonts_en.swf" font="Consolas" size="0" id="25" sourceLastImported="1603773433" embedRanges="9999"/>
+          <DOMFontItem name="_Fonts/$ConsoleFont" itemID="5f97a3f9-00000037" linkageExportForAS="true" linkageExportForRS="true" linkageClassName="$ConsoleFont" linkageURL="fonts_en.swf" font="ArialMT" size="0" id="24" sourceLastImported="1603773433" embedRanges="9999"/>
+          <DOMFontItem name="_Fonts/$CClub_Font_Bold" itemID="5f97a2f3-00000031" linkageExportForAS="true" linkageExportForRS="true" linkageClassName="$CClub_Font_Bold" linkageURL="fonts_en.swf" font="CreationClub-Bold" size="0" id="23" sourceLastImported="1603773171" embedRanges="9999"/>
+          <DOMFontItem name="_Fonts/$CClub_Font" itemID="5f97a2f3-0000002f" linkageExportForAS="true" linkageExportForRS="true" linkageClassName="$CClub_Font" linkageURL="fonts_en.swf" font="CreationClub-Regular" size="0" id="22" sourceLastImported="1603773171" embedRanges="9999"/>
+          <DOMFontItem name="_Fonts/$BRODY" itemID="5f97a2f3-0000002d" linkageExportForAS="true" linkageExportForRS="true" linkageClassName="$BRODY" linkageURL="fonts_en.swf" font="Brody" size="0" id="21" sourceLastImported="1603773171" embedRanges="9999"/>
+          <DOMFontItem name="_Fonts/$Controller_Buttons_inverted" itemID="5f97a2f3-0000002b" linkageExportForAS="true" linkageExportForRS="true" linkageClassName="$Controller_Buttons_inverted" linkageURL="fonts_en.swf" font="ControllerButtons-Bold" size="0" id="20" sourceLastImported="1603773171" embedRanges="9999"/>
+          <DOMFontItem name="_Fonts/$Controller_Buttons" itemID="5f97a2f3-00000029" linkageExportForAS="true" linkageExportForRS="true" linkageClassName="$Controller_Buttons" linkageURL="fonts_en.swf" font="ControllerButtons-Regular" size="0" id="19" sourceLastImported="1603773171" embedRanges="9999"/>
+          <DOMFontItem name="_Fonts/$Terminal_Font" itemID="5f97a2f3-00000027" linkageExportForAS="true" linkageExportForRS="true" linkageClassName="$Terminal_Font" linkageURL="fonts_en.swf" font="ShareTechMono" size="0" id="18" sourceLastImported="1603773171" embedRanges="9999"/>
+          <DOMFontItem name="_Fonts/$MAIN_Font_Bold" itemID="5f97a2f3-00000025" linkageExportForAS="true" linkageExportForRS="true" linkageClassName="$MAIN_Font_Bold" linkageURL="fonts_en.swf" font="RobotoCondensed-Bold" size="0" id="17" sourceLastImported="1603773171" embedRanges="9999"/>
+          <DOMFontItem name="_Fonts/$MAIN_Font" itemID="5f97a2f3-00000023" linkageExportForAS="true" linkageExportForRS="true" linkageClassName="$MAIN_Font" linkageURL="fonts_en.swf" font="RobotoCondensed-Regular" size="0" id="16" sourceLastImported="1603773171" embedRanges="9999"/>
+          <DOMFontItem name="_Fonts/$HandwrittenFont" itemID="5f97a12b-0000001b" linkageExportForAS="true" linkageExportForRS="true" linkageClassName="$HandwrittenFont" linkageURL="fonts_en.swf" font="Handwritten-Fallout4" size="0" id="15" sourceLastImported="1603772715" embeddedCharacters=" &#xD;¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿĀāĂăĄąĆćĈĉĊċČčĎďĐđĒēĔĕĖėĘęĚěĜĝĞğĠġĢģĤĥĦħĨĩĪīĬĭĮįİıĲĳĴĵĶķĸĹĺĻļĽľĿŀŁłŃńŅņŇňŉŊŋŌōŎŏŐőŒœŔŕŖŗŘřŚśŜŝŞşŠšŢţŤťŦŧŨũŪūŬŭŮůŰűŲųŴŵŶŷŸŹźŻżŽžſƒƠơƯưǰǺǻǼǽǾǿȘșȚțȷˆˇˉ˘˙˚˛˜˝΄΅Ά·ΈΉΊΌΎΏΐΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩΪΫάέήίΰαβγδεζηθικλμνξοπρςστυφχψωϊϋόύώϑϒϖЀЁЂЃЄЅІЇЈЉЊЋЌЍЎЏАБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдежзийклмнопрстуфхцчшщъыьэюяѐёђѓєѕіїјљњћќѝўџѠѡѢѣѤѥѦѧѨѩѪѫѬѭѮѯѰѱѲѳѴѵѶѷѸѹѺѻѼѽѾѿҀҁ҂҃҄҅҆҈҉ҊҋҌҍҎҏҐґҒғҔҕҖҗҘҙҚқҜҝҞҟҠҡҢңҤҥҦҧҨҩҪҫҬҭҮүҰұҲҳҴҵҶҷҸҹҺһҼҽҾҿӀӁӂӃӄӅӆӇӈӉӊӋӌӍӎḀḁḾḿẀẁẂẃẄẅẠạẢảẤấẦầẨẩẪẫẬậẮắẰằẲẳẴẵẶặẸẹẺẻẼẽẾếỀềỂểỄễỆệỈỉỊịỌọỎỏỐốỒồỔổỖỗỘộỚớỜờỞởỠỡỢợỤụỦủỨứỪừỬửỮữỰựỲỳỴỵỶỷỸỹὍ           ​–—―‗‘’‚‛“”„†‡•‥…‰′″‹›‼⁄⁴ⁿ₣₤₧₫€℅ℓ№™Ω℮⅛⅜⅝⅞∂∏∑√∞∫≠≤≥﻿￼" embedRanges="9999|1|2|3|4|5"/>
+     </fonts>
+     <timelines>
+          <DOMTimeline name="Scene 1">
+               <layers>
+                    <DOMLayer name="Layer 1" color="#B93CFD" current="true" isSelected="true">
+                         <frames>
+                              <DOMFrame index="0" keyMode="9728">
+                                   <elements/>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+               </layers>
+          </DOMTimeline>
+     </timelines>
+     <scripts/>
+     <PrinterSettings/>
+     <publishHistory/>
+</DOMDocument>
