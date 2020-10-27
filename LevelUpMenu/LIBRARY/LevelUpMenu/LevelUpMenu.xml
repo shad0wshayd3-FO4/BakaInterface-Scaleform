@@ -1,0 +1,37 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="LevelUpMenu/LevelUpMenu" itemID="5f97d64a-000006ae" linkageExportForAS="true" linkageClassName="LevelUpMenu" lastModified="1603786527">
+  <timeline>
+    <DOMTimeline name="LevelUpMenu">
+      <layers>
+        <DOMLayer name="Layer_1" color="#00FFFF" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="BSButtonHintBar/BSButtonHintBar" name="ButtonHintBar_mc">
+                  <matrix>
+                    <Matrix tx="960" ty="960"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="24"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMDynamicText name="Placeholder_tf" selected="true" width="836" height="836" isSelectable="false" lineType="multiline no wrap">
+                  <matrix>
+                    <Matrix tx="542" ty="82"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters></characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" lineHeight="19.4" size="15" bitmapSize="300" face="$MAIN_Font*" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>
