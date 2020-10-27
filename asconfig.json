@@ -1,0 +1,7 @@
+{
+    "compilerOptions": {
+        "source-path": [
+            "_Scripts"
+        ]
+    }
+}

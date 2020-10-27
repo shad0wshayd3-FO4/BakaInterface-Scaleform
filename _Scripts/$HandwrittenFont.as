@@ -1,14 +1,12 @@
 ﻿package
 {
-   import flash.text.Font;
-   
-   public dynamic class $HandwrittenFont extends Font
-   {
-       
-      
-      public function $HandwrittenFont()
-      {
-         super();
-      }
-   }
+    import flash.text.Font;
+
+    public dynamic class $HandwrittenFont extends Font
+    {
+        public function $HandwrittenFont()
+        {
+            super();
+        }
+    }
 }
