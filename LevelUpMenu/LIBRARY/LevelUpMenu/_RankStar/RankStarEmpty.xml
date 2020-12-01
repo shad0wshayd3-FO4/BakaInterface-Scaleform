@@ -1,0 +1,30 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="LevelUpMenu/_RankStar/RankStarEmpty" itemID="5fa7205e-000007d0" lastModified="1604789509">
+  <timeline>
+    <DOMTimeline name="RankStarEmpty">
+      <layers>
+        <DOMLayer name="Layer 1" color="#BEE1FA" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape selected="true" isFloating="true">
+                  <matrix>
+                    <Matrix a="0.899993896484375" d="0.899795532226562"/>
+                  </matrix>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FFFFFF"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="!697 588S1|744 855!744 855|502 730!502 730|257 855!257 855|304 612!304 612|304 588!304 588|107 398!107 398|380 358!380 358|502 114!502 114|624 358!624 358|892 398!892 398|697 588!654 312|502 0!502 0|347 312!347 312|0 364!0 364|252 607
+!252 607|192 948!192 948|502 785!502 785|807 948!807 948|750 607!750 607|1000 364!1000 364|654 312"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

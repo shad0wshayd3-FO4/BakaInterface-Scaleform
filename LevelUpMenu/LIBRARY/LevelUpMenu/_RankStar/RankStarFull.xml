@@ -1,0 +1,26 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="LevelUpMenu/_RankStar/RankStarFull" itemID="5fa72059-000007cf" lastModified="1604789511">
+  <timeline>
+    <DOMTimeline name="RankStarFull">
+      <layers>
+        <DOMLayer name="Layer 1" color="#D3B46A" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FFFFFF"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="!589 281|452 0!452 0|312 281!312 281|0 328!0 328|227 546!227 546|173 853!173 853|452 706!452 706|726 853!726 853|675 546!675 546|900 328!900 328|589 281"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

@@ -1,8 +1,196 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="LevelUpMenu/LevelUpMenu" itemID="5f97d64a-000006ae" linkageExportForAS="true" linkageClassName="LevelUpMenu" lastModified="1603786527">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="LevelUpMenu/LevelUpMenu" itemID="5f97d64a-000006ae" linkageExportForAS="true" linkageClassName="LevelUpMenu" lastModified="1604792539" lastUniqueIdentifier="5">
   <timeline>
     <DOMTimeline name="LevelUpMenu">
       <layers>
-        <DOMLayer name="Layer_1" color="#00FFFF" current="true" isSelected="true">
+        <DOMLayer name="PerkList" color="#9933CC" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="LevelUpMenu/_PerkList/PerkList" name="PerkList_mc" selected="true">
+                  <matrix>
+                    <Matrix tx="260" ty="100"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="255" y="350"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Search" color="#9933CC" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="LevelUpMenu/_Search/SearchBox" name="SearchBox_mc">
+                  <matrix>
+                    <Matrix tx="260" ty="855"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="260" y="22.5"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Icon" color="#FF4FFF" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="LevelUpMenu/MCHolder" name="VBHolder_mc">
+                  <matrix>
+                    <Matrix tx="955" ty="90"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Description" color="#FF800A" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="Description_tf" top="-10.05" width="896" height="346" isSelectable="false" scrollable="true" renderAsHTML="true" lineType="multiline">
+                  <matrix>
+                    <Matrix tx="782" ty="512.05"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>Ranks: 1&#xD;Reqs: Blah, Blah</characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" rotation="true" letterSpacing="0.5" lineSpacing="5" lineHeight="33.65" size="26" bitmapSize="520" face="$MAIN_Font*" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="RankCount" color="#FF800A" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="LevelUpMenu/MCHolder" name="RankStarHolder_mc">
+                  <matrix>
+                    <Matrix tx="780" ty="855"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="PerkCount" color="#9933CC" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="PerkCountLabel_tf" width="396" height="46" isSelectable="false">
+                  <matrix>
+                    <Matrix tx="1217" ty="857"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>Perk Points Remaining:</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="right" aliasText="false" rotation="true" letterSpacing="0.5" lineSpacing="5" lineHeight="44" size="34" bitmapSize="680" face="$MAIN_Font*" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+                <DOMDynamicText name="PerkCount_tf" width="56" height="46" isSelectable="false">
+                  <matrix>
+                    <Matrix tx="1622" ty="857"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>100</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" rotation="true" letterSpacing="0.5" lineSpacing="5" lineHeight="44.55" size="34" bitmapSize="680" face="$MAIN_Font_Bold*" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="BorderText" color="#FF800A" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="BorderText_tf" selected="true" width="596" height="56" isSelectable="false" lineType="multiline no wrap">
+                  <matrix>
+                    <Matrix tx="317" ty="32"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>WELCOME TO LEVEL 2</characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" lineHeight="52.4" size="40" bitmapSize="800" face="$MAIN_Font_Bold*" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="BorderTrim" color="#FF4FFF" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="LevelUpMenu/_Background/BorderTrim" name="BorderTrim_mc">
+                  <matrix>
+                    <Matrix tx="300" ty="75"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="632.5"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Border" color="#9933CC" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="LevelUpMenu/_Background/BorderBase" name="Border_mc">
+                  <matrix>
+                    <Matrix tx="210" ty="75"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="750" y="430"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Background" color="#FF800A" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="LevelUpMenu/_Background/Background" name="Background_mc">
+                  <matrix>
+                    <Matrix tx="210" ty="75"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="750" y="430"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="ButtonHintBar" color="#00FFFF" locked="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
@@ -14,19 +202,6 @@
                     <Point y="24"/>
                   </transformationPoint>
                 </DOMSymbolInstance>
-                <DOMDynamicText name="Placeholder_tf" selected="true" width="836" height="836" isSelectable="false" lineType="multiline no wrap">
-                  <matrix>
-                    <Matrix tx="542" ty="82"/>
-                  </matrix>
-                  <textRuns>
-                    <DOMTextRun>
-                      <characters></characters>
-                      <textAttrs>
-                        <DOMTextAttrs aliasText="false" lineHeight="19.4" size="15" bitmapSize="300" face="$MAIN_Font*" fillColor="#FFFFFF"/>
-                      </textAttrs>
-                    </DOMTextRun>
-                  </textRuns>
-                </DOMDynamicText>
               </elements>
             </DOMFrame>
           </frames>

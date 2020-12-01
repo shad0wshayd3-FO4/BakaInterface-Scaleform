@@ -1,0 +1,40 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="LevelUpMenu/_PerkList/PerkList" itemID="5fa05523-0000038a" linkageExportForAS="true" linkageBaseClass="Shared.AS3.BSScrollingList" linkageClassName="Menu.LevelUpMenu.PerkList" lastModified="1604472038">
+  <timeline>
+    <DOMTimeline name="PerkList">
+      <layers>
+        <DOMLayer name="scrollBar" color="#FF4FFF" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="LevelUpMenu/_PerkList/ScrollBar/ScrollBar" name="ScrollBar_mc" selected="true">
+                  <matrix>
+                    <Matrix a="0" b="1" c="-1" d="0" tx="490" ty="25"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="56.45" y="14.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="border" color="#00FFFF" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="LevelUpMenu/_PerkList/PerkListBorder" name="border">
+                  <transformationPoint>
+                    <Point x="225" y="375"/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

@@ -1,4 +1,4 @@
-package Shared
+﻿package Shared
 {
     import flash.display.DisplayObject;
     import flash.display.MovieClip;
@@ -39,6 +39,11 @@ package Shared
                 }
             }
             return _loc7_;
+        }
+
+        public static function Clamp(val:Number, min:Number, max:Number) : Number
+        {
+            return Math.max(min,Math.min(max,val));
         }
 
         public static function RoundDecimal(param1:Number, param2:Number):Number
@@ -87,7 +92,7 @@ package Shared
             };
         }
 
-        public static function SetText(param1:TextField, param2:String, param3:Boolean, param4:Boolean = false, param5:* = false):*
+        public static function SetText(param1:TextField, param2:String, useHTML:Boolean, param4:Boolean = false, param5:* = false):*
         {
             var _loc6_:TextFormat = null;
             var _loc7_:Number = NaN;
@@ -100,7 +105,7 @@ package Shared
             {
                 param2 = param2.toUpperCase();
             }
-            if (param3)
+            if (useHTML)
             {
                 _loc6_ = param1.getTextFormat();
                 _loc7_ = Number(_loc6_.letterSpacing);

@@ -1,0 +1,64 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="LevelUpMenu/_PerkListEntry/PerkListEntry" itemID="5fa05559-00000392" linkageExportForAS="true" linkageBaseClass="Shared.AS3.BSScrollingListEntry" linkageClassName="Menu.LevelUpMenu.PerkListEntry" lastModified="1604451428">
+  <timeline>
+    <DOMTimeline name="PerkListEntry">
+      <layers>
+        <DOMLayer name="textField" color="#9933CC" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="textField" width="406" height="36" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="42" ty="7"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>Perk Name</characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" rotation="true" letterSpacing="0.5" lineSpacing="5" lineHeight="33.65" size="26" bitmapSize="520" face="$MAIN_Font*" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="SelectionRect" color="#9933CC" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="LevelUpMenu/_PerkListEntry/PerkListEntrySelection" name="SelectionRect_mc">
+                  <matrix>
+                    <Matrix tx="15" ty="15"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="7.5" y="7.5"/>
+                  </transformationPoint>
+                  <color>
+                    <Color/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="border" color="#00FFFF" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="LevelUpMenu/_PerkListEntry/PerkListEntryBorder" name="border">
+                  <transformationPoint>
+                    <Point x="225" y="22.5"/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>
