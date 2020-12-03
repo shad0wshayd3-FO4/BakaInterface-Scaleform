@@ -1,0 +1,18 @@
+<DOMDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" backgroundColor="#00FFFF" width="500" height="500" frameRate="30" currentTimeline="1" xflVersion="2.971" creatorInfo="Adobe Animate" platform="Windows" versionInfo="Saved by Animate Windows 19.2 build 408" majorVersion="19" minorVersion="2" buildNumber="408" viewAngle3D="50.6510299754819" vanishingPoint3DX="250" vanishingPoint3DY="250" nextSceneIdentifier="2" playOptionsPlayLoop="false" playOptionsPlayPages="false" playOptionsPlayFrameActions="false" filetypeGUID="DD0DDBBF-5BEF-45B2-9F24-A3048D2A676F" fileGUID="11627152F0842D4D830A8DDE1883F4DC">
+     <timelines>
+          <DOMTimeline name="Scene 1" layerDepthEnabled="true">
+               <layers>
+                    <DOMLayer name="Layer_1" color="#00FFFF" current="true" isSelected="true">
+                         <frames>
+                              <DOMFrame index="0" keyMode="9728">
+                                   <elements/>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+               </layers>
+          </DOMTimeline>
+     </timelines>
+     <scripts/>
+     <PrinterSettings/>
+     <publishHistory/>
+</DOMDocument>

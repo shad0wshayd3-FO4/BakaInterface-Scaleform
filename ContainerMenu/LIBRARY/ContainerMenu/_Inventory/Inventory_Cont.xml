@@ -1,0 +1,100 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="ContainerMenu/_Inventory/Inventory_Cont" itemID="5fc860d4-000005a2" lastModified="1606969005">
+  <timeline>
+    <DOMTimeline name="Inventory_Cont">
+      <layers>
+        <DOMLayer name="Layer 1" color="#C6F528" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="RightHitBox_tf" width="286" height="32.4" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="25.1" ty="2"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters></characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" rotation="true" lineSpacing="5" lineHeight="19.05" size="16" bitmapSize="320" face="$Controller_Buttons_inverted*" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#7BA2AD">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="LeftHitBox_tf" width="24" height="32.4" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="-8.4" ty="2"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters></characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" rotation="true" lineSpacing="5" lineHeight="19.05" size="16" bitmapSize="320" face="$Controller_Buttons_inverted*" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 3" color="#81DFB5">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="ContainerSwitchButton_tf" width="31" height="25.45" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="278.1" ty="12.25"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>X</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" rotation="true" letterSpacing="0.5" lineSpacing="5" lineHeight="19.05" size="16" bitmapSize="320" face="$Controller_Buttons_inverted*" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 4" color="#D25A5A">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="ContainerMenu/_Inventory/InventoryHeader" name="ContainerListHeader" centerPoint3DX="133.35" centerPoint3DY="21.2">
+                  <matrix>
+                    <Matrix tx="13.1" ty="3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 5" color="#F54BF5">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="ContainerMenu/_Inventory/Inventory_BracketBackground" name="ContainerBracketBackground_mc">
+                  <transformationPoint>
+                    <Point x="250" y="400"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

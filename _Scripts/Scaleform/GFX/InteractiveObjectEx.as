@@ -1,4 +1,4 @@
-package Scaleform.GFX
+package scaleform.gfx
 {
     import flash.display.InteractiveObject;
 
@@ -9,20 +9,20 @@ package Scaleform.GFX
             super();
         }
 
-        public static function setHitTestDisable(param1:InteractiveObject, param2:Boolean):void
+        public static function setHitTestDisable(o:InteractiveObject, f:Boolean):void
         {
         }
 
-        public static function getHitTestDisable(param1:InteractiveObject):Boolean
+        public static function getHitTestDisable(o:InteractiveObject):Boolean
         {
             return false;
         }
 
-        public static function setTopmostLevel(param1:InteractiveObject, param2:Boolean):void
+        public static function setTopmostLevel(o:InteractiveObject, f:Boolean):void
         {
         }
 
-        public static function getTopmostLevel(param1:InteractiveObject):Boolean
+        public static function getTopmostLevel(o:InteractiveObject):Boolean
         {
             return false;
         }

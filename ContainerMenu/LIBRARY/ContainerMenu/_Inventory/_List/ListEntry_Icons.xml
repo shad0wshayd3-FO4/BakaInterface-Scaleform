@@ -1,0 +1,56 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="ContainerMenu/_Inventory/_List/ListEntry_Icons" itemID="5fc8600c-0000058a" lastModified="1606967362">
+  <timeline>
+    <DOMTimeline name="ListEntry_Icons">
+      <layers>
+        <DOMLayer name="Layer 1" color="#943EE8" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="ContainerMenu/_Inventory/_List/ListEntry_Icon_Best" name="BestIcon_mc" selected="true" centerPoint3DX="13.5" centerPoint3DY="9.5">
+                  <matrix>
+                    <Matrix tx="8.5" ty="7"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#7F42FB">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="ContainerMenu/_Inventory/_List/ListEntry_Icon_Barter" name="BarterIcon_mc" centerPoint3DX="14.9" centerPoint3DY="13.85">
+                  <matrix>
+                    <Matrix a="0.631576538085938" d="0.631576538085938" tx="6.9" ty="5.85"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 3" color="#666FF0">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="ContainerMenu/_Inventory/_List/ListEntry_Icon_Equip" name="EquipIcon_mc" centerPoint3DX="8" centerPoint3DY="4">
+                  <matrix>
+                    <Matrix tx="4"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

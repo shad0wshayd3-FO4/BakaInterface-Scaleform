@@ -10,15 +10,11 @@
     import flash.system.LoaderContext;
     import flash.text.TextField;
     import flash.text.TextFieldType;
-	import flash.text.TextLineMetrics;
+    import flash.text.TextLineMetrics;
     import flash.ui.Keyboard;
-	import Menu.LevelUpMenu.BorderBase;
-    import Menu.LevelUpMenu.PerkList;
-	import Menu.LevelUpMenu.RankStar;
-    import Menu.LevelUpMenu.SearchBox;
-    import Menu.LevelUpMenu.SearchFilter;
-    import Scaleform.GFX.Extensions;
-    import Scaleform.GFX.TextFieldEx;
+    import Menu.LevelUpMenu.*;
+    import scaleform.gfx.Extensions;
+    import scaleform.gfx.TextFieldEx;
     import Shared.AS3.BSButtonHintBar;
     import Shared.AS3.BSButtonHintData;
     import Shared.AS3.BSScrollingList;
@@ -28,13 +24,13 @@
 
     public class LevelUpMenu extends IMenu
     {
-		public var BorderText_tf:TextField;
-		public var BorderTrim_mc:MovieClip;
+        public var BorderText_tf:TextField;
+        public var BorderTrim_mc:MovieClip;
         public var ButtonHintBar_mc:BSButtonHintBar;
         public var Description_tf:TextField;
-		public var PerkCount_tf:TextField;
+        public var PerkCount_tf:TextField;
         public var PerkList_mc:PerkList;
-		public var RankStarHolder_mc:MovieClip;
+        public var RankStarHolder_mc:MovieClip;
         public var SearchBox_mc:SearchBox;
         public var VBHolder_mc:MovieClip;
 
@@ -46,7 +42,7 @@
         private var NextPerkButton:BSButtonHintData;
         private var ConfirmButton:BSButtonHintData;
 
-		private var uiPerkBase:uint;
+        private var uiPerkBase:uint;
         private var uiPerkCount:uint;
         private var uiViewingCount:uint;
         private var uiViewingIndex:uint;
@@ -73,11 +69,11 @@
 
             this.BGSCodeObj = new Object();
             this._VBLoader = new Loader();
-			
-			this.searchFilter = new SearchFilter();
-			this.PerkList_mc.filterer = this.searchFilter;
 
-			this.uiPerkBase = 0;
+            this.searchFilter = new SearchFilter();
+            this.PerkList_mc.filterer = this.searchFilter;
+
+            this.uiPerkBase = 0;
             this.uiPerkCount = 0;
             this.uiViewingCount = -1;
             this.uiViewingIndex = -1;
@@ -116,25 +112,25 @@
         public function onCodeObjCreate():*
         {
             this.BGSCodeObj.InitPerkList();
-			this.BGSCodeObj.GetPerkCount();
-			this.BGSCodeObj.UpdateHeader();
+            this.BGSCodeObj.GetPerkCount();
+            this.BGSCodeObj.UpdateHeader();
         }
 
         public function onCodeObjDestruction():*
         {
             this.BGSCodeObj = null;
         }
-		
-		public function get perkCount():uint
-		{
-			return this.uiPerkCount;
-		}
-		
-		public function set perkCount(param1:uint):void
-		{
-			this.uiPerkCount = param1;
-			this.PerkCount_tf.text = this.uiPerkCount.toString();
-		}
+
+        public function get perkCount():uint
+        {
+            return this.uiPerkCount;
+        }
+
+        public function set perkCount(param1:uint):void
+        {
+            this.uiPerkCount = param1;
+            this.PerkCount_tf.text = this.uiPerkCount.toString();
+        }
 
         public function SetPerkList(param1:Array):*
         {
@@ -142,21 +138,21 @@
             this.PerkList_mc.entryList = param1;
             this.PerkList_mc.InvalidateData();
             this.PerkList_mc.selectedIndex = 0;
-			this.onListSelectionChange(null);
+            this.onListSelectionChange(null);
         }
 
         public function SetPerkCount(param1:uint):*
         {
             this.perkCount = param1;
-			this.uiPerkBase = this.perkCount;
+            this.uiPerkBase = this.perkCount;
         }
 
-		public function SetHeader(param1:String):*
-		{
-			GlobalFunc.SetText(this.BorderText_tf, param1, true, true);
-			this.UpdateHeader();
-		}
-		
+        public function SetHeader(param1:String):*
+        {
+            GlobalFunc.SetText(this.BorderText_tf, param1, true, true);
+            this.UpdateHeader();
+        }
+
         public function ProcessUserEvent(a_event:String, a_keyPressed:Boolean):Boolean
         {
             var Handled:Boolean = false;
@@ -196,16 +192,16 @@
                     this.PerkList_mc.moveSelectionDown();
                     Handled = true;
                 }
-				else if (a_event == "XButton" || a_event == "R3")
-				{
-					this.onConfirmPressed();
-					Handled = true;
-				}
-				else if (a_event == "YButton")
-				{
-					this.onResetPressed();
-					Handled = true;
-				}
+                else if (a_event == "XButton" || a_event == "R3")
+                {
+                    this.onConfirmPressed();
+                    Handled = true;
+                }
+                else if (a_event == "YButton")
+                {
+                    this.onResetPressed();
+                    Handled = true;
+                }
                 else if (a_event == "L3")
                 {
                     this.onSearchPressed();
@@ -242,17 +238,17 @@
         private function SetButtons():*
         {
             this.ResetButton.ButtonVisible = !this.searchEnabled;
-			this.SearchButton.ButtonVisible = !this.searchEnabled;
+            this.SearchButton.ButtonVisible = !this.searchEnabled;
             this.SelectButton.ButtonVisible = !this.searchEnabled;
-			this.ConfirmButton.ButtonVisible = !this.searchEnabled;
+            this.ConfirmButton.ButtonVisible = !this.searchEnabled;
             this.PrevPerkButton.ButtonVisible = !this.searchEnabled;
             this.NextPerkButton.ButtonVisible = !this.searchEnabled;
 
             this.SelectButton.ButtonEnabled = false;
             this.PrevPerkButton.ButtonEnabled = this.uiViewingIndex > 0;
             this.NextPerkButton.ButtonEnabled = this.uiViewingCount > this.uiViewingIndex;
-			this.ResetButton.ButtonEnabled = this.perkCount != this.uiPerkBase;
-			this.ConfirmButton.ButtonEnabled = this.perkCount != this.uiPerkBase;
+            this.ResetButton.ButtonEnabled = this.perkCount != this.uiPerkBase;
+            this.ConfirmButton.ButtonEnabled = this.perkCount != this.uiPerkBase;
 
             this.CancelButton.ButtonText = this.searchEnabled ? "$CANCEL" : "$CLOSE";
 
@@ -302,36 +298,36 @@
 
             this.SetButtons();
         }
-		
-		private function onSearchClicked():Boolean
-		{
-			if (!this.searchEnabled)
-			{
-				this.onSearchPressed();
-			}
-			else
-			{
-				this.SearchBox_mc.SearchText_tf.setSelection(0, int.MAX_VALUE);
-			}
-		}
+
+        private function onSearchClicked():Boolean
+        {
+            if (!this.searchEnabled)
+            {
+                this.onSearchPressed();
+            }
+            else
+            {
+                this.SearchBox_mc.SearchText_tf.setSelection(0, int.MAX_VALUE);
+            }
+        }
 
         private function onResetPressed():Boolean
         {
             if (this.ResetButton.ButtonEnabled && this.ResetButton.ButtonVisible)
             {
-				this.BGSCodeObj.PlaySound("UIMenuPopUpGeneric");
-				for (var i:uint = 0; i < this.PerkList_mc.entryList.length; i++)
-				{
-					var entry:Object = this.PerkList_mc.entryList[i];
-					if (entry != null && entry.IsSelected)
-					{
-						entry.IsSelected = false;
-						this.PerkList_mc.UpdateEntry(entry);
-						this.perkCount = this.perkCount + 1;
-					}
-				}
-				
-				this.SetButtons();
+                this.BGSCodeObj.PlaySound("UIMenuPopUpGeneric");
+                for (var i:uint = 0; i < this.PerkList_mc.entryList.length; i++)
+                {
+                    var entry:Object = this.PerkList_mc.entryList[i];
+                    if (entry != null && entry.IsSelected)
+                    {
+                        entry.IsSelected = false;
+                        this.PerkList_mc.UpdateEntry(entry);
+                        this.perkCount = this.perkCount + 1;
+                    }
+                }
+
+                this.SetButtons();
             }
         }
 
@@ -341,13 +337,13 @@
             {
                 if (this.PerkList_mc.selectedEntry.IsSelected)
                 {
-					this.BGSCodeObj.PlaySound("UIMenuCancel");
+                    this.BGSCodeObj.PlaySound("UIMenuCancel");
                     this.PerkList_mc.selectedEntry.IsSelected = false;
                     this.perkCount = this.perkCount + 1;
                 }
                 else
                 {
-					this.BGSCodeObj.PlaySound("UIMenuOK");
+                    this.BGSCodeObj.PlaySound("UIMenuOK");
                     this.PerkList_mc.selectedEntry.IsSelected = true;
                     this.perkCount = this.perkCount - 1;
                 }
@@ -363,7 +359,7 @@
         {
             if (this.PrevPerkButton.ButtonEnabled && this.PrevPerkButton.ButtonVisible)
             {
-				this.BGSCodeObj.PlaySound("UIMenuPrevNext");
+                this.BGSCodeObj.PlaySound("UIMenuPrevNext");
                 this.uiViewingIndex -= 1;
                 this.UpdateDisplay();
             }
@@ -373,7 +369,7 @@
         {
             if (this.NextPerkButton.ButtonEnabled && this.NextPerkButton.ButtonVisible)
             {
-				this.BGSCodeObj.PlaySound("UIMenuPrevNext");
+                this.BGSCodeObj.PlaySound("UIMenuPrevNext");
                 this.uiViewingIndex += 1;
                 this.UpdateDisplay();
             }
@@ -382,28 +378,28 @@
         private function onConfirmPressed():Boolean
         {
             if (this.ConfirmButton.ButtonEnabled && this.ConfirmButton.ButtonVisible)
-			{
-				this.BGSCodeObj.PlaySound("UIMenuOK");
-				for (var i:uint = 0; i < this.PerkList_mc.entryList.length; i++)
-				{
-					var entry:Object = this.PerkList_mc.entryList[i];
-					if (entry != null && entry.IsSelected)
-					{
-						this.BGSCodeObj.AddPerk(entry.FormID);
-					}
-				}
-				
-				this.uiPerkBase = this.perkCount;
-				if (this.uiPerkBase > 0)
-				{
-					this.BGSCodeObj.InitPerkList();
-					
-				}
-				else 
-				{
-					this.BGSCodeObj.CloseMenu();
-				}
-			}
+            {
+                this.BGSCodeObj.PlaySound("UIMenuOK");
+                for (var i:uint = 0; i < this.PerkList_mc.entryList.length; i++)
+                {
+                    var entry:Object = this.PerkList_mc.entryList[i];
+                    if (entry != null && entry.IsSelected)
+                    {
+                        this.BGSCodeObj.AddPerk(entry.FormID);
+                    }
+                }
+
+                this.uiPerkBase = this.perkCount;
+                if (this.uiPerkBase > 0)
+                {
+                    this.BGSCodeObj.InitPerkList();
+
+                }
+                else
+                {
+                    this.BGSCodeObj.CloseMenu();
+                }
+            }
         }
 
         private function onListSelectionChange(param1:Event)
@@ -411,23 +407,23 @@
             var selectedEntry:Object = this.PerkList_mc.selectedEntry;
             this.uiViewingCount = (selectedEntry == null) ? -1 : selectedEntry.RankCount - 1;
             this.uiViewingIndex = (selectedEntry == null) ? -1 : selectedEntry.RankIndex;
-			
-			while (this.RankStarHolder_mc.numChildren > 0)
-			{
-				this.RankStarHolder_mc.removeChildAt(0);
-			}
-			
-			if (selectedEntry != null)
-			{
-				var maxRank:uint = Math.min(selectedEntry.RankCount, 10);
-				for (var i:uint = 0; i < maxRank; i++)
-				{
-					var rankStar:RankStar = new RankStar();
-					this.RankStarHolder_mc.addChild(rankStar);
-					rankStar.x = rankStar.width * i;
-				}
-			}
-			
+
+            while (this.RankStarHolder_mc.numChildren > 0)
+            {
+                this.RankStarHolder_mc.removeChildAt(0);
+            }
+
+            if (selectedEntry != null)
+            {
+                var maxRank:uint = Math.min(selectedEntry.RankCount, 10);
+                for (var i:uint = 0; i < maxRank; i++)
+                {
+                    var rankStar:RankStar = new RankStar();
+                    this.RankStarHolder_mc.addChild(rankStar);
+                    rankStar.x = rankStar.width * i;
+                }
+            }
+
             this.BGSCodeObj.PlaySound("UIMenuFocus");
             this.UpdateDisplay();
         }
@@ -450,14 +446,14 @@
             this.searchFilter.filterString = this.SearchBox_mc.SearchText_tf.text;
         }
 
-		private function UpdateHeader():*
-		{
-			var metrics:TextLineMetrics = this.BorderText_tf.getLineMetrics(0);
-			var diff:Number = (this.BorderText_tf.x + metrics.width + 12) - this.BorderTrim_mc.x;
-			this.BorderTrim_mc.x = this.BorderTrim_mc.x + diff;
-			this.BorderTrim_mc.width = this.BorderTrim_mc.width - diff;
-		}
-		
+        private function UpdateHeader():*
+        {
+            var metrics:TextLineMetrics = this.BorderText_tf.getLineMetrics(0);
+            var diff:Number = (this.BorderText_tf.x + metrics.width + 12) - this.BorderTrim_mc.x;
+            this.BorderTrim_mc.x = this.BorderTrim_mc.x + diff;
+            this.BorderTrim_mc.width = this.BorderTrim_mc.width - diff;
+        }
+
         private function UpdateDisplay():*
         {
             var selectedEntry:Object = this.PerkList_mc.selectedEntry;
@@ -474,22 +470,22 @@
                     this._VBLoader.contentLoaderInfo.addEventListener(Event.COMPLETE, this.onVBLoadComplete);
                     this._VBLoader.load(request, loaderContext);
                 }
-				
-				for (var i:uint = 0; i < this.RankStarHolder_mc.numChildren; i++)
-				{
-					var rankStar:RankStar = this.RankStarHolder_mc.getChildAt(i);
-					rankStar.gotoAndStop("Empty");
-					
-					if (selectedEntry.RankIndex > i)
-					{
-						rankStar.gotoAndStop("Full");
-					}
-					
-					if (this.uiViewingIndex == i)
-					{
-						rankStar.gotoAndStop("Available");
-					}
-				}
+
+                for (var i:uint = 0; i < this.RankStarHolder_mc.numChildren; i++)
+                {
+                    var rankStar:RankStar = this.RankStarHolder_mc.getChildAt(i);
+                    rankStar.gotoAndStop("Empty");
+
+                    if (selectedEntry.RankIndex > i)
+                    {
+                        rankStar.gotoAndStop("Full");
+                    }
+
+                    if (this.uiViewingIndex == i)
+                    {
+                        rankStar.gotoAndStop("Available");
+                    }
+                }
             }
             else
             {

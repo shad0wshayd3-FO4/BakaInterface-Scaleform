@@ -4,8 +4,8 @@ package Shared.AS3
     import flash.display.MovieClip;
     import flash.text.TextField;
     import flash.text.TextFieldAutoSize;
-    import Scaleform.GFX.Extensions;
-    import Scaleform.GFX.TextFieldEx;
+    import scaleform.gfx.Extensions;
+    import scaleform.gfx.TextFieldEx;
 
     public class BSScrollingListEntry extends MovieClip
     {

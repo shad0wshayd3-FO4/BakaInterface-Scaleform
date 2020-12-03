@@ -1,5 +1,6 @@
 package FL.Transitions.Easing
 {
+
     public class Strong
     {
         public function Strong()

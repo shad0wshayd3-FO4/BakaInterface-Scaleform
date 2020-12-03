@@ -10,8 +10,8 @@
         public function SearchBox()
         {
             super();
-			
-			this.SearchText_tf.restrict = "A-z0-9\\-_=<> ";
+
+            this.SearchText_tf.restrict = "A-z0-9\\-_=<> ";
         }
     }
 }

@@ -1,0 +1,133 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_Shared/_Fonts/Fonts" itemID="5fc855a9-00000326" lastModified="1606966074">
+  <timeline>
+    <DOMTimeline name="Fonts">
+      <layers>
+        <DOMLayer name="Layer_1" color="#00FFFF" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText width="196" height="36" isSelectable="false">
+                  <matrix>
+                    <Matrix tx="202" ty="122"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>ABCD</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" lineHeight="24.9" size="20" bitmapSize="400" face="$BRODY*" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+                <DOMDynamicText width="196" height="36" isSelectable="false">
+                  <matrix>
+                    <Matrix tx="2" ty="2"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>ABCD</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" lineHeight="24.35" size="20" bitmapSize="400" face="$CClub_Font*" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+                <DOMDynamicText width="196" height="36" isSelectable="false">
+                  <matrix>
+                    <Matrix tx="202" ty="2"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>ABCD</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" lineHeight="24.85" size="20" bitmapSize="400" face="$CClub_Font_Bold*" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+                <DOMDynamicText width="196" height="36" isSelectable="false">
+                  <matrix>
+                    <Matrix tx="2" ty="42"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>ABCD</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" lineHeight="23.85" size="20" bitmapSize="400" face="$Controller_Buttons*" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+                <DOMDynamicText width="196" height="36" isSelectable="false">
+                  <matrix>
+                    <Matrix tx="202" ty="42"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>ABCD</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" lineHeight="23.9" size="20" bitmapSize="400" face="$Controller_Buttons_inverted*" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+                <DOMDynamicText width="196" height="36" isSelectable="false">
+                  <matrix>
+                    <Matrix tx="2" ty="122"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>ABCD</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" lineHeight="32" size="20" bitmapSize="400" face="$HandwrittenFont*" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+                <DOMDynamicText width="196" height="36" isSelectable="false">
+                  <matrix>
+                    <Matrix tx="2" ty="82"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>ABCD</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" lineHeight="25.85" size="20" bitmapSize="400" face="$MAIN_Font*" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+                <DOMDynamicText width="196" height="36" isSelectable="false">
+                  <matrix>
+                    <Matrix tx="202" ty="82"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>ABCD</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" lineHeight="26.2" size="20" bitmapSize="400" face="$MAIN_Font_Bold*" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+                <DOMDynamicText width="196" height="36" isSelectable="false">
+                  <matrix>
+                    <Matrix tx="2" ty="162"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>ABCD</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" lineHeight="21.8" size="20" bitmapSize="400" face="$Terminal_Font*" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

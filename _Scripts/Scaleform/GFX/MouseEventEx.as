@@ -1,4 +1,4 @@
-package Scaleform.GFX
+package scaleform.gfx
 {
     import flash.events.MouseEvent;
 

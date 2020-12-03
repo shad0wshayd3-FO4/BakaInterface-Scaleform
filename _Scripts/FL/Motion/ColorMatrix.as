@@ -1,5 +1,6 @@
 package FL.Motion
 {
+
     public class ColorMatrix extends DynamicMatrix
     {
         protected static const LUMINANCER:Number = 0.3086;

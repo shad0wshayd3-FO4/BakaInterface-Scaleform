@@ -1,5 +1,6 @@
 package FL.Motion
 {
+
     public class DynamicMatrix
     {
         public static const MATRIX_ORDER_PREPEND:int = 0;

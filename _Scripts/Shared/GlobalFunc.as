@@ -7,7 +7,7 @@
     import flash.geom.Rectangle;
     import flash.text.TextField;
     import flash.text.TextFormat;
-    import Scaleform.GFX.Extensions;
+    import scaleform.gfx.Extensions;
 
     public class GlobalFunc
     {
@@ -41,9 +41,9 @@
             return _loc7_;
         }
 
-        public static function Clamp(val:Number, min:Number, max:Number) : Number
+        public static function Clamp(val:Number, min:Number, max:Number):Number
         {
-            return Math.max(min,Math.min(max,val));
+            return Math.max(min, Math.min(max, val));
         }
 
         public static function RoundDecimal(param1:Number, param2:Number):Number
