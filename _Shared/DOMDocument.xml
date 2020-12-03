@@ -1,0 +1,72 @@
+<DOMDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" backgroundColor="#333333" width="1920" height="1080" currentTimeline="1" xflVersion="2.971" creatorInfo="Adobe Animate" platform="Windows" versionInfo="Saved by Animate Windows 19.2 build 408" majorVersion="19" minorVersion="2" buildNumber="408" viewAngle3D="75.9690363138218" vanishingPoint3DX="960" vanishingPoint3DY="540" sharedLibraryURL="fonts_en.swf" nextSceneIdentifier="2" playOptionsPlayLoop="false" playOptionsPlayPages="false" playOptionsPlayFrameActions="false" autoSaveHasPrompted="true" filetypeGUID="DD0DDBBF-5BEF-45B2-9F24-A3048D2A676F" fileGUID="CD9E1D53C69D4942A4D5B751E9D299E4">
+     <folders>
+          <DOMFolderItem name="_Fonts" itemID="5f97a2fc-00000035"/>
+          <DOMFolderItem name="BSButtonHintBar" itemID="5f97b56b-00000036"/>
+          <DOMFolderItem name="ItemCard" itemID="5fc84d14-00000194" isExpanded="true"/>
+     </folders>
+     <fonts>
+          <DOMFontItem name="_Fonts/$DebugTextFont" itemID="5f97a3f9-00000039" linkageExportForAS="true" linkageExportForRS="true" linkageClassName="$DebugTextFont" linkageURL="fonts_en.swf" font="Consolas" size="0" id="25" sourceLastImported="1603773433" embedRanges="9999"/>
+          <DOMFontItem name="_Fonts/$ConsoleFont" itemID="5f97a3f9-00000037" linkageExportForAS="true" linkageExportForRS="true" linkageClassName="$ConsoleFont" linkageURL="fonts_en.swf" font="ArialMT" size="0" id="24" sourceLastImported="1603773433" embedRanges="9999"/>
+          <DOMFontItem name="_Fonts/$CClub_Font_Bold" itemID="5f97a2f3-00000031" linkageExportForAS="true" linkageExportForRS="true" linkageClassName="$CClub_Font_Bold" linkageURL="fonts_en.swf" font="CreationClub-Bold" size="0" id="23" sourceLastImported="1603773171" embedRanges="9999"/>
+          <DOMFontItem name="_Fonts/$CClub_Font" itemID="5f97a2f3-0000002f" linkageExportForAS="true" linkageExportForRS="true" linkageClassName="$CClub_Font" linkageURL="fonts_en.swf" font="CreationClub-Regular" size="0" id="22" sourceLastImported="1603773171" embedRanges="9999"/>
+          <DOMFontItem name="_Fonts/$BRODY" itemID="5f97a2f3-0000002d" linkageExportForAS="true" linkageExportForRS="true" linkageClassName="$BRODY" linkageURL="fonts_en.swf" font="Brody" size="0" id="21" sourceLastImported="1603773171" embedRanges="9999"/>
+          <DOMFontItem name="_Fonts/$Controller_Buttons_inverted" itemID="5f97a2f3-0000002b" linkageExportForAS="true" linkageExportForRS="true" linkageClassName="$Controller_Buttons_inverted" linkageURL="fonts_en.swf" font="ControllerButtons-Bold" size="0" id="20" sourceLastImported="1603773171" embedRanges="9999"/>
+          <DOMFontItem name="_Fonts/$Controller_Buttons" itemID="5f97a2f3-00000029" linkageExportForAS="true" linkageExportForRS="true" linkageClassName="$Controller_Buttons" linkageURL="fonts_en.swf" font="ControllerButtons-Regular" size="0" id="19" sourceLastImported="1603773171" embedRanges="9999"/>
+          <DOMFontItem name="_Fonts/$Terminal_Font" itemID="5f97a2f3-00000027" linkageExportForAS="true" linkageExportForRS="true" linkageClassName="$Terminal_Font" linkageURL="fonts_en.swf" font="ShareTechMono" size="0" id="18" sourceLastImported="1603773171" embedRanges="9999"/>
+          <DOMFontItem name="_Fonts/$MAIN_Font_Bold" itemID="5f97a2f3-00000025" linkageExportForAS="true" linkageExportForRS="true" linkageClassName="$MAIN_Font_Bold" linkageURL="fonts_en.swf" font="RobotoCondensed-Bold" size="0" id="17" sourceLastImported="1603773171" embedRanges="9999"/>
+          <DOMFontItem name="_Fonts/$MAIN_Font" itemID="5f97a2f3-00000023" linkageExportForAS="true" linkageExportForRS="true" linkageClassName="$MAIN_Font" linkageURL="fonts_en.swf" font="RobotoCondensed-Regular" size="0" id="16" sourceLastImported="1603773171" embedRanges="9999"/>
+          <DOMFontItem name="_Fonts/$HandwrittenFont" itemID="5f97a12b-0000001b" linkageExportForAS="true" linkageExportForRS="true" linkageClassName="$HandwrittenFont" linkageURL="fonts_en.swf" font="Handwritten-Fallout4" size="0" id="15" sourceLastImported="1603772715" embeddedCharacters=" &#xD;¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿĀāĂăĄąĆćĈĉĊċČčĎďĐđĒēĔĕĖėĘęĚěĜĝĞğĠġĢģĤĥĦħĨĩĪīĬĭĮįİıĲĳĴĵĶķĸĹĺĻļĽľĿŀŁłŃńŅņŇňŉŊŋŌōŎŏŐőŒœŔŕŖŗŘřŚśŜŝŞşŠšŢţŤťŦŧŨũŪūŬŭŮůŰűŲųŴŵŶŷŸŹźŻżŽžſƒƠơƯưǰǺǻǼǽǾǿȘșȚțȷˆˇˉ˘˙˚˛˜˝΄΅Ά·ΈΉΊΌΎΏΐΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩΪΫάέήίΰαβγδεζηθικλμνξοπρςστυφχψωϊϋόύώϑϒϖЀЁЂЃЄЅІЇЈЉЊЋЌЍЎЏАБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдежзийклмнопрстуфхцчшщъыьэюяѐёђѓєѕіїјљњћќѝўџѠѡѢѣѤѥѦѧѨѩѪѫѬѭѮѯѰѱѲѳѴѵѶѷѸѹѺѻѼѽѾѿҀҁ҂҃҄҅҆҈҉ҊҋҌҍҎҏҐґҒғҔҕҖҗҘҙҚқҜҝҞҟҠҡҢңҤҥҦҧҨҩҪҫҬҭҮүҰұҲҳҴҵҶҷҸҹҺһҼҽҾҿӀӁӂӃӄӅӆӇӈӉӊӋӌӍӎḀḁḾḿẀẁẂẃẄẅẠạẢảẤấẦầẨẩẪẫẬậẮắẰằẲẳẴẵẶặẸẹẺẻẼẽẾếỀềỂểỄễỆệỈỉỊịỌọỎỏỐốỒồỔổỖỗỘộỚớỜờỞởỠỡỢợỤụỦủỨứỪừỬửỮữỰựỲỳỴỵỶỷỸỹὍ           ​–—―‗‘’‚‛“”„†‡•‥…‰′″‹›‼⁄⁴ⁿ₣₤₧₫€℅ℓ№™Ω℮⅛⅜⅝⅞∂∏∑√∞∫≠≤≥﻿￼" embedRanges="9999|1|2|3|4|5"/>
+     </fonts>
+     <symbols>
+          <Include href="BSButtonHintBar/BSButtonHint.xml" itemID="5f97b58a-00000042" lastModified="1603781750"/>
+          <Include href="BSButtonHintBar/BSButtonHintBar.xml" itemID="5f97b598-00000044" lastModified="1603781809"/>
+          <Include href="BSButtonHintBar/BSButtonHintIcon.xml" loadImmediate="false" itemID="5f97b5ad-00000047" lastModified="1603781761"/>
+          <Include href="BSButtonHintBar/BSButtonHintIconHolder.xml" itemID="5f97b590-00000043" lastModified="1603778123"/>
+          <Include href="BSButtonHintBar/ButtonHintBracketL.xml" loadImmediate="false" itemID="5f97b5a4-00000046" lastModified="1603781718"/>
+          <Include href="BSButtonHintBar/ButtonHintBracketR.xml" loadImmediate="false" itemID="5f97b5a0-00000045" lastModified="1603781729"/>
+          <Include href="ItemCard/ItemCard.xml" itemID="5fc84ebf-000001c2" lastModified="1606962879"/>
+          <Include href="ItemCard/ItemCard_AmmoEntry.xml" itemID="5fc84eb0-000001c1" lastModified="1606962864"/>
+          <Include href="ItemCard/ItemCard_ComponentEntry_Entry.xml" itemID="5fc84ea3-000001c0" lastModified="1606962851"/>
+          <Include href="ItemCard/ItemCard_ComponentsEntry.xml" itemID="5fc84e9b-000001bf" lastModified="1606962843"/>
+          <Include href="ItemCard/ItemCard_DescriptionEntry.xml" itemID="5fc84e95-000001be" lastModified="1606962837"/>
+          <Include href="ItemCard/ItemCard_MultiEntry.xml" itemID="5fc84e87-000001bd" lastModified="1606962823"/>
+          <Include href="ItemCard/ItemCard_MultiEntry_Value.xml" itemID="5fc84e7f-000001bc" lastModified="1606962815"/>
+          <Include href="ItemCard/ItemCard_StandardEntry.xml" itemID="5fc84e64-000001ba" lastModified="1606962788"/>
+          <Include href="ItemCard/ItemCard_TimedEntry.xml" itemID="5fc84e6c-000001bb" lastModified="1606962796"/>
+          <Include href="ItemCard/Symbol 4.xml" itemIcon="1" loadImmediate="false" itemID="5fc84763-00000003" lastModified="1603704806"/>
+          <Include href="ItemCard/Symbol 15.xml" loadImmediate="false" itemID="5fc84763-0000000a" lastModified="1603704806"/>
+          <Include href="ItemCard/Symbol 20.xml" loadImmediate="false" itemID="5fc84763-0000000d" lastModified="1606961068"/>
+          <Include href="ItemCard/Symbol 24.xml" loadImmediate="false" itemID="5fc84763-0000000e" lastModified="1603704806"/>
+          <Include href="ItemCard/Symbol 25.xml" loadImmediate="false" itemID="5fc84763-0000000f" lastModified="1606961077"/>
+          <Include href="ItemCard/Symbol 26.xml" itemID="5fc84763-00000010" lastModified="1603704806"/>
+          <Include href="ItemCard/Symbol 28.xml" loadImmediate="false" itemID="5fc84763-00000011" lastModified="1603704806"/>
+          <Include href="ItemCard/Symbol 34.xml" loadImmediate="false" itemID="5fc84763-00000014" lastModified="1603704806"/>
+          <Include href="ItemCard/Symbol 37.xml" loadImmediate="false" itemID="5fc84763-00000015" lastModified="1603704806"/>
+          <Include href="ItemCard/Symbol 39.xml" loadImmediate="false" itemID="5fc84763-00000016" lastModified="1603704806"/>
+          <Include href="ItemCard/Symbol 41.xml" loadImmediate="false" itemID="5fc84763-00000017" lastModified="1603704806"/>
+          <Include href="ItemCard/Symbol 43.xml" loadImmediate="false" itemID="5fc84763-00000018" lastModified="1603704806"/>
+          <Include href="ItemCard/Symbol 45.xml" loadImmediate="false" itemID="5fc84763-00000019" lastModified="1603704806"/>
+          <Include href="ItemCard/Symbol 47.xml" loadImmediate="false" itemID="5fc84763-0000001a" lastModified="1603704806"/>
+          <Include href="ItemCard/Symbol 49.xml" loadImmediate="false" itemID="5fc84763-0000001b" lastModified="1603704806"/>
+          <Include href="ItemCard/Symbol 50.xml" itemID="5fc84763-0000001c" lastModified="1603704806"/>
+          <Include href="ItemCard/Symbol 53.xml" loadImmediate="false" itemID="5fc84763-0000001e" lastModified="1603704806"/>
+          <Include href="ItemCard/Symbol 59.xml" loadImmediate="false" itemID="5fc84763-00000022" lastModified="1603704806"/>
+          <Include href="ItemCard/Symbol 65.xml" loadImmediate="false" itemID="5fc84763-00000024" lastModified="1603704806"/>
+     </symbols>
+     <timelines>
+          <DOMTimeline name="Scene 1">
+               <layers>
+                    <DOMLayer name="Layer 1" color="#B93CFD" current="true" isSelected="true">
+                         <frames>
+                              <DOMFrame index="0" keyMode="9728">
+                                   <elements/>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+               </layers>
+          </DOMTimeline>
+     </timelines>
+     <scripts/>
+     <PrinterSettings/>
+     <publishHistory/>
+</DOMDocument>

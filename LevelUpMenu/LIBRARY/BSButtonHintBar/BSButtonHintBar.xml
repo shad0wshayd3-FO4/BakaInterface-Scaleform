@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="BSButtonHintBar/BSButtonHintBar" itemID="5f97d0d7-00000670" linkageExportForAS="true" linkageClassName="Shared.AS3.BSButtonHintBar" sourceFlashFilepath="../Shared/Shared.xfl" sourceLibraryItemHRef="BSButtonHintBar/BSButtonHintBar" sourceLastModified="1603781809" sourceAutoUpdate="true" lastModified="1603781809" sourceItemID="5f97b598-00000044">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="BSButtonHintBar/BSButtonHintBar" itemID="5f97d0d7-00000670" linkageExportForAS="true" linkageClassName="Shared.AS3.BSButtonHintBar" sourceFlashFilepath="../_Shared/_Shared.xfl" sourceLibraryItemHRef="BSButtonHintBar/BSButtonHintBar" sourceLastModified="1603781809" sourceAutoUpdate="true" lastModified="1603781809" sourceItemID="5f97b598-00000044">
   <timeline>
     <DOMTimeline name="BSButtonHintBar">
       <layers>

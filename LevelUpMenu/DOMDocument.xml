@@ -1,11 +1,11 @@
 <DOMDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" backgroundColor="#00FFFF" width="1920" height="1080" frameRate="30" currentTimeline="1" xflVersion="2.971" creatorInfo="Adobe Animate" platform="Windows" versionInfo="Saved by Animate Windows 19.2 build 408" majorVersion="19" minorVersion="2" buildNumber="408" viewAngle3D="75.9690363138218" vanishingPoint3DX="960" vanishingPoint3DY="540" nextSceneIdentifier="2" playOptionsPlayLoop="false" playOptionsPlayPages="false" playOptionsPlayFrameActions="false" autoSaveHasPrompted="true" filetypeGUID="DD0DDBBF-5BEF-45B2-9F24-A3048D2A676F" fileGUID="49A9FE7289F9E04699BF33734138295C">
      <folders>
           <DOMFolderItem name="_Fonts" itemID="5f97a2fc-00000035"/>
-          <DOMFolderItem name="BSButtonHintBar" itemID="5f97d0b6-00000614"/>
+          <DOMFolderItem name="BSButtonHintBar" itemID="5f97d0b6-00000614" isExpanded="true"/>
           <DOMFolderItem name="LevelUpMenu" itemID="5f97d0f8-0000067b" isExpanded="true"/>
           <DOMFolderItem name="LevelUpMenu/_Background" itemID="5fa054fb-00000385" isExpanded="true"/>
           <DOMFolderItem name="LevelUpMenu/_PerkList" itemID="5fa05578-00000393" isExpanded="true"/>
-          <DOMFolderItem name="LevelUpMenu/_PerkList/ScrollBar" itemID="5fa226ee-0000150f"/>
+          <DOMFolderItem name="LevelUpMenu/_PerkList/ScrollBar" itemID="5fa226ee-0000150f" isExpanded="true"/>
           <DOMFolderItem name="LevelUpMenu/_PerkListEntry" itemID="5fa05583-00000399" isExpanded="true"/>
           <DOMFolderItem name="LevelUpMenu/_RankStar" itemID="5fa71e36-00000777" isExpanded="true"/>
           <DOMFolderItem name="LevelUpMenu/_Search" itemID="5fa1d3d6-000006da" isExpanded="true"/>
@@ -18,7 +18,7 @@
      <symbols>
           <Include href="BSButtonHintBar/BSButtonHint.xml" itemID="5f97d0b6-000005ed" lastModified="1603781750"/>
           <Include href="BSButtonHintBar/BSButtonHintBar.xml" itemID="5f97d0d7-00000670" lastModified="1603781809"/>
-          <Include href="BSButtonHintBar/BSButtonHintIcon.xml" loadImmediate="false" itemID="5f97b5ad-00000047" lastModified="1603781761"/>
+          <Include href="BSButtonHintBar/BSButtonHintIcon.xml" itemID="5f97b5ad-00000047" lastModified="1603781761"/>
           <Include href="BSButtonHintBar/BSButtonHintIconHolder.xml" itemID="5f97b590-00000043" lastModified="1603778123"/>
           <Include href="BSButtonHintBar/ButtonHintBracketL.xml" itemID="5f97b5a4-00000046" lastModified="1603781718"/>
           <Include href="BSButtonHintBar/ButtonHintBracketR.xml" itemID="5f97b5a0-00000045" lastModified="1603781729"/>
