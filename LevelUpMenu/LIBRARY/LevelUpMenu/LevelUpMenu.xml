@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="LevelUpMenu/LevelUpMenu" itemID="5f97d64a-000006ae" linkageExportForAS="true" linkageClassName="LevelUpMenu" lastModified="1606957835" lastUniqueIdentifier="5">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="LevelUpMenu/LevelUpMenu" itemID="5f97d64a-000006ae" linkageExportForAS="true" linkageClassName="LevelUpMenu" lastModified="1606966921" lastUniqueIdentifier="5">
   <timeline>
     <DOMTimeline name="LevelUpMenu">
       <layers>
@@ -87,7 +87,7 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="PerkCount" color="#9933CC" current="true" isSelected="true" autoNamed="false">
+        <DOMLayer name="PerkCount" color="#9933CC" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
@@ -190,11 +190,11 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="ButtonHintBar" color="#00FFFF" locked="true" autoNamed="false">
+        <DOMLayer name="ButtonHintBar" color="#00FFFF" current="true" isSelected="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="BSButtonHintBar/BSButtonHintBar" name="ButtonHintBar_mc">
+                <DOMSymbolInstance libraryItemName="BSButtonHintBar/BSButtonHintBar" name="ButtonHintBar_mc" selected="true">
                   <matrix>
                     <Matrix tx="960" ty="960"/>
                   </matrix>

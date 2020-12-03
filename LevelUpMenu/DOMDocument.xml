@@ -11,17 +11,17 @@
           <DOMFolderItem name="LevelUpMenu/_Search" itemID="5fa1d3d6-000006da" isExpanded="true"/>
      </folders>
      <fonts>
-          <DOMFontItem name="_Fonts/$MAIN_Font" itemID="5f97d6c7-000006c1" linkageImportForRS="true" linkageExportInFirstFrame="false" linkageClassName="$MAIN_Font" linkageURL="fonts_en.swf" font="RobotoCondensed-Regular" size="0" id="3" sourceLastImported="1603786439" embedRanges="9999"/>
-          <DOMFontItem name="_Fonts/$MAIN_Font_Bold" itemID="5f97a2f3-00000025" linkageImportForRS="true" linkageExportInFirstFrame="false" linkageClassName="$MAIN_Font_Bold" linkageURL="fonts_en.swf" font="RobotoCondensed-Bold" size="0" id="2" sourceLastImported="1603773171" embedRanges="9999"/>
           <DOMFontItem name="_Fonts/$Controller_Buttons_inverted" itemID="5f97a2f3-0000002b" linkageImportForRS="true" linkageExportInFirstFrame="false" linkageClassName="$Controller_Buttons_inverted" linkageURL="fonts_en.swf" font="ControllerButtons-Bold" size="0" id="1" sourceLastImported="1603773171" embedRanges="9999"/>
+          <DOMFontItem name="_Fonts/$MAIN_Font_Bold" itemID="5f97a2f3-00000025" linkageImportForRS="true" linkageExportInFirstFrame="false" linkageClassName="$MAIN_Font_Bold" linkageURL="fonts_en.swf" font="RobotoCondensed-Bold" size="0" id="2" sourceLastImported="1603773171" embedRanges="9999"/>
+          <DOMFontItem name="_Fonts/$MAIN_Font" itemID="5f97d6c7-000006c1" linkageImportForRS="true" linkageExportInFirstFrame="false" linkageClassName="$MAIN_Font" linkageURL="fonts_en.swf" font="RobotoCondensed-Regular" size="0" id="3" sourceLastImported="1603786439" embedRanges="9999"/>
      </fonts>
      <symbols>
           <Include href="BSButtonHintBar/BSButtonHint.xml" itemID="5f97d0b6-000005ed" lastModified="1603781750"/>
           <Include href="BSButtonHintBar/BSButtonHintBar.xml" itemID="5f97d0d7-00000670" lastModified="1603781809"/>
-          <Include href="BSButtonHintBar/BSButtonHintIcon.xml" itemID="5f97b5ad-00000047" lastModified="1603781761"/>
+          <Include href="BSButtonHintBar/BSButtonHintIcon.xml" loadImmediate="false" itemID="5f97b5ad-00000047" lastModified="1603781761"/>
           <Include href="BSButtonHintBar/BSButtonHintIconHolder.xml" itemID="5f97b590-00000043" lastModified="1603778123"/>
-          <Include href="BSButtonHintBar/ButtonHintBracketL.xml" itemID="5f97b5a4-00000046" lastModified="1603781718"/>
-          <Include href="BSButtonHintBar/ButtonHintBracketR.xml" itemID="5f97b5a0-00000045" lastModified="1603781729"/>
+          <Include href="BSButtonHintBar/ButtonHintBracketL.xml" loadImmediate="false" itemID="5f97b5a4-00000046" lastModified="1603781718"/>
+          <Include href="BSButtonHintBar/ButtonHintBracketR.xml" loadImmediate="false" itemID="5f97b5a0-00000045" lastModified="1603781729"/>
           <Include href="LevelUpMenu/_Background/Background.xml" loadImmediate="false" itemID="5fa04f26-00000373" lastModified="1604388591"/>
           <Include href="LevelUpMenu/_Background/BackgroundBase.xml" loadImmediate="false" itemID="5fa106ed-0000019e" lastModified="1604388589"/>
           <Include href="LevelUpMenu/_Background/BorderBase.xml" loadImmediate="false" itemID="5fa1061f-00000199" lastModified="1604792501"/>
@@ -44,7 +44,7 @@
           <Include href="LevelUpMenu/_Search/SearchBox.xml" itemID="5fa1d3e0-000006dc" lastModified="1604471846"/>
           <Include href="LevelUpMenu/_Search/SearchBoxBackground.xml" loadImmediate="false" itemID="5fa1d4f6-0000072a" lastModified="1604441751"/>
           <Include href="LevelUpMenu/_Search/SearchBoxBorder.xml" loadImmediate="false" itemID="5fa1d587-00000738" lastModified="1604441625"/>
-          <Include href="LevelUpMenu/LevelUpMenu.xml" itemID="5f97d64a-000006ae" lastModified="1606957835"/>
+          <Include href="LevelUpMenu/LevelUpMenu.xml" itemID="5f97d64a-000006ae" lastModified="1606966921"/>
           <Include href="LevelUpMenu/MCHolder.xml" loadImmediate="false" itemID="5fa72088-000007d4" lastModified="1604788360"/>
      </symbols>
      <timelines>
