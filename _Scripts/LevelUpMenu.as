@@ -111,9 +111,7 @@
 
         public function onCodeObjCreate():*
         {
-            this.BGSCodeObj.InitPerkList();
-            this.BGSCodeObj.GetPerkCount();
-            this.BGSCodeObj.UpdateHeader();
+            this.BGSCodeObj.NotifyLoaded();
         }
 
         public function onCodeObjDestruction():*
@@ -132,6 +130,16 @@
             this.PerkCount_tf.text = this.uiPerkCount.toString();
         }
 
+        public function RefreshDisplay():*
+        {
+            this.SearchBox_mc.SearchText_tf.text = "";
+            this.onSearchBoxChanged(null);
+
+            this.BGSCodeObj.InitPerkList();
+            this.BGSCodeObj.GetPerkCount();
+            this.BGSCodeObj.UpdateHeader();
+        }
+
         public function SetPerkList(param1:Array):*
         {
             param1.sortOn(["IsAvailable", "PerkLevel", "text"], [Array.NUMERIC | Array.DESCENDING, Array.NUMERIC, Array.CASEINSENSITIVE]);
@@ -139,6 +147,7 @@
             this.PerkList_mc.InvalidateData();
             this.PerkList_mc.selectedIndex = 0;
             this.onListSelectionChange(null);
+            stage.focus = this.PerkList_mc;
         }
 
         public function SetPerkCount(param1:uint):*
@@ -155,68 +164,60 @@
 
         public function ProcessUserEvent(a_event:String, a_keyPressed:Boolean):Boolean
         {
-            var Handled:Boolean = false;
             if (!a_keyPressed)
             {
-                if (a_event == "Cancel")
+                switch (a_event)
                 {
-                    if (this.cancelPressed)
-                    {
+                    case "Cancel":
                         this.onCancelPressed();
-                        Handled = true;
-                    }
-                    this.cancelPressed = false;
-                }
-                else if (a_event == "Accept" || a_event == "Activate")
-                {
-                    this.onSelectPressed();
-                    Handled = true;
-                }
-                else if (a_event == "PrevPerk")
-                {
-                    this.onPrevPerk();
-                    Handled = true;
-                }
-                else if (a_event == "NextPerk")
-                {
-                    this.onNextPerk();
-                    Handled = true;
-                }
-                else if (a_event == "Forward" || a_event == "Up")
-                {
-                    this.PerkList_mc.moveSelectionUp();
-                    Handled = true;
-                }
-                else if (a_event == "Back" || a_event == "Down")
-                {
-                    this.PerkList_mc.moveSelectionDown();
-                    Handled = true;
-                }
-                else if (a_event == "XButton" || a_event == "R3")
-                {
-                    this.onConfirmPressed();
-                    Handled = true;
-                }
-                else if (a_event == "YButton")
-                {
-                    this.onResetPressed();
-                    Handled = true;
-                }
-                else if (a_event == "L3")
-                {
-                    this.onSearchPressed();
-                    Handled = true;
+                        return true;
+
+                    case "PrevPerk":
+                    case "LShoulder":
+                        this.onPrevPerk();
+                        return true;
+
+                    case "NextPerk":
+                    case "RShoulder":
+                        this.onNextPerk();
+                        return true;
+
+                    case "ZoomIn":
+                    case "ZoomOut":
+                        return true;
+
+                    case "XButton":
+                    case "R3":
+                        this.onConfirmPressed();
+                        return true;
+
+                    case "YButton":
+                        this.onResetPressed();
+                        return true;
+
+                    case "L3":
+                        this.onSearchPressed();
+                        return true;
+
+                    case "Accept":
+                    case "Activate":
+                        return true;
+
+                    default:
+                        break;
                 }
             }
             else
             {
-                if (a_event == "Cancel")
+                switch (a_event)
                 {
-                    this.cancelPressed = true;
+                    case "Cancel":
+                        this.cancelPressed = true;
+                        break;
                 }
             }
 
-            return Handled;
+            return false;
         }
 
         public function onKeyDown(param1:KeyboardEvent):*
@@ -267,11 +268,13 @@
                 {
                     this.onSearchPressed();
                 }
-                else
+                else if (this.cancelPressed)
                 {
                     this.BGSCodeObj.CloseMenu();
                 }
             }
+
+            this.cancelPressed = false;
         }
 
         private function onSearchPressed():Boolean
