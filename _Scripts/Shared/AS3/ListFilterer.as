@@ -9,15 +9,15 @@
 
         private var iItemFilter:int;
         private var _filterArray:Array;
-		private var _filterCount:uint;
-		private var _countUpdated:Boolean;
+        private var _filterCount:uint;
+        private var _countUpdated:Boolean;
 
         public function ListFilterer()
         {
             super();
             this.iItemFilter = 4294967295;
-			this._countUpdated = false;
-			this._filterCount = 0;
+            this._countUpdated = false;
+            this._filterCount = 0;
         }
 
         public function get itemFilter():int
@@ -29,8 +29,8 @@
         {
             if (this.iItemFilter != aiNewFilter)
             {
-				this.iItemFilter = aiNewFilter;
-				this._countUpdated = false;
+                this.iItemFilter = aiNewFilter;
+                this._countUpdated = false;
                 dispatchEvent(new Event(FILTER_CHANGE, true, true));
             }
         }
@@ -42,29 +42,29 @@
 
         public function set filterArray(aNewArray:Array):*
         {
-			this._countUpdated = false;
+            this._countUpdated = false;
             this._filterArray = aNewArray;
         }
 
-		public function GetFilterCount():uint
-		{
-			if (!this._countUpdated)
-			{
-				this._filterCount = 0;
-				for (var i:uint = 0; i < this._filterArray.length; i++)
-				{
-					if (this.EntryMatchesFilter(this._filterArray[i]))
-					{
-						this._filterCount++;
-					}
-				}
-				
-				this._countUpdated = true;
-			}
-			
-			return this._filterCount;
-		}
-		
+        public function GetFilterCount():uint
+        {
+            if (!this._countUpdated)
+            {
+                this._filterCount = 0;
+                for (var i:uint = 0; i < this._filterArray.length; i++)
+                {
+                    if (this.EntryMatchesFilter(this._filterArray[i]))
+                    {
+                        this._filterCount++;
+                    }
+                }
+
+                this._countUpdated = true;
+            }
+
+            return this._filterCount;
+        }
+
         public function EntryMatchesFilter(aEntry:Object):Boolean
         {
             return aEntry != null && (!aEntry.hasOwnProperty("filterFlag") || (aEntry.filterFlag & this.iItemFilter) != 0);

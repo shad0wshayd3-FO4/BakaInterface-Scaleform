@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_Shared/ItemCard/ItemCard_AmmoEntry" itemID="5fc84eb0-000001c1" linkageExportForAS="true" linkageClassName="Components.ItemCard_AmmoEntry" lastModified="1606962864">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_Shared/ItemCard/ItemCard_AmmoEntry" itemID="5fc84eb0-000001c1" linkageExportForAS="true" linkageClassName="Components.ItemCard_AmmoEntry" lastModified="1606970117">
   <timeline>
     <DOMTimeline name="ItemCard_AmmoEntry">
       <layers>
@@ -6,7 +6,7 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_Shared/ItemCard/Symbol 65" centerPoint3DX="-214.25" centerPoint3DY="26.55">
+                <DOMSymbolInstance libraryItemName="_Shared/ItemCard/_TempIcons/Symbol 65" centerPoint3DX="-214.25" centerPoint3DY="26.55">
                   <matrix>
                     <Matrix tx="-223.45" ty="17.3"/>
                   </matrix>
@@ -18,7 +18,7 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Layer 2" color="#B5F5B0" current="true" isSelected="true">
+        <DOMLayer name="Layer 2" color="#B5F5B0">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
@@ -60,11 +60,11 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Layer 4" color="#936BEA">
+        <DOMLayer name="Layer 4" color="#936BEA" current="true" isSelected="true">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_Shared/ItemCard/Symbol 34" centerPoint3DX="-189.2" centerPoint3DY="51">
+                <DOMSymbolInstance libraryItemName="_Shared/ItemCard/_Components/ItemCard_BG_Light" selected="true" centerPoint3DX="-189.2" centerPoint3DY="51">
                   <matrix>
                     <Matrix a="2.39698791503906" d="0.330490112304688" tx="-239.7" ty="0.5"/>
                   </matrix>

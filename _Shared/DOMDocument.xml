@@ -2,8 +2,10 @@
      <folders>
           <DOMFolderItem name="_Shared" itemID="5fc8556c-0000031d" isExpanded="true"/>
           <DOMFolderItem name="_Shared/_Fonts" itemID="5f97a2fc-00000035"/>
-          <DOMFolderItem name="_Shared/BSButtonHintBar" itemID="5f97b56b-00000036"/>
+          <DOMFolderItem name="_Shared/BSButtonHintBar" itemID="5f97b56b-00000036" isExpanded="true"/>
           <DOMFolderItem name="_Shared/ItemCard" itemID="5fc84d14-00000194" isExpanded="true"/>
+          <DOMFolderItem name="_Shared/ItemCard/_Components" itemID="5fc86aed-00000184"/>
+          <DOMFolderItem name="_Shared/ItemCard/_TempIcons" itemID="5fc86e20-00000225"/>
      </folders>
      <fonts>
           <DOMFontItem name="_Shared/_Fonts/$DebugTextFont" itemID="5f97a3f9-00000039" linkageExportForAS="true" linkageExportForRS="true" linkageClassName="$DebugTextFont" linkageURL="fonts_en.swf" font="Consolas" size="0" id="25" sourceLastImported="1603773433" embedRanges="9999"/>
@@ -26,35 +28,35 @@
           <Include href="_Shared/BSButtonHintBar/BSButtonHintIconHolder.xml" itemID="5f97b590-00000043" lastModified="1603778123"/>
           <Include href="_Shared/BSButtonHintBar/ButtonHintBracketL.xml" loadImmediate="false" itemID="5f97b5a4-00000046" lastModified="1603781718"/>
           <Include href="_Shared/BSButtonHintBar/ButtonHintBracketR.xml" loadImmediate="false" itemID="5f97b5a0-00000045" lastModified="1603781729"/>
+          <Include href="_Shared/BSButtonHintBar/ButtonHintTemplate.xml" loadImmediate="false" itemID="5fdda206-00000265" lastModified="1608360502"/>
+          <Include href="_Shared/ItemCard/_Components/Comparison_Minus.xml" loadImmediate="false" itemID="5fc86c82-0000021e" lastModified="1606970792"/>
+          <Include href="_Shared/ItemCard/_Components/Comparison_Plus.xml" loadImmediate="false" itemID="5fc86c85-0000021f" lastModified="1606970501"/>
+          <Include href="_Shared/ItemCard/_Components/Components_EntryBorder.xml" loadImmediate="false" itemID="5fc86dff-00000221" lastModified="1606970887"/>
+          <Include href="_Shared/ItemCard/_Components/Components_EntryHolder.xml" loadImmediate="false" itemID="5fc86c87-00000220" lastModified="1606970503"/>
+          <Include href="_Shared/ItemCard/_Components/ItemCard_BG_Dark.xml" loadImmediate="false" itemID="5fc86c78-0000021d" lastModified="1606970488"/>
+          <Include href="_Shared/ItemCard/_Components/ItemCard_BG_Light.xml" loadImmediate="false" itemID="5fc86c73-0000021c" lastModified="1606970483"/>
+          <Include href="_Shared/ItemCard/_Components/ItemCard_Comparison.xml" itemID="5fc86c2c-00000216" lastModified="1606970412"/>
+          <Include href="_Shared/ItemCard/_TempIcons/Symbol 15.xml" loadImmediate="false" itemID="5fc84763-0000000a" lastModified="1606970252"/>
+          <Include href="_Shared/ItemCard/_TempIcons/Symbol 28.xml" loadImmediate="false" itemID="5fc84763-00000011" lastModified="1603704806"/>
+          <Include href="_Shared/ItemCard/_TempIcons/Symbol 37.xml" loadImmediate="false" itemID="5fc84763-00000015" lastModified="1603704806"/>
+          <Include href="_Shared/ItemCard/_TempIcons/Symbol 39.xml" loadImmediate="false" itemID="5fc84763-00000016" lastModified="1603704806"/>
+          <Include href="_Shared/ItemCard/_TempIcons/Symbol 41.xml" loadImmediate="false" itemID="5fc84763-00000017" lastModified="1603704806"/>
+          <Include href="_Shared/ItemCard/_TempIcons/Symbol 43.xml" loadImmediate="false" itemID="5fc84763-00000018" lastModified="1603704806"/>
+          <Include href="_Shared/ItemCard/_TempIcons/Symbol 45.xml" loadImmediate="false" itemID="5fc84763-00000019" lastModified="1603704806"/>
+          <Include href="_Shared/ItemCard/_TempIcons/Symbol 47.xml" loadImmediate="false" itemID="5fc84763-0000001a" lastModified="1603704806"/>
+          <Include href="_Shared/ItemCard/_TempIcons/Symbol 49.xml" loadImmediate="false" itemID="5fc84763-0000001b" lastModified="1603704806"/>
+          <Include href="_Shared/ItemCard/_TempIcons/Symbol 50.xml" itemID="5fc84763-0000001c" lastModified="1603704806"/>
+          <Include href="_Shared/ItemCard/_TempIcons/Symbol 65.xml" loadImmediate="false" itemID="5fc84763-00000024" lastModified="1603704806"/>
           <Include href="_Shared/ItemCard/ItemCard.xml" itemID="5fc84ebf-000001c2" lastModified="1606962879"/>
-          <Include href="_Shared/ItemCard/ItemCard__Entries.xml" loadImmediate="false" itemID="5fc85f52-00000538" lastModified="1606967122"/>
-          <Include href="_Shared/ItemCard/ItemCard_AmmoEntry.xml" itemID="5fc84eb0-000001c1" lastModified="1606962864"/>
-          <Include href="_Shared/ItemCard/ItemCard_ComponentEntry_Entry.xml" itemID="5fc84ea3-000001c0" lastModified="1606962851"/>
-          <Include href="_Shared/ItemCard/ItemCard_ComponentsEntry.xml" itemID="5fc84e9b-000001bf" lastModified="1606962843"/>
-          <Include href="_Shared/ItemCard/ItemCard_DescriptionEntry.xml" itemID="5fc84e95-000001be" lastModified="1606962837"/>
-          <Include href="_Shared/ItemCard/ItemCard_MultiEntry.xml" itemID="5fc84e87-000001bd" lastModified="1606962823"/>
-          <Include href="_Shared/ItemCard/ItemCard_MultiEntry_Value.xml" itemID="5fc84e7f-000001bc" lastModified="1606962815"/>
-          <Include href="_Shared/ItemCard/ItemCard_StandardEntry.xml" itemID="5fc84e64-000001ba" lastModified="1606962788"/>
+          <Include href="_Shared/ItemCard/ItemCard__Entries.xml" loadImmediate="false" itemID="5fc85f52-00000538" lastModified="1606970247"/>
+          <Include href="_Shared/ItemCard/ItemCard_AmmoEntry.xml" itemID="5fc84eb0-000001c1" lastModified="1606970117"/>
+          <Include href="_Shared/ItemCard/ItemCard_ComponentEntry_Entry.xml" itemID="5fc84ea3-000001c0" lastModified="1606970883"/>
+          <Include href="_Shared/ItemCard/ItemCard_ComponentsEntry.xml" itemID="5fc84e9b-000001bf" lastModified="1606970176"/>
+          <Include href="_Shared/ItemCard/ItemCard_DescriptionEntry.xml" itemID="5fc84e95-000001be" lastModified="1606970053"/>
+          <Include href="_Shared/ItemCard/ItemCard_MultiEntry.xml" itemID="5fc84e87-000001bd" lastModified="1606970046"/>
+          <Include href="_Shared/ItemCard/ItemCard_MultiEntry_Value.xml" itemID="5fc84e7f-000001bc" lastModified="1606970041"/>
+          <Include href="_Shared/ItemCard/ItemCard_StandardEntry.xml" itemID="5fc84e64-000001ba" lastModified="1606970024"/>
           <Include href="_Shared/ItemCard/ItemCard_TimedEntry.xml" itemID="5fc84e6c-000001bb" lastModified="1606962796"/>
-          <Include href="_Shared/ItemCard/Symbol 4.xml" itemIcon="1" loadImmediate="false" itemID="5fc84763-00000003" lastModified="1603704806"/>
-          <Include href="_Shared/ItemCard/Symbol 15.xml" loadImmediate="false" itemID="5fc84763-0000000a" lastModified="1603704806"/>
-          <Include href="_Shared/ItemCard/Symbol 20.xml" loadImmediate="false" itemID="5fc84763-0000000d" lastModified="1606961068"/>
-          <Include href="_Shared/ItemCard/Symbol 24.xml" loadImmediate="false" itemID="5fc84763-0000000e" lastModified="1603704806"/>
-          <Include href="_Shared/ItemCard/Symbol 25.xml" loadImmediate="false" itemID="5fc84763-0000000f" lastModified="1606961077"/>
-          <Include href="_Shared/ItemCard/Symbol 26.xml" itemID="5fc84763-00000010" lastModified="1603704806"/>
-          <Include href="_Shared/ItemCard/Symbol 28.xml" loadImmediate="false" itemID="5fc84763-00000011" lastModified="1603704806"/>
-          <Include href="_Shared/ItemCard/Symbol 34.xml" loadImmediate="false" itemID="5fc84763-00000014" lastModified="1603704806"/>
-          <Include href="_Shared/ItemCard/Symbol 37.xml" loadImmediate="false" itemID="5fc84763-00000015" lastModified="1603704806"/>
-          <Include href="_Shared/ItemCard/Symbol 39.xml" loadImmediate="false" itemID="5fc84763-00000016" lastModified="1603704806"/>
-          <Include href="_Shared/ItemCard/Symbol 41.xml" loadImmediate="false" itemID="5fc84763-00000017" lastModified="1603704806"/>
-          <Include href="_Shared/ItemCard/Symbol 43.xml" loadImmediate="false" itemID="5fc84763-00000018" lastModified="1603704806"/>
-          <Include href="_Shared/ItemCard/Symbol 45.xml" loadImmediate="false" itemID="5fc84763-00000019" lastModified="1603704806"/>
-          <Include href="_Shared/ItemCard/Symbol 47.xml" loadImmediate="false" itemID="5fc84763-0000001a" lastModified="1603704806"/>
-          <Include href="_Shared/ItemCard/Symbol 49.xml" loadImmediate="false" itemID="5fc84763-0000001b" lastModified="1603704806"/>
-          <Include href="_Shared/ItemCard/Symbol 50.xml" itemID="5fc84763-0000001c" lastModified="1603704806"/>
-          <Include href="_Shared/ItemCard/Symbol 53.xml" loadImmediate="false" itemID="5fc84763-0000001e" lastModified="1603704806"/>
-          <Include href="_Shared/ItemCard/Symbol 59.xml" loadImmediate="false" itemID="5fc84763-00000022" lastModified="1603704806"/>
-          <Include href="_Shared/ItemCard/Symbol 65.xml" loadImmediate="false" itemID="5fc84763-00000024" lastModified="1603704806"/>
      </symbols>
      <timelines>
           <DOMTimeline name="Scene 1">
@@ -62,7 +64,16 @@
                     <DOMLayer name="Layer 1" color="#B93CFD" current="true" isSelected="true">
                          <frames>
                               <DOMFrame index="0" keyMode="9728">
-                                   <elements/>
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="_Shared/_Fonts/Fonts">
+                                             <matrix>
+                                                  <Matrix tx="40" ty="40"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="200" y="100"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
                               </DOMFrame>
                          </frames>
                     </DOMLayer>

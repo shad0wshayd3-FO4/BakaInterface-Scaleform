@@ -1,11 +1,76 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_Shared/ItemCard/ItemCard__Entries" itemID="5fc85f52-00000538" lastModified="1606967122">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_Shared/ItemCard/ItemCard__Entries" itemID="5fc85f52-00000538" lastModified="1606970247">
   <timeline>
     <DOMTimeline name="ItemCard__Entries">
       <layers>
         <DOMLayer name="Layer_1" color="#00FFFF" current="true" isSelected="true">
           <frames>
             <DOMFrame index="0" keyMode="9728">
-              <elements/>
+              <elements>
+                <DOMSymbolInstance libraryItemName="_Shared/ItemCard/ItemCard_AmmoEntry">
+                  <matrix>
+                    <Matrix tx="-0.95" ty="-1.1"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-119.85" y="18.35"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="_Shared/ItemCard/ItemCard_MultiEntry">
+                  <matrix>
+                    <Matrix tx="-0.95" ty="-41.35"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-156.85" y="17.3"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="_Shared/ItemCard/ItemCard_MultiEntry_Value">
+                  <matrix>
+                    <Matrix tx="-74.1" ty="-45.05"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="41.45" y="21.35"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="_Shared/ItemCard/ItemCard_DescriptionEntry">
+                  <matrix>
+                    <Matrix tx="-0.95" ty="-78.65"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-119.85" y="12.75"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="_Shared/ItemCard/ItemCard_StandardEntry">
+                  <matrix>
+                    <Matrix tx="-0.8" ty="40.1"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-115.45" y="18.1"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="_Shared/ItemCard/ItemCard_TimedEntry">
+                  <matrix>
+                    <Matrix tx="-0.95" ty="80.8"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-115.45" y="18.1"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="_Shared/ItemCard/ItemCard_ComponentsEntry">
+                  <matrix>
+                    <Matrix tx="105.4" ty="-168.6"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-220" y="-10"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="_Shared/ItemCard/ItemCard_ComponentEntry_Entry">
+                  <matrix>
+                    <Matrix tx="-215.9" ty="-165.95"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="100" y="20"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
             </DOMFrame>
           </frames>
         </DOMLayer>

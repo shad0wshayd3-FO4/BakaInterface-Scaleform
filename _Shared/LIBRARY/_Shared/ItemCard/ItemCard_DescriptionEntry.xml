@@ -1,8 +1,8 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_Shared/ItemCard/ItemCard_DescriptionEntry" itemID="5fc84e95-000001be" linkageExportForAS="true" linkageClassName="Components.ItemCard_DescriptionEntry" lastModified="1606962837">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_Shared/ItemCard/ItemCard_DescriptionEntry" itemID="5fc84e95-000001be" linkageExportForAS="true" linkageClassName="Components.ItemCard_DescriptionEntry" lastModified="1606970053">
   <timeline>
     <DOMTimeline name="ItemCard_DescriptionEntry">
       <layers>
-        <DOMLayer name="Layer 1" color="#CC7E63" current="true" isSelected="true">
+        <DOMLayer name="Layer 1" color="#CC7E63">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
@@ -23,11 +23,11 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Layer 2" color="#BEE1FA">
+        <DOMLayer name="Layer 2" color="#BEE1FA" current="true" isSelected="true">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_Shared/ItemCard/Symbol 20" name="Background_mc" centerPoint3DX="-189.2" centerPoint3DY="46.75">
+                <DOMSymbolInstance libraryItemName="_Shared/ItemCard/_Components/ItemCard_BG_Dark" name="Background_mc" selected="true" centerPoint3DX="-189.2" centerPoint3DY="46.75">
                   <matrix>
                     <Matrix a="2.39698791503906" d="0.330490112304688" tx="-239.7" ty="-3.75"/>
                   </matrix>

@@ -1,6 +1,5 @@
 package Shared.AS3
 {
-    import Shared.AS3.COMPANIONAPP.CompanionAppMode;
     import Shared.GlobalFunc;
     import Shared.PlatformChangeEvent;
     import flash.display.MovieClip;
@@ -230,10 +229,6 @@ package Shared.AS3
 
         public function get Justification():uint
         {
-            if (CompanionAppMode.isOn)
-            {
-                return this._buttonHintData != null ? uint(this._buttonHintData.Justification) : uint(JUSTIFY_LEFT);
-            }
             return this._buttonHintData.Justification;
         }
 

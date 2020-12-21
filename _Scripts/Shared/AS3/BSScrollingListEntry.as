@@ -1,11 +1,11 @@
 package Shared.AS3
 {
-    import Shared.GlobalFunc;
     import flash.display.MovieClip;
     import flash.text.TextField;
     import flash.text.TextFieldAutoSize;
     import scaleform.gfx.Extensions;
     import scaleform.gfx.TextFieldEx;
+    import Shared.GlobalFunc;
 
     public class BSScrollingListEntry extends MovieClip
     {

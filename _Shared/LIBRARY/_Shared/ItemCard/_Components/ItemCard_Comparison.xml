@@ -1,6 +1,6 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_Shared/ItemCard/Symbol 26" itemID="5fc84763-00000010" linkageExportForAS="true" linkageClassName="ContainerMenu_fla.ItemCard_Comparison_44" lastModified="1603704806">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_Shared/ItemCard/_Components/ItemCard_Comparison" itemID="5fc86c2c-00000216" linkageExportForAS="true" linkageClassName="Components.ItemCard_Comparison" lastModified="1606970412">
   <timeline>
-    <DOMTimeline name="Symbol 26">
+    <DOMTimeline name="ItemCard_Comparison">
       <layers>
         <DOMLayer name="Labels Layer" color="#D17092">
           <frames>
@@ -34,7 +34,7 @@
             </DOMFrame>
             <DOMFrame index="3" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_Shared/ItemCard/Symbol 24" centerPoint3DX="37.5" centerPoint3DY="5.5">
+                <DOMSymbolInstance libraryItemName="_Shared/ItemCard/_Components/Comparison_Plus" centerPoint3DX="37.5" centerPoint3DY="5.5">
                   <matrix>
                     <Matrix tx="32"/>
                   </matrix>
@@ -49,7 +49,7 @@
             </DOMFrame>
             <DOMFrame index="6" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_Shared/ItemCard/Symbol 25" centerPoint3DX="37.5" centerPoint3DY="1.85">
+                <DOMSymbolInstance libraryItemName="_Shared/ItemCard/_Components/Comparison_Minus" centerPoint3DX="37.5" centerPoint3DY="1.85">
                   <matrix>
                     <Matrix tx="32"/>
                   </matrix>
@@ -68,7 +68,7 @@
             </DOMFrame>
             <DOMFrame index="2" duration="2" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_Shared/ItemCard/Symbol 24" centerPoint3DX="21.5" centerPoint3DY="5.5">
+                <DOMSymbolInstance libraryItemName="_Shared/ItemCard/_Components/Comparison_Plus" centerPoint3DX="21.5" centerPoint3DY="5.5">
                   <matrix>
                     <Matrix tx="16"/>
                   </matrix>
@@ -83,7 +83,7 @@
             </DOMFrame>
             <DOMFrame index="5" duration="2" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_Shared/ItemCard/Symbol 25" centerPoint3DX="21.5" centerPoint3DY="1.85">
+                <DOMSymbolInstance libraryItemName="_Shared/ItemCard/_Components/Comparison_Minus" centerPoint3DX="21.5" centerPoint3DY="1.85">
                   <matrix>
                     <Matrix tx="16"/>
                   </matrix>
@@ -102,7 +102,7 @@
             </DOMFrame>
             <DOMFrame index="1" duration="3" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_Shared/ItemCard/Symbol 24" centerPoint3DX="5.5" centerPoint3DY="5.5">
+                <DOMSymbolInstance libraryItemName="_Shared/ItemCard/_Components/Comparison_Plus" centerPoint3DX="5.5" centerPoint3DY="5.5">
                   <transformationPoint>
                     <Point/>
                   </transformationPoint>
@@ -111,7 +111,7 @@
             </DOMFrame>
             <DOMFrame index="4" duration="3" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_Shared/ItemCard/Symbol 25" centerPoint3DX="5.5" centerPoint3DY="1.85">
+                <DOMSymbolInstance libraryItemName="_Shared/ItemCard/_Components/Comparison_Minus" centerPoint3DX="5.5" centerPoint3DY="1.85">
                   <transformationPoint>
                     <Point/>
                   </transformationPoint>

@@ -1,8 +1,8 @@
 ﻿package Menu.LevelUpMenu
 {
-    import Shared.AS3.BSScrollingListSB;
+    import Shared.AS3.BSScrollingScrollList;
 
-    public class PerkList extends BSScrollingListSB
+    public class PerkList extends BSScrollingScrollList
     {
         public function PerkList()
         {

@@ -1,12 +1,12 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_Shared/ItemCard/Symbol 24" itemID="5fc84763-0000000e" lastModified="1603704806">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_Shared/ItemCard/_Components/Comparison_Plus" itemID="5fc86c85-0000021f" lastModified="1606970501">
   <timeline>
-    <DOMTimeline name="Symbol 24">
+    <DOMTimeline name="Comparison_Plus">
       <layers>
         <DOMLayer name="Layer 1" color="#70A2F5" current="true" isSelected="true">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMShape isFloating="true">
+                <DOMShape selected="true" isFloating="true">
                   <fills>
                     <FillStyle index="1">
                       <SolidColor color="#FFFFFF"/>

@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_Shared/ItemCard/ItemCard_ComponentsEntry" itemID="5fc84e9b-000001bf" linkageExportForAS="true" linkageClassName="Components.ItemCard_ComponentsEntry" lastModified="1606962843">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_Shared/ItemCard/ItemCard_ComponentsEntry" itemID="5fc84e9b-000001bf" linkageExportForAS="true" linkageClassName="Components.ItemCard_ComponentsEntry" lastModified="1606970176">
   <timeline>
     <DOMTimeline name="ItemCard_ComponentsEntry">
       <layers>
@@ -6,7 +6,7 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_Shared/ItemCard/Symbol 53" name="EntryHolder_mc" centerPoint3DX="-220" centerPoint3DY="-10">
+                <DOMSymbolInstance libraryItemName="_Shared/ItemCard/_Components/Components_EntryHolder" name="EntryHolder_mc" selected="true" centerPoint3DX="-220" centerPoint3DY="-10">
                   <matrix>
                     <Matrix tx="-220" ty="-10"/>
                   </matrix>

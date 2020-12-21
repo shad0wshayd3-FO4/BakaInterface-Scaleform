@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_Shared/ItemCard/ItemCard_MultiEntry" itemID="5fc84e87-000001bd" linkageExportForAS="true" linkageClassName="Components.ItemCard_MultiEntry" lastModified="1606962823">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_Shared/ItemCard/ItemCard_MultiEntry" itemID="5fc84e87-000001bd" linkageExportForAS="true" linkageClassName="Components.ItemCard_MultiEntry" lastModified="1606970046">
   <timeline>
     <DOMTimeline name="ItemCard_MultiEntry">
       <layers>
@@ -6,7 +6,7 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_Shared/ItemCard/Symbol 53" name="EntryHolder_mc" centerPoint3DX="-73.15" centerPoint3DY="-3.4">
+                <DOMSymbolInstance libraryItemName="_Shared/ItemCard/_Components/Components_EntryHolder" name="EntryHolder_mc" centerPoint3DX="-73.15" centerPoint3DY="-3.4">
                   <matrix>
                     <Matrix tx="-73.15" ty="-3.4"/>
                   </matrix>
@@ -18,7 +18,7 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Layer 2" color="#FFB4AD" current="true" isSelected="true">
+        <DOMLayer name="Layer 2" color="#FFB4AD">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
@@ -39,11 +39,11 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Layer 3" color="#B1E53E">
+        <DOMLayer name="Layer 3" color="#B1E53E" current="true" isSelected="true">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_Shared/ItemCard/Symbol 34" name="Background_mc" centerPoint3DX="-189.2" centerPoint3DY="50.5">
+                <DOMSymbolInstance libraryItemName="_Shared/ItemCard/_Components/ItemCard_BG_Light" name="Background_mc" selected="true" centerPoint3DX="-189.2" centerPoint3DY="50.5">
                   <matrix>
                     <Matrix a="1.636474609375" d="0.330490112304688" tx="-239.7"/>
                   </matrix>

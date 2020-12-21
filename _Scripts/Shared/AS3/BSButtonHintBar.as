@@ -1,7 +1,5 @@
 package Shared.AS3
 {
-    import Shared.AS3.COMPANIONAPP.CompanionAppMode;
-    import Shared.AS3.COMPANIONAPP.MobileButtonHint;
     import flash.display.Graphics;
     import flash.display.MovieClip;
     import flash.events.Event;
@@ -146,14 +144,7 @@ package Shared.AS3
             visible = false;
             while (this.ButtonPoolV.length < this._buttonHintDataV.length)
             {
-                if (CompanionAppMode.isOn)
-                {
-                    this.ButtonPoolV.push(new MobileButtonHint());
-                }
-                else
-                {
-                    this.ButtonPoolV.push(new BSButtonHint());
-                }
+                this.ButtonPoolV.push(new BSButtonHint());
             }
             var _loc1_:int = 0;
             while (_loc1_ < this.ButtonPoolV.length)
@@ -177,10 +168,6 @@ package Shared.AS3
             var _loc1_:* = false;
             var _loc2_:Number = 0;
             var _loc3_:Number = 0;
-            if (CompanionAppMode.isOn)
-            {
-                _loc3_ = stage.stageWidth - 75;
-            }
             var _loc4_:Number = 0;
             while (_loc4_ < this.ButtonPoolV.length)
             {
@@ -196,16 +183,8 @@ package Shared.AS3
                     {
                         _loc6_.redrawUIComponent();
                     }
-                    if (CompanionAppMode.isOn && _loc6_.Justification == BSButtonHint.JUSTIFY_RIGHT)
-                    {
-                        _loc3_ = _loc3_ - _loc6_.width;
-                        _loc6_.x = _loc3_;
-                    }
-                    else
-                    {
-                        _loc6_.x = _loc2_;
-                        _loc2_ = _loc2_ + (_loc6_.width + 20);
-                    }
+                    _loc6_.x = _loc2_;
+                    _loc2_ = _loc2_ + (_loc6_.width + 20);
                 }
                 else if (this.ButtonHintBarInternal_mc.contains(_loc6_))
                 {
@@ -217,15 +196,11 @@ package Shared.AS3
             {
                 this.ButtonPoolV.splice(this._buttonHintDataV.length, this.ButtonPoolV.length - this._buttonHintDataV.length);
             }
-            if (!CompanionAppMode.isOn)
-            {
-                this.ButtonHintBarInternal_mc.x = -this.ButtonHintBarInternal_mc.width / 2;
-            }
             var _loc5_:Rectangle = this.ButtonHintBarInternal_mc.getBounds(this);
             this.ButtonBracket_Left_mc.x = _loc5_.left - this.ButtonBracket_Left_mc.width;
             this.ButtonBracket_Right_mc.x = _loc5_.right;
-            this.ButtonBracket_Left_mc.visible = this.bShowBrackets && !CompanionAppMode.isOn;
-            this.ButtonBracket_Right_mc.visible = this.bShowBrackets && !CompanionAppMode.isOn;
+            this.ButtonBracket_Left_mc.visible = this.bShowBrackets;
+            this.ButtonBracket_Right_mc.visible = this.bShowBrackets;
             if (ShadedBackgroundMethod == "Flash" && this.bUseShadedBackground)
             {
                 if (!this.ShadedBackground_mc)

@@ -1,6 +1,6 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_Shared/ItemCard/Symbol 34" itemID="5fc84763-00000014" lastModified="1603704806">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_Shared/ItemCard/_Components/ItemCard_BG_Light" itemID="5fc86c73-0000021c" lastModified="1606970483">
   <timeline>
-    <DOMTimeline name="Symbol 34">
+    <DOMTimeline name="ItemCard_BG_Light">
       <layers>
         <DOMLayer name="Layer 1" color="#BAECCC" current="true" isSelected="true">
           <frames>

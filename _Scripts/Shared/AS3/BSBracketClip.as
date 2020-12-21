@@ -44,7 +44,7 @@ package Shared.AS3
             this._clipRect.inflatePoint(this._padding);
             this._style = param5;
             this.ClearBrackets();
-            graphics.lineStyle(this._lineThickness, 16777215, 1, false, "normal", CapsStyle.SQUARE, JointStyle.MITER, 3);
+            graphics.lineStyle(this._lineThickness, 0xFFFFFF, 1, false, "normal", CapsStyle.SQUARE, JointStyle.MITER, 3);
             switch (this._style)
             {
                 case BR_HORIZONTAL:

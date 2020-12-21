@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_Shared/ItemCard/ItemCard_MultiEntry_Value" itemID="5fc84e7f-000001bc" linkageExportForAS="true" linkageClassName="Components.ItemCard_MultiEntry_Value" lastModified="1606962815">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_Shared/ItemCard/ItemCard_MultiEntry_Value" itemID="5fc84e7f-000001bc" linkageExportForAS="true" linkageClassName="Components.ItemCard_MultiEntry_Value" lastModified="1606970041">
   <timeline>
     <DOMTimeline name="ItemCard_MultiEntry_Value">
       <layers>
@@ -6,7 +6,7 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_Shared/ItemCard/Symbol 50" name="Icon_mc" centerPoint3DX="23.55" centerPoint3DY="29.15">
+                <DOMSymbolInstance libraryItemName="_Shared/ItemCard/_TempIcons/Symbol 50" name="Icon_mc" centerPoint3DX="23.55" centerPoint3DY="29.15">
                   <matrix>
                     <Matrix a="0.996566772460938" tx="14.2" ty="19.75"/>
                   </matrix>
@@ -22,7 +22,7 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_Shared/ItemCard/Symbol 26" name="Comparison_mc" centerPoint3DX="104.8" centerPoint3DY="25.5">
+                <DOMSymbolInstance libraryItemName="_Shared/ItemCard/_Components/ItemCard_Comparison" name="Comparison_mc" centerPoint3DX="104.8" centerPoint3DY="25.5">
                   <matrix>
                     <Matrix tx="83.3" ty="20"/>
                   </matrix>
@@ -34,7 +34,7 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Layer 3" color="#8787CA" current="true" isSelected="true">
+        <DOMLayer name="Layer 3" color="#8787CA">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
@@ -55,11 +55,11 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Layer 4" color="#5591E7">
+        <DOMLayer name="Layer 4" color="#5591E7" current="true" isSelected="true">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_Shared/ItemCard/Symbol 34" centerPoint3DX="50.5" centerPoint3DY="54">
+                <DOMSymbolInstance libraryItemName="_Shared/ItemCard/_Components/ItemCard_BG_Light" selected="true" centerPoint3DX="50.5" centerPoint3DY="54">
                   <matrix>
                     <Matrix a="0.73199462890625" d="0.33050537109375" ty="3.5"/>
                   </matrix>
