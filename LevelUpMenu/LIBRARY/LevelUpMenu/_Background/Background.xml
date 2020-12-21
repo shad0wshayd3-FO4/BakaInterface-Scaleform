@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="LevelUpMenu/_Background/Background" itemID="5fa04f26-00000373" lastModified="1604388591">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="LevelUpMenu/_Background/Background" itemID="5fa04f26-00000373" lastModified="1608362842">
   <timeline>
     <DOMTimeline name="Background">
       <layers>
@@ -6,7 +6,7 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="LevelUpMenu/_Background/BackgroundBase">
+                <DOMSymbolInstance libraryItemName="LevelUpMenu/_Background/BackgroundBase" selected="true">
                   <transformationPoint>
                     <Point x="750" y="430"/>
                   </transformationPoint>

@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="LevelUpMenu/LevelUpMenu" itemID="5f97d64a-000006ae" linkageExportForAS="true" linkageClassName="LevelUpMenu" lastModified="1606966921" lastUniqueIdentifier="5">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="LevelUpMenu/LevelUpMenu" itemID="5f97d64a-000006ae" linkageExportForAS="true" linkageClassName="LevelUpMenu" lastModified="1608362844" lastUniqueIdentifier="5">
   <timeline>
     <DOMTimeline name="LevelUpMenu">
       <layers>
@@ -174,11 +174,11 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Background" color="#FF800A" locked="true" autoNamed="false">
+        <DOMLayer name="Background" color="#FF800A" current="true" isSelected="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="LevelUpMenu/_Background/Background" name="Background_mc">
+                <DOMSymbolInstance libraryItemName="LevelUpMenu/_Background/Background" name="Background_mc" selected="true">
                   <matrix>
                     <Matrix tx="210" ty="75"/>
                   </matrix>
@@ -190,13 +190,13 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="ButtonHintBar" color="#00FFFF" current="true" isSelected="true" autoNamed="false">
+        <DOMLayer name="ButtonHintBar" color="#00FFFF" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="BSButtonHintBar/BSButtonHintBar" name="ButtonHintBar_mc" selected="true">
+                <DOMSymbolInstance libraryItemName="BSButtonHintBar/BSButtonHintBar" name="ButtonHintBar_mc">
                   <matrix>
-                    <Matrix tx="960" ty="960"/>
+                    <Matrix tx="960" ty="980"/>
                   </matrix>
                   <transformationPoint>
                     <Point y="24"/>
