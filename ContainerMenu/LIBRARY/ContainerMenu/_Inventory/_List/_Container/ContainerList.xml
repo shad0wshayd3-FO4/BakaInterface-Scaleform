@@ -1,0 +1,43 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="ContainerMenu/_Inventory/_List/_Container/ContainerList" itemID="5fc86089-00000593" linkageExportForAS="true" linkageClassName="Menu.ContainerMenu.ContainerList" lastModified="1606987140">
+  <timeline>
+    <DOMTimeline name="ContainerList">
+      <layers>
+        <DOMLayer name="ScrollBar" color="#FF800A" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="ContainerMenu/_Inventory/_List/List_Scrollbar/ScrollBar" name="ScrollBar_mc">
+                  <matrix>
+                    <Matrix a="0" b="1" c="-1" d="0" tx="515" ty="25"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="300" y="12.5"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="border" color="#FC2074" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="ContainerMenu/_Inventory/_List/List_Border" name="border" selected="true">
+                  <matrix>
+                    <Matrix d="1.00001525878906"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="225" y="325"/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

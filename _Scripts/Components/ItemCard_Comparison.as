@@ -1,10 +1,10 @@
-package ContainerMenu_fla
+﻿package Components
 {
     import flash.display.MovieClip;
 
-    public dynamic class ItemCard_Comparison_44 extends MovieClip
+    public dynamic class ItemCard_Comparison extends MovieClip
     {
-        public function ItemCard_Comparison_44()
+        public function ItemCard_Comparison()
         {
             super();
             addFrameScript(0, this.frame1);

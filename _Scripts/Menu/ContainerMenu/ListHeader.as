@@ -1,17 +1,15 @@
-package Menu.ContainerMenu
+﻿package Menu.ContainerMenu
 {
-    import Shared.GlobalFunc;
     import flash.display.MovieClip;
     import flash.text.TextField;
     import flash.text.TextLineMetrics;
     import scaleform.gfx.Extensions;
     import scaleform.gfx.TextFieldEx;
+	import Shared.GlobalFunc;
 
     public class ListHeader extends MovieClip
     {
         public var textField:TextField;
-        public var LeftArrow:MovieClip;
-        public var RightArrow:MovieClip;
 
         public function ListHeader()
         {
@@ -27,7 +25,8 @@ package Menu.ContainerMenu
 
         public function get headerWidth():*
         {
-            return this.RightArrow.x + this.RightArrow.width;
+			metrics = this.textField.getLineMetrics(0);
+            return this.textField.x + metrics.width + 10;
         }
 
         public function set headerText(strText:String):void
@@ -36,15 +35,7 @@ package Menu.ContainerMenu
             if (this.textField && strText)
             {
                 GlobalFunc.SetText(this.textField, strText, false);
-                metrics = this.textField.getLineMetrics(0);
-                this.RightArrow.x = this.textField.x + metrics.width + 10;
             }
-        }
-
-        public function SetArrowVisibility(abVisible:Boolean):*
-        {
-            this.LeftArrow.visible = abVisible;
-            this.RightArrow.visible = abVisible;
         }
     }
 }

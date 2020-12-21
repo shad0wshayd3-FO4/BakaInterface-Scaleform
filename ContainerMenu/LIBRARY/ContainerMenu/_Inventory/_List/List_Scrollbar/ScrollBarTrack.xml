@@ -1,0 +1,29 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="ContainerMenu/_Inventory/_List/List_Scrollbar/ScrollBarTrack" itemID="5fa21cd5-00001309" lastModified="1606985119">
+  <timeline>
+    <DOMTimeline name="ScrollBarTrack">
+      <layers>
+        <DOMLayer name="Layer 1" color="#8787CA" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape selected="true" isFloating="true">
+                  <matrix>
+                    <Matrix a="0.941635131835938"/>
+                  </matrix>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FFFFFF"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!0 0S2|12000 0!12000 0|12000 500!12000 500|0 500!0 500|0 0!56 60|56 440!56 440|11944 440!11944 440|11944 60!11944 60|56 60"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

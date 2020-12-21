@@ -1,8 +1,8 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="ContainerMenu/_Inventory/_List/PlayerListEntry" itemID="5fc8608d-00000595" linkageExportForAS="true" linkageClassName="Menu.ContainerMenu.PlayerListEntry" lastModified="1606968593">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="ContainerMenu/_Inventory/_List/_Player/PlayerListEntry" itemID="5fc8608d-00000595" linkageExportForAS="true" linkageClassName="Menu.ContainerMenu.PlayerListEntry" lastModified="1606987015">
   <timeline>
     <DOMTimeline name="PlayerListEntry">
       <layers>
-        <DOMLayer name="Layer 1" color="#BDD3F1" visible="false">
+        <DOMLayer name="Search" color="#BDD3F1" locked="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
@@ -18,11 +18,11 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Layer 2" color="#83C998" visible="false">
+        <DOMLayer name="Favorite" color="#83C998" locked="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="Icon_Fav" name="FavoriteIcon_mc" centerPoint3DX="17" centerPoint3DY="13.35">
+                <DOMSymbolInstance libraryItemName="Icon_Fav" name="FavoriteIcon_mc" selected="true" centerPoint3DX="17" centerPoint3DY="13.35">
                   <matrix>
                     <Matrix tx="11.95" ty="9.35"/>
                   </matrix>
@@ -34,11 +34,11 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Layer 3" color="#F76FB9" visible="false">
+        <DOMLayer name="Legendary" color="#F76FB9" locked="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="Icon_Legendary" name="LegendaryIcon_mc" centerPoint3DX="31.6" centerPoint3DY="12.15">
+                <DOMSymbolInstance libraryItemName="Icon_Legendary" name="LegendaryIcon_mc" selected="true" centerPoint3DX="31.6" centerPoint3DY="12.15">
                   <matrix>
                     <Matrix a="1.48515319824219" d="1.484375" tx="26.55" ty="7.35"/>
                   </matrix>
@@ -50,11 +50,11 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Layer 4" color="#09BDC1" visible="false">
+        <DOMLayer name="LeftIcon" color="#09BDC1" locked="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="ContainerMenu/_Inventory/_List/ListEntry_Icons" name="LeftIcon_mc" centerPoint3DX="-2.95" centerPoint3DY="13.3">
+                <DOMSymbolInstance libraryItemName="ContainerMenu/_Inventory/_List/ListEntry_Icons" name="LeftIcon_mc" selected="true" centerPoint3DX="-2.95" centerPoint3DY="13.3">
                   <matrix>
                     <Matrix tx="-9" ty="8.25"/>
                   </matrix>
@@ -66,19 +66,19 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Layer 5" color="#7CFB1F" locked="true" visible="false">
+        <DOMLayer name="Text" color="#7CFB1F" locked="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMDynamicText name="textField" selected="true" width="271.75" height="23.3" isSelectable="false" renderAsHTML="true">
+                <DOMDynamicText name="textField" width="396" height="36.25" isSelectable="false" renderAsHTML="true">
                   <matrix>
-                    <Matrix tx="11.25" ty="3"/>
+                    <Matrix tx="42" ty="2"/>
                   </matrix>
                   <textRuns>
                     <DOMTextRun>
                       <characters>Item</characters>
                       <textAttrs>
-                        <DOMTextAttrs aliasText="false" rotation="true" letterSpacing="0.5" lineSpacing="5" lineHeight="23.3" size="18" bitmapSize="360" face="$MAIN_Font*" fillColor="#FFFFFF"/>
+                        <DOMTextAttrs aliasText="false" rotation="true" letterSpacing="0.5" lineSpacing="5" lineHeight="36.25" size="28" bitmapSize="560" face="$MAIN_Font*" fillColor="#FFFFFF"/>
                       </textAttrs>
                     </DOMTextRun>
                   </textRuns>
@@ -87,16 +87,13 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Layer 6" color="#33C2FF" locked="true" current="true" isSelected="true" visible="false">
+        <DOMLayer name="Border" color="#33C2FF" current="true" isSelected="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="ContainerMenu/_Inventory/_List/ListEntry_Border" name="border" selected="true" centerPoint3DX="543.45" centerPoint3DY="20.45">
-                  <matrix>
-                    <Matrix a="-0.76580810546875" d="0.654159545898438" tx="323.45" ty="0.5"/>
-                  </matrix>
+                <DOMSymbolInstance libraryItemName="ContainerMenu/_Inventory/_List/ListEntry_Border_Alt" name="border">
                   <transformationPoint>
-                    <Point/>
+                    <Point x="245" y="20"/>
                   </transformationPoint>
                 </DOMSymbolInstance>
               </elements>

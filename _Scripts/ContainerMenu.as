@@ -1,4 +1,4 @@
-package
+﻿package
 {
     import Components.ItemCard;
     import Shared.AS3.BSButtonHintBar;
@@ -23,85 +23,47 @@ package
 
     public class ContainerMenu extends IMenu
     {
-
         private static const NUM_FILTERS:uint = 8;
-
         private static const CM_LOOT = 0;
-
         private static const CM_STEALING_FROM_CONTAINER = 1;
-
         private static const CM_PICKPOCKET = 2;
-
         private static const CM_TEAMMATE = 3;
-
         private static const CM_POWER_ARMOR = 4;
-
         private static const CM_JUNK_JET_RELOAD = 5;
-
         private static const CM_WORKBENCH = 6;
 
-
         public var ButtonHintBar_mc:BSButtonHintBar;
-
-        public var CapsLabel_tf:TextField;
-
-        public var ContainerInventory_mc:MovieClip;
-
-        public var ContainerList_mc:ItemList;
-
+        public var ContainerInventory_mc:ContainerInventory;
+        public var ContainerList_mc:ContainerList;
+        public var PlayerInventory_mc:PlayerInventory;
         public var ItemCard_mc:ItemCard;
-
         public var PickpocketInfo_mc:MovieClip;
-
-        public var PlayerInventory_mc:MovieClip;
-
         public var QuantityMenu_mc:MovieClip;
-
         public var PlayerHasJunk:Boolean = false;
-
         public var BGSCodeObj:Object;
 
         private var PlayFocusSounds:Boolean = true;
-
         private var FilterInfoA:Array;
-
         private var uiPlayerFilterIndex:uint;
-
         private var uiContainerFilterIndex:uint;
-
         private var uiUpperBracketPlayerLineMaxX:uint;
-
         private var uiUpperBracketContainerLineMaxX:uint;
-
-        protected var MessageBoxIsActive = false;
-
         private var uiMode:uint = 0;
-
         private var InspectingFeaturedItem:Boolean = false;
-
         private var BlockNextListFocusSound:Boolean = false;
+        private var InitialValidation = true;
 
         protected var SwitchToPlayerButton:BSButtonHintData;
-
         protected var SwitchToContainerButton:BSButtonHintData;
-
         protected var AcceptButton:BSButtonHintData;
-
         protected var TakeAllButton:BSButtonHintData;
-
         protected var EquipOrStoreButton:BSButtonHintData;
-
         protected var SortButton:BSButtonHintData;
-
         protected var InspectButton:BSButtonHintData;
-
         protected var ExitButton:BSButtonHintData;
-
         protected var QuantityAcceptButton:BSButtonHintData;
-
         protected var QuantityCancelButton:BSButtonHintData;
-
-        private var InitialValidation = true;
+        protected var MessageBoxIsActive = false;
 
         public function ContainerMenu()
         {
@@ -115,14 +77,16 @@ package
             this.ExitButton = new BSButtonHintData("$EXIT", "TAB", "PSN_B", "Xenon_B", 1, this.onExitMenu);
             this.QuantityAcceptButton = new BSButtonHintData("$ACCEPT", "E", "PSN_A", "Xenon_A", 1, this.onQuantityAccepted);
             this.QuantityCancelButton = new BSButtonHintData("$CANCEL", "TAB", "PSN_B", "Xenon_B", 1, this.onQuantityCanceled);
+
             super();
+
             this.BGSCodeObj = new Object();
             this.PopulateButtonBar();
             stage.stageFocusRect = false;
+
             this.PlayerInventory_mc.PlayerSwitchButton_tf.visible = false;
             this.ContainerInventory_mc.ContainerSwitchButton_tf.visible = false;
-            this.ItemCard_mc.scaleX = 0.7;
-            this.ItemCard_mc.scaleY = this.ItemCard_mc.scaleX;
+
             this.FilterInfoA = new Array();
             this.FilterInfoA.push({"text": "$INVENTORY",
                     "flag": 4294967295});
@@ -140,31 +104,27 @@ package
                     "flag": 1 << 11});
             this.FilterInfoA.push({"text": "$InventoryCategoryAmmo",
                     "flag": 1 << 12});
+
             this.uiPlayerFilterIndex = 0;
             this.uiContainerFilterIndex = 0;
-            this.PlayerInventory_mc.LeftHitBox_tf.addEventListener(MouseEvent.MOUSE_UP, this.onListHeaderClick);
-            this.PlayerInventory_mc.RightHitBox_tf.addEventListener(MouseEvent.MOUSE_UP, this.onListHeaderClick);
-            this.ContainerInventory_mc.LeftHitBox_tf.addEventListener(MouseEvent.MOUSE_UP, this.onListHeaderClick);
-            this.ContainerInventory_mc.RightHitBox_tf.addEventListener(MouseEvent.MOUSE_UP, this.onListHeaderClick);
             addEventListener(FocusEvent.FOCUS_OUT, this.onFocusChange);
             addEventListener(KeyboardEvent.KEY_UP, this.onKeyUp);
             addEventListener(BSScrollingList.ITEM_PRESS, this.onItemPress);
             addEventListener(BSScrollingList.SELECTION_CHANGE, this.onSelectionChange);
             addEventListener(ItemList.MOUSE_OVER, this.onListMouseOver);
-            addEventListener(HeaderArrow.MOUSE_UP, this.onListHeaderClick);
             addEventListener(QuantityMenu.CONFIRM, this.onQuantityConfirm);
-            this.PlayerInventory_mc.PlayerListHeader.addEventListener(MouseEvent.MOUSE_OVER, this.onMouseOverPlayerHeader);
-            this.ContainerInventory_mc.ContainerListHeader.addEventListener(MouseEvent.MOUSE_OVER, this.onMouseOverContainerHeader);
+
             this.SwitchToContainerList(false);
             this.UpdateButtonHints();
             this.UpdateHeaderText(this.PlayerInventory_mc.PlayerList_mc);
             this.UpdateHeaderText(this.ContainerList_mc);
+
             if (this.PickpocketInfo_mc != null)
             {
                 this.PickpocketInfo_mc.Caption_tf.visible = false;
                 this.PickpocketInfo_mc.Percent_tf.visible = false;
             }
-            this.__setProp_ButtonHintBar_mc_MenuObj_Buttons_0();
+
             this.__setProp_ContainerList_mc_MenuObj_ContainerList_0();
         }
 
@@ -287,7 +247,6 @@ package
         {
             this.uiMode = auiMode;
             this.FilterInfoA[0].containerText = strName.toUpperCase();
-            this.ContainerInventory_mc.ContainerListHeader.SetArrowVisibility(this.uiMode != CM_JUNK_JET_RELOAD);
             this.UpdateHeaderText(this.ContainerList_mc);
             this.SwitchToContainerButton.ButtonText = this.FilterInfoA[this.uiContainerFilterIndex].containerText.toUpperCase();
         }
@@ -388,9 +347,7 @@ package
                 {
                     this.PlayerInventory_mc.PlayerSwitchButton_tf.visible = true;
                 }
-                this.PlayerInventory_mc.PlayerListHeader.SetArrowVisibility(false);
                 this.ContainerInventory_mc.ContainerSwitchButton_tf.visible = false;
-                this.ContainerInventory_mc.ContainerListHeader.SetArrowVisibility(this.uiMode != CM_JUNK_JET_RELOAD);
                 this.UpdateButtonHints();
                 this.RepositionUpperBracketBars();
                 if (aPlaySound)
@@ -405,69 +362,55 @@ package
         protected function RepositionUpperBracketBars():*
         {
             var lines:Shape = null;
-            var child:* = null;
-            var i:* = 0;
-            for (i = 0; i < this.PlayerInventory_mc.numChildren; i++)
+
+            for (var i:uint = 0; i < this.PlayerInventory_mc.numChildren; i++)
             {
-                child = this.PlayerInventory_mc.getChildAt(i);
+                var child:* = this.PlayerInventory_mc.getChildAt(i);
                 if (child.name == "lines")
                 {
                     this.PlayerInventory_mc.removeChild(child);
                     break;
                 }
             }
-            lines = new Shape();
-            lines.name = "lines";
-            lines.graphics.lineStyle(2, 16777215, 1, true, LineScaleMode.NONE);
-            lines.graphics.moveTo(0, 31.5);
-            lines.graphics.lineTo(0, 27.5);
-            lines.graphics.lineTo(this.PlayerInventory_mc.PlayerListHeader.x, 27.5);
-            if (this.PlayerInventory_mc.PlayerSwitchButton_tf.visible == true)
+			
+			for (var i:uint = 0; i < this.ContainerInventory_mc.numChildren; i++)
             {
-                lines.graphics.lineTo(this.PlayerInventory_mc.PlayerListHeader.x + 15, 27.5);
-            }
-            lines.graphics.moveTo(this.PlayerInventory_mc.PlayerListHeader.x + this.PlayerInventory_mc.PlayerListHeader.headerWidth - (!!this.PlayerInventory_mc.PlayerSwitchButton_tf.visible ? 17 : 0), 27.5);
-            lines.graphics.lineTo(this.PlayerInventory_mc.PlayerSwitchButton_tf.x, 27.5);
-            if (this.PlayerInventory_mc.PlayerSwitchButton_tf.visible == true)
-            {
-                lines.graphics.moveTo(this.PlayerInventory_mc.PlayerSwitchButton_tf.x + this.PlayerInventory_mc.PlayerSwitchButton_tf.width + 2, 27.5);
-            }
-            lines.graphics.lineTo(this.PlayerInventory_mc.PlayerBracketBackground_mc.x + this.PlayerInventory_mc.PlayerBracketBackground_mc.width, 27.5);
-            lines.graphics.lineTo(this.PlayerInventory_mc.PlayerBracketBackground_mc.x + this.PlayerInventory_mc.PlayerBracketBackground_mc.width, 31.5);
-            lines.graphics.moveTo(0, this.PlayerInventory_mc.PlayerBracketBackground_mc.y + this.PlayerInventory_mc.PlayerBracketBackground_mc.height - 4);
-            lines.graphics.lineTo(0, this.PlayerInventory_mc.PlayerBracketBackground_mc.y + this.PlayerInventory_mc.PlayerBracketBackground_mc.height);
-            lines.graphics.lineTo(this.PlayerInventory_mc.PlayerBracketBackground_mc.x + this.PlayerInventory_mc.PlayerBracketBackground_mc.width, this.PlayerInventory_mc.PlayerBracketBackground_mc.y + this.PlayerInventory_mc.PlayerBracketBackground_mc.height);
-            lines.graphics.lineTo(this.PlayerInventory_mc.PlayerBracketBackground_mc.x + this.PlayerInventory_mc.PlayerBracketBackground_mc.width, this.PlayerInventory_mc.PlayerBracketBackground_mc.y + this.PlayerInventory_mc.PlayerBracketBackground_mc.height - 4);
-            this.PlayerInventory_mc.addChild(lines);
-            for (i = 0; i < this.ContainerInventory_mc.numChildren; i++)
-            {
-                child = this.ContainerInventory_mc.getChildAt(i);
+                var child:* = this.ContainerInventory_mc.getChildAt(i);
                 if (child.name == "lines")
                 {
                     this.ContainerInventory_mc.removeChild(child);
                     break;
                 }
             }
+			
             lines = new Shape();
             lines.name = "lines";
-            lines.graphics.lineStyle(2, 16777215, 1, true, LineScaleMode.NONE);
-            lines.graphics.moveTo(0, 31.5);
-            lines.graphics.lineTo(0, 27.5);
-            lines.graphics.lineTo(this.ContainerInventory_mc.ContainerListHeader.x, 27.5);
-            if (this.ContainerInventory_mc.ContainerSwitchButton_tf.visible == true)
-            {
-                lines.graphics.lineTo(this.ContainerInventory_mc.ContainerListHeader.x + 15, 27.5);
-            }
-            lines.graphics.moveTo(this.ContainerInventory_mc.ContainerListHeader.x + this.ContainerInventory_mc.ContainerListHeader.headerWidth - (!!this.ContainerInventory_mc.ContainerSwitchButton_tf.visible ? 17 : 0), 27.5);
-            lines.graphics.lineTo(this.ContainerInventory_mc.ContainerSwitchButton_tf.x - 2, 27.5);
-            if (this.ContainerInventory_mc.ContainerSwitchButton_tf.visible == true)
-            {
-                lines.graphics.moveTo(this.ContainerInventory_mc.ContainerSwitchButton_tf.x + this.ContainerInventory_mc.ContainerSwitchButton_tf.width, 27.5);
-            }
-            lines.graphics.lineTo(this.ContainerInventory_mc.ContainerBracketBackground_mc.x + this.ContainerInventory_mc.ContainerBracketBackground_mc.width, 27.5);
-            lines.graphics.lineTo(this.ContainerInventory_mc.ContainerBracketBackground_mc.x + this.ContainerInventory_mc.ContainerBracketBackground_mc.width, 31.5);
-            lines.graphics.moveTo(0, this.ContainerInventory_mc.ContainerBracketBackground_mc.y + this.ContainerInventory_mc.ContainerBracketBackground_mc.height - 4);
-            lines.graphics.lineTo(0, this.ContainerInventory_mc.ContainerBracketBackground_mc.y + this.ContainerInventory_mc.ContainerBracketBackground_mc.height);
+            lines.graphics.lineStyle(2, 0xFFFFFF, 1.0, true, LineScaleMode.NONE);
+            lines.graphics.moveTo(-3, 4);
+            lines.graphics.lineTo(-3, 0);
+            lines.graphics.lineTo(this.PlayerInventory_mc.PlayerListHeader.x - 5, 0);
+            lines.graphics.moveTo(this.PlayerInventory_mc.PlayerListHeader.x + this.PlayerInventory_mc.PlayerListHeader.headerWidth, 0);
+            lines.graphics.lineTo(this.PlayerInventory_mc.PlayerSwitchButton_tf.x, 0);
+            lines.graphics.lineTo(this.PlayerInventory_mc.PlayerBracketBackground_mc.x + this.PlayerInventory_mc.PlayerBracketBackground_mc.width, 0);
+            lines.graphics.lineTo(this.PlayerInventory_mc.PlayerBracketBackground_mc.x + this.PlayerInventory_mc.PlayerBracketBackground_mc.width, 4);
+            lines.graphics.moveTo(-3, this.PlayerInventory_mc.PlayerBracketBackground_mc.y + this.PlayerInventory_mc.PlayerBracketBackground_mc.height - 4);
+            lines.graphics.lineTo(-3, this.PlayerInventory_mc.PlayerBracketBackground_mc.y + this.PlayerInventory_mc.PlayerBracketBackground_mc.height);
+            lines.graphics.lineTo(this.PlayerInventory_mc.PlayerBracketBackground_mc.x + this.PlayerInventory_mc.PlayerBracketBackground_mc.width, this.PlayerInventory_mc.PlayerBracketBackground_mc.y + this.PlayerInventory_mc.PlayerBracketBackground_mc.height);
+            lines.graphics.lineTo(this.PlayerInventory_mc.PlayerBracketBackground_mc.x + this.PlayerInventory_mc.PlayerBracketBackground_mc.width, this.PlayerInventory_mc.PlayerBracketBackground_mc.y + this.PlayerInventory_mc.PlayerBracketBackground_mc.height - 4);
+            this.PlayerInventory_mc.addChild(lines);
+
+            lines = new Shape();
+            lines.name = "lines";
+            lines.graphics.lineStyle(2, 0xFFFFFF, 1.0, true, LineScaleMode.NONE);
+            lines.graphics.moveTo(-3, 4);
+            lines.graphics.lineTo(-3, 0);
+            lines.graphics.lineTo(this.ContainerInventory_mc.ContainerListHeader.x - 5, 0);
+            lines.graphics.moveTo(this.ContainerInventory_mc.ContainerListHeader.x + this.ContainerInventory_mc.ContainerListHeader.headerWidth, 0);
+            lines.graphics.lineTo(this.ContainerInventory_mc.ContainerSwitchButton_tf.x, 0);
+            lines.graphics.lineTo(this.ContainerInventory_mc.ContainerBracketBackground_mc.x + this.ContainerInventory_mc.ContainerBracketBackground_mc.width, 0);
+            lines.graphics.lineTo(this.ContainerInventory_mc.ContainerBracketBackground_mc.x + this.ContainerInventory_mc.ContainerBracketBackground_mc.width, 4);
+            lines.graphics.moveTo(-3, this.ContainerInventory_mc.ContainerBracketBackground_mc.y + this.ContainerInventory_mc.ContainerBracketBackground_mc.height - 4);
+            lines.graphics.lineTo(-3, this.ContainerInventory_mc.ContainerBracketBackground_mc.y + this.ContainerInventory_mc.ContainerBracketBackground_mc.height);
             lines.graphics.lineTo(this.ContainerInventory_mc.ContainerBracketBackground_mc.x + this.ContainerInventory_mc.ContainerBracketBackground_mc.width, this.ContainerInventory_mc.ContainerBracketBackground_mc.y + this.ContainerInventory_mc.ContainerBracketBackground_mc.height);
             lines.graphics.lineTo(this.ContainerInventory_mc.ContainerBracketBackground_mc.x + this.ContainerInventory_mc.ContainerBracketBackground_mc.width, this.ContainerInventory_mc.ContainerBracketBackground_mc.y + this.ContainerInventory_mc.ContainerBracketBackground_mc.height - 4);
             this.ContainerInventory_mc.addChild(lines);
@@ -482,9 +425,7 @@ package
                 {
                     this.ContainerInventory_mc.ContainerSwitchButton_tf.visible = true;
                 }
-                this.ContainerInventory_mc.ContainerListHeader.SetArrowVisibility(false);
                 this.PlayerInventory_mc.PlayerSwitchButton_tf.visible = false;
-                this.PlayerInventory_mc.PlayerListHeader.SetArrowVisibility(true);
                 this.UpdateButtonHints();
                 this.RepositionUpperBracketBars();
                 if (aPlaySound)
@@ -553,8 +494,6 @@ package
                     stage.focus = this.PlayerInventory_mc.PlayerList_mc;
                     this.PlayerInventory_mc.PlayerList_mc.selectedIndex = 0;
                     this.ContainerList_mc.selectedIndex = -1;
-                    this.ContainerInventory_mc.ContainerListHeader.SetArrowVisibility(false);
-                    this.PlayerInventory_mc.PlayerListHeader.SetArrowVisibility(true);
                     this.UpdateButtonHints();
                     this.RepositionUpperBracketBars();
                     this.BGSCodeObj.updateSortButtonLabel(false, this.uiPlayerFilterIndex);
@@ -571,8 +510,6 @@ package
                     stage.focus = this.ContainerList_mc;
                     this.ContainerList_mc.selectedIndex = 0;
                     this.PlayerInventory_mc.PlayerList_mc.selectedIndex = -1;
-                    this.PlayerInventory_mc.PlayerListHeader.SetArrowVisibility(false);
-                    this.ContainerInventory_mc.ContainerListHeader.SetArrowVisibility(true);
                     this.UpdateButtonHints();
                     this.RepositionUpperBracketBars();
                     this.BGSCodeObj.updateSortButtonLabel(true, this.uiContainerFilterIndex);
@@ -588,8 +525,6 @@ package
                 {
                     stage.focus = this.PlayerInventory_mc.PlayerList_mc;
                     this.ContainerList_mc.selectedIndex = -1;
-                    this.ContainerInventory_mc.ContainerListHeader.SetArrowVisibility(false);
-                    this.PlayerInventory_mc.PlayerListHeader.SetArrowVisibility(true);
                     this.UpdateButtonHints();
                     this.RepositionUpperBracketBars();
                     this.BGSCodeObj.updateSortButtonLabel(false, this.uiPlayerFilterIndex);
@@ -598,8 +533,6 @@ package
                 {
                     stage.focus = this.ContainerList_mc;
                     this.PlayerInventory_mc.PlayerList_mc.selectedIndex = -1;
-                    this.PlayerInventory_mc.PlayerListHeader.SetArrowVisibility(false);
-                    this.ContainerInventory_mc.ContainerListHeader.SetArrowVisibility(true);
                     this.UpdateButtonHints();
                     this.RepositionUpperBracketBars();
                     this.BGSCodeObj.updateSortButtonLabel(true, this.uiContainerFilterIndex);
@@ -673,7 +606,6 @@ package
 
         public function onEquipOrStore():*
         {
-            trace("here");
             this.BGSCodeObj.sendYButton();
         }
 
@@ -823,23 +755,6 @@ package
             this.RepositionUpperBracketBars();
         }
 
-        private function onListHeaderClick(event:Event):*
-        {
-            var bleft:Boolean = false;
-            if (visible && !this.QuantityMenu_mc.opened)
-            {
-                bleft = event.target.name == "LeftArrow" || event.target.name == "LeftHitBox_tf";
-                if (event.target.parent == this.ContainerInventory_mc.ContainerListHeader || event.target.parent == this.ContainerInventory_mc)
-                {
-                    this.changeItemFilter(this.ContainerList_mc, !!bleft ? -1 : 1);
-                }
-                else if (event.target.parent == this.PlayerInventory_mc.PlayerListHeader || event.target.parent == this.PlayerInventory_mc)
-                {
-                    this.changeItemFilter(this.PlayerInventory_mc.PlayerList_mc, !!bleft ? -1 : 1);
-                }
-            }
-        }
-
         public function ProcessUserEvent(strEventName:String, abPressed:Boolean):Boolean
         {
             var bhandled:Boolean = false;
@@ -889,9 +804,9 @@ package
             }
             if (aContainer)
             {
-                if (this.ContainerInventory_mc.VendorCaps_tf != null)
+                if (this.ContainerInventory_mc.ContainerCaps_tf != null)
                 {
-                    GlobalFunc.SetText(this.ContainerInventory_mc.VendorCaps_tf, aCaps.toString() + incomingCapsString, false);
+                    GlobalFunc.SetText(this.ContainerInventory_mc.ContainerCaps_tf, aCaps.toString() + incomingCapsString, false);
                 }
             }
             else
@@ -977,55 +892,13 @@ package
             this.UpdateButtonHints();
         }
 
-        function __setProp_ButtonHintBar_mc_MenuObj_Buttons_0():*
-        {
-            try
-            {
-                this.ButtonHintBar_mc["componentInspectorSetting"] = true;
-            }
-            catch (e:Error)
-            {
-            }
-            this.ButtonHintBar_mc.BackgroundAlpha = 1;
-            this.ButtonHintBar_mc.BackgroundColor = 0;
-            this.ButtonHintBar_mc.bracketCornerLength = 6;
-            this.ButtonHintBar_mc.bracketLineWidth = 1.5;
-            this.ButtonHintBar_mc.BracketStyle = "horizontal";
-            this.ButtonHintBar_mc.bRedirectToButtonBarMenu = true;
-            this.ButtonHintBar_mc.bShowBrackets = true;
-            this.ButtonHintBar_mc.bUseShadedBackground = true;
-            this.ButtonHintBar_mc.ShadedBackgroundMethod = "Shader";
-            this.ButtonHintBar_mc.ShadedBackgroundType = "normal";
-            try
-            {
-                this.ButtonHintBar_mc["componentInspectorSetting"] = false;
-            }
-            catch (e:Error)
-            {
-            }
-        }
-
         function __setProp_ContainerList_mc_MenuObj_ContainerList_0():*
         {
-            try
-            {
-                this.ContainerList_mc["componentInspectorSetting"] = true;
-            }
-            catch (e:Error)
-            {
-            }
-            this.ContainerList_mc.listEntryClass = "ContainerListEntry";
-            this.ContainerList_mc.numListItems = 10;
+            this.ContainerList_mc.listEntryClass = "Menu.ContainerMenu.ContainerListEntry";
+            this.ContainerList_mc.numListItems = 16;
             this.ContainerList_mc.restoreListIndex = true;
-            this.ContainerList_mc.textOption = "Shrink To Fit";
-            this.ContainerList_mc.verticalSpacing = -3;
-            try
-            {
-                this.ContainerList_mc["componentInspectorSetting"] = false;
-            }
-            catch (e:Error)
-            {
-            }
+            this.ContainerList_mc.textOption = BSScrollingList.TEXT_OPTION_SHRINK_TO_FIT;
+            this.ContainerList_mc.verticalSpacing = -2;
         }
     }
 }

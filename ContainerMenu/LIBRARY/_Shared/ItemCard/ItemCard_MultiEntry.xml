@@ -1,0 +1,61 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_Shared/ItemCard/ItemCard_MultiEntry" itemID="5fc84e87-000001bd" linkageExportForAS="true" linkageClassName="Components.ItemCard_MultiEntry" sourceFlashFilepath="../_Shared/_Shared.xfl" sourceLibraryItemHRef="_Shared/ItemCard/ItemCard_MultiEntry" sourceLastModified="1606970046" sourceAutoUpdate="true" lastModified="1606970046" sourceItemID="00000000-ffffffff">
+  <timeline>
+    <DOMTimeline name="ItemCard_MultiEntry">
+      <layers>
+        <DOMLayer name="Layer 1" color="#9C59C6">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_Shared/ItemCard/_Components/Components_EntryHolder" name="EntryHolder_mc" centerPoint3DX="-73.15" centerPoint3DY="-3.4">
+                  <matrix>
+                    <Matrix tx="-73.15" ty="-3.4"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#FFB4AD">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="Label_tf" width="129.05" height="36.25" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="-233.45" ty="-0.25"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>DMG Resist</characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" rotation="true" lineHeight="36.25" size="28" bitmapSize="560" face="$MAIN_Font*" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 3" color="#B1E53E" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_Shared/ItemCard/_Components/ItemCard_BG_Light" name="Background_mc" selected="true" centerPoint3DX="-189.2" centerPoint3DY="50.5">
+                  <matrix>
+                    <Matrix a="1.636474609375" d="0.330490112304688" tx="-239.7"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

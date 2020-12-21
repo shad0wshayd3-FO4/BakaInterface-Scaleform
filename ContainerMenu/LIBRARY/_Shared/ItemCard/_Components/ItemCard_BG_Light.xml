@@ -1,15 +1,15 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="ContainerMenu/_Inventory/_List/ListBottomBarBackground" itemID="5fc8662a-000006ad" lastModified="1606968874">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_Shared/ItemCard/_Components/ItemCard_BG_Light" itemID="5fc86c73-0000021c" sourceFlashFilepath="../_Shared/_Shared.xfl" sourceLibraryItemHRef="_Shared/ItemCard/_Components/ItemCard_BG_Light" sourceLastModified="1606970483" sourceAutoUpdate="true" lastModified="1606970483" sourceItemID="00000000-ffffffff">
   <timeline>
-    <DOMTimeline name="ListBottomBarBackground">
+    <DOMTimeline name="ItemCard_BG_Light">
       <layers>
-        <DOMLayer name="Layer 1" color="#F5D8AB" current="true" isSelected="true">
+        <DOMLayer name="Layer 1" color="#BAECCC" current="true" isSelected="true">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
                 <DOMShape isFloating="true">
                   <fills>
                     <FillStyle index="1">
-                      <SolidColor color="#FFFFFF" alpha="0.2"/>
+                      <SolidColor color="#FFFFFF" alpha="0.4"/>
                     </FillStyle>
                   </fills>
                   <strokes>

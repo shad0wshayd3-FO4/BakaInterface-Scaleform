@@ -1,12 +1,12 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="ContainerMenu/_QuantityMenu/Scrollbar" itemID="5fc863b5-000005f7" linkageExportForAS="true" linkageClassName="Shared.AS3.Option_Scrollbar" lastModified="1606968426">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="ContainerMenu/_QuantityMenu/Scrollbar" itemID="5fc863b5-000005f7" linkageExportForAS="true" linkageClassName="Shared.AS3.Option_Scrollbar" lastModified="1606971009">
   <timeline>
     <DOMTimeline name="Scrollbar">
       <layers>
-        <DOMLayer name="Layer 1" color="#7E28F9">
+        <DOMLayer name="Layer 1" color="#7E28F9" current="true" isSelected="true">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="ListBorder&amp;#063" name="Thumb_mc" centerPoint3DX="101.5" centerPoint3DY="57">
+                <DOMSymbolInstance libraryItemName="ContainerMenu/_QuantityMenu/_Thumb" name="Thumb_mc" selected="true" centerPoint3DX="101.5" centerPoint3DY="57">
                   <matrix>
                     <Matrix a="0.030029296875" d="0.139999389648438" tx="51" ty="6.5"/>
                   </matrix>
@@ -18,11 +18,11 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Layer 2" color="#F9DC7F" current="true" isSelected="true">
+        <DOMLayer name="Layer 2" color="#F9DC7F">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="ContainerMenu/_QuantityMenu/_Catcher" name="RightCatcher_mc" selected="true" centerPoint3DX="82" centerPoint3DY="57.5">
+                <DOMSymbolInstance libraryItemName="ContainerMenu/_QuantityMenu/_Catcher" name="RightCatcher_mc" centerPoint3DX="82" centerPoint3DY="57.5">
                   <matrix>
                     <Matrix a="0.355056762695312" d="0.120025634765625" tx="31.5" ty="7"/>
                   </matrix>
