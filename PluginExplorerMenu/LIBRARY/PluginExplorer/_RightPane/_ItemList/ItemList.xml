@@ -1,0 +1,40 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="PluginExplorer/_RightPane/_ItemList/ItemList" itemID="5fddbbe1-00000c43" linkageExportForAS="true" linkageClassName="Menu.PluginExplorerMenu.ItemList" lastModified="1608387560">
+  <timeline>
+    <DOMTimeline name="ItemList" layerDepthEnabled="true">
+      <layers>
+        <DOMLayer name="Layer_2" color="#9933CC">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="PluginExplorer/_RightPane/_ItemList/ScrollBar/ScrollBar" name="ScrollBar_mc">
+                  <matrix>
+                    <Matrix a="0" b="1" c="-1" d="0" tx="740" ty="25"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="56.45" y="14.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer_1" color="#00FFFF" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="PluginExplorer/_RightPane/_ItemList/ItemListBorder" name="border" selected="true">
+                  <transformationPoint>
+                    <Point x="225" y="375"/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

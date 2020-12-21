@@ -1,0 +1,37 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="PluginExplorer/_TopPane/LabelSelector" itemID="5fddf256-000002b0" linkageExportForAS="true" linkageClassName="Shared.AS3.LabelSelector" lastModified="1608383525">
+  <timeline>
+    <DOMTimeline name="LabelSelector" layerDepthEnabled="true">
+      <layers>
+        <DOMLayer name="Layer_2" color="#9933CC" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="PluginExplorer/_TopPane/LabelSelection" name="Selector_mc" selected="true">
+                  <matrix>
+                    <Matrix tx="200"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="75" y="25"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer_1" color="#00FFFF">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="PluginExplorer/_TopPane/_Background/Background" name="BackerBar_mc">
+                  <transformationPoint>
+                    <Point x="625" y="25"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

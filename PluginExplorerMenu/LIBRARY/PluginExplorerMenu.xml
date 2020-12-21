@@ -1,0 +1,118 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="PluginExplorerMenu" itemID="5fdda179-00000153" linkageExportForAS="true" linkageBaseClass="Shared.IMenu" linkageClassName="PluginExplorerMenu" lastModified="1608384570">
+  <timeline>
+    <DOMTimeline name="PluginExplorerMenu" layerDepthEnabled="true">
+      <layers>
+        <DOMLayer name="Layer_6" color="#FF0000">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer_8" color="#FF4F4F" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="PluginExplorer/_TopPane/LabelSelector" name="CategoryBar_mc">
+                  <matrix>
+                    <Matrix tx="570" ty="70"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="625" y="25"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="TopPane" color="#669900" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="PluginList" color="#FF4FFF" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="PluginExplorer/_LeftPane/_PluginList/PluginList" name="PluginList_mc">
+                  <matrix>
+                    <Matrix tx="105" ty="155"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="244.35" y="375"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="LeftPane" color="#9933CC" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="PluginExplorer/_LeftPane/LeftPane" name="LeftPane_mc">
+                  <matrix>
+                    <Matrix tx="100" ty="130"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="200" y="350"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="ItemList" color="#009999" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="PluginExplorer/_RightPane/_ItemList/ItemList" name="ItemList_mc">
+                  <matrix>
+                    <Matrix tx="575" ty="155"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="344.35" y="375"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="RightPane" color="#FF800A" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="PluginExplorer/_RightPane/RightPane" name="RightPane_mc">
+                  <matrix>
+                    <Matrix tx="570" ty="130"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="635" y="399"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="ButtonHintBar" color="#00FFFF" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_Shared/BSButtonHintBar/BSButtonHintBar" name="ButtonHintBar_mc">
+                  <matrix>
+                    <Matrix tx="960" ty="980"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="24"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

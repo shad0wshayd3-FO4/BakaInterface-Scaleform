@@ -1,0 +1,56 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="PluginExplorer/_LeftPane/_Background/Background" itemID="5fddab2b-000005f9" lastModified="1608363888">
+  <timeline>
+    <DOMTimeline name="Background" layerDepthEnabled="true">
+      <layers>
+        <DOMLayer name="BracketTop" color="#FF800A" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="PluginExplorer/_LeftPane/_Background/BackgroundTrim">
+                  <transformationPoint>
+                    <Point x="200" y="10"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="BracketBottom" color="#9933CC" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="PluginExplorer/_LeftPane/_Background/BackgroundTrim">
+                  <matrix>
+                    <Matrix d="-1" ty="800"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="200" y="10"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Background" color="#00FFFF" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="PluginExplorer/_LeftPane/_Background/BackgroundBase">
+                  <matrix>
+                    <Matrix ty="-1.95"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="200" y="350"/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

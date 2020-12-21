@@ -1,0 +1,21 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="PluginExplorer/_RightPane/RightPane" itemID="5fddaf9a-00000818" lastModified="1608363930">
+  <timeline>
+    <DOMTimeline name="RightPane" layerDepthEnabled="true">
+      <layers>
+        <DOMLayer name="Background" color="#00FFFF" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="PluginExplorer/_RightPane/_Background/Background" name="Background_mc">
+                  <transformationPoint>
+                    <Point x="200" y="350"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

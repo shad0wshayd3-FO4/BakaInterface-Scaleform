@@ -1,0 +1,66 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="PluginExplorer/_LeftPane/_PluginList/PluginListEntry/PluginListEntry" itemID="5fddb7be-00000aea" linkageExportForAS="true" linkageClassName="Menu.PluginExplorerMenu.PluginListEntry" lastModified="1608388229" lastUniqueIdentifier="1">
+  <timeline>
+    <DOMTimeline name="PluginListEntry" layerDepthEnabled="true">
+      <layers>
+        <DOMLayer name="Layer_3" color="#FF800A">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="FormID_tf" width="126" height="31" isSelectable="false">
+                  <matrix>
+                    <Matrix tx="267" ty="7"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>[FE][000]</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="right" aliasText="false" lineHeight="28.3" size="26" bitmapSize="520" face="$Terminal_Font*" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer_2" color="#9933CC" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="textField" selected="true" width="256" height="36" isSelectable="false">
+                  <matrix>
+                    <Matrix tx="7" ty="2"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>Fallout4.esm</characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" leftMargin="5" lineHeight="33.65" size="26" bitmapSize="520" face="$MAIN_Font*" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer_1" color="#00FFFF">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="PluginExplorer/_LeftPane/_PluginList/PluginListEntry/PluginListEntryBorder" name="border">
+                  <transformationPoint>
+                    <Point x="200" y="20"/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

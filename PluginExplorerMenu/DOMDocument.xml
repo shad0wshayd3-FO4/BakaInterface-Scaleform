@@ -1,0 +1,115 @@
+<DOMDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" backgroundColor="#00FFFF" width="1920" height="1080" frameRate="30" currentTimeline="1" xflVersion="2.971" creatorInfo="Adobe Animate" platform="Windows" versionInfo="Saved by Animate Windows 19.2 build 408" majorVersion="19" minorVersion="2" buildNumber="408" viewAngle3D="122.353661987282" vanishingPoint3DX="960" vanishingPoint3DY="540" nextSceneIdentifier="2" playOptionsPlayLoop="false" playOptionsPlayPages="false" playOptionsPlayFrameActions="false" filetypeGUID="DD0DDBBF-5BEF-45B2-9F24-A3048D2A676F" fileGUID="A2CF3704D040124784A7CC1377A9C592">
+     <folders>
+          <DOMFolderItem name="_Shared" itemID="5fdda1be-00000208"/>
+          <DOMFolderItem name="_Shared/_Fonts" itemID="5fdda1be-00000209"/>
+          <DOMFolderItem name="_Shared/BSButtonHintBar" itemID="5fdda244-00000338" isExpanded="true"/>
+          <DOMFolderItem name="PluginExplorer" itemID="5fddaace-000005a1" isExpanded="true"/>
+          <DOMFolderItem name="PluginExplorer/_LeftPane" itemID="5fddb5e7-00000876" isExpanded="true"/>
+          <DOMFolderItem name="PluginExplorer/_LeftPane/_Background" itemID="5fddb5e4-00000875"/>
+          <DOMFolderItem name="PluginExplorer/_LeftPane/_PluginList" itemID="5fddb5f6-00000882" isExpanded="true"/>
+          <DOMFolderItem name="PluginExplorer/_LeftPane/_PluginList/PluginListEntry" itemID="5fddb7af-00000ae5" isExpanded="true"/>
+          <DOMFolderItem name="PluginExplorer/_LeftPane/_PluginList/ScrollBar" itemID="5fa226ee-0000150f"/>
+          <DOMFolderItem name="PluginExplorer/_RightPane" itemID="5fddb5e9-00000878" isExpanded="true"/>
+          <DOMFolderItem name="PluginExplorer/_RightPane/_Background" itemID="5fddb5f0-0000087d"/>
+          <DOMFolderItem name="PluginExplorer/_RightPane/_ItemList" itemID="5fddbbcb-00000c17"/>
+          <DOMFolderItem name="PluginExplorer/_RightPane/_ItemList/ItemListEntry" itemID="5fddbbe8-00000c45" isExpanded="true"/>
+          <DOMFolderItem name="PluginExplorer/_RightPane/_ItemList/ScrollBar" itemID="5fddbbd3-00000c2d"/>
+          <DOMFolderItem name="PluginExplorer/_TopPane" itemID="5fdde435-00001be2"/>
+          <DOMFolderItem name="PluginExplorer/_TopPane/_Background" itemID="5fdde476-00001bea"/>
+     </folders>
+     <fonts>
+          <DOMFontItem name="_Shared/_Fonts/$BRODY" itemID="5f97a2f3-0000002d" linkageImportForRS="true" linkageExportInFirstFrame="false" linkageClassName="$BRODY" linkageURL="fonts_en.swf" font="Brody" size="0" id="1" sourceLastImported="1603773171" embedRanges="9999"/>
+          <DOMFontItem name="_Shared/_Fonts/$CClub_Font" itemID="5f97a2f3-0000002f" linkageImportForRS="true" linkageExportInFirstFrame="false" linkageClassName="$CClub_Font" linkageURL="fonts_en.swf" font="CreationClub-Regular" size="0" id="2" sourceLastImported="1603773171" embedRanges="9999"/>
+          <DOMFontItem name="_Shared/_Fonts/$CClub_Font_Bold" itemID="5f97a2f3-00000031" linkageImportForRS="true" linkageExportInFirstFrame="false" linkageClassName="$CClub_Font_Bold" linkageURL="fonts_en.swf" font="CreationClub-Bold" size="0" id="3" sourceLastImported="1603773171" embedRanges="9999"/>
+          <DOMFontItem name="_Shared/_Fonts/$Controller_Buttons" itemID="5f97a2f3-00000029" linkageImportForRS="true" linkageExportInFirstFrame="false" linkageClassName="$Controller_Buttons" linkageURL="fonts_en.swf" font="ControllerButtons-Regular" size="0" id="4" sourceLastImported="1603773171" embedRanges="9999"/>
+          <DOMFontItem name="_Shared/_Fonts/$Controller_Buttons_inverted" itemID="5f97a2f3-0000002b" linkageImportForRS="true" linkageExportInFirstFrame="false" linkageClassName="$Controller_Buttons_inverted" linkageURL="fonts_en.swf" font="ControllerButtons-Bold" size="0" id="5" sourceLastImported="1603773171" embedRanges="9999"/>
+          <DOMFontItem name="_Shared/_Fonts/$HandwrittenFont" itemID="5f97a12b-0000001b" linkageImportForRS="true" linkageExportInFirstFrame="false" linkageClassName="$HandwrittenFont" linkageURL="fonts_en.swf" font="Handwritten-Fallout4" size="0" id="6" sourceLastImported="1603772715" embeddedCharacters=" &#xD;¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿĀāĂăĄąĆćĈĉĊċČčĎďĐđĒēĔĕĖėĘęĚěĜĝĞğĠġĢģĤĥĦħĨĩĪīĬĭĮįİıĲĳĴĵĶķĸĹĺĻļĽľĿŀŁłŃńŅņŇňŉŊŋŌōŎŏŐőŒœŔŕŖŗŘřŚśŜŝŞşŠšŢţŤťŦŧŨũŪūŬŭŮůŰűŲųŴŵŶŷŸŹźŻżŽžſƒƠơƯưǰǺǻǼǽǾǿȘșȚțȷˆˇˉ˘˙˚˛˜˝΄΅Ά·ΈΉΊΌΎΏΐΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩΪΫάέήίΰαβγδεζηθικλμνξοπρςστυφχψωϊϋόύώϑϒϖЀЁЂЃЄЅІЇЈЉЊЋЌЍЎЏАБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдежзийклмнопрстуфхцчшщъыьэюяѐёђѓєѕіїјљњћќѝўџѠѡѢѣѤѥѦѧѨѩѪѫѬѭѮѯѰѱѲѳѴѵѶѷѸѹѺѻѼѽѾѿҀҁ҂҃҄҅҆҈҉ҊҋҌҍҎҏҐґҒғҔҕҖҗҘҙҚқҜҝҞҟҠҡҢңҤҥҦҧҨҩҪҫҬҭҮүҰұҲҳҴҵҶҷҸҹҺһҼҽҾҿӀӁӂӃӄӅӆӇӈӉӊӋӌӍӎḀḁḾḿẀẁẂẃẄẅẠạẢảẤấẦầẨẩẪẫẬậẮắẰằẲẳẴẵẶặẸẹẺẻẼẽẾếỀềỂểỄễỆệỈỉỊịỌọỎỏỐốỒồỔổỖỗỘộỚớỜờỞởỠỡỢợỤụỦủỨứỪừỬửỮữỰựỲỳỴỵỶỷỸỹὍ           ​–—―‗‘’‚‛“”„†‡•‥…‰′″‹›‼⁄⁴ⁿ₣₤₧₫€℅ℓ№™Ω℮⅛⅜⅝⅞∂∏∑√∞∫≠≤≥﻿￼" embedRanges="9999|1|2|3|4|5"/>
+          <DOMFontItem name="_Shared/_Fonts/$MAIN_Font" itemID="5f97a2f3-00000023" linkageImportForRS="true" linkageExportInFirstFrame="false" linkageClassName="$MAIN_Font" linkageURL="fonts_en.swf" font="RobotoCondensed-Regular" size="0" id="7" sourceLastImported="1603773171" embedRanges="9999"/>
+          <DOMFontItem name="_Shared/_Fonts/$MAIN_Font_Bold" itemID="5f97a2f3-00000025" linkageImportForRS="true" linkageExportInFirstFrame="false" linkageClassName="$MAIN_Font_Bold" linkageURL="fonts_en.swf" font="RobotoCondensed-Bold" size="0" id="8" sourceLastImported="1603773171" embedRanges="9999"/>
+          <DOMFontItem name="_Shared/_Fonts/$Terminal_Font" itemID="5f97a2f3-00000027" linkageImportForRS="true" linkageExportInFirstFrame="false" linkageClassName="$Terminal_Font" linkageURL="fonts_en.swf" font="ShareTechMono" size="0" id="9" sourceLastImported="1603773171" embedRanges="9999"/>
+     </fonts>
+     <symbols>
+          <Include href="_Shared/BSButtonHintBar/BSButtonHint.xml" itemID="5f97b58a-00000042" lastModified="1603781750"/>
+          <Include href="_Shared/BSButtonHintBar/BSButtonHintBar.xml" itemID="5f97b598-00000044" lastModified="1603781809"/>
+          <Include href="_Shared/BSButtonHintBar/BSButtonHintIcon.xml" itemID="5f97b5ad-00000047" lastModified="1603781761"/>
+          <Include href="_Shared/BSButtonHintBar/BSButtonHintIconHolder.xml" itemID="5f97b590-00000043" lastModified="1603778123"/>
+          <Include href="_Shared/BSButtonHintBar/ButtonHintBracketL.xml" itemID="5f97b5a4-00000046" lastModified="1603781718"/>
+          <Include href="_Shared/BSButtonHintBar/ButtonHintBracketR.xml" itemID="5f97b5a0-00000045" lastModified="1603781729"/>
+          <Include href="PluginExplorer/_LeftPane/_Background/Background.xml" loadImmediate="false" itemID="5fddab2b-000005f9" lastModified="1608363888"/>
+          <Include href="PluginExplorer/_LeftPane/_Background/BackgroundBase.xml" loadImmediate="false" itemID="5fddab21-000005f5" lastModified="1608377106"/>
+          <Include href="PluginExplorer/_LeftPane/_Background/BackgroundTrim.xml" loadImmediate="false" itemID="5fddabfb-0000069a" lastModified="1608377121"/>
+          <Include href="PluginExplorer/_LeftPane/_PluginList/PluginList.xml" itemID="5fddb617-00000884" lastModified="1608388634"/>
+          <Include href="PluginExplorer/_LeftPane/_PluginList/PluginListBorder.xml" loadImmediate="false" itemID="5fddb69a-00000958" lastModified="1608388187"/>
+          <Include href="PluginExplorer/_LeftPane/_PluginList/PluginListEntry/PluginListEntry.xml" itemID="5fddb7be-00000aea" lastModified="1608388229"/>
+          <Include href="PluginExplorer/_LeftPane/_PluginList/PluginListEntry/PluginListEntryBorder.xml" loadImmediate="false" itemID="5fddb7cd-00000aee" lastModified="1608388192"/>
+          <Include href="PluginExplorer/_LeftPane/_PluginList/ScrollBar/ScrollBar.xml" itemID="5fa21c93-00001302" lastModified="1608365888"/>
+          <Include href="PluginExplorer/_LeftPane/_PluginList/ScrollBar/ScrollBarArrow.xml" loadImmediate="false" itemID="5fa21cdc-0000130a" lastModified="1604460420"/>
+          <Include href="PluginExplorer/_LeftPane/_PluginList/ScrollBar/ScrollBarCatcher.xml" loadImmediate="false" itemID="5fa21ce4-0000130b" lastModified="1604459911"/>
+          <Include href="PluginExplorer/_LeftPane/_PluginList/ScrollBar/ScrollBarThumb.xml" loadImmediate="false" itemID="5fa21fe2-00001380" lastModified="1604467865"/>
+          <Include href="PluginExplorer/_LeftPane/_PluginList/ScrollBar/ScrollBarTrack.xml" loadImmediate="false" itemID="5fa21cd5-00001309" lastModified="1604460738"/>
+          <Include href="PluginExplorer/_LeftPane/LeftPane.xml" loadImmediate="false" itemID="5fddaaf8-000005af" lastModified="1608362919"/>
+          <Include href="PluginExplorer/_RightPane/_Background/Background.xml" loadImmediate="false" itemID="5fddaf8f-00000812" lastModified="1608363888"/>
+          <Include href="PluginExplorer/_RightPane/_Background/BackgroundBase.xml" loadImmediate="false" itemID="5fddaf8f-00000815" lastModified="1608377004"/>
+          <Include href="PluginExplorer/_RightPane/_Background/BackgroundTrim.xml" loadImmediate="false" itemID="5fddaf8f-00000814" lastModified="1608377020"/>
+          <Include href="PluginExplorer/_RightPane/_ItemList/ItemList.xml" itemID="5fddbbe1-00000c43" lastModified="1608387560"/>
+          <Include href="PluginExplorer/_RightPane/_ItemList/ItemListBorder.xml" loadImmediate="false" itemID="5fddbbe4-00000c44" lastModified="1608388181"/>
+          <Include href="PluginExplorer/_RightPane/_ItemList/ItemListEntry/ItemListEntry.xml" itemID="5fddbc03-00000c47" lastModified="1608388622"/>
+          <Include href="PluginExplorer/_RightPane/_ItemList/ItemListEntry/ItemListEntryBorder.xml" loadImmediate="false" itemID="5fddbc5f-00000cc8" lastModified="1608388177"/>
+          <Include href="PluginExplorer/_RightPane/_ItemList/ScrollBar/ScrollBar.xml" itemID="5fddbbd3-00000c36" lastModified="1608367093"/>
+          <Include href="PluginExplorer/_RightPane/_ItemList/ScrollBar/ScrollBarArrow.xml" loadImmediate="false" itemID="5fddbbd3-00000c3d" lastModified="1604460420"/>
+          <Include href="PluginExplorer/_RightPane/_ItemList/ScrollBar/ScrollBarCatcher.xml" loadImmediate="false" itemID="5fddbbd3-00000c3b" lastModified="1604459911"/>
+          <Include href="PluginExplorer/_RightPane/_ItemList/ScrollBar/ScrollBarThumb.xml" loadImmediate="false" itemID="5fddbbd3-00000c38" lastModified="1604467865"/>
+          <Include href="PluginExplorer/_RightPane/_ItemList/ScrollBar/ScrollBarTrack.xml" loadImmediate="false" itemID="5fddbbd3-00000c37" lastModified="1604460738"/>
+          <Include href="PluginExplorer/_RightPane/RightPane.xml" loadImmediate="false" itemID="5fddaf9a-00000818" lastModified="1608363930"/>
+          <Include href="PluginExplorer/_TopPane/_Background/Background.xml" loadImmediate="false" itemID="5fdde486-00001bf1" lastModified="1608383407"/>
+          <Include href="PluginExplorer/_TopPane/_Background/BackgroundBase.xml" loadImmediate="false" itemID="5fdde47a-00001bec" lastModified="1608377498"/>
+          <Include href="PluginExplorer/_TopPane/_Background/BackgroundTrim.xml" loadImmediate="false" itemID="5fdde483-00001bef" lastModified="1608377643"/>
+          <Include href="PluginExplorer/_TopPane/LabelItem.xml" itemID="5fddef7d-00001dde" lastModified="1608383776"/>
+          <Include href="PluginExplorer/_TopPane/LabelSelection.xml" loadImmediate="false" itemID="5fde0020-00000a7d" lastModified="1608384544"/>
+          <Include href="PluginExplorer/_TopPane/LabelSelector.xml" itemID="5fddf256-000002b0" lastModified="1608383525"/>
+          <Include href="PluginExplorerMenu.xml" itemID="5fdda179-00000153" lastModified="1608384570"/>
+     </symbols>
+     <timelines>
+          <DOMTimeline name="Scene 1" layerDepthEnabled="true">
+               <layers>
+                    <DOMLayer name="Layer_1" color="#00FFFF" current="true" isSelected="true">
+                         <frames>
+                              <DOMFrame index="0" keyMode="9728">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="PluginExplorerMenu" name="Menu_mc" selected="true">
+                                             <transformationPoint>
+                                                  <Point/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+               </layers>
+          </DOMTimeline>
+     </timelines>
+     <scripts/>
+     <PrinterSettings/>
+     <publishHistory>
+          <PublishItem publishSize="30996" publishTime="1608388517"/>
+          <PublishItem publishSize="31008" publishTime="1608388345"/>
+          <PublishItem publishSize="31007" publishTime="1608388259"/>
+          <PublishItem publishSize="31195" publishTime="1608387913"/>
+          <PublishItem publishSize="31149" publishTime="1608387854"/>
+          <PublishItem publishSize="31233" publishTime="1608387517"/>
+          <PublishItem publishSize="31224" publishTime="1608387372"/>
+          <PublishItem publishSize="31221" publishTime="1608387214"/>
+          <PublishItem publishSize="31228" publishTime="1608387115"/>
+          <PublishItem publishSize="31217" publishTime="1608387051"/>
+          <PublishItem publishSize="31217" publishTime="1608386996"/>
+          <PublishItem publishSize="31227" publishTime="1608386709"/>
+          <PublishItem publishSize="31270" publishTime="1608386672"/>
+          <PublishItem publishSize="31225" publishTime="1608386245"/>
+          <PublishItem publishSize="31237" publishTime="1608386180"/>
+          <PublishItem publishSize="2049" publishTime="1608386164"/>
+          <PublishItem publishSize="30963" publishTime="1608385002"/>
+          <PublishItem publishSize="30963" publishTime="1608384851"/>
+          <PublishItem publishSize="30956" publishTime="1608384743"/>
+          <PublishItem publishSize="30875" publishTime="1608384177"/>
+     </publishHistory>
+</DOMDocument>
