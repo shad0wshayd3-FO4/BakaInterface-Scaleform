@@ -1,28 +1,28 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="PluginExplorer/_RightPane/_ItemList/ItemList" itemID="5fddbbe1-00000c43" linkageExportForAS="true" linkageClassName="Menu.PluginExplorerMenu.ItemList" lastModified="1608387560">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="PluginExplorer/_RightPane/_ItemList/ItemList" itemID="5fddbbe1-00000c43" linkageExportForAS="true" linkageClassName="Menu.PluginExplorerMenu.ItemList" lastModified="1608599319">
   <timeline>
     <DOMTimeline name="ItemList" layerDepthEnabled="true">
       <layers>
-        <DOMLayer name="Layer_2" color="#9933CC">
+        <DOMLayer name="Layer_2" color="#9933CC" current="true" isSelected="true">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="PluginExplorer/_RightPane/_ItemList/ScrollBar/ScrollBar" name="ScrollBar_mc">
+                <DOMSymbolInstance libraryItemName="PluginExplorer/ScrollbarNew/Scrollbar" name="Scrollbar" selected="true">
                   <matrix>
-                    <Matrix a="0" b="1" c="-1" d="0" tx="740" ty="25"/>
+                    <Matrix tx="715"/>
                   </matrix>
                   <transformationPoint>
-                    <Point x="56.45" y="14.05"/>
+                    <Point x="10" y="340"/>
                   </transformationPoint>
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Layer_1" color="#00FFFF" current="true" isSelected="true">
+        <DOMLayer name="Layer_1" color="#00FFFF">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="PluginExplorer/_RightPane/_ItemList/ItemListBorder" name="border" selected="true">
+                <DOMSymbolInstance libraryItemName="PluginExplorer/_RightPane/_ItemList/ItemListBorder" name="border">
                   <transformationPoint>
                     <Point x="225" y="375"/>
                   </transformationPoint>

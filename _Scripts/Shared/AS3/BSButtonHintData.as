@@ -1,11 +1,13 @@
 package Shared.AS3
 {
+    import Shared.AS3.Events.PlatformChangeEvent;
     import flash.events.Event;
     import flash.events.EventDispatcher;
 
     public dynamic class BSButtonHintData extends EventDispatcher
     {
         public static const BUTTON_HINT_DATA_CHANGE:String = "ButtonHintDataChange";
+        public static const EVENT_CONTROL_MAP_DATA:String = "ControlMapData";
 
         private var _strButtonText:String;
         private var _strPCKey:String;
@@ -13,15 +15,23 @@ package Shared.AS3
         private var _strXenonButton:String;
         private var _uiJustification:uint;
         private var _callbackFunction:Function;
+
         private var _bButtonDisabled:Boolean;
         private var _bSecondaryButtonDisabled:Boolean;
         private var _bButtonVisible:Boolean;
         private var _bButtonFlashing:Boolean;
+
         private var _hasSecondaryButton:Boolean;
         private var _strSecondaryPCKey:String;
         private var _strSecondaryXenonButton:String;
         private var _strSecondaryPSNButton:String;
         private var _secondaryButtonCallback:Function;
+
+        private var m_CanHold:Boolean = false;
+        private var m_HoldPercent:Number = 0.0;
+        private var m_bIgnorePCKeyMapping:Boolean = false;
+
+        private var _isWarning:Boolean;
         private var _strDynamicMovieClipName:String;
 
         public var onAnnounceDataChange:Function;
@@ -49,6 +59,7 @@ package Shared.AS3
             this._strSecondaryXenonButton = "";
             this._secondaryButtonCallback = null;
             this._strDynamicMovieClipName = "";
+            this._isWarning = false;
         }
 
         public function get PCKey():String
@@ -96,6 +107,48 @@ package Shared.AS3
             if (this._strDynamicMovieClipName != param1)
             {
                 this._strDynamicMovieClipName = param1;
+                this.AnnounceDataChange();
+            }
+        }
+
+        public function get canHold():Boolean
+        {
+            return this.m_CanHold;
+        }
+
+        public function set canHold(param1:Boolean):void
+        {
+            if (this.m_CanHold != param1)
+            {
+                this.m_CanHold = param1;
+                this.AnnounceDataChange();
+            }
+        }
+
+        public function get holdPercent():Number
+        {
+            return this.m_HoldPercent;
+        }
+
+        public function set holdPercent(param1:Number):void
+        {
+            if (this.m_HoldPercent != param1)
+            {
+                this.m_HoldPercent = param1;
+                this.AnnounceDataChange();
+            }
+        }
+
+        public function get ignorePCKeyMapping():Boolean
+        {
+            return this.m_bIgnorePCKeyMapping;
+        }
+
+        public function set ignorePCKeyMapping(param1:Boolean):void
+        {
+            if (this.m_bIgnorePCKeyMapping != param1)
+            {
+                this.m_bIgnorePCKeyMapping = param1;
                 this.AnnounceDataChange();
             }
         }
@@ -193,6 +246,20 @@ package Shared.AS3
         public function get hasSecondaryButton():Boolean
         {
             return this._hasSecondaryButton;
+        }
+
+        public function get IsWarning():Boolean
+        {
+            return this._isWarning;
+        }
+
+        public function set IsWarning(param1:Boolean):void
+        {
+            if (this._isWarning != param1)
+            {
+                this._isWarning = param1;
+                this.AnnounceDataChange();
+            }
         }
 
         private function AnnounceDataChange():void

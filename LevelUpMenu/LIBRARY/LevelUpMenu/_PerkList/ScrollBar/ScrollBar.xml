@@ -1,28 +1,12 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="LevelUpMenu/_PerkList/ScrollBar/ScrollBar" itemID="5fa21c93-00001302" linkageExportForAS="true" linkageClassName="Shared.AS3.Option_Scrollbar" lastModified="1606971705">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="LevelUpMenu/_PerkList/ScrollBar/ScrollBar" itemID="5fa21c93-00001302" linkageExportForAS="true" linkageClassName="Shared.AS3.BSSlider" lastModified="1608525814">
   <timeline>
     <DOMTimeline name="ScrollBar">
       <layers>
-        <DOMLayer name="Track" color="#D3B46A" autoNamed="false">
+        <DOMLayer name="Marker" color="#5591E7" locked="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="LevelUpMenu/_PerkList/ScrollBar/ScrollBarTrack" name="Track_mc">
-                  <transformationPoint>
-                    <Point x="350" y="12.5"/>
-                  </transformationPoint>
-                  <color>
-                    <Color alphaMultiplier="0"/>
-                  </color>
-                </DOMSymbolInstance>
-              </elements>
-            </DOMFrame>
-          </frames>
-        </DOMLayer>
-        <DOMLayer name="Thumb" color="#5591E7" autoNamed="false">
-          <frames>
-            <DOMFrame index="0" keyMode="9728">
-              <elements>
-                <DOMSymbolInstance libraryItemName="LevelUpMenu/_PerkList/ScrollBar/ScrollBarThumb" name="Thumb_mc">
+                <DOMSymbolInstance libraryItemName="LevelUpMenu/_PerkList/ScrollBar/ScrollBarThumb" name="Marker_mc" selected="true">
                   <matrix>
                     <Matrix tx="550"/>
                   </matrix>
@@ -34,64 +18,23 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="BarCatcher" color="#FFB4AD" locked="true" autoNamed="false">
+        <DOMLayer name="ArrowLeft" color="#5BAF8B" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="LevelUpMenu/_PerkList/ScrollBar/ScrollBarCatcher" name="BarCatcher_mc">
+                <DOMSymbolInstance libraryItemName="LevelUpMenu/_PerkList/ScrollBar/ScrollBarArrow" name="LeftArrow_mc">
                   <matrix>
-                    <Matrix a="27.9999084472656"/>
+                    <Matrix a="-1" tx="-5" ty="13.5"/>
                   </matrix>
                   <transformationPoint>
-                    <Point x="12.5" y="12.5"/>
+                    <Point x="6.25"/>
                   </transformationPoint>
-                  <color>
-                    <Color alphaMultiplier="0"/>
-                  </color>
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="RightCatcher" color="#B1E53E" locked="true" autoNamed="false">
-          <frames>
-            <DOMFrame index="0" keyMode="9728">
-              <elements>
-                <DOMSymbolInstance libraryItemName="LevelUpMenu/_PerkList/ScrollBar/ScrollBarCatcher" name="RightCatcher_mc">
-                  <matrix>
-                    <Matrix tx="700"/>
-                  </matrix>
-                  <transformationPoint>
-                    <Point x="12.5" y="12.5"/>
-                  </transformationPoint>
-                  <color>
-                    <Color alphaMultiplier="0"/>
-                  </color>
-                </DOMSymbolInstance>
-              </elements>
-            </DOMFrame>
-          </frames>
-        </DOMLayer>
-        <DOMLayer name="LeftCatcher" color="#09E5A7" locked="true" autoNamed="false">
-          <frames>
-            <DOMFrame index="0" keyMode="9728">
-              <elements>
-                <DOMSymbolInstance libraryItemName="LevelUpMenu/_PerkList/ScrollBar/ScrollBarCatcher" name="LeftCatcher_mc">
-                  <matrix>
-                    <Matrix tx="-25"/>
-                  </matrix>
-                  <transformationPoint>
-                    <Point x="12.5" y="12.5"/>
-                  </transformationPoint>
-                  <color>
-                    <Color alphaMultiplier="0"/>
-                  </color>
-                </DOMSymbolInstance>
-              </elements>
-            </DOMFrame>
-          </frames>
-        </DOMLayer>
-        <DOMLayer name="RightArrow" color="#EBE61B" autoNamed="false">
+        <DOMLayer name="ArrowRight" color="#EBE61B" current="true" isSelected="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
@@ -107,16 +50,32 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="LeftArrow" color="#5BAF8B" current="true" isSelected="true" autoNamed="false">
+        <DOMLayer name="Fill" color="#FFB4AD" locked="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="LevelUpMenu/_PerkList/ScrollBar/ScrollBarArrow" name="LeftArrow_mc" selected="true">
+                <DOMSymbolInstance libraryItemName="LevelUpMenu/_PerkList/ScrollBar/ScrollBarCatcher" name="Fill_mc">
                   <matrix>
-                    <Matrix a="-1" tx="-5" ty="12.5"/>
+                    <Matrix a="27.9999084472656"/>
                   </matrix>
                   <transformationPoint>
-                    <Point x="6.25"/>
+                    <Point x="12.5" y="12.5"/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Background" color="#D3B46A" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="LevelUpMenu/_PerkList/ScrollBar/ScrollBarTrack" name="SliderBackground_mc">
+                  <transformationPoint>
+                    <Point x="350" y="12.5"/>
                   </transformationPoint>
                 </DOMSymbolInstance>
               </elements>

@@ -1,8 +1,8 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="PluginExplorer/_LeftPane/_Background/BackgroundTrim" itemID="5fddabfb-0000069a" lastModified="1608377121">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="PluginExplorer/_LeftPane/_Background/BackgroundTrim" itemID="5fddabfb-0000069a" lastModified="1608599356">
   <timeline>
     <DOMTimeline name="BackgroundTrim" layerDepthEnabled="true">
       <layers>
-        <DOMLayer name="Layer_3" color="#FF800A" current="true" isSelected="true">
+        <DOMLayer name="Layer_3" color="#FF800A">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
@@ -13,7 +13,7 @@
                     </FillStyle>
                   </fills>
                   <edges>
-                    <Edge fillStyle1="1" edges="!8940 0|9000 0!9000 0|9000 400!9000 400|8940 400!8940 400|8940 0"/>
+                    <Edge fillStyle1="1" edges="!9140 0|9200 0!9200 0|9200 400!9200 400|9140 400!9140 400|9140 0"/>
                   </edges>
                 </DOMShape>
               </elements>
@@ -38,18 +38,21 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Layer_1" color="#00FFFF">
+        <DOMLayer name="Layer_1" color="#00FFFF" current="true" isSelected="true">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMShape>
+                <DOMShape selected="true" isFloating="true">
+                  <matrix>
+                    <Matrix a="1.022216796875"/>
+                  </matrix>
                   <fills>
                     <FillStyle index="1">
                       <SolidColor color="#FFFFFF"/>
                     </FillStyle>
                   </fills>
                   <edges>
-                    <Edge fillStyle1="1" edges="!0 0|9000 0!9000 0|9000 60!9000 60|0 60!0 60|0 0"/>
+                    <Edge fillStyle1="1" edges="!0 0S2|9000 0!9000 0|9000 60!9000 60|0 60!0 60|0 0"/>
                   </edges>
                 </DOMShape>
               </elements>

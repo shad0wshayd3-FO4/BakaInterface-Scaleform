@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="LevelUpMenu/_PerkList/PerkList" itemID="5fa05523-0000038a" linkageExportForAS="true" linkageBaseClass="Shared.AS3.BSScrollingList" linkageClassName="Menu.LevelUpMenu.PerkList" lastModified="1604472038">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="LevelUpMenu/_PerkList/PerkList" itemID="5fa05523-0000038a" linkageExportForAS="true" linkageBaseClass="Shared.AS3.BSScrollingList" linkageClassName="Menu.LevelUpMenu.PerkList" lastModified="1608526639">
   <timeline>
     <DOMTimeline name="PerkList">
       <layers>
@@ -6,7 +6,7 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="LevelUpMenu/_PerkList/ScrollBar/ScrollBar" name="ScrollBar_mc" selected="true">
+                <DOMSymbolInstance libraryItemName="LevelUpMenu/_PerkList/ScrollBar/ScrollBar" name="Scrollbar">
                   <matrix>
                     <Matrix a="0" b="1" c="-1" d="0" tx="490" ty="25"/>
                   </matrix>

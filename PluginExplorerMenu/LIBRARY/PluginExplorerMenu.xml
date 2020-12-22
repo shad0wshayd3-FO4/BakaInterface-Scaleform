@@ -1,21 +1,14 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="PluginExplorerMenu" itemID="5fdda179-00000153" linkageExportForAS="true" linkageBaseClass="Shared.IMenu" linkageClassName="PluginExplorerMenu" lastModified="1608384570">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="PluginExplorerMenu" itemID="5fdda179-00000153" linkageExportForAS="true" linkageBaseClass="Shared.IMenu" linkageClassName="PluginExplorerMenu" lastModified="1608617761">
   <timeline>
     <DOMTimeline name="PluginExplorerMenu" layerDepthEnabled="true">
       <layers>
-        <DOMLayer name="Layer_6" color="#FF0000">
-          <frames>
-            <DOMFrame index="0" keyMode="9728">
-              <elements/>
-            </DOMFrame>
-          </frames>
-        </DOMLayer>
-        <DOMLayer name="Layer_8" color="#FF4F4F" current="true" isSelected="true">
+        <DOMLayer name="CategoryBar" color="#FF4F4F" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="PluginExplorer/_TopPane/LabelSelector" name="CategoryBar_mc">
                   <matrix>
-                    <Matrix tx="570" ty="70"/>
+                    <Matrix tx="100" ty="70"/>
                   </matrix>
                   <transformationPoint>
                     <Point x="625" y="25"/>
@@ -25,10 +18,19 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="TopPane" color="#669900" autoNamed="false">
+        <DOMLayer name="ItemCard" color="#FF4FFF" current="true" isSelected="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
-              <elements/>
+              <elements>
+                <DOMSymbolInstance libraryItemName="_Shared/ItemCard/ItemCard" name="ItemCard_mc">
+                  <matrix>
+                    <Matrix tx="1780" ty="900"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
             </DOMFrame>
           </frames>
         </DOMLayer>
@@ -38,7 +40,7 @@
               <elements>
                 <DOMSymbolInstance libraryItemName="PluginExplorer/_LeftPane/_PluginList/PluginList" name="PluginList_mc">
                   <matrix>
-                    <Matrix tx="105" ty="155"/>
+                    <Matrix tx="110" ty="160"/>
                   </matrix>
                   <transformationPoint>
                     <Point x="244.35" y="375"/>
@@ -48,11 +50,27 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="LeftPane" color="#9933CC" autoNamed="false">
+        <DOMLayer name="PluginSearch" color="#9933CC" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="PluginExplorer/_LeftPane/LeftPane" name="LeftPane_mc">
+                <DOMSymbolInstance libraryItemName="PluginExplorer/_LeftPane/_Search/PluginListSearch" name="PluginSearch_mc" hasAccessibleData="true">
+                  <matrix>
+                    <Matrix tx="110" ty="860"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="260" y="22.5"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="LeftPane" color="#9933CC" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="PluginExplorer/_LeftPane/LeftPane" name="LeftPane_mc" selected="true">
                   <matrix>
                     <Matrix tx="100" ty="130"/>
                   </matrix>
@@ -70,7 +88,7 @@
               <elements>
                 <DOMSymbolInstance libraryItemName="PluginExplorer/_RightPane/_ItemList/ItemList" name="ItemList_mc">
                   <matrix>
-                    <Matrix tx="575" ty="155"/>
+                    <Matrix tx="580" ty="160"/>
                   </matrix>
                   <transformationPoint>
                     <Point x="344.35" y="375"/>
@@ -80,11 +98,27 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="RightPane" color="#FF800A" autoNamed="false">
+        <DOMLayer name="ItemSearch" color="#FF800A" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="PluginExplorer/_RightPane/RightPane" name="RightPane_mc">
+                <DOMSymbolInstance libraryItemName="PluginExplorer/_RightPane/_Search/ItemListSearch" name="ItemSearch_mc" hasAccessibleData="true">
+                  <matrix>
+                    <Matrix tx="580" ty="860"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="217.5" y="22.5"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="RightPane" color="#FF800A" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="PluginExplorer/_RightPane/RightPane" name="RightPane_mc" selected="true">
                   <matrix>
                     <Matrix tx="570" ty="130"/>
                   </matrix>

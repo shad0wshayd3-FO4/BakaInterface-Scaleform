@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="LevelUpMenu/LevelUpMenu" itemID="5f97d64a-000006ae" linkageExportForAS="true" linkageClassName="LevelUpMenu" lastModified="1608362844" lastUniqueIdentifier="5">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="LevelUpMenu/LevelUpMenu" itemID="5f97d64a-000006ae" linkageExportForAS="true" linkageClassName="LevelUpMenu" lastModified="1608605435" lastUniqueIdentifier="5">
   <timeline>
     <DOMTimeline name="LevelUpMenu">
       <layers>
@@ -6,7 +6,7 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="LevelUpMenu/_PerkList/PerkList" name="PerkList_mc">
+                <DOMSymbolInstance libraryItemName="LevelUpMenu/_PerkList/PerkList" name="PerkList_mc" selected="true">
                   <matrix>
                     <Matrix tx="260" ty="100"/>
                   </matrix>
@@ -18,11 +18,11 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Search" color="#9933CC" locked="true" autoNamed="false">
+        <DOMLayer name="Search" color="#9933CC" current="true" isSelected="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="LevelUpMenu/_Search/SearchBox" name="SearchBox_mc">
+                <DOMSymbolInstance libraryItemName="LevelUpMenu/_Search/SearchBox" name="SearchBox_mc" selected="true">
                   <matrix>
                     <Matrix tx="260" ty="855"/>
                   </matrix>
@@ -174,11 +174,11 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Background" color="#FF800A" current="true" isSelected="true" autoNamed="false">
+        <DOMLayer name="Background" color="#FF800A" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="LevelUpMenu/_Background/Background" name="Background_mc" selected="true">
+                <DOMSymbolInstance libraryItemName="LevelUpMenu/_Background/Background" name="Background_mc">
                   <matrix>
                     <Matrix tx="210" ty="75"/>
                   </matrix>
@@ -194,7 +194,7 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="BSButtonHintBar/BSButtonHintBar" name="ButtonHintBar_mc">
+                <DOMSymbolInstance libraryItemName="_Shared/BSButtonHintBar/BSButtonHintBar" name="ButtonHintBar_mc">
                   <matrix>
                     <Matrix tx="960" ty="980"/>
                   </matrix>

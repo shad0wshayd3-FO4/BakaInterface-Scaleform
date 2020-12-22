@@ -1,35 +1,43 @@
 <DOMDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" backgroundColor="#00FFFF" width="1920" height="1080" frameRate="30" currentTimeline="1" xflVersion="2.971" creatorInfo="Adobe Animate" platform="Windows" versionInfo="Saved by Animate Windows 19.2 build 408" majorVersion="19" minorVersion="2" buildNumber="408" viewAngle3D="75.9690363138218" vanishingPoint3DX="960" vanishingPoint3DY="540" nextSceneIdentifier="2" playOptionsPlayLoop="false" playOptionsPlayPages="false" playOptionsPlayFrameActions="false" autoSaveHasPrompted="true" filetypeGUID="DD0DDBBF-5BEF-45B2-9F24-A3048D2A676F" fileGUID="49A9FE7289F9E04699BF33734138295C">
      <folders>
-          <DOMFolderItem name="_Fonts" itemID="5f97a2fc-00000035"/>
-          <DOMFolderItem name="BSButtonHintBar" itemID="5f97d0b6-00000614"/>
+          <DOMFolderItem name="_Shared" itemID="5fc8556c-0000031d" isExpanded="true"/>
+          <DOMFolderItem name="_Shared/_Fonts" itemID="5fe01395-00000538"/>
+          <DOMFolderItem name="_Shared/BSButtonHintBar" itemID="5fe013bf-0000060c" isExpanded="true"/>
           <DOMFolderItem name="LevelUpMenu" itemID="5f97d0f8-0000067b" isExpanded="true"/>
-          <DOMFolderItem name="LevelUpMenu/_Background" itemID="5fa054fb-00000385" isExpanded="true"/>
+          <DOMFolderItem name="LevelUpMenu/_Background" itemID="5fa054fb-00000385"/>
           <DOMFolderItem name="LevelUpMenu/_PerkList" itemID="5fa05578-00000393" isExpanded="true"/>
-          <DOMFolderItem name="LevelUpMenu/_PerkList/ScrollBar" itemID="5fa226ee-0000150f"/>
+          <DOMFolderItem name="LevelUpMenu/_PerkList/ScrollBar" itemID="5fa226ee-0000150f" isExpanded="true"/>
           <DOMFolderItem name="LevelUpMenu/_PerkListEntry" itemID="5fa05583-00000399" isExpanded="true"/>
-          <DOMFolderItem name="LevelUpMenu/_RankStar" itemID="5fa71e36-00000777" isExpanded="true"/>
-          <DOMFolderItem name="LevelUpMenu/_Search" itemID="5fa1d3d6-000006da" isExpanded="true"/>
+          <DOMFolderItem name="LevelUpMenu/_RankStar" itemID="5fa71e36-00000777"/>
+          <DOMFolderItem name="LevelUpMenu/_Search" itemID="5fa1d3d6-000006da"/>
      </folders>
      <fonts>
-          <DOMFontItem name="_Fonts/$Controller_Buttons_inverted" itemID="5f97a2f3-0000002b" linkageImportForRS="true" linkageExportInFirstFrame="false" linkageClassName="$Controller_Buttons_inverted" linkageURL="fonts_en.swf" font="ControllerButtons-Bold" size="0" id="1" sourceLastImported="1603773171" embedRanges="9999"/>
-          <DOMFontItem name="_Fonts/$MAIN_Font_Bold" itemID="5f97a2f3-00000025" linkageImportForRS="true" linkageExportInFirstFrame="false" linkageClassName="$MAIN_Font_Bold" linkageURL="fonts_en.swf" font="RobotoCondensed-Bold" size="0" id="2" sourceLastImported="1603773171" embedRanges="9999"/>
-          <DOMFontItem name="_Fonts/$MAIN_Font" itemID="5f97d6c7-000006c1" linkageImportForRS="true" linkageExportInFirstFrame="false" linkageClassName="$MAIN_Font" linkageURL="fonts_en.swf" font="RobotoCondensed-Regular" size="0" id="3" sourceLastImported="1603786439" embedRanges="9999"/>
+          <DOMFontItem name="_Shared/_Fonts/$Terminal_Font" itemID="5f97a2f3-00000027" linkageImportForRS="true" linkageExportInFirstFrame="false" linkageClassName="$Terminal_Font" linkageURL="fonts_en.swf" font="ShareTechMono" size="0" id="10" sourceLastImported="1603773171" embedRanges="9999"/>
+          <DOMFontItem name="_Shared/_Fonts/$MAIN_Font" itemID="5f97a2f3-00000023" linkageImportForRS="true" linkageExportInFirstFrame="false" linkageClassName="$MAIN_Font" linkageURL="fonts_en.swf" font="RobotoCondensed-Regular" size="0" id="9" sourceLastImported="1603773171" embedRanges="9999"/>
+          <DOMFontItem name="_Shared/_Fonts/$HandwrittenFont" itemID="5f97a12b-0000001b" linkageImportForRS="true" linkageExportInFirstFrame="false" linkageClassName="$HandwrittenFont" linkageURL="fonts_en.swf" font="Handwritten-Fallout4" size="0" id="8" sourceLastImported="1603772715" embeddedCharacters=" &#xD;¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿĀāĂăĄąĆćĈĉĊċČčĎďĐđĒēĔĕĖėĘęĚěĜĝĞğĠġĢģĤĥĦħĨĩĪīĬĭĮįİıĲĳĴĵĶķĸĹĺĻļĽľĿŀŁłŃńŅņŇňŉŊŋŌōŎŏŐőŒœŔŕŖŗŘřŚśŜŝŞşŠšŢţŤťŦŧŨũŪūŬŭŮůŰűŲųŴŵŶŷŸŹźŻżŽžſƒƠơƯưǰǺǻǼǽǾǿȘșȚțȷˆˇˉ˘˙˚˛˜˝΄΅Ά·ΈΉΊΌΎΏΐΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩΪΫάέήίΰαβγδεζηθικλμνξοπρςστυφχψωϊϋόύώϑϒϖЀЁЂЃЄЅІЇЈЉЊЋЌЍЎЏАБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдежзийклмнопрстуфхцчшщъыьэюяѐёђѓєѕіїјљњћќѝўџѠѡѢѣѤѥѦѧѨѩѪѫѬѭѮѯѰѱѲѳѴѵѶѷѸѹѺѻѼѽѾѿҀҁ҂҃҄҅҆҈҉ҊҋҌҍҎҏҐґҒғҔҕҖҗҘҙҚқҜҝҞҟҠҡҢңҤҥҦҧҨҩҪҫҬҭҮүҰұҲҳҴҵҶҷҸҹҺһҼҽҾҿӀӁӂӃӄӅӆӇӈӉӊӋӌӍӎḀḁḾḿẀẁẂẃẄẅẠạẢảẤấẦầẨẩẪẫẬậẮắẰằẲẳẴẵẶặẸẹẺẻẼẽẾếỀềỂểỄễỆệỈỉỊịỌọỎỏỐốỒồỔổỖỗỘộỚớỜờỞởỠỡỢợỤụỦủỨứỪừỬửỮữỰựỲỳỴỵỶỷỸỹὍ           ​–—―‗‘’‚‛“”„†‡•‥…‰′″‹›‼⁄⁴ⁿ₣₤₧₫€℅ℓ№™Ω℮⅛⅜⅝⅞∂∏∑√∞∫≠≤≥﻿￼" embedRanges="9999|1|2|3|4|5"/>
+          <DOMFontItem name="_Shared/_Fonts/$Controller_Buttons" itemID="5f97a2f3-00000029" linkageImportForRS="true" linkageExportInFirstFrame="false" linkageClassName="$Controller_Buttons" linkageURL="fonts_en.swf" font="ControllerButtons-Regular" size="0" id="7" sourceLastImported="1603773171" embedRanges="9999"/>
+          <DOMFontItem name="_Shared/_Fonts/$CClub_Font_Bold" itemID="5f97a2f3-00000031" linkageImportForRS="true" linkageExportInFirstFrame="false" linkageClassName="$CClub_Font_Bold" linkageURL="fonts_en.swf" font="CreationClub-Bold" size="0" id="6" sourceLastImported="1603773171" embedRanges="9999"/>
+          <DOMFontItem name="_Shared/_Fonts/$CClub_Font" itemID="5f97a2f3-0000002f" linkageImportForRS="true" linkageExportInFirstFrame="false" linkageClassName="$CClub_Font" linkageURL="fonts_en.swf" font="CreationClub-Regular" size="0" id="5" sourceLastImported="1603773171" embedRanges="9999"/>
+          <DOMFontItem name="_Shared/_Fonts/$BRODY" itemID="5f97a2f3-0000002d" linkageImportForRS="true" linkageExportInFirstFrame="false" linkageClassName="$BRODY" linkageURL="fonts_en.swf" font="Brody" size="0" id="4" sourceLastImported="1603773171" embedRanges="9999"/>
+          <DOMFontItem name="_Shared/_Fonts/$MAIN_Font_Bold" itemID="5f97a2f3-00000025" linkageImportForRS="true" linkageExportInFirstFrame="false" linkageClassName="$MAIN_Font_Bold" linkageURL="fonts_en.swf" font="RobotoCondensed-Bold" size="0" id="2" sourceLastImported="1603773171" embedRanges="9999"/>
+          <DOMFontItem name="_Shared/_Fonts/$Controller_Buttons_inverted" itemID="5f97a2f3-0000002b" linkageImportForRS="true" linkageExportInFirstFrame="false" linkageClassName="$Controller_Buttons_inverted" linkageURL="fonts_en.swf" font="ControllerButtons-Bold" size="0" id="1" sourceLastImported="1603773171" embedRanges="9999"/>
      </fonts>
      <symbols>
-          <Include href="BSButtonHintBar/BSButtonHint.xml" itemID="5f97d0b6-000005ed" lastModified="1603781750"/>
-          <Include href="BSButtonHintBar/BSButtonHintBar.xml" itemID="5f97d0d7-00000670" lastModified="1603781809"/>
-          <Include href="BSButtonHintBar/BSButtonHintIcon.xml" loadImmediate="false" itemID="5f97b5ad-00000047" lastModified="1603781761"/>
-          <Include href="BSButtonHintBar/BSButtonHintIconHolder.xml" itemID="5f97b590-00000043" lastModified="1603778123"/>
-          <Include href="BSButtonHintBar/ButtonHintBracketL.xml" loadImmediate="false" itemID="5f97b5a4-00000046" lastModified="1603781718"/>
-          <Include href="BSButtonHintBar/ButtonHintBracketR.xml" loadImmediate="false" itemID="5f97b5a0-00000045" lastModified="1603781729"/>
+          <Include href="_Shared/BSButtonHintBar/BSButtonHint.xml" itemID="5f97b58a-00000042" lastModified="1608521139"/>
+          <Include href="_Shared/BSButtonHintBar/BSButtonHintBar.xml" itemID="5f97b598-00000044" lastModified="1608562526"/>
+          <Include href="_Shared/BSButtonHintBar/HintBarBracket.xml" itemID="5fe0b763-00001692" lastModified="1608520104"/>
+          <Include href="_Shared/BSButtonHintBar/IconHolder.xml" itemID="5fe011fb-000001c3" lastModified="1608520187"/>
+          <Include href="_Shared/BSButtonHintBar/IconHolderBase.xml" itemID="5fe011f8-000001c2" lastModified="1608520184"/>
+          <Include href="_Shared/BSButtonHintBar/Sizer.xml" itemID="5fe01213-000001c5" lastModified="1608562511"/>
+          <Include href="_Shared/BSButtonHintBar/SizerBase.xml" itemID="5fe050d7-0000118f" lastModified="1608536279"/>
           <Include href="LevelUpMenu/_Background/Background.xml" loadImmediate="false" itemID="5fa04f26-00000373" lastModified="1608362842"/>
           <Include href="LevelUpMenu/_Background/BackgroundBase.xml" loadImmediate="false" itemID="5fa106ed-0000019e" lastModified="1604388589"/>
           <Include href="LevelUpMenu/_Background/BorderBase.xml" loadImmediate="false" itemID="5fa1061f-00000199" lastModified="1604792501"/>
           <Include href="LevelUpMenu/_Background/BorderTrim.xml" loadImmediate="false" itemID="5fa72da0-00000a74" lastModified="1604792360"/>
           <Include href="LevelUpMenu/_Background/VTIcon.xml" loadImmediate="false" itemID="5fa626a8-000001ef" lastModified="1604724937"/>
-          <Include href="LevelUpMenu/_PerkList/PerkList.xml" itemID="5fa05523-0000038a" lastModified="1604472038"/>
-          <Include href="LevelUpMenu/_PerkList/PerkListBorder.xml" loadImmediate="false" itemID="5fa056a9-0000046c" lastModified="1604451248"/>
-          <Include href="LevelUpMenu/_PerkList/ScrollBar/ScrollBar.xml" itemID="5fa21c93-00001302" lastModified="1606971705"/>
+          <Include href="LevelUpMenu/_PerkList/PerkList.xml" itemID="5fa05523-0000038a" lastModified="1608526639"/>
+          <Include href="LevelUpMenu/_PerkList/PerkListBorder.xml" loadImmediate="false" itemID="5fa056a9-0000046c" lastModified="1608529475"/>
+          <Include href="LevelUpMenu/_PerkList/ScrollBar/ScrollBar.xml" itemID="5fa21c93-00001302" lastModified="1608525814"/>
           <Include href="LevelUpMenu/_PerkList/ScrollBar/ScrollBarArrow.xml" loadImmediate="false" itemID="5fa21cdc-0000130a" lastModified="1604460420"/>
           <Include href="LevelUpMenu/_PerkList/ScrollBar/ScrollBarCatcher.xml" loadImmediate="false" itemID="5fa21ce4-0000130b" lastModified="1604459911"/>
           <Include href="LevelUpMenu/_PerkList/ScrollBar/ScrollBarThumb.xml" loadImmediate="false" itemID="5fa21fe2-00001380" lastModified="1604467865"/>
@@ -44,7 +52,7 @@
           <Include href="LevelUpMenu/_Search/SearchBox.xml" itemID="5fa1d3e0-000006dc" lastModified="1604471846"/>
           <Include href="LevelUpMenu/_Search/SearchBoxBackground.xml" loadImmediate="false" itemID="5fa1d4f6-0000072a" lastModified="1604441751"/>
           <Include href="LevelUpMenu/_Search/SearchBoxBorder.xml" loadImmediate="false" itemID="5fa1d587-00000738" lastModified="1604441625"/>
-          <Include href="LevelUpMenu/LevelUpMenu.xml" itemID="5f97d64a-000006ae" lastModified="1608362844"/>
+          <Include href="LevelUpMenu/LevelUpMenu.xml" itemID="5f97d64a-000006ae" lastModified="1608605435"/>
           <Include href="LevelUpMenu/MCHolder.xml" loadImmediate="false" itemID="5fa72088-000007d4" lastModified="1604788360"/>
      </symbols>
      <timelines>
@@ -69,25 +77,25 @@
      <scripts/>
      <PrinterSettings/>
      <publishHistory>
-          <PublishItem publishSize="28595" publishTime="1608359927"/>
-          <PublishItem publishSize="28595" publishTime="1608359598"/>
-          <PublishItem publishSize="28653" publishTime="1608359197"/>
-          <PublishItem publishSize="28653" publishTime="1608358724"/>
-          <PublishItem publishSize="28653" publishTime="1608358714"/>
-          <PublishItem publishSize="28652" publishTime="1608358591"/>
-          <PublishItem publishSize="28594" publishTime="1608358476"/>
-          <PublishItem publishSize="28587" publishTime="1608358408"/>
-          <PublishItem publishSize="28604" publishTime="1608358388"/>
-          <PublishItem publishSize="28602" publishTime="1608358042"/>
-          <PublishItem publishSize="28602" publishTime="1608357978"/>
-          <PublishItem publishSize="28584" publishTime="1608357096"/>
-          <PublishItem publishSize="28561" publishTime="1608356984"/>
-          <PublishItem publishSize="28555" publishTime="1608356695"/>
-          <PublishItem publishSize="28553" publishTime="1608356541"/>
-          <PublishItem publishSize="28553" publishTime="1608356437"/>
-          <PublishItem publishSize="28552" publishTime="1608356098"/>
-          <PublishItem publishSize="28552" publishTime="1608356068"/>
-          <PublishItem publishSize="28483" publishTime="1608355255"/>
-          <PublishItem publishSize="28472" publishTime="1606957908"/>
+          <PublishItem publishSize="39390" publishTime="1608562246"/>
+          <PublishItem publishSize="39472" publishTime="1608552570"/>
+          <PublishItem publishSize="39455" publishTime="1608536353"/>
+          <PublishItem publishSize="39454" publishTime="1608534010"/>
+          <PublishItem publishSize="39420" publishTime="1608528619"/>
+          <PublishItem publishSize="39432" publishTime="1608528312"/>
+          <PublishItem publishSize="39433" publishTime="1608527953"/>
+          <PublishItem publishSize="39195" publishTime="1608527554"/>
+          <PublishItem publishSize="39189" publishTime="1608527194"/>
+          <PublishItem publishSize="2508" publishTime="1608527164"/>
+          <PublishItem publishSize="39186" publishTime="1608526769"/>
+          <PublishItem publishSize="39194" publishTime="1608526681"/>
+          <PublishItem publishSize="2508" publishTime="1608526646"/>
+          <PublishItem publishSize="38893" publishTime="1608525827"/>
+          <PublishItem publishSize="36579" publishTime="1608525566"/>
+          <PublishItem publishSize="36523" publishTime="1608524579"/>
+          <PublishItem publishSize="36514" publishTime="1608524455"/>
+          <PublishItem publishSize="36505" publishTime="1608524307"/>
+          <PublishItem publishSize="36568" publishTime="1608524088"/>
+          <PublishItem publishSize="36402" publishTime="1608523653"/>
      </publishHistory>
 </DOMDocument>

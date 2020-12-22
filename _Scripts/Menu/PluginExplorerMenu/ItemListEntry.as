@@ -1,10 +1,10 @@
 ﻿package Menu.PluginExplorerMenu
 {
     import flash.text.TextField;
-    import Shared.AS3.BSScrollingScrollListEntry;
+    import Shared.AS3.BSScrollingListEntry;
     import Shared.GlobalFunc;
 
-    public class ItemListEntry extends BSScrollingScrollListEntry
+    public class ItemListEntry extends BSScrollingListEntry
     {
         public var FormID_tf:TextField;
 

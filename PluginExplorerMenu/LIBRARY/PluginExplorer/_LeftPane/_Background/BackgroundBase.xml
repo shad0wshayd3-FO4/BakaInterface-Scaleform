@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="PluginExplorer/_LeftPane/_Background/BackgroundBase" itemID="5fddab21-000005f5" lastModified="1608377106">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="PluginExplorer/_LeftPane/_Background/BackgroundBase" itemID="5fddab21-000005f5" lastModified="1608599343">
   <timeline>
     <DOMTimeline name="BackgroundBase" layerDepthEnabled="true">
       <layers>
@@ -8,7 +8,7 @@
               <elements>
                 <DOMShape selected="true" isFloating="true">
                   <matrix>
-                    <Matrix a="1.125" d="1.14285278320312"/>
+                    <Matrix a="1.14999389648438" d="1.14285278320312"/>
                   </matrix>
                   <fills>
                     <FillStyle index="1">

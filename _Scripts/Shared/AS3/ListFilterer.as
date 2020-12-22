@@ -1,4 +1,4 @@
-﻿package Shared.AS3
+package Shared.AS3
 {
     import flash.events.Event;
     import flash.events.EventDispatcher;
@@ -8,16 +8,13 @@
         public static const FILTER_CHANGE:String = "ListFilterer::filter_change";
 
         private var iItemFilter:int;
+
         private var _filterArray:Array;
-        private var _filterCount:uint;
-        private var _countUpdated:Boolean;
 
         public function ListFilterer()
         {
             super();
             this.iItemFilter = 4294967295;
-            this._countUpdated = false;
-            this._filterCount = 0;
         }
 
         public function get itemFilter():int
@@ -25,12 +22,12 @@
             return this.iItemFilter;
         }
 
-        public function set itemFilter(aiNewFilter:int):*
+        public function set itemFilter(param1:int):*
         {
-            if (this.iItemFilter != aiNewFilter)
+            var _loc2_:* = this.iItemFilter != param1;
+            this.iItemFilter = param1;
+            if (_loc2_ == true)
             {
-                this.iItemFilter = aiNewFilter;
-                this._countUpdated = false;
                 dispatchEvent(new Event(FILTER_CHANGE, true, true));
             }
         }
@@ -40,111 +37,107 @@
             return this._filterArray;
         }
 
-        public function set filterArray(aNewArray:Array):*
+        public function set filterArray(param1:Array):*
         {
-            this._countUpdated = false;
-            this._filterArray = aNewArray;
+            this._filterArray = param1;
         }
 
-        public function GetFilterCount():uint
+        public function EntryMatchesFilter(param1:Object):Boolean
         {
-            if (!this._countUpdated)
+            return param1 != null && (!param1.hasOwnProperty("filterFlag") || (param1.filterFlag & this.iItemFilter) != 0);
+        }
+
+        public function GetPrevFilterMatch(param1:int):int
+        {
+            var _loc3_:int = 0;
+            var _loc2_:int = int.MAX_VALUE;
+            if (param1 != int.MAX_VALUE && this._filterArray != null)
             {
-                this._filterCount = 0;
-                for (var i:uint = 0; i < this._filterArray.length; i++)
+                _loc3_ = param1 - 1;
+                while (_loc3_ >= 0 && _loc2_ == int.MAX_VALUE)
                 {
-                    if (this.EntryMatchesFilter(this._filterArray[i]))
+                    if (this.EntryMatchesFilter(this._filterArray[_loc3_]))
                     {
-                        this._filterCount++;
+                        _loc2_ = _loc3_;
                     }
-                }
-
-                this._countUpdated = true;
-            }
-
-            return this._filterCount;
-        }
-
-        public function EntryMatchesFilter(aEntry:Object):Boolean
-        {
-            return aEntry != null && (!aEntry.hasOwnProperty("filterFlag") || (aEntry.filterFlag & this.iItemFilter) != 0);
-        }
-
-        public function GetPrevFilterMatch(aiStartIndex:int):int
-        {
-            var ientry:int = 0;
-            var imatchIndex:int = int.MAX_VALUE;
-            if (aiStartIndex != int.MAX_VALUE && this._filterArray != null)
-            {
-                ientry = aiStartIndex - 1;
-                while (ientry >= 0 && imatchIndex == int.MAX_VALUE)
-                {
-                    if (this.EntryMatchesFilter(this._filterArray[ientry]))
-                    {
-                        imatchIndex = ientry;
-                    }
-                    ientry--;
+                    _loc3_--;
                 }
             }
-            return imatchIndex;
+            return _loc2_;
         }
 
-        public function GetNextFilterMatch(aiStartIndex:int):int
+        public function GetNextFilterMatch(param1:int):int
         {
-            var ientry:int = 0;
-            var imatchIndex:int = int.MAX_VALUE;
-            if (aiStartIndex != int.MAX_VALUE && this._filterArray != null)
+            var _loc3_:int = 0;
+            var _loc2_:int = int.MAX_VALUE;
+            if (param1 != int.MAX_VALUE && this._filterArray != null)
             {
-                ientry = aiStartIndex + 1;
-                while (ientry < this._filterArray.length && imatchIndex == int.MAX_VALUE)
+                _loc3_ = param1 + 1;
+                while (_loc3_ < this._filterArray.length && _loc2_ == int.MAX_VALUE)
                 {
-                    if (this.EntryMatchesFilter(this._filterArray[ientry]))
+                    if (this.EntryMatchesFilter(this._filterArray[_loc3_]))
                     {
-                        imatchIndex = ientry;
+                        _loc2_ = _loc3_;
                     }
-                    ientry++;
+                    _loc3_++;
                 }
             }
-            return imatchIndex;
+            return _loc2_;
         }
 
-        public function ClampIndex(aiStartIndex:int):int
+        public function FindArrayIndexOfFilteredPosition(param1:int):int
         {
-            var inextIndex:int = 0;
-            var iprevIndex:int = 0;
-            var ireturnVal:* = aiStartIndex;
-            if (aiStartIndex != int.MAX_VALUE && this._filterArray != null && !this.EntryMatchesFilter(this._filterArray[ireturnVal]))
+            var _loc2_:Number = this.ClampIndex(0);
+            while (param1 > 0 && _loc2_ != int.MAX_VALUE)
             {
-                inextIndex = this.GetNextFilterMatch(ireturnVal);
-                iprevIndex = this.GetPrevFilterMatch(ireturnVal);
-                if (inextIndex != int.MAX_VALUE)
+                _loc2_ = this.GetNextFilterMatch(_loc2_);
+                param1--;
+            }
+            return _loc2_;
+        }
+
+        public function ClampIndex(param1:int):int
+        {
+            var _loc3_:int = 0;
+            var _loc4_:int = 0;
+            var _loc2_:* = param1;
+            if (param1 != int.MAX_VALUE && this._filterArray != null && !this.EntryMatchesFilter(this._filterArray[_loc2_]))
+            {
+                _loc3_ = this.GetNextFilterMatch(_loc2_);
+                _loc4_ = this.GetPrevFilterMatch(_loc2_);
+                if (_loc3_ != int.MAX_VALUE)
                 {
-                    ireturnVal = inextIndex;
+                    _loc2_ = _loc3_;
                 }
-                else if (iprevIndex != int.MAX_VALUE)
+                else if (_loc4_ != int.MAX_VALUE)
                 {
-                    ireturnVal = iprevIndex;
+                    _loc2_ = _loc4_;
                 }
                 else
                 {
-                    ireturnVal = int.MAX_VALUE;
+                    _loc2_ = int.MAX_VALUE;
                 }
-                if (inextIndex != int.MAX_VALUE && iprevIndex != int.MAX_VALUE && iprevIndex != inextIndex && ireturnVal == inextIndex && this._filterArray[iprevIndex].text == this._filterArray[aiStartIndex].text)
+                if (_loc3_ != int.MAX_VALUE && _loc4_ != int.MAX_VALUE && _loc4_ != _loc3_ && _loc2_ == _loc3_ && this._filterArray[_loc4_].text == this._filterArray[param1].text)
                 {
-                    ireturnVal = iprevIndex;
+                    _loc2_ = _loc4_;
                 }
             }
-            return ireturnVal;
+            return _loc2_;
         }
 
-        public function IsFilterEmpty(aiFilter:int):Boolean
+        public function IsFilterEmpty(param1:int):Boolean
         {
-            var bresult:* = false;
-            var iprevFilter:int = this.iItemFilter;
-            this.iItemFilter = aiFilter;
-            bresult = this.ClampIndex(0) == int.MAX_VALUE;
-            this.iItemFilter = iprevFilter;
-            return bresult;
+            var _loc3_:* = false;
+            var _loc2_:int = this.iItemFilter;
+            this.iItemFilter = param1;
+            _loc3_ = this.ClampIndex(0) == int.MAX_VALUE;
+            this.iItemFilter = _loc2_;
+            return _loc3_;
+        }
+
+        public function IsValidIndex(param1:int):Boolean
+        {
+            return param1 != int.MAX_VALUE && this._filterArray != null && this.EntryMatchesFilter(this._filterArray[param1]);
         }
     }
 }

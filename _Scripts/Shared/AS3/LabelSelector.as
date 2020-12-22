@@ -1,98 +1,55 @@
 ﻿package Shared.AS3
 {
     import flash.display.MovieClip;
-    import flash.events.Event;
     import flash.events.MouseEvent;
     import flash.text.TextField;
     import flash.utils.getDefinitionByName;
+    import Shared.AS3.BGSExternalInterface;
     import Shared.AS3.BSButtonHintBar;
     import Shared.AS3.BSButtonHintData;
     import Shared.AS3.BSUIComponent;
-    import Shared.CustomEvent;
+    import Shared.AS3.Events.CustomEvent;
     import Shared.GlobalFunc;
 
     public class LabelSelector extends BSUIComponent
     {
-
         public static const LABEL_SELECTED_EVENT:String = "LabelSelectedEvent";
-
         public static const LABEL_MOUSE_SELECTION_EVENT:String = "LabelMouseSelectionEvent";
-
         public static const LABEL_SELECTOR_FINALIZED_EVENT:String = "LabelSelectorFinalizedEvent";
 
-
         public var Slider_mc:MovieClip;
-
         public var Selector_mc:MovieClip;
-
         public var SelectorGray_mc:MovieClip;
-
         public var ButtonLeft_mc:BSButtonHintBar;
-
         public var ButtonRight_mc:BSButtonHintBar;
-
-        public var ArrowLeftKeyboard_tf:TextField;
-
-        public var ArrowRightKeyboard_tf:TextField;
-
-        public var ArrowLeftConsole_tf:TextField;
-
-        public var ArrowRightConsole_tf:TextField;
-
         public var BGSCodeObj:Object;
-
         public var BackerBar_mc:MovieClip;
 
         private var LabelsA:Vector.<LabelItem>;
-
         private var LeftIndex:int = 0;
-
         private var SelectedIndex:uint = 4.294967295E9;
-
         private var LabelClass:Class;
-
         private var TotalWidth:Number = 0.0;
-
         private var MaxDisplayWidth:Number = 0.0;
-
         private var m_MaxVisible:uint = 9;
-
         private var ButtonHintDataLeftV:Vector.<BSButtonHintData>;
-
         private var ButtonHintDataRightV:Vector.<BSButtonHintData>;
-
         private var LBButtonData:BSButtonHintData;
-
         private var RBButtonData:BSButtonHintData;
-
         private var LastSliderX = 0;
-
         private var TargetSliderX = 0;
-
         private var LastSelectorX = 0;
-
         private var TargetSelectorX = 0;
-
         private var AnimationFramesLeftSelector:Number = 0;
-
         private var AnimationFramesLeftSlider:Number = 0;
-
         private var m_LabelWidthScale:Number = 1;
-
         private var m_ForceUppercase:Boolean = true;
-
         private var MaxStringWidth = 0;
-
         private var ShowDirectionalArrows:Boolean = true;
-
         private var Enabled = true;
-
         private var FoundSelection:Boolean = false;
-
         private const AnimFrameCount:Number = 5;
-
         private var AnimFrameMoveAmount:Array;
-
         private var m_CenterPointOffset:Number = 640;
 
         public function LabelSelector()
@@ -400,7 +357,7 @@
                         this.SetSelection(_loc2_, true, param1);
                         if (this.BGSCodeObj != null)
                         {
-                            this.BGSCodeObj.PlaySound("UIWorkshopModeMenuCategoryLeft");
+                            BGSExternalInterface.call(this.BGSCodeObj, "PlaySound", "UIWorkshopModeMenuCategoryLeft");
                         }
                         break;
                     }
@@ -423,7 +380,7 @@
                         this.SetSelection(_loc3_, true, param1);
                         if (this.BGSCodeObj != null)
                         {
-                            this.BGSCodeObj.PlaySound("UIWorkshopModeMenuCategoryRight");
+                            BGSExternalInterface.call(this.BGSCodeObj, "PlaySound", "UIWorkshopModeMenuCategoryRight");
                         }
                         break;
                     }

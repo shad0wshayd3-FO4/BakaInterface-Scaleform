@@ -1,4 +1,4 @@
-﻿package Shared.AS3
+package Shared.AS3
 {
     import flash.display.MovieClip;
     import flash.text.TextField;
@@ -7,24 +7,17 @@
 
     public class LabelItem extends MovieClip
     {
-
         private static const MaxTextWidth = 130;
-
         private static const LABEL_BUFFER_X:Number = 8.35;
 
-
         private var DisplayText:String;
-
         private var AssociatedID:uint;
 
         public var Label_tf:TextField;
 
         protected var Selected:Boolean = false;
-
         protected var Enabled:Boolean = true;
-
         protected var Selectable:Boolean = true;
-
         protected var StringWidth:Number = 0.0;
 
         private var m_ForceUppercase:Boolean = true;
@@ -34,7 +27,7 @@
             super();
             this.m_ForceUppercase = param3;
             this.AssociatedID = param2;
-            this.DisplayText = param1;
+            this.DisplayText = GlobalFunc.LocalizeFormattedString(param1);
             this.DisplayText = !!this.m_ForceUppercase ? this.DisplayText.toUpperCase() : this.DisplayText;
             GlobalFunc.SetText(this.Label_tf, "<b>" + this.DisplayText + "</b>", true);
             if (this.textWidth > MaxTextWidth)

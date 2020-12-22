@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="PluginExplorer/_LeftPane/_PluginList/PluginList" itemID="5fddb617-00000884" linkageExportForAS="true" linkageClassName="Menu.PluginExplorerMenu.PluginList" lastModified="1608388634">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="PluginExplorer/_LeftPane/_PluginList/PluginList" itemID="5fddb617-00000884" linkageExportForAS="true" linkageClassName="Menu.PluginExplorerMenu.PluginList" lastModified="1608599327">
   <timeline>
     <DOMTimeline name="PluginList" layerDepthEnabled="true">
       <layers>
@@ -6,12 +6,12 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="PluginExplorer/_LeftPane/_PluginList/ScrollBar/ScrollBar" name="ScrollBar_mc" selected="true">
+                <DOMSymbolInstance libraryItemName="PluginExplorer/ScrollbarNew/Scrollbar" name="Scrollbar">
                   <matrix>
-                    <Matrix a="0" b="1" c="-1" d="0" tx="435" ty="25"/>
+                    <Matrix tx="415"/>
                   </matrix>
                   <transformationPoint>
-                    <Point x="56.45" y="14.05"/>
+                    <Point x="10" y="300"/>
                   </transformationPoint>
                 </DOMSymbolInstance>
               </elements>

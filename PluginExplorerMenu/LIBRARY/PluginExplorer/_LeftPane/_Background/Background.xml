@@ -2,11 +2,11 @@
   <timeline>
     <DOMTimeline name="Background" layerDepthEnabled="true">
       <layers>
-        <DOMLayer name="BracketTop" color="#FF800A" autoNamed="false">
+        <DOMLayer name="BracketTop" color="#FF800A" current="true" isSelected="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="PluginExplorer/_LeftPane/_Background/BackgroundTrim">
+                <DOMSymbolInstance libraryItemName="PluginExplorer/_LeftPane/_Background/BackgroundTrim" selected="true">
                   <transformationPoint>
                     <Point x="200" y="10"/>
                   </transformationPoint>
@@ -31,7 +31,7 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Background" color="#00FFFF" current="true" isSelected="true" autoNamed="false">
+        <DOMLayer name="Background" color="#00FFFF" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>

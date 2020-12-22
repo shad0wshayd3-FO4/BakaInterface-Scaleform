@@ -6,7 +6,7 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="PluginExplorer/_LeftPane/_Background/Background" name="Background_mc" selected="true">
+                <DOMSymbolInstance libraryItemName="PluginExplorer/_LeftPane/_Background/Background" name="Background_mc">
                   <transformationPoint>
                     <Point x="200" y="350"/>
                   </transformationPoint>

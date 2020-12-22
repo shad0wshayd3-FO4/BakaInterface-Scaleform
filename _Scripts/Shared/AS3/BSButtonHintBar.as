@@ -7,37 +7,64 @@ package Shared.AS3
 
     public dynamic class BSButtonHintBar extends BSUIComponent
     {
-        public var ButtonBracket_Left_mc:MovieClip;
-        public var ButtonBracket_Right_mc:MovieClip;
-        public var ShadedBackground_mc:MovieClip;
-        public var SetButtonHintData:Function;
+        public static var BACKGROUND_COLOR:uint = 0;
+        public static var BACKGROUND_ALPHA:Number = 0.4;
+        public static var BACKGROUND_PAD:Number = 8;
+        public static var BUTTON_SPACING:Number = 20;
+        public static var BAR_Y_OFFSET:Number = 5;
 
+        private static var ALIGN_CENTER = 0;
+        private static var ALIGN_LEFT = 1;
+        private static var ALIGN_RIGHT = 2;
+
+        public var Sizer_mc:MovieClip;
+
+        private var Alignment:int = 0;
+        private var StartingXPos:int = 0;
+
+        private var m_UseBackground:Boolean = true;
         private var ButtonHintBarInternal_mc:MovieClip;
         private var _buttonHintDataV:Vector.<BSButtonHintData>;
         private var ButtonPoolV:Vector.<BSButtonHint>;
+        private var m_UseVaultTecColor:Boolean = true;
         private var _bRedirectToButtonBarMenu:Boolean = true;
-        private var _backgroundColor:uint = 0;
-        private var _backgroundAlpha:Number = 1.0;
-        private var _bShowBrackets_Override:Boolean = true;
-        private var _bUseShadedBackground_Override:Boolean = true;
+
+        public var SetButtonHintData:Function;
 
         public function BSButtonHintBar()
         {
             this.SetButtonHintData = this.SetButtonHintData_Impl;
+
             super();
+
             visible = false;
+
             this.ButtonHintBarInternal_mc = new MovieClip();
+            this.ButtonHintBarInternal_mc.y = BAR_Y_OFFSET;
             addChild(this.ButtonHintBarInternal_mc);
             this._buttonHintDataV = new Vector.<BSButtonHintData>();
             this.ButtonPoolV = new Vector.<BSButtonHint>();
+
+            this.StartingXPos = this.x;
         }
 
-        public function get bRedirectToButtonBarMenu():Boolean
+        public function set useBackground(param1:Boolean):void
+        {
+            this.m_UseBackground = param1;
+            SetIsDirty();
+        }
+
+        public function get useBackground():Boolean
+        {
+            return this.m_UseBackground;
+        }
+
+        public function get bRedirectToButtonBarMenu_Inspectable():Boolean
         {
             return this._bRedirectToButtonBarMenu;
         }
 
-        public function set bRedirectToButtonBarMenu(param1:Boolean):*
+        public function set bRedirectToButtonBarMenu_Inspectable(param1:Boolean):*
         {
             if (this._bRedirectToButtonBarMenu != param1)
             {
@@ -46,65 +73,46 @@ package Shared.AS3
             }
         }
 
-        public function get BackgroundColor():uint
+        public function get bRedirectToButtonBarMenu():Boolean
         {
-            return this._backgroundColor;
+            return this.bRedirectToButtonBarMenu_Inspectable;
         }
 
-        public function set BackgroundColor(param1:uint):*
+        public function set bRedirectToButtonBarMenu(param1:Boolean):*
         {
-            if (this._backgroundColor != param1)
+            this.bRedirectToButtonBarMenu_Inspectable = param1;
+        }
+
+        public function get useVaultTecColor():Boolean
+        {
+            return this.m_UseVaultTecColor;
+        }
+
+        public function set useVaultTecColor(param1:Boolean):void
+        {
+            if (this.m_UseVaultTecColor != param1)
             {
-                this._backgroundColor = param1;
+                this.m_UseVaultTecColor = param1;
                 SetIsDirty();
             }
         }
 
-        public function get BackgroundAlpha():Number
+        public function set align(param1:uint):*
         {
-            return this._backgroundAlpha;
-        }
-
-        public function set BackgroundAlpha(param1:Number):*
-        {
-            if (this._backgroundAlpha != param1)
-            {
-                this._backgroundAlpha = param1;
-            }
-        }
-
-        override public function get bShowBrackets():Boolean
-        {
-            return this._bShowBrackets_Override;
-        }
-
-        override public function set bShowBrackets(param1:Boolean):*
-        {
-            this._bShowBrackets_Override = param1;
-            SetIsDirty();
-        }
-
-        override public function get bUseShadedBackground():Boolean
-        {
-            return this._bUseShadedBackground_Override;
-        }
-
-        override public function set bUseShadedBackground(param1:Boolean):*
-        {
-            this._bUseShadedBackground_Override = param1;
+            this.Alignment = param1;
             SetIsDirty();
         }
 
         private function CanBeVisible():Boolean
         {
-            return !this.bRedirectToButtonBarMenu || !bAcquiredByNativeCode;
+            return !this.bRedirectToButtonBarMenu_Inspectable || !bAcquiredByNativeCode;
         }
 
         override public function onAcquiredByNativeCode():*
         {
             var _loc1_:Vector.<BSButtonHintData> = null;
             super.onAcquiredByNativeCode();
-            if (this.bRedirectToButtonBarMenu)
+            if (this.bRedirectToButtonBarMenu_Inspectable)
             {
                 this.SetButtonHintData(this._buttonHintDataV);
                 _loc1_ = new Vector.<BSButtonHintData>();
@@ -155,67 +163,87 @@ package Shared.AS3
             SetIsDirty();
         }
 
+        override public function onAddedToStage():void
+        {
+            super.onAddedToStage();
+        }
+
         override public function redrawUIComponent():void
         {
-            var _loc6_:BSButtonHint = null;
-            var _loc7_:Rectangle = null;
-            var _loc8_:Graphics = null;
+            var _loc4_:BSButtonHint = null;
             super.redrawUIComponent();
-            if (this.ShadedBackground_mc && contains(this.ShadedBackground_mc))
-            {
-                removeChild(this.ShadedBackground_mc);
-            }
             var _loc1_:* = false;
             var _loc2_:Number = 0;
             var _loc3_:Number = 0;
-            var _loc4_:Number = 0;
-            while (_loc4_ < this.ButtonPoolV.length)
+            var _loc5_:int = -1;
+            var _loc6_:Number = 0;
+
+            while (_loc6_ < this.ButtonPoolV.length)
             {
-                _loc6_ = this.ButtonPoolV[_loc4_];
-                if (_loc6_.ButtonVisible && this.CanBeVisible())
+                _loc4_ = this.ButtonPoolV[_loc6_];
+                if (_loc4_.ButtonVisible && this.CanBeVisible())
                 {
                     _loc1_ = true;
-                    if (!this.ButtonHintBarInternal_mc.contains(_loc6_))
+                    _loc4_.useVaultTecColor = this.useVaultTecColor;
+                    _loc5_ = _loc6_;
+                    if (!this.ButtonHintBarInternal_mc.contains(_loc4_))
                     {
-                        this.ButtonHintBarInternal_mc.addChild(_loc6_);
+                        this.ButtonHintBarInternal_mc.addChild(_loc4_);
                     }
-                    if (_loc6_.bIsDirty)
+                    if (_loc4_.bIsDirty)
                     {
-                        _loc6_.redrawUIComponent();
+                        _loc4_.redrawUIComponent();
                     }
-                    _loc6_.x = _loc2_;
-                    _loc2_ = _loc2_ + (_loc6_.width + 20);
+                    _loc4_.x = _loc2_;
+                    _loc2_ = _loc2_ + (_loc4_.Sizer_mc.width + BUTTON_SPACING);
                 }
-                else if (this.ButtonHintBarInternal_mc.contains(_loc6_))
+                else if (this.ButtonHintBarInternal_mc.contains(_loc4_))
                 {
-                    this.ButtonHintBarInternal_mc.removeChild(_loc6_);
+                    this.ButtonHintBarInternal_mc.removeChild(_loc4_);
                 }
-                _loc4_++;
+                _loc6_++;
             }
+
             if (this.ButtonPoolV.length > this._buttonHintDataV.length)
             {
                 this.ButtonPoolV.splice(this._buttonHintDataV.length, this.ButtonPoolV.length - this._buttonHintDataV.length);
             }
-            var _loc5_:Rectangle = this.ButtonHintBarInternal_mc.getBounds(this);
-            this.ButtonBracket_Left_mc.x = _loc5_.left - this.ButtonBracket_Left_mc.width;
-            this.ButtonBracket_Right_mc.x = _loc5_.right;
-            this.ButtonBracket_Left_mc.visible = this.bShowBrackets;
-            this.ButtonBracket_Right_mc.visible = this.bShowBrackets;
-            if (ShadedBackgroundMethod == "Flash" && this.bUseShadedBackground)
+
+            var _loc7_:Rectangle = new Rectangle(0, 0, 0, 0);
+            if (_loc5_ >= 0)
             {
-                if (!this.ShadedBackground_mc)
-                {
-                    this.ShadedBackground_mc = new MovieClip();
-                }
-                _loc7_ = getBounds(this);
-                addChildAt(this.ShadedBackground_mc, 0);
-                _loc8_ = this.ShadedBackground_mc.graphics;
-                _loc8_.clear();
-                _loc8_.beginFill(this.BackgroundColor, this.BackgroundAlpha);
-                _loc8_.drawRect(_loc7_.x, _loc7_.y, _loc7_.width, _loc7_.height);
-                _loc8_.endFill();
+                _loc7_.width = this.ButtonPoolV[_loc5_].x + this.ButtonPoolV[_loc5_].Sizer_mc.width;
+                _loc7_.height = this.ButtonPoolV[_loc5_].y + this.ButtonPoolV[_loc5_].Sizer_mc.height;
             }
+
+            if (this.Sizer_mc && this.ButtonHintBarInternal_mc.contains(this.Sizer_mc))
+            {
+                this.ButtonHintBarInternal_mc.removeChild(this.Sizer_mc);
+            }
+
+            this.Sizer_mc = new MovieClip();
+            var _loc8_:Graphics = this.Sizer_mc.graphics;
+            this.ButtonHintBarInternal_mc.addChildAt(this.Sizer_mc, 0);
+            _loc8_.clear();
+            _loc8_.beginFill(BACKGROUND_COLOR, !!this.m_UseBackground ? Number(BACKGROUND_ALPHA) : Number(0));
+            _loc8_.drawRect(0, 0, _loc7_.width + BACKGROUND_PAD, _loc7_.height);
+            _loc8_.endFill();
+
+            this.Sizer_mc.x = BACKGROUND_PAD * -0.5;
+            this.ButtonHintBarInternal_mc.x = -_loc7_.width / 2;
             visible = _loc1_;
+
+            if (this.Alignment == ALIGN_LEFT)
+            {
+                this.x = this.StartingXPos + _loc7_.width / 2;
+            }
+            else if (this.Alignment != ALIGN_CENTER)
+            {
+                if (this.Alignment == ALIGN_RIGHT)
+                {
+                    this.x = this.StartingXPos - _loc7_.width / 2;
+                }
+            }
         }
     }
 }

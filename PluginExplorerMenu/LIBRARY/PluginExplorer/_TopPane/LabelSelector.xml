@@ -1,12 +1,36 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="PluginExplorer/_TopPane/LabelSelector" itemID="5fddf256-000002b0" linkageExportForAS="true" linkageClassName="Shared.AS3.LabelSelector" lastModified="1608383525">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="PluginExplorer/_TopPane/LabelSelector" itemID="5fddf256-000002b0" linkageExportForAS="true" linkageClassName="Shared.AS3.LabelSelector" lastModified="1608563493">
   <timeline>
     <DOMTimeline name="LabelSelector" layerDepthEnabled="true">
       <layers>
-        <DOMLayer name="Layer_2" color="#9933CC" current="true" isSelected="true">
+        <DOMLayer name="ButtonHints" color="#FF800A" current="true" isSelected="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="PluginExplorer/_TopPane/LabelSelection" name="Selector_mc" selected="true">
+                <DOMSymbolInstance libraryItemName="_Shared/BSButtonHintBar/BSButtonHintBar" name="ButtonLeft_mc">
+                  <matrix>
+                    <Matrix tx="50"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="24"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="_Shared/BSButtonHintBar/BSButtonHintBar" name="ButtonRight_mc">
+                  <matrix>
+                    <Matrix tx="1670"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="24"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Selector" color="#9933CC" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="PluginExplorer/_TopPane/LabelSelection" name="Selector_mc">
                   <matrix>
                     <Matrix tx="200"/>
                   </matrix>
@@ -18,7 +42,7 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Layer_1" color="#00FFFF">
+        <DOMLayer name="Background" color="#00FFFF" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>

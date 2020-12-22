@@ -3,7 +3,7 @@
           <DOMFolderItem name="_Shared" itemID="5fc8556c-0000031d" isExpanded="true"/>
           <DOMFolderItem name="_Shared/_Fonts" itemID="5f97a2fc-00000035"/>
           <DOMFolderItem name="_Shared/BSButtonHintBar" itemID="5f97b56b-00000036" isExpanded="true"/>
-          <DOMFolderItem name="_Shared/ItemCard" itemID="5fc84d14-00000194" isExpanded="true"/>
+          <DOMFolderItem name="_Shared/ItemCard" itemID="5fc84d14-00000194"/>
           <DOMFolderItem name="_Shared/ItemCard/_Components" itemID="5fc86aed-00000184"/>
           <DOMFolderItem name="_Shared/ItemCard/_TempIcons" itemID="5fc86e20-00000225"/>
      </folders>
@@ -22,13 +22,14 @@
      </fonts>
      <symbols>
           <Include href="_Shared/_Fonts/Fonts.xml" loadImmediate="false" itemID="5fc855a9-00000326" lastModified="1606966074"/>
-          <Include href="_Shared/BSButtonHintBar/BSButtonHint.xml" itemID="5f97b58a-00000042" lastModified="1603781750"/>
-          <Include href="_Shared/BSButtonHintBar/BSButtonHintBar.xml" itemID="5f97b598-00000044" lastModified="1603781809"/>
-          <Include href="_Shared/BSButtonHintBar/BSButtonHintIcon.xml" loadImmediate="false" itemID="5f97b5ad-00000047" lastModified="1603781761"/>
-          <Include href="_Shared/BSButtonHintBar/BSButtonHintIconHolder.xml" itemID="5f97b590-00000043" lastModified="1603778123"/>
-          <Include href="_Shared/BSButtonHintBar/ButtonHintBracketL.xml" loadImmediate="false" itemID="5f97b5a4-00000046" lastModified="1603781718"/>
-          <Include href="_Shared/BSButtonHintBar/ButtonHintBracketR.xml" loadImmediate="false" itemID="5f97b5a0-00000045" lastModified="1603781729"/>
-          <Include href="_Shared/BSButtonHintBar/ButtonHintTemplate.xml" loadImmediate="false" itemID="5fdda206-00000265" lastModified="1608360502"/>
+          <Include href="_Shared/BSButtonHintBar/BSButtonHint.xml" itemID="5f97b58a-00000042" lastModified="1608521139"/>
+          <Include href="_Shared/BSButtonHintBar/BSButtonHintBar.xml" itemID="5f97b598-00000044" lastModified="1608562526"/>
+          <Include href="_Shared/BSButtonHintBar/HintBarBracket.xml" loadImmediate="false" itemID="5fe011a8-000001b9" lastModified="1608520104"/>
+          <Include href="_Shared/BSButtonHintBar/IconHolder.xml" itemID="5fe011fb-000001c3" lastModified="1608520187"/>
+          <Include href="_Shared/BSButtonHintBar/IconHolderBase.xml" loadImmediate="false" itemID="5fe011f8-000001c2" lastModified="1608520184"/>
+          <Include href="_Shared/BSButtonHintBar/Sizer.xml" loadImmediate="false" itemID="5fe01213-000001c5" lastModified="1608562511"/>
+          <Include href="_Shared/BSButtonHintBar/SizerBase.xml" loadImmediate="false" itemID="5fe050d7-0000118f" lastModified="1608536279"/>
+          <Include href="_Shared/BSButtonHintBar/Template.xml" loadImmediate="false" itemID="5fe01194-000001b6" lastModified="1608520084"/>
           <Include href="_Shared/ItemCard/_Components/Comparison_Minus.xml" loadImmediate="false" itemID="5fc86c82-0000021e" lastModified="1606970792"/>
           <Include href="_Shared/ItemCard/_Components/Comparison_Plus.xml" loadImmediate="false" itemID="5fc86c85-0000021f" lastModified="1606970501"/>
           <Include href="_Shared/ItemCard/_Components/Components_EntryBorder.xml" loadImmediate="false" itemID="5fc86dff-00000221" lastModified="1606970887"/>

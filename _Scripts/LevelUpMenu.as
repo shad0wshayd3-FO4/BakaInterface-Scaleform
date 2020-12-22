@@ -13,14 +13,12 @@
     import flash.text.TextLineMetrics;
     import flash.ui.Keyboard;
     import Menu.LevelUpMenu.*;
-    import scaleform.gfx.Extensions;
-    import scaleform.gfx.TextFieldEx;
     import Shared.AS3.BSButtonHintBar;
     import Shared.AS3.BSButtonHintData;
     import Shared.AS3.BSScrollingList;
+    import Shared.AS3.IMenu;
+    import Shared.AS3.StyleSheet;
     import Shared.GlobalFunc;
-    import Shared.IMenu;
-    import Shared.PlatformChangeEvent;
 
     public class LevelUpMenu extends IMenu
     {
@@ -49,7 +47,7 @@
         private var cachedVBPath:String;
         private var cancelPressed:Boolean;
         private var searchEnabled:Boolean;
-        private var searchFilter:SearchFilter;
+        private var searchFilter:PerkListFilter;
 
         private var _VBLoader:Loader;
 
@@ -70,7 +68,7 @@
             this.BGSCodeObj = new Object();
             this._VBLoader = new Loader();
 
-            this.searchFilter = new SearchFilter();
+            this.searchFilter = new PerkListFilter();
             this.PerkList_mc.filterer = this.searchFilter;
 
             this.uiPerkBase = 0;
@@ -80,20 +78,17 @@
             this.cancelPressed = false;
             this.searchEnabled = false;
 
+            StyleSheet.apply(this.PerkList_mc, false, Menu.LevelUpMenu.PerkListStyle);
+
             this.PopulateButtonBar();
             this.UpdateDisplay();
 
-            Extensions.enabled = true;
-
             addEventListener(BSScrollingList.SELECTION_CHANGE, this.onListSelectionChange);
             addEventListener(BSScrollingList.ITEM_PRESS, this.onListItemSelected);
-
             this.PerkList_mc.addEventListener(MouseEvent.MOUSE_OVER, this.onListMouseOver);
 
             this.SearchBox_mc.addEventListener(MouseEvent.MOUSE_UP, this.onSearchClicked);
             this.SearchBox_mc.SearchText_tf.addEventListener(Event.CHANGE, this.onSearchBoxChanged);
-
-            this.__setProp_PerkList_mc();
         }
 
         private function PopulateButtonBar():void
@@ -146,7 +141,6 @@
             this.PerkList_mc.entryList = param1;
             this.PerkList_mc.InvalidateData();
             this.PerkList_mc.selectedIndex = 0;
-            this.onListSelectionChange(null);
             stage.focus = this.PerkList_mc;
         }
 
@@ -285,7 +279,7 @@
                 addEventListener(KeyboardEvent.KEY_DOWN, this.onKeyDown);
                 stage.focus = searchText;
                 searchText.type = TextFieldType.INPUT;
-                this.PerkList_mc.disableInput = true;
+                this.PerkList_mc.disableInput_Inspectable = true
                 this.BGSCodeObj.SetTextEntry(true);
                 this.searchEnabled = true;
             }
@@ -294,7 +288,7 @@
                 removeEventListener(KeyboardEvent.KEY_DOWN, this.onKeyDown);
                 stage.focus = this.PerkList_mc;
                 searchText.type = TextFieldType.DYNAMIC;
-                this.PerkList_mc.disableInput = false;
+                this.PerkList_mc.disableInput_Inspectable = false;
                 this.BGSCodeObj.SetTextEntry(false);
                 this.searchEnabled = false;
             }
@@ -325,7 +319,7 @@
                     if (entry != null && entry.IsSelected)
                     {
                         entry.IsSelected = false;
-                        this.PerkList_mc.UpdateEntry(entry);
+                        this.PerkList_mc.UpdateEntry(i);
                         this.perkCount = this.perkCount + 1;
                     }
                 }
@@ -513,15 +507,6 @@
             {
                 this.VBHolder_mc.removeChildAt(0);
             }
-        }
-
-        function __setProp_PerkList_mc():*
-        {
-            this.PerkList_mc.listEntryClass = "Menu.LevelUpMenu.PerkListEntry";
-            this.PerkList_mc.numListItems = 16;
-            this.PerkList_mc.restoreListIndex = false;
-            this.PerkList_mc.textOption = BSScrollingList.TEXT_OPTION_SHRINK_TO_FIT;
-            this.PerkList_mc.verticalSpacing = 1;
         }
     }
 }

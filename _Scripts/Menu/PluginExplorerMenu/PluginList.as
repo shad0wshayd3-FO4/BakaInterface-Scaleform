@@ -1,8 +1,8 @@
 ﻿package Menu.PluginExplorerMenu
 {
-    import Shared.AS3.BSScrollingScrollList;
+    import Shared.AS3.BSScrollbarList;
 
-    public class PluginList extends BSScrollingScrollList
+    public class PluginList extends BSScrollbarList
     {
         public function PluginList()
         {

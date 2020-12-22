@@ -1,14 +1,14 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_Shared/BSButtonHintBar/BSButtonHintBar" itemID="5f97b598-00000044" linkageExportForAS="true" linkageClassName="Shared.AS3.BSButtonHintBar" lastModified="1603781809">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_Shared/BSButtonHintBar/BSButtonHintBar" itemID="5f97b598-00000044" linkageExportForAS="true" linkageClassName="Shared.AS3.BSButtonHintBar" lastModified="1608562526">
   <timeline>
     <DOMTimeline name="BSButtonHintBar">
       <layers>
-        <DOMLayer name="Layer 1" color="#D4A0A9" current="true" isSelected="true">
+        <DOMLayer name="Layer 1" color="#D4A0A9">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_Shared/BSButtonHintBar/ButtonHintBracketL" name="ButtonBracket_Left_mc" centerPoint3DX="-26.6" centerPoint3DY="16">
+                <DOMSymbolInstance libraryItemName="_Shared/BSButtonHintBar/HintBarBracket" name="ButtonBracket_Left_mc" centerPoint3DX="-26.75" centerPoint3DY="16" isVisible="false">
                   <matrix>
-                    <Matrix tx="-29.85"/>
+                    <Matrix tx="-30"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
@@ -18,16 +18,16 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Layer 2" color="#BDD3F1">
+        <DOMLayer name="Layer 2" color="#BDD3F1" current="true" isSelected="true">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_Shared/BSButtonHintBar/ButtonHintBracketR" name="ButtonBracket_Right_mc" centerPoint3DX="23.25" centerPoint3DY="16">
+                <DOMSymbolInstance libraryItemName="_Shared/BSButtonHintBar/HintBarBracket" name="ButtonBracket_Right_mc" isVisible="false">
                   <matrix>
-                    <Matrix tx="20"/>
+                    <Matrix a="-1" tx="30"/>
                   </matrix>
                   <transformationPoint>
-                    <Point/>
+                    <Point x="4.9" y="24"/>
                   </transformationPoint>
                 </DOMSymbolInstance>
               </elements>

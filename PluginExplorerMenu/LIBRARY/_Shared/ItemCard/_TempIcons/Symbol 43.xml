@@ -1,0 +1,27 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_Shared/ItemCard/_TempIcons/Symbol 43" itemID="5fc84763-00000018" sourceFlashFilepath="../_Shared/_Shared.xfl" sourceLibraryItemHRef="_Shared/ItemCard/_TempIcons/Symbol 43" sourceLastModified="1603704806" lastModified="1603704806" sourceItemID="5fc84763-00000018">
+  <timeline>
+    <DOMTimeline name="Symbol 43" layerDepthEnabled="true">
+      <layers>
+        <DOMLayer name="Layer_1" color="#F89698" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FFFFFF"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="!50 -113|50 -117!50 -117|48 -118!48 -118|-31 -118!-31 -118|-35 -115!-35 -115|-67 13!-67 13|-67 15!-67 15|-64 17!-64 17|-13 17!-13 17|-33 115!-33 115|-30 117!-30 117|-29 118!-29 118|-27 117!-27 117|68 -24!68 -24|68 -27!68 -27|66 -28!66
+ -28|0 -28!0 -28|50 -113"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

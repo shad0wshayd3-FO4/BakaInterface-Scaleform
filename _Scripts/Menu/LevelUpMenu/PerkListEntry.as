@@ -1,7 +1,6 @@
 ﻿package Menu.LevelUpMenu
 {
     import flash.display.MovieClip;
-    import flash.geom.ColorTransform;
     import Shared.AS3.BSScrollingListEntry;
 
     public class PerkListEntry extends BSScrollingListEntry
@@ -17,8 +16,7 @@
         {
             super.SetEntryText(param1, param2);
 
-            var color:Number = (this.selected) ? 0.0 : 1.0;
-            this.SelectionRect_mc.transform.colorTransform = new ColorTransform(color, color, color);
+            this.SetColorTransform(this.SelectionRect_mc, param1.IsSelected);
             this.SelectionRect_mc.visible = param1.IsSelected;
 
             if (!param1.IsAvailable)

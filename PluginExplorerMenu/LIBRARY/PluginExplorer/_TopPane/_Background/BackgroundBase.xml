@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="PluginExplorer/_TopPane/_Background/BackgroundBase" itemID="5fdde47a-00001bec" lastModified="1608377498">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="PluginExplorer/_TopPane/_Background/BackgroundBase" itemID="5fdde47a-00001bec" lastModified="1608563426">
   <timeline>
     <DOMTimeline name="BackgroundBase" layerDepthEnabled="true">
       <layers>
@@ -13,7 +13,7 @@
                     </FillStyle>
                   </fills>
                   <edges>
-                    <Edge fillStyle1="1" edges="!0 0|25000 0!25000 0|25000 1000!25000 1000|0 1000!0 1000|0 0"/>
+                    <Edge fillStyle1="1" edges="!0 0|34400 0!34400 0|34400 1000!34400 1000|0 1000!0 1000|0 0"/>
                   </edges>
                 </DOMShape>
               </elements>

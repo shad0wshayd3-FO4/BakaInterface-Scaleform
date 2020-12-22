@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="PluginExplorer/_RightPane/_ItemList/ItemListBorder" itemID="5fddbbe4-00000c44" lastModified="1608388181">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="PluginExplorer/_RightPane/_ItemList/ItemListBorder" itemID="5fddbbe4-00000c44" lastModified="1608599016">
   <timeline>
     <DOMTimeline name="ItemListBorder" layerDepthEnabled="true">
       <layers>
@@ -6,10 +6,7 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMShape selected="true" isFloating="true">
-                  <matrix>
-                    <Matrix a="0.933334350585938"/>
-                  </matrix>
+                <DOMShape>
                   <strokes>
                     <StrokeStyle index="1">
                       <SolidStroke scaleMode="normal" caps="none" weight="2.5" joints="miter">
@@ -20,7 +17,7 @@
                     </StrokeStyle>
                   </strokes>
                   <edges>
-                    <Edge strokeStyle="1" edges="!0 0S4|15000 0!15000 0|15000 15000!15000 15000|0 15000!0 15000|0 0"/>
+                    <Edge strokeStyle="1" edges="!0 0|14000 0!14000 0|14000 13700!14000 13700|0 13700!0 13700|0 0"/>
                   </edges>
                 </DOMShape>
               </elements>
