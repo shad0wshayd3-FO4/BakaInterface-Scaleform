@@ -1,8 +1,8 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="ContainerMenu/_Inventory/_List/List_Scrollbar/ScrollBarThumb" itemID="5fa21fe2-00001380" lastModified="1604467865">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_Shared/BSButtonHintBar/SizerBase" itemID="5fe050d7-0000118f" sourceFlashFilepath="../_Shared/_Shared.xfl" lastModified="1608536279" sourceItemID="00000000-ffffffff">
   <timeline>
-    <DOMTimeline name="ScrollBarThumb">
+    <DOMTimeline name="SizerBase">
       <layers>
-        <DOMLayer name="Layer 1" color="#9B42CE" current="true" isSelected="true">
+        <DOMLayer name="Layer_1" color="#00FFFF" current="true" isSelected="true">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
@@ -13,7 +13,7 @@
                     </FillStyle>
                   </fills>
                   <edges>
-                    <Edge fillStyle1="1" edges="!0 100S2|2000 100!2000 100|2000 400!2000 400|0 400!0 400|0 100"/>
+                    <Edge fillStyle1="1" edges="!0 0S2|1000 0!1000 0|1000 300!1000 300|0 300!0 300|0 0"/>
                   </edges>
                 </DOMShape>
               </elements>

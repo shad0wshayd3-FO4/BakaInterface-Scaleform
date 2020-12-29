@@ -1,14 +1,16 @@
 package Components
 {
-    import flash.display.MovieClip;
     import Shared.AS3.BSScrollingList;
+    import flash.display.MovieClip;
 
     public class ItemCard_ComponentsEntry extends ItemCard_Entry
     {
+        private const ENTRY_SPACING:Number = 0;
+
         public var EntryHolder_mc:MovieClip;
 
         private var currY:Number;
-        private const ENTRY_SPACING:Number = 0;
+        private var m_EntryCount:int = 0;
 
         public function ItemCard_ComponentsEntry()
         {
@@ -16,22 +18,29 @@ package Components
             this.currY = 0;
         }
 
-        override public function PopulateEntry(aInfoObj:Object):*
+        public function get entryCount():int
         {
-            var component:Object = null;
-            var newEntry:ItemCard_ComponentEntry_Entry = null;
+            return this.m_EntryCount;
+        }
+
+        override public function PopulateEntry(param1:Object):*
+        {
+            var _loc2_:Object = null;
+            var _loc3_:ItemCard_ComponentEntry_Entry = null;
             while (this.EntryHolder_mc.numChildren > 0)
             {
                 this.EntryHolder_mc.removeChildAt(0);
             }
             this.currY = 0;
-            for each (component in aInfoObj.components)
+            this.m_EntryCount = 0;
+            for each (_loc2_ in param1.components)
             {
-                newEntry = new ItemCard_ComponentEntry_Entry();
-                newEntry.SetEntryText(component, BSScrollingList.TEXT_OPTION_SHRINK_TO_FIT);
-                this.EntryHolder_mc.addChild(newEntry);
-                newEntry.y = this.currY;
-                this.currY = this.currY + (newEntry.height + this.ENTRY_SPACING);
+                _loc3_ = new ItemCard_ComponentEntry_Entry();
+                _loc3_.SetEntryText(_loc2_, BSScrollingList.TEXT_OPTION_SHRINK_TO_FIT);
+                this.EntryHolder_mc.addChild(_loc3_);
+                _loc3_.y = this.currY;
+                this.currY = this.currY + (_loc3_.height + this.ENTRY_SPACING);
+                this.m_EntryCount++;
             }
         }
     }

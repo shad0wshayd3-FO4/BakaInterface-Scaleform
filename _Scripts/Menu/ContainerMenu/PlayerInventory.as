@@ -15,16 +15,6 @@ package Menu.ContainerMenu
         public function PlayerInventory()
         {
             super();
-            this.__setProp_PlayerList_mc_PlayerInventory_Layer1_0();
-        }
-
-        function __setProp_PlayerList_mc_PlayerInventory_Layer1_0():*
-        {
-            this.PlayerList_mc.listEntryClass = "Menu.ContainerMenu.PlayerListEntry";
-            this.PlayerList_mc.numListItems = 16;
-            this.PlayerList_mc.restoreListIndex = true;
-            this.PlayerList_mc.textOption = "Shrink To Fit";
-            this.PlayerList_mc.verticalSpacing = -2;
         }
     }
 }

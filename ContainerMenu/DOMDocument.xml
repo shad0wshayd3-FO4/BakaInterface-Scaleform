@@ -2,42 +2,42 @@
      <folders>
           <DOMFolderItem name="_Shared" itemID="5fc85582-00000322" isExpanded="true"/>
           <DOMFolderItem name="_Shared/_Fonts" itemID="5fc84880-00000199"/>
-          <DOMFolderItem name="_Shared/BSButtonHintBar" itemID="5fc84b39-00000502"/>
+          <DOMFolderItem name="_Shared/BSButtonHintBar" itemID="5fe1a023-000021a0"/>
           <DOMFolderItem name="_Shared/ItemCard" itemID="5fc85f12-0000052d"/>
-          <DOMFolderItem name="_Shared/ItemCard/_Components" itemID="5fc86aed-00000184"/>
+          <DOMFolderItem name="_Shared/ItemCard/_Components" itemID="5fc86aed-00000184" isExpanded="true"/>
           <DOMFolderItem name="_Shared/ItemCard/_TempIcons" itemID="5fc86e20-00000225"/>
           <DOMFolderItem name="ContainerMenu" itemID="5fc84f15-000001d8" isExpanded="true"/>
           <DOMFolderItem name="ContainerMenu/_Inventory" itemID="5fc8609a-00000597" isExpanded="true"/>
           <DOMFolderItem name="ContainerMenu/_Inventory/_List" itemID="5fc860a5-0000059d" isExpanded="true"/>
-          <DOMFolderItem name="ContainerMenu/_Inventory/_List/_Container" itemID="5fc873ef-00000898" isExpanded="true"/>
-          <DOMFolderItem name="ContainerMenu/_Inventory/_List/_Player" itemID="5fc873f5-0000089d" isExpanded="true"/>
-          <DOMFolderItem name="ContainerMenu/_Inventory/_List/List_Scrollbar" itemID="5fc8747c-00000a27"/>
+          <DOMFolderItem name="ContainerMenu/_Inventory/_List/_Container" itemID="5fc873ef-00000898"/>
+          <DOMFolderItem name="ContainerMenu/_Inventory/_List/_Player" itemID="5fc873f5-0000089d"/>
           <DOMFolderItem name="ContainerMenu/_QuantityMenu" itemID="5fc853f6-00000308"/>
      </folders>
      <fonts>
-          <DOMFontItem name="_Shared/_Fonts/$MAIN_Font" itemID="5fc84879-00000191" linkageImportForRS="true" linkageExportInFirstFrame="false" linkageClassName="$MAIN_Font" linkageURL="fonts_en.swf" font="RobotoCondensed-Regular" size="0" id="26" sourceLastImported="1603773171" embedRanges="9999"/>
-          <DOMFontItem name="_Shared/_Fonts/$MAIN_Font_Bold" itemID="5fc84879-00000193" linkageImportForRS="true" linkageExportInFirstFrame="false" linkageClassName="$MAIN_Font_Bold" linkageURL="fonts_en.swf" font="RobotoCondensed-Bold" size="0" id="25" sourceLastImported="1603773171" embedRanges="9999"/>
-          <DOMFontItem name="_Shared/_Fonts/$BRODY" itemID="5f97a2f3-0000002d" linkageImportForRS="true" linkageExportInFirstFrame="false" linkageClassName="$BRODY" linkageURL="fonts_en.swf" font="Brody" size="0" id="8" sourceLastImported="1603773171" embedRanges="9999"/>
-          <DOMFontItem name="_Shared/_Fonts/$CClub_Font" itemID="5f97a2f3-0000002f" linkageImportForRS="true" linkageExportInFirstFrame="false" linkageClassName="$CClub_Font" linkageURL="fonts_en.swf" font="CreationClub-Regular" size="0" id="9" sourceLastImported="1603773171" embedRanges="9999"/>
-          <DOMFontItem name="_Shared/_Fonts/$CClub_Font_Bold" itemID="5f97a2f3-00000031" linkageImportForRS="true" linkageExportInFirstFrame="false" linkageClassName="$CClub_Font_Bold" linkageURL="fonts_en.swf" font="CreationClub-Bold" size="0" id="10" sourceLastImported="1603773171" embedRanges="9999"/>
-          <DOMFontItem name="_Shared/_Fonts/$Controller_Buttons" itemID="5f97a2f3-00000029" linkageImportForRS="true" linkageExportInFirstFrame="false" linkageClassName="$Controller_Buttons" linkageURL="fonts_en.swf" font="ControllerButtons-Regular" size="0" id="11" sourceLastImported="1603773171" embedRanges="9999"/>
-          <DOMFontItem name="_Shared/_Fonts/$Controller_Buttons_inverted" itemID="5fc84879-00000195" linkageImportForRS="true" linkageExportInFirstFrame="false" linkageClassName="$Controller_Buttons_inverted" linkageURL="fonts_en.swf" font="ControllerButtons-Bold" size="0" id="12" sourceLastImported="1603773171" embedRanges="9999"/>
-          <DOMFontItem name="_Shared/_Fonts/$HandwrittenFont" itemID="5f97a12b-0000001b" linkageImportForRS="true" linkageExportInFirstFrame="false" linkageClassName="$HandwrittenFont" linkageURL="fonts_en.swf" font="Handwritten-Fallout4" size="0" id="13" sourceLastImported="1603772715" embeddedCharacters=" &#xD;¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿĀāĂăĄąĆćĈĉĊċČčĎďĐđĒēĔĕĖėĘęĚěĜĝĞğĠġĢģĤĥĦħĨĩĪīĬĭĮįİıĲĳĴĵĶķĸĹĺĻļĽľĿŀŁłŃńŅņŇňŉŊŋŌōŎŏŐőŒœŔŕŖŗŘřŚśŜŝŞşŠšŢţŤťŦŧŨũŪūŬŭŮůŰűŲųŴŵŶŷŸŹźŻżŽžſƒƠơƯưǰǺǻǼǽǾǿȘșȚțȷˆˇˉ˘˙˚˛˜˝΄΅Ά·ΈΉΊΌΎΏΐΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩΪΫάέήίΰαβγδεζηθικλμνξοπρςστυφχψωϊϋόύώϑϒϖЀЁЂЃЄЅІЇЈЉЊЋЌЍЎЏАБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдежзийклмнопрстуфхцчшщъыьэюяѐёђѓєѕіїјљњћќѝўџѠѡѢѣѤѥѦѧѨѩѪѫѬѭѮѯѰѱѲѳѴѵѶѷѸѹѺѻѼѽѾѿҀҁ҂҃҄҅҆҈҉ҊҋҌҍҎҏҐґҒғҔҕҖҗҘҙҚқҜҝҞҟҠҡҢңҤҥҦҧҨҩҪҫҬҭҮүҰұҲҳҴҵҶҷҸҹҺһҼҽҾҿӀӁӂӃӄӅӆӇӈӉӊӋӌӍӎḀḁḾḿẀẁẂẃẄẅẠạẢảẤấẦầẨẩẪẫẬậẮắẰằẲẳẴẵẶặẸẹẺẻẼẽẾếỀềỂểỄễỆệỈỉỊịỌọỎỏỐốỒồỔổỖỗỘộỚớỜờỞởỠỡỢợỤụỦủỨứỪừỬửỮữỰựỲỳỴỵỶỷỸỹὍ           ​–—―‗‘’‚‛“”„†‡•‥…‰′″‹›‼⁄⁴ⁿ₣₤₧₫€℅ℓ№™Ω℮⅛⅜⅝⅞∂∏∑√∞∫≠≤≥﻿￼" embedRanges="9999|1|2|3|4|5"/>
+          <DOMFontItem name="_Shared/_Fonts/$MAIN_Font_Bold" itemID="5fc84879-00000193" linkageImportForRS="true" linkageExportInFirstFrame="false" linkageClassName="$MAIN_Font_Bold" linkageURL="fonts_en.swf" font="RobotoCondensed-Bold" size="0" id="58" sourceLastImported="1603773171" embedRanges="9999"/>
+          <DOMFontItem name="_Shared/_Fonts/$MAIN_Font" itemID="5fc84879-00000191" linkageImportForRS="true" linkageExportInFirstFrame="false" linkageClassName="$MAIN_Font" linkageURL="fonts_en.swf" font="RobotoCondensed-Regular" size="0" id="57" sourceLastImported="1603773171" embedRanges="9999"/>
+          <DOMFontItem name="_Shared/_Fonts/$Controller_Buttons_inverted" itemID="5fc84879-00000195" linkageImportForRS="true" linkageExportInFirstFrame="false" linkageClassName="$Controller_Buttons_inverted" linkageURL="fonts_en.swf" font="ControllerButtons-Bold" size="0" id="45" sourceLastImported="1603773171" embedRanges="9999"/>
           <DOMFontItem name="_Shared/_Fonts/$Terminal_Font" itemID="5f97a2f3-00000027" linkageImportForRS="true" linkageExportInFirstFrame="false" linkageClassName="$Terminal_Font" linkageURL="fonts_en.swf" font="ShareTechMono" size="0" id="16" sourceLastImported="1603773171" embedRanges="9999"/>
+          <DOMFontItem name="_Shared/_Fonts/$HandwrittenFont" itemID="5f97a12b-0000001b" linkageImportForRS="true" linkageExportInFirstFrame="false" linkageClassName="$HandwrittenFont" linkageURL="fonts_en.swf" font="Handwritten-Fallout4" size="0" id="13" sourceLastImported="1603772715" embeddedCharacters=" &#xD;¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿĀāĂăĄąĆćĈĉĊċČčĎďĐđĒēĔĕĖėĘęĚěĜĝĞğĠġĢģĤĥĦħĨĩĪīĬĭĮįİıĲĳĴĵĶķĸĹĺĻļĽľĿŀŁłŃńŅņŇňŉŊŋŌōŎŏŐőŒœŔŕŖŗŘřŚśŜŝŞşŠšŢţŤťŦŧŨũŪūŬŭŮůŰűŲųŴŵŶŷŸŹźŻżŽžſƒƠơƯưǰǺǻǼǽǾǿȘșȚțȷˆˇˉ˘˙˚˛˜˝΄΅Ά·ΈΉΊΌΎΏΐΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩΪΫάέήίΰαβγδεζηθικλμνξοπρςστυφχψωϊϋόύώϑϒϖЀЁЂЃЄЅІЇЈЉЊЋЌЍЎЏАБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдежзийклмнопрстуфхцчшщъыьэюяѐёђѓєѕіїјљњћќѝўџѠѡѢѣѤѥѦѧѨѩѪѫѬѭѮѯѰѱѲѳѴѵѶѷѸѹѺѻѼѽѾѿҀҁ҂҃҄҅҆҈҉ҊҋҌҍҎҏҐґҒғҔҕҖҗҘҙҚқҜҝҞҟҠҡҢңҤҥҦҧҨҩҪҫҬҭҮүҰұҲҳҴҵҶҷҸҹҺһҼҽҾҿӀӁӂӃӄӅӆӇӈӉӊӋӌӍӎḀḁḾḿẀẁẂẃẄẅẠạẢảẤấẦầẨẩẪẫẬậẮắẰằẲẳẴẵẶặẸẹẺẻẼẽẾếỀềỂểỄễỆệỈỉỊịỌọỎỏỐốỒồỔổỖỗỘộỚớỜờỞởỠỡỢợỤụỦủỨứỪừỬửỮữỰựỲỳỴỵỶỷỸỹὍ           ​–—―‗‘’‚‛“”„†‡•‥…‰′″‹›‼⁄⁴ⁿ₣₤₧₫€℅ℓ№™Ω℮⅛⅜⅝⅞∂∏∑√∞∫≠≤≥﻿￼" embedRanges="9999|1|2|3|4|5"/>
+          <DOMFontItem name="_Shared/_Fonts/$Controller_Buttons" itemID="5f97a2f3-00000029" linkageImportForRS="true" linkageExportInFirstFrame="false" linkageClassName="$Controller_Buttons" linkageURL="fonts_en.swf" font="ControllerButtons-Regular" size="0" id="11" sourceLastImported="1603773171" embedRanges="9999"/>
+          <DOMFontItem name="_Shared/_Fonts/$CClub_Font_Bold" itemID="5f97a2f3-00000031" linkageImportForRS="true" linkageExportInFirstFrame="false" linkageClassName="$CClub_Font_Bold" linkageURL="fonts_en.swf" font="CreationClub-Bold" size="0" id="10" sourceLastImported="1603773171" embedRanges="9999"/>
+          <DOMFontItem name="_Shared/_Fonts/$CClub_Font" itemID="5f97a2f3-0000002f" linkageImportForRS="true" linkageExportInFirstFrame="false" linkageClassName="$CClub_Font" linkageURL="fonts_en.swf" font="CreationClub-Regular" size="0" id="9" sourceLastImported="1603773171" embedRanges="9999"/>
+          <DOMFontItem name="_Shared/_Fonts/$BRODY" itemID="5f97a2f3-0000002d" linkageImportForRS="true" linkageExportInFirstFrame="false" linkageClassName="$BRODY" linkageURL="fonts_en.swf" font="Brody" size="0" id="8" sourceLastImported="1603773171" embedRanges="9999"/>
      </fonts>
      <symbols>
-          <Include href="_Shared/BSButtonHintBar/BSButtonHint.xml" itemID="5fc84b53-00000533" lastModified="1603781750"/>
-          <Include href="_Shared/BSButtonHintBar/BSButtonHintBar.xml" itemID="5fc84bb9-000006e3" lastModified="1606962105"/>
-          <Include href="_Shared/BSButtonHintBar/BSButtonHintIcon.xml" loadImmediate="false" itemID="5f97b5ad-00000047" lastModified="1603781761"/>
-          <Include href="_Shared/BSButtonHintBar/BSButtonHintIconHolder.xml" itemID="5f97b590-00000043" lastModified="1603778123"/>
-          <Include href="_Shared/BSButtonHintBar/ButtonHintBracketL.xml" loadImmediate="false" itemID="5f97b5a4-00000046" lastModified="1603781718"/>
-          <Include href="_Shared/BSButtonHintBar/ButtonHintBracketR.xml" loadImmediate="false" itemID="5f97b5a0-00000045" lastModified="1603781729"/>
+          <Include href="_Shared/BSButtonHintBar/BSButtonHint.xml" itemID="5f97b58a-00000042" lastModified="1608521139"/>
+          <Include href="_Shared/BSButtonHintBar/BSButtonHintBar.xml" itemID="5f97b598-00000044" lastModified="1608562526"/>
+          <Include href="_Shared/BSButtonHintBar/HintBarBracket.xml" loadImmediate="false" itemID="5fe011a8-000001b9" lastModified="1608520104"/>
+          <Include href="_Shared/BSButtonHintBar/IconHolder.xml" itemID="5fe011fb-000001c3" lastModified="1608520187"/>
+          <Include href="_Shared/BSButtonHintBar/IconHolderBase.xml" loadImmediate="false" itemID="5fe011f8-000001c2" lastModified="1608520184"/>
+          <Include href="_Shared/BSButtonHintBar/Sizer.xml" loadImmediate="false" itemID="5fe01213-000001c5" lastModified="1608562511"/>
+          <Include href="_Shared/BSButtonHintBar/SizerBase.xml" loadImmediate="false" itemID="5fe050d7-0000118f" lastModified="1608536279"/>
           <Include href="_Shared/ItemCard/_Components/Comparison_Minus.xml" itemID="5fc86c82-0000021e" lastModified="1606970792"/>
           <Include href="_Shared/ItemCard/_Components/Comparison_Plus.xml" itemID="5fc86c85-0000021f" lastModified="1606970501"/>
           <Include href="_Shared/ItemCard/_Components/Components_EntryBorder.xml" itemID="5fc86dff-00000221" lastModified="1606970887"/>
           <Include href="_Shared/ItemCard/_Components/Components_EntryHolder.xml" itemID="5fc86c87-00000220" lastModified="1606970503"/>
           <Include href="_Shared/ItemCard/_Components/ItemCard_BG_Dark.xml" itemID="5fc86c78-0000021d" lastModified="1606970488"/>
-          <Include href="_Shared/ItemCard/_Components/ItemCard_BG_Light.xml" itemID="5fc86c73-0000021c" lastModified="1606970483"/>
+          <Include href="_Shared/ItemCard/_Components/ItemCard_BG_Light.xml" itemID="5fe1a925-00002a94" lastModified="1606970483"/>
           <Include href="_Shared/ItemCard/_Components/ItemCard_Comparison.xml" itemID="5fc86c2c-00000216" lastModified="1606970412"/>
           <Include href="_Shared/ItemCard/_TempIcons/Symbol 15.xml" itemID="5fc84763-0000000a" lastModified="1606970252"/>
           <Include href="_Shared/ItemCard/_TempIcons/Symbol 28.xml" itemID="5fc84763-00000011" lastModified="1603704806"/>
@@ -51,34 +51,27 @@
           <Include href="_Shared/ItemCard/_TempIcons/Symbol 50.xml" itemID="5fc84763-0000001c" lastModified="1603704806"/>
           <Include href="_Shared/ItemCard/_TempIcons/Symbol 65.xml" itemID="5fc84763-00000024" lastModified="1603704806"/>
           <Include href="_Shared/ItemCard/ItemCard.xml" itemID="5fc85f09-000004e2" lastModified="1606962879"/>
-          <Include href="_Shared/ItemCard/ItemCard_AmmoEntry.xml" itemID="5fc84eb0-000001c1" lastModified="1606970117"/>
-          <Include href="_Shared/ItemCard/ItemCard_ComponentEntry_Entry.xml" itemID="5fc84ea3-000001c0" lastModified="1606970883"/>
-          <Include href="_Shared/ItemCard/ItemCard_ComponentsEntry.xml" itemID="5fc84e9b-000001bf" lastModified="1606970176"/>
-          <Include href="_Shared/ItemCard/ItemCard_DescriptionEntry.xml" itemID="5fc84e95-000001be" lastModified="1606970053"/>
-          <Include href="_Shared/ItemCard/ItemCard_MultiEntry.xml" itemID="5fc84e87-000001bd" lastModified="1606970046"/>
-          <Include href="_Shared/ItemCard/ItemCard_MultiEntry_Value.xml" itemID="5fc84e7f-000001bc" lastModified="1606970041"/>
-          <Include href="_Shared/ItemCard/ItemCard_StandardEntry.xml" itemID="5fc84e64-000001ba" lastModified="1606970024"/>
-          <Include href="_Shared/ItemCard/ItemCard_TimedEntry.xml" itemID="5fc84e6c-000001bb" lastModified="1606962796"/>
+          <Include href="_Shared/ItemCard/ItemCard_AmmoEntry.xml" itemID="5fc84eb0-000001c1" lastModified="1608624465"/>
+          <Include href="_Shared/ItemCard/ItemCard_ComponentEntry_Entry.xml" itemID="5fc84ea3-000001c0" lastModified="1608624313"/>
+          <Include href="_Shared/ItemCard/ItemCard_ComponentsEntry.xml" itemID="5fc84e9b-000001bf" lastModified="1608624307"/>
+          <Include href="_Shared/ItemCard/ItemCard_DescriptionEntry.xml" itemID="5fc84e95-000001be" lastModified="1608624305"/>
+          <Include href="_Shared/ItemCard/ItemCard_MultiEntry.xml" itemID="5fc84e87-000001bd" lastModified="1608624303"/>
+          <Include href="_Shared/ItemCard/ItemCard_MultiEntry_Value.xml" itemID="5fc84e7f-000001bc" lastModified="1608624465"/>
+          <Include href="_Shared/ItemCard/ItemCard_StandardEntry.xml" itemID="5fc84e64-000001ba" lastModified="1608624299"/>
+          <Include href="_Shared/ItemCard/ItemCard_TimedEntry.xml" itemID="5fc84e6c-000001bb" lastModified="1608624298"/>
           <Include href="ContainerMenu/_Inventory/_List/_Container/ContainerInventory.xml" itemID="5fc88dba-000017f0" lastModified="1606987528"/>
-          <Include href="ContainerMenu/_Inventory/_List/_Container/ContainerList.xml" itemID="5fc86089-00000593" lastModified="1606987140"/>
+          <Include href="ContainerMenu/_Inventory/_List/_Container/ContainerList.xml" itemID="5fc86089-00000593" lastModified="1608622267"/>
           <Include href="ContainerMenu/_Inventory/_List/_Container/ContainerListEntry.xml" itemID="5fc86086-00000592" lastModified="1606987030"/>
           <Include href="ContainerMenu/_Inventory/_List/_Player/PlayerInventory.xml" itemID="5fc88dbf-000017f1" lastModified="1606987520"/>
-          <Include href="ContainerMenu/_Inventory/_List/_Player/PlayerList.xml" itemID="5fc86090-00000596" lastModified="1606987150"/>
+          <Include href="ContainerMenu/_Inventory/_List/_Player/PlayerList.xml" itemID="5fc86090-00000596" lastModified="1608622201"/>
           <Include href="ContainerMenu/_Inventory/_List/_Player/PlayerListEntry.xml" itemID="5fc8608d-00000595" lastModified="1606987015"/>
-          <Include href="ContainerMenu/_Inventory/_List/List_Arrow.xml" loadImmediate="false" itemID="5fc864c6-000006ab" lastModified="1606968518"/>
           <Include href="ContainerMenu/_Inventory/_List/List_Border.xml" loadImmediate="false" itemID="5fc87405-0000089f" lastModified="1606987117"/>
           <Include href="ContainerMenu/_Inventory/_List/List_BottomBarBackground.xml" loadImmediate="false" itemID="5fc8740a-000008a0" lastModified="1606972426"/>
-          <Include href="ContainerMenu/_Inventory/_List/List_Scrollbar/ScrollBar.xml" itemID="5fa21c93-00001302" lastModified="1606985777"/>
-          <Include href="ContainerMenu/_Inventory/_List/List_Scrollbar/ScrollBarArrow.xml" loadImmediate="false" itemID="5fa21cdc-0000130a" lastModified="1604460420"/>
-          <Include href="ContainerMenu/_Inventory/_List/List_Scrollbar/ScrollBarCatcher.xml" loadImmediate="false" itemID="5fa21ce4-0000130b" lastModified="1604459911"/>
-          <Include href="ContainerMenu/_Inventory/_List/List_Scrollbar/ScrollBarThumb.xml" loadImmediate="false" itemID="5fa21fe2-00001380" lastModified="1604467865"/>
-          <Include href="ContainerMenu/_Inventory/_List/List_Scrollbar/ScrollBarTrack.xml" loadImmediate="false" itemID="5fa21cd5-00001309" lastModified="1606985119"/>
           <Include href="ContainerMenu/_Inventory/_List/ListEntry_Border.xml" loadImmediate="false" itemID="5fc85fbf-00000585" lastModified="1606986730"/>
           <Include href="ContainerMenu/_Inventory/_List/ListEntry_Border_Alt.xml" loadImmediate="false" itemID="5fc8aba9-00001b82" lastModified="1606987005"/>
           <Include href="ContainerMenu/_Inventory/_List/ListEntry_Icon_Barter.xml" loadImmediate="false" itemID="5fc85fd1-00000587" lastModified="1606967261"/>
-          <Include href="ContainerMenu/_Inventory/_List/ListEntry_Icon_Best.xml" loadImmediate="false" itemID="5fc864bb-000006aa" lastModified="1606968507"/>
           <Include href="ContainerMenu/_Inventory/_List/ListEntry_Icon_Equip.xml" loadImmediate="false" itemID="5fc85fd8-00000588" lastModified="1606967261"/>
-          <Include href="ContainerMenu/_Inventory/_List/ListEntry_Icons.xml" loadImmediate="false" itemID="5fc8600c-0000058a" lastModified="1606967362"/>
+          <Include href="ContainerMenu/_Inventory/_List/ListEntry_Icons.xml" loadImmediate="false" itemID="5fc8600c-0000058a" lastModified="1608623403"/>
           <Include href="ContainerMenu/_Inventory/Inventory_BracketBackground.xml" loadImmediate="false" itemID="5fc862ae-000005e9" lastModified="1606986009"/>
           <Include href="ContainerMenu/_Inventory/InventoryHeader.xml" itemID="5fc860c4-000005a0" lastModified="1606983246"/>
           <Include href="ContainerMenu/_QuantityMenu/_Arrow.xml" loadImmediate="false" itemID="5fc86407-0000063f" lastModified="1606968327"/>
@@ -90,7 +83,7 @@
           <Include href="ContainerMenu/_QuantityMenu/_Thumb.xml" loadImmediate="false" itemID="5fc86e73-000002f8" lastModified="1606970995"/>
           <Include href="ContainerMenu/_QuantityMenu/QuantityMenu.xml" itemID="5fc86398-000005f1" lastModified="1606968216"/>
           <Include href="ContainerMenu/_QuantityMenu/Scrollbar.xml" itemID="5fc863b5-000005f7" lastModified="1606971009"/>
-          <Include href="ContainerMenu/ContainerMenu.xml" itemID="5fc853d5-000002fe" lastModified="1606988464"/>
+          <Include href="ContainerMenu/ContainerMenu.xml" itemID="5fc853d5-000002fe" lastModified="1608623396"/>
           <Include href="ContainerMenu/FilterHolder.xml" itemID="5fc853c0-000002fd" lastModified="1606975040"/>
           <Include href="ContainerMenu/PickpocketInfo.xml" loadImmediate="false" itemID="5fc86027-0000058c" lastModified="1606968700"/>
           <Include href="Icon_Caps.xml" loadImmediate="false" itemID="5fc86154-000005a9" lastModified="1606967636"/>
@@ -122,6 +115,13 @@
      <scripts/>
      <PrinterSettings/>
      <publishHistory>
+          <PublishItem publishSize="47609" publishTime="1608624515"/>
+          <PublishItem publishSize="47578" publishTime="1608623708"/>
+          <PublishItem publishSize="47682" publishTime="1608623234"/>
+          <PublishItem publishSize="47686" publishTime="1608623029"/>
+          <PublishItem publishSize="47048" publishTime="1608622835"/>
+          <PublishItem publishSize="5280" publishTime="1608622814"/>
+          <PublishItem publishSize="5280" publishTime="1608622789"/>
           <PublishItem publishSize="40147" publishTime="1606988318"/>
           <PublishItem publishSize="40147" publishTime="1606988029"/>
           <PublishItem publishSize="40150" publishTime="1606987972"/>
@@ -135,12 +135,5 @@
           <PublishItem publishSize="40228" publishTime="1606985050"/>
           <PublishItem publishSize="40238" publishTime="1606984940"/>
           <PublishItem publishSize="40237" publishTime="1606984877"/>
-          <PublishItem publishSize="40227" publishTime="1606984199"/>
-          <PublishItem publishSize="40237" publishTime="1606983971"/>
-          <PublishItem publishSize="40229" publishTime="1606983855"/>
-          <PublishItem publishSize="40230" publishTime="1606983613"/>
-          <PublishItem publishSize="40221" publishTime="1606983307"/>
-          <PublishItem publishSize="40225" publishTime="1606983114"/>
-          <PublishItem publishSize="40224" publishTime="1606982976"/>
      </publishHistory>
 </DOMDocument>

@@ -1,46 +1,14 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_Shared/ItemCard/ItemCard_MultiEntry_Value" itemID="5fc84e7f-000001bc" linkageExportForAS="true" linkageClassName="Components.ItemCard_MultiEntry_Value" lastModified="1606970041">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_Shared/ItemCard/ItemCard_MultiEntry_Value" itemID="5fc84e7f-000001bc" linkageExportForAS="true" linkageClassName="Components.ItemCard_MultiEntry_Value" lastModified="1608624302">
   <timeline>
     <DOMTimeline name="ItemCard_MultiEntry_Value">
       <layers>
-        <DOMLayer name="Layer 1" color="#DFCB41">
+        <DOMLayer name="Text" color="#8787CA" current="true" isSelected="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_Shared/ItemCard/_TempIcons/Symbol 50" name="Icon_mc" centerPoint3DX="23.55" centerPoint3DY="29.15">
+                <DOMDynamicText name="Value_tf" selected="true" width="91" height="36.7" isSelectable="false" renderAsHTML="true">
                   <matrix>
-                    <Matrix a="0.996566772460938" tx="14.2" ty="19.75"/>
-                  </matrix>
-                  <transformationPoint>
-                    <Point/>
-                  </transformationPoint>
-                </DOMSymbolInstance>
-              </elements>
-            </DOMFrame>
-          </frames>
-        </DOMLayer>
-        <DOMLayer name="Layer 2" color="#DB5497">
-          <frames>
-            <DOMFrame index="0" keyMode="9728">
-              <elements>
-                <DOMSymbolInstance libraryItemName="_Shared/ItemCard/_Components/ItemCard_Comparison" name="Comparison_mc" centerPoint3DX="104.8" centerPoint3DY="25.5">
-                  <matrix>
-                    <Matrix tx="83.3" ty="20"/>
-                  </matrix>
-                  <transformationPoint>
-                    <Point/>
-                  </transformationPoint>
-                </DOMSymbolInstance>
-              </elements>
-            </DOMFrame>
-          </frames>
-        </DOMLayer>
-        <DOMLayer name="Layer 3" color="#8787CA">
-          <frames>
-            <DOMFrame index="0" keyMode="9728">
-              <elements>
-                <DOMDynamicText name="Value_tf" width="41" height="36.7" isSelectable="false" renderAsHTML="true">
-                  <matrix>
-                    <Matrix tx="24.25" ty="3"/>
+                    <Matrix tx="2"/>
                   </matrix>
                   <textRuns>
                     <DOMTextRun>
@@ -55,13 +23,45 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Layer 4" color="#5591E7" current="true" isSelected="true">
+        <DOMLayer name="Icon" color="#DFCB41" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_Shared/ItemCard/_Components/ItemCard_BG_Light" selected="true" centerPoint3DX="50.5" centerPoint3DY="54">
+                <DOMSymbolInstance libraryItemName="_Shared/ItemCard/_TempIcons/Symbol 50" name="Icon_mc" centerPoint3DX="24.35" centerPoint3DY="26.9">
                   <matrix>
-                    <Matrix a="0.73199462890625" d="0.33050537109375" ty="3.5"/>
+                    <Matrix a="0.996566772460938" tx="15" ty="17.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Background" color="#5591E7" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_Shared/ItemCard/_Components/ItemCard_BG_Light" centerPoint3DX="69" centerPoint3DY="53">
+                  <matrix>
+                    <Matrix a="0.999984741210938" d="0.350006103515625" ty="-0.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Comparison" color="#DB5497" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_Shared/ItemCard/_Components/ItemCard_Comparison" name="Comparison_mc" centerPoint3DX="131.5" centerPoint3DY="23">
+                  <matrix>
+                    <Matrix tx="110" ty="17.5"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>

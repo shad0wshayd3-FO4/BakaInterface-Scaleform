@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="ContainerMenu/ContainerMenu" itemID="5fc853d5-000002fe" linkageExportForAS="true" linkageClassName="ContainerMenu" lastModified="1606988464">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="ContainerMenu/ContainerMenu" itemID="5fc853d5-000002fe" linkageExportForAS="true" linkageClassName="ContainerMenu" lastModified="1608623396">
   <timeline>
     <DOMTimeline name="ContainerMenu">
       <layers>
@@ -21,11 +21,11 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="PlayerInventory" color="#EB53C7" current="true" isSelected="true" autoNamed="false">
+        <DOMLayer name="PlayerInventory" color="#EB53C7" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="ContainerMenu/_Inventory/_List/_Player/PlayerInventory" name="PlayerInventory_mc" selected="true" centerPoint3DX="287.95" centerPoint3DY="411.25">
+                <DOMSymbolInstance libraryItemName="ContainerMenu/_Inventory/_List/_Player/PlayerInventory" name="PlayerInventory_mc" centerPoint3DX="287.95" centerPoint3DY="411.25">
                   <matrix>
                     <Matrix tx="100" ty="235"/>
                   </matrix>
@@ -101,13 +101,13 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="ButtonHintBar" color="#867AAD" autoNamed="false">
+        <DOMLayer name="ButtonHintBar" color="#867AAD" current="true" isSelected="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_Shared/BSButtonHintBar/BSButtonHintBar" name="ButtonHintBar_mc">
                   <matrix>
-                    <Matrix tx="960" ty="960"/>
+                    <Matrix tx="960" ty="980"/>
                   </matrix>
                   <transformationPoint>
                     <Point y="24"/>

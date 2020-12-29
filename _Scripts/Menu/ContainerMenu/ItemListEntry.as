@@ -1,4 +1,4 @@
-package Menu.ContainerMenu
+﻿package Menu.ContainerMenu
 {
     import Shared.AS3.BSScrollingListEntry;
     import Shared.GlobalFunc;
@@ -36,11 +36,13 @@ package Menu.ContainerMenu
             }
             textField.width = this.BaseTextFieldWidth - textFieldWidthDelta;
             super.SetEntryText(aEntryObject, astrTextOption);
+
             var barterCount:int = 0;
             if (aEntryObject.barterCount != undefined)
             {
                 barterCount = aEntryObject.barterCount;
             }
+
             var displayCount:int = aEntryObject.count - barterCount;
             GlobalFunc.SetText(textField, textField.text, false, false, true);
             if (displayCount != 1)
@@ -48,35 +50,21 @@ package Menu.ContainerMenu
                 textField.appendText(" (" + displayCount + ")");
             }
             GlobalFunc.SetText(textField, textField.text, false);
-            var colorTrans:ColorTransform = this.LeftIcon_mc.transform.colorTransform;
-            colorTrans.redOffset = !!this.selected ? Number(-255) : Number(0);
-            colorTrans.greenOffset = !!this.selected ? Number(-255) : Number(0);
-            colorTrans.blueOffset = !!this.selected ? Number(-255) : Number(0);
-            this.LeftIcon_mc.transform.colorTransform = colorTrans;
+
+            this.SetColorTransform(this.LeftIcon_mc, this.selected);
+            this.SetColorTransform(this.FavoriteIcon_mc, this.selected);
+            this.SetColorTransform(this.TaggedForSearchIcon_mc, this.selected);
+            this.SetColorTransform(this.LegendaryIcon_mc, this.selected);
+
             this.LeftIcon_mc.EquipIcon_mc.visible = aEntryObject.equipState != 0;
-            this.LeftIcon_mc.BestIcon_mc.visible = aEntryObject.inContainer && aEntryObject.bestInClass == true;
             if (this.LeftIcon_mc.BarterIcon_mc != undefined)
             {
                 this.LeftIcon_mc.BarterIcon_mc.visible = barterCount < 0;
             }
+
             this.TaggedForSearchIcon_mc.x = this.textField.getLineMetrics(0).width + this.textField.x + 10;
             this.LegendaryIcon_mc.x = !!this.TaggedForSearchIcon_mc.visible ? Number(this.TaggedForSearchIcon_mc.x + this.TaggedForSearchIcon_mc.width / 2 + 10) : Number(this.TaggedForSearchIcon_mc.x);
             this.FavoriteIcon_mc.x = !!this.LegendaryIcon_mc.visible ? Number(this.LegendaryIcon_mc.x + this.LegendaryIcon_mc.width / 2 + 10) : !!this.TaggedForSearchIcon_mc.visible ? Number(this.TaggedForSearchIcon_mc.x + this.TaggedForSearchIcon_mc.width / 2 + 10) : Number(this.TaggedForSearchIcon_mc.x);
-            colorTrans = this.FavoriteIcon_mc.transform.colorTransform;
-            colorTrans.redOffset = !!this.selected ? Number(-255) : Number(0);
-            colorTrans.greenOffset = !!this.selected ? Number(-255) : Number(0);
-            colorTrans.blueOffset = !!this.selected ? Number(-255) : Number(0);
-            this.FavoriteIcon_mc.transform.colorTransform = colorTrans;
-            colorTrans = this.TaggedForSearchIcon_mc.transform.colorTransform;
-            colorTrans.redOffset = !!this.selected ? Number(-255) : Number(0);
-            colorTrans.greenOffset = !!this.selected ? Number(-255) : Number(0);
-            colorTrans.blueOffset = !!this.selected ? Number(-255) : Number(0);
-            this.TaggedForSearchIcon_mc.transform.colorTransform = colorTrans;
-            colorTrans = this.LegendaryIcon_mc.transform.colorTransform;
-            colorTrans.redOffset = !!this.selected ? Number(-255) : Number(0);
-            colorTrans.greenOffset = !!this.selected ? Number(-255) : Number(0);
-            colorTrans.blueOffset = !!this.selected ? Number(-255) : Number(0);
-            this.LegendaryIcon_mc.transform.colorTransform = colorTrans;
         }
     }
 }

@@ -9,10 +9,10 @@ package Components
     public class ItemCard_Entry extends MovieClip
     {
         public var Label_tf:TextField;
-
         public var Value_tf:TextField;
-
         public var Comparison_mc:MovieClip;
+        public var Icon_mc:MovieClip;
+        public var Sizer_mc:MovieClip;
 
         public function ItemCard_Entry()
         {
@@ -28,64 +28,78 @@ package Components
             }
         }
 
-        public static function ShouldShowDifference(aInfoObj:Object):Boolean
+        public static function ShouldShowDifference(param1:Object):Boolean
         {
-            var precision:uint = aInfoObj.precision != undefined ? uint(aInfoObj.precision) : uint(0);
-            var smallestStep:Number = 1;
-            for (var radix:uint = 0; radix < precision; radix++)
+            var _loc2_:uint = param1.precision != undefined ? uint(param1.precision) : uint(0);
+            var _loc3_:Number = 1;
+            var _loc4_:uint = 0;
+            while (_loc4_ < _loc2_)
             {
-                smallestStep = smallestStep / 10;
+                _loc3_ = _loc3_ / 10;
+                _loc4_++;
             }
-            return Math.abs(aInfoObj.difference) >= smallestStep;
+            return Math.abs(param1.difference) >= _loc3_;
         }
 
-        public function PopulateEntry(aInfoObj:Object):*
+        public function PopulateText(param1:String):*
         {
-            var valueText:* = null;
-            var val:Number = NaN;
-            var precision:uint = 0;
-            var indexOfDecimal:* = undefined;
             if (this.Label_tf != null)
             {
-                GlobalFunc.SetText(this.Label_tf, aInfoObj.text, false);
+                GlobalFunc.SetText(this.Label_tf, param1, false);
             }
+        }
+
+        public function PopulateEntry(param1:Object):*
+        {
+            var _loc2_:* = null;
+            var _loc3_:Number = NaN;
+            var _loc4_:uint = 0;
+            var _loc5_:* = undefined;
+            var _loc6_:* = undefined;
+            this.PopulateText(param1.text);
             if (this.Value_tf != null)
             {
-                if (aInfoObj.value is String)
+                if (param1.value is String)
                 {
-                    valueText = aInfoObj.value;
+                    _loc2_ = param1.value;
                 }
                 else
                 {
-                    val = aInfoObj.value;
-                    if (aInfoObj.scaleWithDuration)
+                    _loc3_ = param1.value;
+                    if (param1.scaleWithDuration)
                     {
-                        val = val * aInfoObj.duration;
+                        _loc3_ = _loc3_ * param1.duration;
                     }
-                    valueText = val.toString();
-                    precision = aInfoObj.precision != undefined ? uint(aInfoObj.precision) : uint(0);
-                    indexOfDecimal = valueText.indexOf(".");
-                    if (indexOfDecimal > -1)
+                    _loc4_ = param1.precision != undefined ? uint(param1.precision) : uint(0);
+                    _loc2_ = _loc3_.toFixed(_loc4_);
+                    _loc5_ = _loc2_.indexOf(".");
+                    if (_loc5_ > -1)
                     {
-                        if (precision)
+                        _loc6_ = _loc2_.length - 1;
+                        while (_loc6_ > _loc5_)
                         {
-                            valueText = valueText.substring(0, Math.min(indexOfDecimal + precision + 1, valueText.length));
+                            if (_loc2_.charAt(_loc6_) != "0")
+                            {
+                                break;
+                            }
+                            _loc6_--;
                         }
-                        else
-                        {
-                            valueText = valueText.substring(0, indexOfDecimal);
-                        }
+                        _loc2_ = _loc6_ == _loc5_ ? _loc2_.substring(0, _loc5_) : _loc2_.substring(0, _loc6_ + 1);
                     }
-                    if (aInfoObj.showAsPercent)
+                    if (param1.showAsPercent)
                     {
-                        valueText = valueText + "%";
+                        _loc2_ = _loc2_ + "%";
                     }
                 }
-                GlobalFunc.SetText(this.Value_tf, valueText, false);
+                GlobalFunc.SetText(this.Value_tf, _loc2_, false);
+                if (this.Icon_mc != null)
+                {
+                    this.Icon_mc.x = this.Value_tf.x + this.Value_tf.width - this.Value_tf.getLineMetrics(0).width - this.Icon_mc.width / 2 - 8;
+                }
             }
-            if (this.Comparison_mc != null && ShouldShowDifference(aInfoObj))
+            if (this.Comparison_mc != null && ShouldShowDifference(param1))
             {
-                switch (aInfoObj.diffRating)
+                switch (param1.diffRating)
                 {
                     case -3:
                         this.Comparison_mc.gotoAndStop("Worst");

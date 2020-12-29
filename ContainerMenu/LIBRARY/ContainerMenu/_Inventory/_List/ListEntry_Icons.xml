@@ -1,20 +1,11 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="ContainerMenu/_Inventory/_List/ListEntry_Icons" itemID="5fc8600c-0000058a" lastModified="1606967362">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="ContainerMenu/_Inventory/_List/ListEntry_Icons" itemID="5fc8600c-0000058a" lastModified="1608623403">
   <timeline>
     <DOMTimeline name="ListEntry_Icons">
       <layers>
         <DOMLayer name="Layer 1" color="#943EE8" current="true" isSelected="true">
           <frames>
             <DOMFrame index="0" keyMode="9728">
-              <elements>
-                <DOMSymbolInstance libraryItemName="ContainerMenu/_Inventory/_List/ListEntry_Icon_Best" name="BestIcon_mc" selected="true" centerPoint3DX="13.5" centerPoint3DY="9.5">
-                  <matrix>
-                    <Matrix tx="8.5" ty="7"/>
-                  </matrix>
-                  <transformationPoint>
-                    <Point/>
-                  </transformationPoint>
-                </DOMSymbolInstance>
-              </elements>
+              <elements/>
             </DOMFrame>
           </frames>
         </DOMLayer>

@@ -2,23 +2,23 @@
      <folders>
           <DOMFolderItem name="_Shared" itemID="5fc8556c-0000031d" isExpanded="true"/>
           <DOMFolderItem name="_Shared/_Fonts" itemID="5f97a2fc-00000035"/>
-          <DOMFolderItem name="_Shared/BSButtonHintBar" itemID="5f97b56b-00000036" isExpanded="true"/>
-          <DOMFolderItem name="_Shared/ItemCard" itemID="5fc84d14-00000194"/>
+          <DOMFolderItem name="_Shared/BSButtonHintBar" itemID="5f97b56b-00000036"/>
+          <DOMFolderItem name="_Shared/ItemCard" itemID="5fc84d14-00000194" isExpanded="true"/>
           <DOMFolderItem name="_Shared/ItemCard/_Components" itemID="5fc86aed-00000184"/>
-          <DOMFolderItem name="_Shared/ItemCard/_TempIcons" itemID="5fc86e20-00000225"/>
+          <DOMFolderItem name="_Shared/ItemCard/_TempIcons" itemID="5fc86e20-00000225" isExpanded="true"/>
      </folders>
      <fonts>
-          <DOMFontItem name="_Shared/_Fonts/$DebugTextFont" itemID="5f97a3f9-00000039" linkageExportForAS="true" linkageExportForRS="true" linkageClassName="$DebugTextFont" linkageURL="fonts_en.swf" font="Consolas" size="0" id="25" sourceLastImported="1603773433" embedRanges="9999"/>
-          <DOMFontItem name="_Shared/_Fonts/$ConsoleFont" itemID="5f97a3f9-00000037" linkageExportForAS="true" linkageExportForRS="true" linkageClassName="$ConsoleFont" linkageURL="fonts_en.swf" font="ArialMT" size="0" id="24" sourceLastImported="1603773433" embedRanges="9999"/>
-          <DOMFontItem name="_Shared/_Fonts/$CClub_Font_Bold" itemID="5f97a2f3-00000031" linkageExportForAS="true" linkageExportForRS="true" linkageClassName="$CClub_Font_Bold" linkageURL="fonts_en.swf" font="CreationClub-Bold" size="0" id="23" sourceLastImported="1603773171" embedRanges="9999"/>
-          <DOMFontItem name="_Shared/_Fonts/$CClub_Font" itemID="5f97a2f3-0000002f" linkageExportForAS="true" linkageExportForRS="true" linkageClassName="$CClub_Font" linkageURL="fonts_en.swf" font="CreationClub-Regular" size="0" id="22" sourceLastImported="1603773171" embedRanges="9999"/>
-          <DOMFontItem name="_Shared/_Fonts/$BRODY" itemID="5f97a2f3-0000002d" linkageExportForAS="true" linkageExportForRS="true" linkageClassName="$BRODY" linkageURL="fonts_en.swf" font="Brody" size="0" id="21" sourceLastImported="1603773171" embedRanges="9999"/>
-          <DOMFontItem name="_Shared/_Fonts/$Controller_Buttons_inverted" itemID="5f97a2f3-0000002b" linkageExportForAS="true" linkageExportForRS="true" linkageClassName="$Controller_Buttons_inverted" linkageURL="fonts_en.swf" font="ControllerButtons-Bold" size="0" id="20" sourceLastImported="1603773171" embedRanges="9999"/>
-          <DOMFontItem name="_Shared/_Fonts/$Controller_Buttons" itemID="5f97a2f3-00000029" linkageExportForAS="true" linkageExportForRS="true" linkageClassName="$Controller_Buttons" linkageURL="fonts_en.swf" font="ControllerButtons-Regular" size="0" id="19" sourceLastImported="1603773171" embedRanges="9999"/>
-          <DOMFontItem name="_Shared/_Fonts/$Terminal_Font" itemID="5f97a2f3-00000027" linkageExportForAS="true" linkageExportForRS="true" linkageClassName="$Terminal_Font" linkageURL="fonts_en.swf" font="ShareTechMono" size="0" id="18" sourceLastImported="1603773171" embedRanges="9999"/>
-          <DOMFontItem name="_Shared/_Fonts/$MAIN_Font_Bold" itemID="5f97a2f3-00000025" linkageExportForAS="true" linkageExportForRS="true" linkageClassName="$MAIN_Font_Bold" linkageURL="fonts_en.swf" font="RobotoCondensed-Bold" size="0" id="17" sourceLastImported="1603773171" embedRanges="9999"/>
-          <DOMFontItem name="_Shared/_Fonts/$MAIN_Font" itemID="5f97a2f3-00000023" linkageExportForAS="true" linkageExportForRS="true" linkageClassName="$MAIN_Font" linkageURL="fonts_en.swf" font="RobotoCondensed-Regular" size="0" id="16" sourceLastImported="1603773171" embedRanges="9999"/>
           <DOMFontItem name="_Shared/_Fonts/$HandwrittenFont" itemID="5f97a12b-0000001b" linkageExportForAS="true" linkageExportForRS="true" linkageClassName="$HandwrittenFont" linkageURL="fonts_en.swf" font="Handwritten-Fallout4" size="0" id="15" sourceLastImported="1603772715" embeddedCharacters=" &#xD;¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿĀāĂăĄąĆćĈĉĊċČčĎďĐđĒēĔĕĖėĘęĚěĜĝĞğĠġĢģĤĥĦħĨĩĪīĬĭĮįİıĲĳĴĵĶķĸĹĺĻļĽľĿŀŁłŃńŅņŇňŉŊŋŌōŎŏŐőŒœŔŕŖŗŘřŚśŜŝŞşŠšŢţŤťŦŧŨũŪūŬŭŮůŰűŲųŴŵŶŷŸŹźŻżŽžſƒƠơƯưǰǺǻǼǽǾǿȘșȚțȷˆˇˉ˘˙˚˛˜˝΄΅Ά·ΈΉΊΌΎΏΐΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩΪΫάέήίΰαβγδεζηθικλμνξοπρςστυφχψωϊϋόύώϑϒϖЀЁЂЃЄЅІЇЈЉЊЋЌЍЎЏАБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдежзийклмнопрстуфхцчшщъыьэюяѐёђѓєѕіїјљњћќѝўџѠѡѢѣѤѥѦѧѨѩѪѫѬѭѮѯѰѱѲѳѴѵѶѷѸѹѺѻѼѽѾѿҀҁ҂҃҄҅҆҈҉ҊҋҌҍҎҏҐґҒғҔҕҖҗҘҙҚқҜҝҞҟҠҡҢңҤҥҦҧҨҩҪҫҬҭҮүҰұҲҳҴҵҶҷҸҹҺһҼҽҾҿӀӁӂӃӄӅӆӇӈӉӊӋӌӍӎḀḁḾḿẀẁẂẃẄẅẠạẢảẤấẦầẨẩẪẫẬậẮắẰằẲẳẴẵẶặẸẹẺẻẼẽẾếỀềỂểỄễỆệỈỉỊịỌọỎỏỐốỒồỔổỖỗỘộỚớỜờỞởỠỡỢợỤụỦủỨứỪừỬửỮữỰựỲỳỴỵỶỷỸỹὍ           ​–—―‗‘’‚‛“”„†‡•‥…‰′″‹›‼⁄⁴ⁿ₣₤₧₫€℅ℓ№™Ω℮⅛⅜⅝⅞∂∏∑√∞∫≠≤≥﻿￼" embedRanges="9999|1|2|3|4|5"/>
+          <DOMFontItem name="_Shared/_Fonts/$MAIN_Font" itemID="5f97a2f3-00000023" linkageExportForAS="true" linkageExportForRS="true" linkageClassName="$MAIN_Font" linkageURL="fonts_en.swf" font="RobotoCondensed-Regular" size="0" id="16" sourceLastImported="1603773171" embedRanges="9999"/>
+          <DOMFontItem name="_Shared/_Fonts/$MAIN_Font_Bold" itemID="5f97a2f3-00000025" linkageExportForAS="true" linkageExportForRS="true" linkageClassName="$MAIN_Font_Bold" linkageURL="fonts_en.swf" font="RobotoCondensed-Bold" size="0" id="17" sourceLastImported="1603773171" embedRanges="9999"/>
+          <DOMFontItem name="_Shared/_Fonts/$Terminal_Font" itemID="5f97a2f3-00000027" linkageExportForAS="true" linkageExportForRS="true" linkageClassName="$Terminal_Font" linkageURL="fonts_en.swf" font="ShareTechMono" size="0" id="18" sourceLastImported="1603773171" embedRanges="9999"/>
+          <DOMFontItem name="_Shared/_Fonts/$Controller_Buttons" itemID="5f97a2f3-00000029" linkageExportForAS="true" linkageExportForRS="true" linkageClassName="$Controller_Buttons" linkageURL="fonts_en.swf" font="ControllerButtons-Regular" size="0" id="19" sourceLastImported="1603773171" embedRanges="9999"/>
+          <DOMFontItem name="_Shared/_Fonts/$Controller_Buttons_inverted" itemID="5f97a2f3-0000002b" linkageExportForAS="true" linkageExportForRS="true" linkageClassName="$Controller_Buttons_inverted" linkageURL="fonts_en.swf" font="ControllerButtons-Bold" size="0" id="20" sourceLastImported="1603773171" embedRanges="9999"/>
+          <DOMFontItem name="_Shared/_Fonts/$BRODY" itemID="5f97a2f3-0000002d" linkageExportForAS="true" linkageExportForRS="true" linkageClassName="$BRODY" linkageURL="fonts_en.swf" font="Brody" size="0" id="21" sourceLastImported="1603773171" embedRanges="9999"/>
+          <DOMFontItem name="_Shared/_Fonts/$CClub_Font" itemID="5f97a2f3-0000002f" linkageExportForAS="true" linkageExportForRS="true" linkageClassName="$CClub_Font" linkageURL="fonts_en.swf" font="CreationClub-Regular" size="0" id="22" sourceLastImported="1603773171" embedRanges="9999"/>
+          <DOMFontItem name="_Shared/_Fonts/$CClub_Font_Bold" itemID="5f97a2f3-00000031" linkageExportForAS="true" linkageExportForRS="true" linkageClassName="$CClub_Font_Bold" linkageURL="fonts_en.swf" font="CreationClub-Bold" size="0" id="23" sourceLastImported="1603773171" embedRanges="9999"/>
+          <DOMFontItem name="_Shared/_Fonts/$ConsoleFont" itemID="5f97a3f9-00000037" linkageExportForAS="true" linkageExportForRS="true" linkageClassName="$ConsoleFont" linkageURL="fonts_en.swf" font="ArialMT" size="0" id="24" sourceLastImported="1603773433" embedRanges="9999"/>
+          <DOMFontItem name="_Shared/_Fonts/$DebugTextFont" itemID="5f97a3f9-00000039" linkageExportForAS="true" linkageExportForRS="true" linkageClassName="$DebugTextFont" linkageURL="fonts_en.swf" font="Consolas" size="0" id="25" sourceLastImported="1603773433" embedRanges="9999"/>
      </fonts>
      <symbols>
           <Include href="_Shared/_Fonts/Fonts.xml" loadImmediate="false" itemID="5fc855a9-00000326" lastModified="1606966074"/>
@@ -49,15 +49,15 @@
           <Include href="_Shared/ItemCard/_TempIcons/Symbol 50.xml" itemID="5fc84763-0000001c" lastModified="1603704806"/>
           <Include href="_Shared/ItemCard/_TempIcons/Symbol 65.xml" loadImmediate="false" itemID="5fc84763-00000024" lastModified="1603704806"/>
           <Include href="_Shared/ItemCard/ItemCard.xml" itemID="5fc84ebf-000001c2" lastModified="1606962879"/>
-          <Include href="_Shared/ItemCard/ItemCard__Entries.xml" loadImmediate="false" itemID="5fc85f52-00000538" lastModified="1606970247"/>
-          <Include href="_Shared/ItemCard/ItemCard_AmmoEntry.xml" itemID="5fc84eb0-000001c1" lastModified="1606970117"/>
-          <Include href="_Shared/ItemCard/ItemCard_ComponentEntry_Entry.xml" itemID="5fc84ea3-000001c0" lastModified="1606970883"/>
-          <Include href="_Shared/ItemCard/ItemCard_ComponentsEntry.xml" itemID="5fc84e9b-000001bf" lastModified="1606970176"/>
-          <Include href="_Shared/ItemCard/ItemCard_DescriptionEntry.xml" itemID="5fc84e95-000001be" lastModified="1606970053"/>
-          <Include href="_Shared/ItemCard/ItemCard_MultiEntry.xml" itemID="5fc84e87-000001bd" lastModified="1606970046"/>
-          <Include href="_Shared/ItemCard/ItemCard_MultiEntry_Value.xml" itemID="5fc84e7f-000001bc" lastModified="1606970041"/>
-          <Include href="_Shared/ItemCard/ItemCard_StandardEntry.xml" itemID="5fc84e64-000001ba" lastModified="1606970024"/>
-          <Include href="_Shared/ItemCard/ItemCard_TimedEntry.xml" itemID="5fc84e6c-000001bb" lastModified="1606962796"/>
+          <Include href="_Shared/ItemCard/ItemCard__Entries.xml" loadImmediate="false" itemID="5fc85f52-00000538" lastModified="1608624380"/>
+          <Include href="_Shared/ItemCard/ItemCard_AmmoEntry.xml" itemID="5fc84eb0-000001c1" lastModified="1608624331"/>
+          <Include href="_Shared/ItemCard/ItemCard_ComponentEntry_Entry.xml" itemID="5fc84ea3-000001c0" lastModified="1608624313"/>
+          <Include href="_Shared/ItemCard/ItemCard_ComponentsEntry.xml" itemID="5fc84e9b-000001bf" lastModified="1608624307"/>
+          <Include href="_Shared/ItemCard/ItemCard_DescriptionEntry.xml" itemID="5fc84e95-000001be" lastModified="1608624305"/>
+          <Include href="_Shared/ItemCard/ItemCard_MultiEntry.xml" itemID="5fc84e87-000001bd" lastModified="1608624303"/>
+          <Include href="_Shared/ItemCard/ItemCard_MultiEntry_Value.xml" itemID="5fc84e7f-000001bc" lastModified="1608624302"/>
+          <Include href="_Shared/ItemCard/ItemCard_StandardEntry.xml" itemID="5fc84e64-000001ba" lastModified="1608624299"/>
+          <Include href="_Shared/ItemCard/ItemCard_TimedEntry.xml" itemID="5fc84e6c-000001bb" lastModified="1608624298"/>
      </symbols>
      <timelines>
           <DOMTimeline name="Scene 1">

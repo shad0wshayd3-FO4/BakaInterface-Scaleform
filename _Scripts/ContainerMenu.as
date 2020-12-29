@@ -1,14 +1,6 @@
 ﻿package
 {
     import Components.ItemCard;
-    import Shared.AS3.BSButtonHintBar;
-    import Shared.AS3.BSButtonHintData;
-    import Shared.AS3.BSScrollingList;
-    import Shared.AS3.QuantityMenu;
-    import Shared.CustomEvent;
-    import Shared.GlobalFunc;
-    import Shared.IMenu;
-    import Shared.PlatformChangeEvent;
     import flash.display.InteractiveObject;
     import flash.display.LineScaleMode;
     import flash.display.MovieClip;
@@ -20,6 +12,15 @@
     import flash.text.TextField;
     import flash.ui.Keyboard;
     import Menu.ContainerMenu.*
+	import Shared.AS3.BSButtonHintBar;
+    import Shared.AS3.BSButtonHintData;
+    import Shared.AS3.BSScrollingList;
+	import Shared.AS3.Events.CustomEvent;
+	import Shared.AS3.Events.PlatformChangeEvent;
+    import Shared.AS3.IMenu;
+	import Shared.AS3.QuantityMenu;
+	import Shared.AS3.StyleSheet;
+	import Shared.GlobalFunc;
 
     public class ContainerMenu extends IMenu
     {
@@ -81,6 +82,10 @@
             super();
 
             this.BGSCodeObj = new Object();
+			
+			StyleSheet.apply(this.PlayerInventory_mc.PlayerList_mc, false, Menu.ContainerMenu.PlayerListStyle);
+			StyleSheet.apply(this.ContainerList_mc, false, Menu.ContainerMenu.ContainerListStyle);
+			
             this.PopulateButtonBar();
             stage.stageFocusRect = false;
 
@@ -111,7 +116,7 @@
             addEventListener(KeyboardEvent.KEY_UP, this.onKeyUp);
             addEventListener(BSScrollingList.ITEM_PRESS, this.onItemPress);
             addEventListener(BSScrollingList.SELECTION_CHANGE, this.onSelectionChange);
-            addEventListener(ItemList.MOUSE_OVER, this.onListMouseOver);
+			addEventListener(BSScrollingList.MOUSE_OVER, this.onListMouseOver);
             addEventListener(QuantityMenu.CONFIRM, this.onQuantityConfirm);
 
             this.SwitchToContainerList(false);
@@ -124,8 +129,6 @@
                 this.PickpocketInfo_mc.Caption_tf.visible = false;
                 this.PickpocketInfo_mc.Percent_tf.visible = false;
             }
-
-            this.__setProp_ContainerList_mc_MenuObj_ContainerList_0();
         }
 
         public function get containerIsSelected():Boolean
@@ -890,15 +893,6 @@
         {
             this.MessageBoxIsActive = aActive;
             this.UpdateButtonHints();
-        }
-
-        function __setProp_ContainerList_mc_MenuObj_ContainerList_0():*
-        {
-            this.ContainerList_mc.listEntryClass = "Menu.ContainerMenu.ContainerListEntry";
-            this.ContainerList_mc.numListItems = 16;
-            this.ContainerList_mc.restoreListIndex = true;
-            this.ContainerList_mc.textOption = BSScrollingList.TEXT_OPTION_SHRINK_TO_FIT;
-            this.ContainerList_mc.verticalSpacing = -2;
         }
     }
 }

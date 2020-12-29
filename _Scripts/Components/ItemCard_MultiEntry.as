@@ -10,46 +10,72 @@ package Components
 
         public var EntryHolder_mc:MovieClip;
         public var Background_mc:MovieClip;
-
-        private var currY:Number;
-        private const ENTRY_SPACING:Number = -4.5;
+        private var m_EntrySpacing:Number = 3.5;
+        private var m_EntryCount:int = 0;
 
         public function ItemCard_MultiEntry()
         {
             super();
-            this.currY = 0;
         }
 
-        public static function IsEntryValid(aEntryObj:Object):Boolean
+        public static function IsEntryValid(param1:Object):Boolean
         {
-            return aEntryObj.value > 0 || ShouldShowDifference(aEntryObj) && aEntryObj.text == DMG_ARMO_ID;
+            return param1.value > 0 || ShouldShowDifference(param1) && param1.text == DMG_ARMO_ID;
         }
 
-        public function PopulateMultiEntry(aInfoObj:Array, aPropName:String):*
+        public function set entrySpacing(param1:Number):*
         {
-            var newEntry:ItemCard_MultiEntry_Value = null;
+            this.m_EntrySpacing = param1;
+        }
+
+        public function get entryCount():int
+        {
+            return this.m_EntryCount;
+        }
+
+        public function PopulateMultiEntry(param1:Array, param2:String):*
+        {
+            var _loc5_:ItemCard_MultiEntry_Value = null;
             if (Label_tf != null)
             {
-                GlobalFunc.SetText(Label_tf, aPropName, false);
+                GlobalFunc.SetText(Label_tf, param2, false);
             }
             while (this.EntryHolder_mc.numChildren > 0)
             {
                 this.EntryHolder_mc.removeChildAt(0);
             }
-            this.currY = 0;
-            for (var dataIdx:uint = 0; dataIdx < aInfoObj.length; dataIdx++)
+            var _loc3_:Number = 0;
+            this.m_EntryCount = 0;
+            var _loc4_:uint = 0;
+            while (_loc4_ < param1.length)
             {
-                if (aInfoObj[dataIdx].text == aPropName && IsEntryValid(aInfoObj[dataIdx]))
+                if (param1[_loc4_].text == param2 && IsEntryValid(param1[_loc4_]))
                 {
-                    newEntry = new ItemCard_MultiEntry_Value();
-                    newEntry.Icon_mc.gotoAndStop(aPropName == DMG_WEAP_ID ? aInfoObj[dataIdx].damageType + GlobalFunc.NUM_DAMAGE_TYPES : aInfoObj[dataIdx].damageType);
-                    newEntry.PopulateEntry(aInfoObj[dataIdx]);
-                    this.EntryHolder_mc.addChild(newEntry);
-                    newEntry.y = this.currY;
-                    this.currY = this.currY + (newEntry.height + this.ENTRY_SPACING);
+                    _loc5_ = new ItemCard_MultiEntry_Value();
+                    _loc5_.Icon_mc.gotoAndStop(param2 == DMG_WEAP_ID ? param1[_loc4_].damageType + GlobalFunc.NUM_DAMAGE_TYPES : param1[_loc4_].damageType);
+                    _loc5_.PopulateEntry(param1[_loc4_]);
+                    this.EntryHolder_mc.addChild(_loc5_);
+                    this.m_EntryCount++;
+                    if (_loc3_ > 0)
+                    {
+                        _loc3_ = _loc3_ + this.m_EntrySpacing;
+                    }
+                    _loc5_.y = _loc3_;
+                    if (_loc5_.Sizer_mc != null)
+                    {
+                        _loc3_ = _loc3_ + _loc5_.Sizer_mc.height;
+                    }
+                    else
+                    {
+                        _loc3_ = _loc3_ + _loc5_.height;
+                    }
                 }
+                _loc4_++;
             }
-            this.Background_mc.height = this.EntryHolder_mc.height + this.ENTRY_SPACING;
+            if (this.Background_mc != null)
+            {
+                this.Background_mc.height = _loc3_;
+            }
         }
     }
 }

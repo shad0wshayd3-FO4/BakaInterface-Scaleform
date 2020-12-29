@@ -1,28 +1,19 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="ContainerMenu/_Inventory/_List/_Player/PlayerList" itemID="5fc86090-00000596" linkageExportForAS="true" linkageClassName="Menu.ContainerMenu.PlayerList" lastModified="1606987150">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="ContainerMenu/_Inventory/_List/_Player/PlayerList" itemID="5fc86090-00000596" linkageExportForAS="true" linkageClassName="Menu.ContainerMenu.PlayerList" lastModified="1608622201">
   <timeline>
     <DOMTimeline name="PlayerList">
       <layers>
-        <DOMLayer name="ScrollBar" color="#FF4FFF" autoNamed="false">
+        <DOMLayer name="ScrollBar" color="#FF4FFF" current="true" isSelected="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
-              <elements>
-                <DOMSymbolInstance libraryItemName="ContainerMenu/_Inventory/_List/List_Scrollbar/ScrollBar" name="ScrollBar_mc">
-                  <matrix>
-                    <Matrix a="0" b="1" c="-1" d="0" tx="515" ty="25"/>
-                  </matrix>
-                  <transformationPoint>
-                    <Point x="300" y="12.5"/>
-                  </transformationPoint>
-                </DOMSymbolInstance>
-              </elements>
+              <elements/>
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="border" color="#E5953F" current="true" isSelected="true" autoNamed="false">
+        <DOMLayer name="border" color="#E5953F" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="ContainerMenu/_Inventory/_List/List_Border" name="border" selected="true">
+                <DOMSymbolInstance libraryItemName="ContainerMenu/_Inventory/_List/List_Border" name="border">
                   <transformationPoint>
                     <Point x="225" y="325"/>
                   </transformationPoint>
