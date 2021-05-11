@@ -1,6 +1,6 @@
 <DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="PluginExplorer/_RightPane/_Search/Border" itemID="5fe16410-000014c6" lastModified="1608606891">
   <timeline>
-    <DOMTimeline name="Border" layerDepthEnabled="true">
+    <DOMTimeline name="Border">
       <layers>
         <DOMLayer name="Layer_1" color="#00FFFF" current="true" isSelected="true">
           <frames>
@@ -20,7 +20,7 @@
                     </StrokeStyle>
                   </strokes>
                   <edges>
-                    <Edge strokeStyle="1" edges="!0 0S4|8700 0!8700 0|8700 900!8700 900|0 900!0 900|0 0"/>
+                    <Edge strokeStyle="1" edges="!8700 900S4|0 900!0 900|0 0!0 0|8700 0!8700 0|8700 900"/>
                   </edges>
                 </DOMShape>
               </elements>

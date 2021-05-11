@@ -1,8 +1,8 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_Shared/BSButtonHintBar/BSButtonHintBar" itemID="5f97b598-00000044" linkageExportForAS="true" linkageClassName="Shared.AS3.BSButtonHintBar" sourceFlashFilepath="../_Shared/_Shared.xfl" sourceLibraryItemHRef="_Shared/BSButtonHintBar/BSButtonHintBar" sourceLastModified="1608562526" sourceAutoUpdate="true" lastModified="1608562526" sourceItemID="5f97b598-00000044">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_Shared/BSButtonHintBar/BSButtonHintBar" itemID="60984bb1-00000fa9" linkageExportForAS="true" linkageClassName="Shared.AS3.BSButtonHintBar" sourceFlashFilepath="../_Shared/_Shared.xfl" sourceLibraryItemHRef="_Shared/BSButtonHintBar/BSButtonHintBar" sourceLastModified="1608562526" sourceAutoUpdate="true" lastModified="1608562526" sourceItemID="00000000-ffffffff">
   <timeline>
-    <DOMTimeline name="BSButtonHintBar" layerDepthEnabled="true">
+    <DOMTimeline name="BSButtonHintBar">
       <layers>
-        <DOMLayer name="Layer_1" color="#D4A0A9">
+        <DOMLayer name="Layer 1" color="#D4A0A9">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
@@ -18,7 +18,7 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Layer_2" color="#BDD3F1" current="true" isSelected="true">
+        <DOMLayer name="Layer 2" color="#BDD3F1" current="true" isSelected="true">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>

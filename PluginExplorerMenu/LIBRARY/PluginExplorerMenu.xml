@@ -1,12 +1,12 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="PluginExplorerMenu" itemID="5fdda179-00000153" linkageExportForAS="true" linkageBaseClass="Shared.IMenu" linkageClassName="PluginExplorerMenu" lastModified="1608617761">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="PluginExplorerMenu" itemID="5fdda179-00000153" linkageExportForAS="true" linkageBaseClass="Shared.IMenu" linkageClassName="PluginExplorerMenu" lastModified="1620593658">
   <timeline>
-    <DOMTimeline name="PluginExplorerMenu" layerDepthEnabled="true">
+    <DOMTimeline name="PluginExplorerMenu">
       <layers>
         <DOMLayer name="CategoryBar" color="#FF4F4F" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="PluginExplorer/_TopPane/LabelSelector" name="CategoryBar_mc">
+                <DOMSymbolInstance libraryItemName="_Shared/LabelSelector/LabelSelector" name="CategoryBar_mc" centerPoint3DX="960" centerPoint3DY="95">
                   <matrix>
                     <Matrix tx="100" ty="70"/>
                   </matrix>
@@ -18,27 +18,11 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="ItemCard" color="#FF4FFF" current="true" isSelected="true" autoNamed="false">
-          <frames>
-            <DOMFrame index="0" keyMode="9728">
-              <elements>
-                <DOMSymbolInstance libraryItemName="_Shared/ItemCard/ItemCard" name="ItemCard_mc">
-                  <matrix>
-                    <Matrix tx="1780" ty="900"/>
-                  </matrix>
-                  <transformationPoint>
-                    <Point/>
-                  </transformationPoint>
-                </DOMSymbolInstance>
-              </elements>
-            </DOMFrame>
-          </frames>
-        </DOMLayer>
         <DOMLayer name="PluginList" color="#FF4FFF" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="PluginExplorer/_LeftPane/_PluginList/PluginList" name="PluginList_mc">
+                <DOMSymbolInstance libraryItemName="PluginExplorer/_LeftPane/_PluginList/PluginList" name="PluginList_mc" centerPoint3DX="328.75" centerPoint3DY="502.5">
                   <matrix>
                     <Matrix tx="110" ty="160"/>
                   </matrix>
@@ -70,7 +54,7 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="PluginExplorer/_LeftPane/LeftPane" name="LeftPane_mc" selected="true">
+                <DOMSymbolInstance libraryItemName="PluginExplorer/_LeftPane/LeftPane" name="LeftPane_mc">
                   <matrix>
                     <Matrix tx="100" ty="130"/>
                   </matrix>
@@ -82,11 +66,11 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="ItemList" color="#009999" autoNamed="false">
+        <DOMLayer name="ItemList" color="#009999" current="true" isSelected="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="PluginExplorer/_RightPane/_ItemList/ItemList" name="ItemList_mc">
+                <DOMSymbolInstance libraryItemName="PluginExplorer/_RightPane/_ItemList/ItemList" name="ItemList_mc" selected="true">
                   <matrix>
                     <Matrix tx="580" ty="160"/>
                   </matrix>
@@ -118,7 +102,7 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="PluginExplorer/_RightPane/RightPane" name="RightPane_mc" selected="true">
+                <DOMSymbolInstance libraryItemName="PluginExplorer/_RightPane/RightPane" name="RightPane_mc">
                   <matrix>
                     <Matrix tx="570" ty="130"/>
                   </matrix>

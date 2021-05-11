@@ -1,12 +1,12 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="PluginExplorer/_LeftPane/_PluginList/PluginList" itemID="5fddb617-00000884" linkageExportForAS="true" linkageClassName="Menu.PluginExplorerMenu.PluginList" lastModified="1608599327">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="PluginExplorer/_LeftPane/_PluginList/PluginList" itemID="5fddb617-00000884" linkageExportForAS="true" linkageClassName="Menu.PluginExplorerMenu.PluginList" lastModified="1620593710">
   <timeline>
-    <DOMTimeline name="PluginList" layerDepthEnabled="true">
+    <DOMTimeline name="PluginList">
       <layers>
         <DOMLayer name="Layer_2" color="#9933CC" current="true" isSelected="true">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="PluginExplorer/ScrollbarNew/Scrollbar" name="Scrollbar">
+                <DOMSymbolInstance libraryItemName="_Shared/Scrollbar/Scrollbar" name="Scrollbar" selected="true" centerPoint3DX="425" centerPoint3DY="340">
                   <matrix>
                     <Matrix tx="415"/>
                   </matrix>

@@ -1,22 +1,19 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="PluginExplorer/ScrollbarNew/ScrollbarFill" itemID="5fe136d9-0000042e" lastModified="1608598813">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_Shared/Scrollbar/ScrollbarFill" itemID="60984bd2-000010ac" sourceFlashFilepath="../_Shared/_Shared.xfl" sourceLibraryItemHRef="_Shared/Scrollbar/ScrollbarFill" sourceLastModified="1620593248" sourceAutoUpdate="true" lastModified="1620593248" sourceItemID="00000000-ffffffff">
   <timeline>
-    <DOMTimeline name="ScrollbarFill" layerDepthEnabled="true">
+    <DOMTimeline name="ScrollbarFill">
       <layers>
         <DOMLayer name="Layer_1" color="#00FFFF" current="true" isSelected="true">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMShape selected="true" isFloating="true">
-                  <matrix>
-                    <Matrix d="0.984619140625"/>
-                  </matrix>
+                <DOMShape>
                   <fills>
                     <FillStyle index="1">
                       <SolidColor color="#FFFFFF"/>
                     </FillStyle>
                   </fills>
                   <edges>
-                    <Edge fillStyle1="1" edges="!75 0S2|325 0!325 0|325 13000!325 13000|75 13000!75 13000|75 0"/>
+                    <Edge fillStyle1="1" edges="!325 0|325 10000!325 10000|75 10000!75 10000|75 0!75 0|325 0"/>
                   </edges>
                 </DOMShape>
               </elements>

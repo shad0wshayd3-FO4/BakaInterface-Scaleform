@@ -7,6 +7,7 @@
         public function ItemList()
         {
             super();
+			this.Scrollbar.forceResize(640);
         }
     }
 }

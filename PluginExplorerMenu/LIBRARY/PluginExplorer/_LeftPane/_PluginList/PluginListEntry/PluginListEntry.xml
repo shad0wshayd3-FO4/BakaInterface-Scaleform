@@ -1,8 +1,8 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="PluginExplorer/_LeftPane/_PluginList/PluginListEntry/PluginListEntry" itemID="5fddb7be-00000aea" linkageExportForAS="true" linkageClassName="Menu.PluginExplorerMenu.PluginListEntry" lastModified="1608388229" lastUniqueIdentifier="1">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="PluginExplorer/_LeftPane/_PluginList/PluginListEntry/PluginListEntry" itemID="5fddb7be-00000aea" linkageExportForAS="true" linkageClassName="Menu.PluginExplorerMenu.PluginListEntry" lastModified="1620594076" lastUniqueIdentifier="1">
   <timeline>
-    <DOMTimeline name="PluginListEntry" layerDepthEnabled="true">
+    <DOMTimeline name="PluginListEntry">
       <layers>
-        <DOMLayer name="Layer_3" color="#FF800A">
+        <DOMLayer name="Layer_3" color="#FF800A" current="true" isSelected="true">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
@@ -23,11 +23,11 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Layer_2" color="#9933CC" current="true" isSelected="true">
+        <DOMLayer name="Layer_2" color="#9933CC">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMDynamicText name="textField" selected="true" width="256" height="36" isSelectable="false">
+                <DOMDynamicText name="textField" width="256" height="36" isSelectable="false">
                   <matrix>
                     <Matrix tx="7" ty="2"/>
                   </matrix>

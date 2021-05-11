@@ -7,6 +7,7 @@
         public function PluginList()
         {
             super();
+			this.Scrollbar.forceResize(640);
         }
     }
 }

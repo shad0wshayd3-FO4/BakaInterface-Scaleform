@@ -1,8 +1,8 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_Shared/BSButtonHintBar/HintBarBracket" itemID="5fe0b773-00001715" sourceFlashFilepath="../_Shared/_Shared.xfl" sourceLibraryItemHRef="_Shared/BSButtonHintBar/HintBarBracket" sourceLastModified="1608520104" sourceAutoUpdate="true" lastModified="1608520104" sourceItemID="5fe011a8-000001b9">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_Shared/BSButtonHintBar/HintBarBracket" itemID="60984bb1-00000fab" sourceFlashFilepath="../_Shared/_Shared.xfl" sourceLibraryItemHRef="_Shared/BSButtonHintBar/HintBarBracket" sourceLastModified="1608520104" sourceAutoUpdate="true" lastModified="1608520104" sourceItemID="00000000-ffffffff">
   <timeline>
-    <DOMTimeline name="HintBarBracket" layerDepthEnabled="true">
+    <DOMTimeline name="HintBarBracket">
       <layers>
-        <DOMLayer name="Layer_1" color="#B16AAD" current="true" isSelected="true">
+        <DOMLayer name="Layer 1" color="#B16AAD" current="true" isSelected="true">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>

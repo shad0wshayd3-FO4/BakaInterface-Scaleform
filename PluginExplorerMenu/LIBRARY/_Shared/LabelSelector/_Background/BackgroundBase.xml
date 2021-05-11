@@ -1,6 +1,6 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="PluginExplorer/_TopPane/LabelSelection" itemID="5fde0020-00000a7d" lastModified="1608384544">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_Shared/LabelSelector/_Background/BackgroundBase" itemID="60984bb1-00000fb0" sourceFlashFilepath="../_Shared/_Shared.xfl" sourceLibraryItemHRef="_Shared/LabelSelector/_Background/BackgroundBase" sourceLastModified="1608563426" sourceAutoUpdate="true" lastModified="1608563426" sourceItemID="00000000-ffffffff">
   <timeline>
-    <DOMTimeline name="LabelSelection" layerDepthEnabled="true">
+    <DOMTimeline name="BackgroundBase">
       <layers>
         <DOMLayer name="Layer_1" color="#00FFFF" current="true" isSelected="true">
           <frames>
@@ -13,7 +13,7 @@
                     </FillStyle>
                   </fills>
                   <edges>
-                    <Edge fillStyle1="1" edges="!0 100|3000 100!3000 100|3000 900!3000 900|0 900!0 900|0 100"/>
+                    <Edge fillStyle1="1" edges="!34400 1000|0 1000!0 1000|0 0!0 0|34400 0!34400 0|34400 1000"/>
                   </edges>
                 </DOMShape>
               </elements>

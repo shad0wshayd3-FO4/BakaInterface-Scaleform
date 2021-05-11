@@ -1,6 +1,6 @@
 <DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="PluginExplorer/_LeftPane/_Search/PluginListSearch" itemID="5fe16400-000014aa" linkageExportForAS="true" linkageClassName="Menu.PluginExplorerMenu.PluginListSearch" lastModified="1608606989">
   <timeline>
-    <DOMTimeline name="PluginListSearch" layerDepthEnabled="true">
+    <DOMTimeline name="PluginListSearch">
       <layers>
         <DOMLayer name="TextBox" color="#9933CC" current="true" isSelected="true" autoNamed="false">
           <frames>
@@ -27,7 +27,7 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="PluginExplorer/_LeftPane/_Search/Border" selected="true">
+                <DOMSymbolInstance libraryItemName="PluginExplorer/_LeftPane/_Search/Border">
                   <transformationPoint>
                     <Point x="260" y="22.5"/>
                   </transformationPoint>
@@ -40,7 +40,7 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMShape selected="true" isFloating="true">
+                <DOMShape isFloating="true">
                   <matrix>
                     <Matrix tx="-22.5"/>
                   </matrix>
@@ -50,7 +50,7 @@
                     </FillStyle>
                   </fills>
                   <edges>
-                    <Edge fillStyle1="1" edges="!8300 0S2|9200 0!9200 0|9200 900!9200 900|8300 900!8300 900|8300 0"/>
+                    <Edge fillStyle1="1" edges="!9200 900S2|8300 900!8300 900|8300 0!8300 0|9200 0!9200 0|9200 900"/>
                   </edges>
                 </DOMShape>
               </elements>

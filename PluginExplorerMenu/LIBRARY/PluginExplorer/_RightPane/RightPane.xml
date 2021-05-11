@@ -1,6 +1,6 @@
 <DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="PluginExplorer/_RightPane/RightPane" itemID="5fddaf9a-00000818" lastModified="1608363930">
   <timeline>
-    <DOMTimeline name="RightPane" layerDepthEnabled="true">
+    <DOMTimeline name="RightPane">
       <layers>
         <DOMLayer name="Background" color="#00FFFF" current="true" isSelected="true" autoNamed="false">
           <frames>

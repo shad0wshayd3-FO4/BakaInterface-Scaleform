@@ -1,6 +1,6 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="PluginExplorer/ScrollbarNew/ScrollbarMarker" itemID="5fe13710-00000431" lastModified="1608598169">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_Shared/Scrollbar/ScrollbarMarker" itemID="60984bd2-000010aa" sourceFlashFilepath="../_Shared/_Shared.xfl" sourceLibraryItemHRef="_Shared/Scrollbar/ScrollbarMarker" sourceLastModified="1608598169" sourceAutoUpdate="true" lastModified="1608598169" sourceItemID="00000000-ffffffff">
   <timeline>
-    <DOMTimeline name="ScrollbarMarker" layerDepthEnabled="true">
+    <DOMTimeline name="ScrollbarMarker">
       <layers>
         <DOMLayer name="Layer_1" color="#00FFFF" current="true" isSelected="true">
           <frames>
@@ -13,7 +13,7 @@
                     </FillStyle>
                   </fills>
                   <edges>
-                    <Edge fillStyle1="1" edges="!75 0S2|325 0!325 0|325 2000!325 2000|75 2000!75 2000|75 0"/>
+                    <Edge fillStyle1="1" edges="!325 0S2|325 2000!325 2000|75 2000!75 2000|75 0!75 0|325 0"/>
                   </edges>
                 </DOMShape>
               </elements>

@@ -1,6 +1,6 @@
 <DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="PluginExplorer/_LeftPane/_Background/BackgroundBase" itemID="5fddab21-000005f5" lastModified="1608599343">
   <timeline>
-    <DOMTimeline name="BackgroundBase" layerDepthEnabled="true">
+    <DOMTimeline name="BackgroundBase">
       <layers>
         <DOMLayer name="Layer_1" color="#00FFFF" current="true" isSelected="true">
           <frames>
@@ -8,7 +8,7 @@
               <elements>
                 <DOMShape selected="true" isFloating="true">
                   <matrix>
-                    <Matrix a="1.14999389648438" d="1.14285278320312"/>
+                    <Matrix a="1.14999389648438" d="1.14283752441406"/>
                   </matrix>
                   <fills>
                     <FillStyle index="1">

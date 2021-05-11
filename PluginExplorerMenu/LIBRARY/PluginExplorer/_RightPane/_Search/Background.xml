@@ -1,6 +1,6 @@
 <DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="PluginExplorer/_RightPane/_Search/Background" itemID="5fe1641a-000014e2" lastModified="1608606934">
   <timeline>
-    <DOMTimeline name="Background" layerDepthEnabled="true">
+    <DOMTimeline name="Background">
       <layers>
         <DOMLayer name="Layer_1" color="#00FFFF" current="true" isSelected="true">
           <frames>
@@ -13,7 +13,7 @@
                     </FillStyle>
                   </fills>
                   <edges>
-                    <Edge fillStyle1="1" edges="!0 0S2|14750 0!14750 0|14750 900!14750 900|0 900!0 900|0 0"/>
+                    <Edge fillStyle1="1" edges="!14750 900S2|0 900!0 900|0 0!0 0|14750 0!14750 0|14750 900"/>
                   </edges>
                 </DOMShape>
               </elements>

@@ -1,78 +1,58 @@
-<DOMDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" backgroundColor="#00FFFF" width="1920" height="1080" frameRate="30" currentTimeline="1" xflVersion="2.971" creatorInfo="Adobe Animate" platform="Windows" versionInfo="Saved by Animate Windows 19.2 build 408" majorVersion="19" minorVersion="2" buildNumber="408" viewAngle3D="122.353661987282" vanishingPoint3DX="960" vanishingPoint3DY="540" nextSceneIdentifier="2" playOptionsPlayLoop="false" playOptionsPlayPages="false" playOptionsPlayFrameActions="false" filetypeGUID="DD0DDBBF-5BEF-45B2-9F24-A3048D2A676F" fileGUID="A2CF3704D040124784A7CC1377A9C592" hasAccessibleData="true">
+<DOMDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" backgroundColor="#00FFFF" width="1920" height="1080" frameRate="30" currentTimeline="1" xflVersion="2.980" creatorInfo="Adobe Animate" platform="Windows" versionInfo="Saved by Animate Windows 21.0 build 40714" majorVersion="21" buildNumber="40714" viewAngle3D="122.353661987282" vanishingPoint3DX="960" vanishingPoint3DY="540" nextSceneIdentifier="2" playOptionsPlayLoop="false" playOptionsPlayPages="false" playOptionsPlayFrameActions="false" autoSaveEnabled="true" autoSaveHasPrompted="true" filetypeGUID="DD0DDBBF-5BEF-45B2-9F24-A3048D2A676F" fileGUID="F0DD817DDD4A98499610641895C9E6E4" hasAccessibleData="true">
      <folders>
           <DOMFolderItem name="_Shared" itemID="5fdda1be-00000208" isExpanded="true"/>
           <DOMFolderItem name="_Shared/_Fonts" itemID="5fdda1be-00000209"/>
           <DOMFolderItem name="_Shared/BSButtonHintBar" itemID="5fdda244-00000338"/>
-          <DOMFolderItem name="_Shared/ItemCard" itemID="5fe18ed9-00001981" isExpanded="true"/>
-          <DOMFolderItem name="_Shared/ItemCard/_Components" itemID="5fc86aed-00000184"/>
-          <DOMFolderItem name="_Shared/ItemCard/_TempIcons" itemID="5fc86e20-00000225"/>
-          <DOMFolderItem name="PluginExplorer" itemID="5fddaace-000005a1"/>
-          <DOMFolderItem name="PluginExplorer/_LeftPane" itemID="5fddb5e7-00000876"/>
+          <DOMFolderItem name="_Shared/LabelSelector" itemID="6098476a-00000562"/>
+          <DOMFolderItem name="_Shared/LabelSelector/_Background" itemID="60984bb1-00000f9f"/>
+          <DOMFolderItem name="_Shared/Scrollbar" itemID="609849b2-00000def"/>
+          <DOMFolderItem name="PluginExplorer" itemID="5fddaace-000005a1" isExpanded="true"/>
+          <DOMFolderItem name="PluginExplorer/_LeftPane" itemID="5fddb5e7-00000876" isExpanded="true"/>
           <DOMFolderItem name="PluginExplorer/_LeftPane/_Background" itemID="5fddb5e4-00000875"/>
-          <DOMFolderItem name="PluginExplorer/_LeftPane/_PluginList" itemID="5fddb5f6-00000882"/>
-          <DOMFolderItem name="PluginExplorer/_LeftPane/_PluginList/PluginListEntry" itemID="5fddb7af-00000ae5"/>
-          <DOMFolderItem name="PluginExplorer/_LeftPane/_Search" itemID="5fe15c4a-00000f7d" isExpanded="true"/>
-          <DOMFolderItem name="PluginExplorer/_RightPane" itemID="5fddb5e9-00000878"/>
+          <DOMFolderItem name="PluginExplorer/_LeftPane/_PluginList" itemID="5fddb5f6-00000882" isExpanded="true"/>
+          <DOMFolderItem name="PluginExplorer/_LeftPane/_PluginList/PluginListEntry" itemID="5fddb7af-00000ae5" isExpanded="true"/>
+          <DOMFolderItem name="PluginExplorer/_LeftPane/_Search" itemID="5fe15c4a-00000f7d"/>
+          <DOMFolderItem name="PluginExplorer/_RightPane" itemID="5fddb5e9-00000878" isExpanded="true"/>
           <DOMFolderItem name="PluginExplorer/_RightPane/_Background" itemID="5fddb5f0-0000087d"/>
-          <DOMFolderItem name="PluginExplorer/_RightPane/_ItemList" itemID="5fddbbcb-00000c17"/>
+          <DOMFolderItem name="PluginExplorer/_RightPane/_ItemList" itemID="5fddbbcb-00000c17" isExpanded="true"/>
           <DOMFolderItem name="PluginExplorer/_RightPane/_ItemList/ItemListEntry" itemID="5fddbbe8-00000c45"/>
-          <DOMFolderItem name="PluginExplorer/_RightPane/_Search" itemID="5fe163d1-00001491" isExpanded="true"/>
-          <DOMFolderItem name="PluginExplorer/_TopPane" itemID="5fdde435-00001be2"/>
-          <DOMFolderItem name="PluginExplorer/_TopPane/_Background" itemID="5fdde476-00001bea"/>
-          <DOMFolderItem name="PluginExplorer/ScrollbarNew" itemID="5fe13593-0000023a"/>
+          <DOMFolderItem name="PluginExplorer/_RightPane/_Search" itemID="5fe163d1-00001491"/>
      </folders>
      <fonts>
-          <DOMFontItem name="_Shared/_Fonts/$BRODY" itemID="5f97a2f3-0000002d" linkageImportForRS="true" linkageExportInFirstFrame="false" linkageClassName="$BRODY" linkageURL="fonts_en.swf" font="Brody" size="0" id="1" sourceLastImported="1603773171" embedRanges="9999"/>
-          <DOMFontItem name="_Shared/_Fonts/$CClub_Font" itemID="5f97a2f3-0000002f" linkageImportForRS="true" linkageExportInFirstFrame="false" linkageClassName="$CClub_Font" linkageURL="fonts_en.swf" font="CreationClub-Regular" size="0" id="2" sourceLastImported="1603773171" embedRanges="9999"/>
-          <DOMFontItem name="_Shared/_Fonts/$CClub_Font_Bold" itemID="5f97a2f3-00000031" linkageImportForRS="true" linkageExportInFirstFrame="false" linkageClassName="$CClub_Font_Bold" linkageURL="fonts_en.swf" font="CreationClub-Bold" size="0" id="3" sourceLastImported="1603773171" embedRanges="9999"/>
-          <DOMFontItem name="_Shared/_Fonts/$Controller_Buttons" itemID="5f97a2f3-00000029" linkageImportForRS="true" linkageExportInFirstFrame="false" linkageClassName="$Controller_Buttons" linkageURL="fonts_en.swf" font="ControllerButtons-Regular" size="0" id="4" sourceLastImported="1603773171" embedRanges="9999"/>
-          <DOMFontItem name="_Shared/_Fonts/$Controller_Buttons_inverted" itemID="5f97a2f3-0000002b" linkageImportForRS="true" linkageExportInFirstFrame="false" linkageClassName="$Controller_Buttons_inverted" linkageURL="fonts_en.swf" font="ControllerButtons-Bold" size="0" id="5" sourceLastImported="1603773171" embedRanges="9999"/>
-          <DOMFontItem name="_Shared/_Fonts/$HandwrittenFont" itemID="5f97a12b-0000001b" linkageImportForRS="true" linkageExportInFirstFrame="false" linkageClassName="$HandwrittenFont" linkageURL="fonts_en.swf" font="Handwritten-Fallout4" size="0" id="6" sourceLastImported="1603772715" embeddedCharacters=" &#xD;¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿĀāĂăĄąĆćĈĉĊċČčĎďĐđĒēĔĕĖėĘęĚěĜĝĞğĠġĢģĤĥĦħĨĩĪīĬĭĮįİıĲĳĴĵĶķĸĹĺĻļĽľĿŀŁłŃńŅņŇňŉŊŋŌōŎŏŐőŒœŔŕŖŗŘřŚśŜŝŞşŠšŢţŤťŦŧŨũŪūŬŭŮůŰűŲųŴŵŶŷŸŹźŻżŽžſƒƠơƯưǰǺǻǼǽǾǿȘșȚțȷˆˇˉ˘˙˚˛˜˝΄΅Ά·ΈΉΊΌΎΏΐΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩΪΫάέήίΰαβγδεζηθικλμνξοπρςστυφχψωϊϋόύώϑϒϖЀЁЂЃЄЅІЇЈЉЊЋЌЍЎЏАБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдежзийклмнопрстуфхцчшщъыьэюяѐёђѓєѕіїјљњћќѝўџѠѡѢѣѤѥѦѧѨѩѪѫѬѭѮѯѰѱѲѳѴѵѶѷѸѹѺѻѼѽѾѿҀҁ҂҃҄҅҆҈҉ҊҋҌҍҎҏҐґҒғҔҕҖҗҘҙҚқҜҝҞҟҠҡҢңҤҥҦҧҨҩҪҫҬҭҮүҰұҲҳҴҵҶҷҸҹҺһҼҽҾҿӀӁӂӃӄӅӆӇӈӉӊӋӌӍӎḀḁḾḿẀẁẂẃẄẅẠạẢảẤấẦầẨẩẪẫẬậẮắẰằẲẳẴẵẶặẸẹẺẻẼẽẾếỀềỂểỄễỆệỈỉỊịỌọỎỏỐốỒồỔổỖỗỘộỚớỜờỞởỠỡỢợỤụỦủỨứỪừỬửỮữỰựỲỳỴỵỶỷỸỹὍ           ​–—―‗‘’‚‛“”„†‡•‥…‰′″‹›‼⁄⁴ⁿ₣₤₧₫€℅ℓ№™Ω℮⅛⅜⅝⅞∂∏∑√∞∫≠≤≥﻿￼" embedRanges="9999|1|2|3|4|5"/>
-          <DOMFontItem name="_Shared/_Fonts/$MAIN_Font" itemID="5f97a2f3-00000023" linkageImportForRS="true" linkageExportInFirstFrame="false" linkageClassName="$MAIN_Font" linkageURL="fonts_en.swf" font="RobotoCondensed-Regular" size="0" id="7" sourceLastImported="1603773171" embedRanges="9999"/>
+          <DOMFontItem name="_Shared/_Fonts/$Terminal_Font" itemID="5f97a2f3-00000027" linkageImportForRS="true" linkageExportInFirstFrame="false" linkageClassName="$Terminal_Font" linkageURL="fonts_en.swf" font="TerminalFont-Regular" size="0" id="9" sourceLastImported="1603773171" embedRanges="9999"/>
           <DOMFontItem name="_Shared/_Fonts/$MAIN_Font_Bold" itemID="5f97a2f3-00000025" linkageImportForRS="true" linkageExportInFirstFrame="false" linkageClassName="$MAIN_Font_Bold" linkageURL="fonts_en.swf" font="RobotoCondensed-Bold" size="0" id="8" sourceLastImported="1603773171" embedRanges="9999"/>
-          <DOMFontItem name="_Shared/_Fonts/$Terminal_Font" itemID="5f97a2f3-00000027" linkageImportForRS="true" linkageExportInFirstFrame="false" linkageClassName="$Terminal_Font" linkageURL="fonts_en.swf" font="ShareTechMono" size="0" id="9" sourceLastImported="1603773171" embedRanges="9999"/>
+          <DOMFontItem name="_Shared/_Fonts/$MAIN_Font" itemID="5f97a2f3-00000023" linkageImportForRS="true" linkageExportInFirstFrame="false" linkageClassName="$MAIN_Font" linkageURL="fonts_en.swf" font="RobotoCondensed-Regular" size="0" id="7" sourceLastImported="1603773171" embedRanges="9999"/>
+          <DOMFontItem name="_Shared/_Fonts/$HandwrittenFont" itemID="5f97a12b-0000001b" linkageImportForRS="true" linkageExportInFirstFrame="false" linkageClassName="$HandwrittenFont" linkageURL="fonts_en.swf" font="HandwrittenInstitute-Regular" size="0" id="6" sourceLastImported="1603772715" embeddedCharacters=" &#xD;¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿĀāĂăĄąĆćĈĉĊċČčĎďĐđĒēĔĕĖėĘęĚěĜĝĞğĠġĢģĤĥĦħĨĩĪīĬĭĮįİıĲĳĴĵĶķĸĹĺĻļĽľĿŀŁłŃńŅņŇňŉŊŋŌōŎŏŐőŒœŔŕŖŗŘřŚśŜŝŞşŠšŢţŤťŦŧŨũŪūŬŭŮůŰűŲųŴŵŶŷŸŹźŻżŽžſƒƠơƯưǰǺǻǼǽǾǿȘșȚțȷˆˇˉ˘˙˚˛˜˝΄΅Ά·ΈΉΊΌΎΏΐΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩΪΫάέήίΰαβγδεζηθικλμνξοπρςστυφχψωϊϋόύώϑϒϖЀЁЂЃЄЅІЇЈЉЊЋЌЍЎЏАБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдежзийклмнопрстуфхцчшщъыьэюяѐёђѓєѕіїјљњћќѝўџѠѡѢѣѤѥѦѧѨѩѪѫѬѭѮѯѰѱѲѳѴѵѶѷѸѹѺѻѼѽѾѿҀҁ҂҃҄҅҆҈҉ҊҋҌҍҎҏҐґҒғҔҕҖҗҘҙҚқҜҝҞҟҠҡҢңҤҥҦҧҨҩҪҫҬҭҮүҰұҲҳҴҵҶҷҸҹҺһҼҽҾҿӀӁӂӃӄӅӆӇӈӉӊӋӌӍӎḀḁḾḿẀẁẂẃẄẅẠạẢảẤấẦầẨẩẪẫẬậẮắẰằẲẳẴẵẶặẸẹẺẻẼẽẾếỀềỂểỄễỆệỈỉỊịỌọỎỏỐốỒồỔổỖỗỘộỚớỜờỞởỠỡỢợỤụỦủỨứỪừỬửỮữỰựỲỳỴỵỶỷỸỹὍ           ​–—―‗‘’‚‛“”„†‡•‥…‰′″‹›‼⁄⁴ⁿ₣₤₧₫€℅ℓ№™Ω℮⅛⅜⅝⅞∂∏∑√∞∫≠≤≥﻿￼" embedRanges="9999|1|2|3|4|5"/>
+          <DOMFontItem name="_Shared/_Fonts/$Controller_Buttons_inverted" itemID="5f97a2f3-0000002b" linkageImportForRS="true" linkageExportInFirstFrame="false" linkageClassName="$Controller_Buttons_inverted" linkageURL="fonts_en.swf" font="ControllerButtons-Regular" size="0" id="5" sourceLastImported="1603773171" embedRanges="9999"/>
+          <DOMFontItem name="_Shared/_Fonts/$Controller_Buttons" itemID="5f97a2f3-00000029" linkageImportForRS="true" linkageExportInFirstFrame="false" linkageClassName="$Controller_Buttons" linkageURL="fonts_en.swf" font="ControllerButtons-Bold" size="0" id="4" sourceLastImported="1603773171" embedRanges="9999"/>
+          <DOMFontItem name="_Shared/_Fonts/$CClub_Font_Bold" itemID="5f97a2f3-00000031" linkageImportForRS="true" linkageExportInFirstFrame="false" linkageClassName="$CClub_Font_Bold" linkageURL="fonts_en.swf" font="CreationClub-Bold" size="0" id="3" sourceLastImported="1603773171" embedRanges="9999"/>
+          <DOMFontItem name="_Shared/_Fonts/$CClub_Font" itemID="5f97a2f3-0000002f" linkageImportForRS="true" linkageExportInFirstFrame="false" linkageClassName="$CClub_Font" linkageURL="fonts_en.swf" font="CreationClub-Regular" size="0" id="2" sourceLastImported="1603773171" embedRanges="9999"/>
+          <DOMFontItem name="_Shared/_Fonts/$BRODY" itemID="5f97a2f3-0000002d" linkageImportForRS="true" linkageExportInFirstFrame="false" linkageClassName="$BRODY" linkageURL="fonts_en.swf" font="Brody-Regular" size="0" id="1" sourceLastImported="1603773171" embedRanges="9999"/>
      </fonts>
      <symbols>
           <Include href="_Shared/BSButtonHintBar/BSButtonHint.xml" itemID="5f97b58a-00000042" lastModified="1608521139"/>
-          <Include href="_Shared/BSButtonHintBar/BSButtonHintBar.xml" itemID="5f97b598-00000044" lastModified="1608562526"/>
-          <Include href="_Shared/BSButtonHintBar/HintBarBracket.xml" itemID="5fe0b773-00001715" lastModified="1608520104"/>
+          <Include href="_Shared/BSButtonHintBar/BSButtonHintBar.xml" itemID="60984bb1-00000fa9" lastModified="1608562526"/>
+          <Include href="_Shared/BSButtonHintBar/HintBarBracket.xml" itemID="60984bb1-00000fab" lastModified="1608520104"/>
           <Include href="_Shared/BSButtonHintBar/IconHolder.xml" itemID="5fe011fb-000001c3" lastModified="1608520187"/>
           <Include href="_Shared/BSButtonHintBar/IconHolderBase.xml" itemID="5fe011f8-000001c2" lastModified="1608520184"/>
           <Include href="_Shared/BSButtonHintBar/Sizer.xml" itemID="5fe01213-000001c5" lastModified="1608562511"/>
           <Include href="_Shared/BSButtonHintBar/SizerBase.xml" itemID="5fe050d7-0000118f" lastModified="1608536279"/>
-          <Include href="_Shared/ItemCard/_Components/Comparison_Minus.xml" loadImmediate="false" itemID="5fc86c82-0000021e" lastModified="1606970792"/>
-          <Include href="_Shared/ItemCard/_Components/Comparison_Plus.xml" loadImmediate="false" itemID="5fc86c85-0000021f" lastModified="1606970501"/>
-          <Include href="_Shared/ItemCard/_Components/Components_EntryBorder.xml" loadImmediate="false" itemID="5fc86dff-00000221" lastModified="1606970887"/>
-          <Include href="_Shared/ItemCard/_Components/Components_EntryHolder.xml" loadImmediate="false" itemID="5fc86c87-00000220" lastModified="1606970503"/>
-          <Include href="_Shared/ItemCard/_Components/ItemCard_BG_Dark.xml" loadImmediate="false" itemID="5fc86c78-0000021d" lastModified="1606970488"/>
-          <Include href="_Shared/ItemCard/_Components/ItemCard_BG_Light.xml" loadImmediate="false" itemID="5fc86c73-0000021c" lastModified="1606970483"/>
-          <Include href="_Shared/ItemCard/_Components/ItemCard_Comparison.xml" itemID="5fc86c2c-00000216" lastModified="1606970412"/>
-          <Include href="_Shared/ItemCard/_TempIcons/Symbol 15.xml" loadImmediate="false" itemID="5fc84763-0000000a" lastModified="1606970252"/>
-          <Include href="_Shared/ItemCard/_TempIcons/Symbol 28.xml" loadImmediate="false" itemID="5fc84763-00000011" lastModified="1603704806"/>
-          <Include href="_Shared/ItemCard/_TempIcons/Symbol 37.xml" loadImmediate="false" itemID="5fc84763-00000015" lastModified="1603704806"/>
-          <Include href="_Shared/ItemCard/_TempIcons/Symbol 39.xml" loadImmediate="false" itemID="5fc84763-00000016" lastModified="1603704806"/>
-          <Include href="_Shared/ItemCard/_TempIcons/Symbol 41.xml" loadImmediate="false" itemID="5fc84763-00000017" lastModified="1603704806"/>
-          <Include href="_Shared/ItemCard/_TempIcons/Symbol 43.xml" loadImmediate="false" itemID="5fc84763-00000018" lastModified="1603704806"/>
-          <Include href="_Shared/ItemCard/_TempIcons/Symbol 45.xml" loadImmediate="false" itemID="5fc84763-00000019" lastModified="1603704806"/>
-          <Include href="_Shared/ItemCard/_TempIcons/Symbol 47.xml" loadImmediate="false" itemID="5fc84763-0000001a" lastModified="1603704806"/>
-          <Include href="_Shared/ItemCard/_TempIcons/Symbol 49.xml" loadImmediate="false" itemID="5fc84763-0000001b" lastModified="1603704806"/>
-          <Include href="_Shared/ItemCard/_TempIcons/Symbol 50.xml" itemID="5fc84763-0000001c" lastModified="1603704806"/>
-          <Include href="_Shared/ItemCard/_TempIcons/Symbol 65.xml" loadImmediate="false" itemID="5fc84763-00000024" lastModified="1603704806"/>
-          <Include href="_Shared/ItemCard/ItemCard.xml" itemID="5fe18ef1-00001a1b" lastModified="1606962879"/>
-          <Include href="_Shared/ItemCard/ItemCard_AmmoEntry.xml" itemID="5fc84eb0-000001c1" lastModified="1606970117"/>
-          <Include href="_Shared/ItemCard/ItemCard_ComponentEntry_Entry.xml" itemID="5fc84ea3-000001c0" lastModified="1606970883"/>
-          <Include href="_Shared/ItemCard/ItemCard_ComponentsEntry.xml" itemID="5fc84e9b-000001bf" lastModified="1606970176"/>
-          <Include href="_Shared/ItemCard/ItemCard_DescriptionEntry.xml" itemID="5fc84e95-000001be" lastModified="1606970053"/>
-          <Include href="_Shared/ItemCard/ItemCard_MultiEntry.xml" itemID="5fc84e87-000001bd" lastModified="1606970046"/>
-          <Include href="_Shared/ItemCard/ItemCard_MultiEntry_Value.xml" itemID="5fc84e7f-000001bc" lastModified="1606970041"/>
-          <Include href="_Shared/ItemCard/ItemCard_StandardEntry.xml" itemID="5fc84e64-000001ba" lastModified="1606970024"/>
-          <Include href="_Shared/ItemCard/ItemCard_TimedEntry.xml" itemID="5fc84e6c-000001bb" lastModified="1606962796"/>
+          <Include href="_Shared/LabelSelector/_Background/Background.xml" itemID="60984bb1-00000fad" lastModified="1608563434"/>
+          <Include href="_Shared/LabelSelector/_Background/BackgroundBase.xml" itemID="60984bb1-00000fb0" lastModified="1608563426"/>
+          <Include href="_Shared/LabelSelector/_Background/BackgroundTrim.xml" itemID="60984bb1-00000faf" lastModified="1608377643"/>
+          <Include href="_Shared/LabelSelector/LabelItem.xml" itemID="60984bb1-00000fb1" lastModified="1608383776"/>
+          <Include href="_Shared/LabelSelector/LabelSelection.xml" itemID="60984bb1-00000fac" lastModified="1608384544"/>
+          <Include href="_Shared/LabelSelector/LabelSelector.xml" itemID="60984bb1-00000fa4" lastModified="1620592465"/>
+          <Include href="_Shared/Scrollbar/Scrollbar.xml" itemID="60984bd2-000010a7" lastModified="1620593307"/>
+          <Include href="_Shared/Scrollbar/ScrollbarArrow.xml" itemID="60984bd2-000010a9" lastModified="1608598345"/>
+          <Include href="_Shared/Scrollbar/ScrollbarFill.xml" itemID="60984bd2-000010ac" lastModified="1620593248"/>
+          <Include href="_Shared/Scrollbar/ScrollbarMarker.xml" itemID="60984bd2-000010aa" lastModified="1608598169"/>
           <Include href="PluginExplorer/_LeftPane/_Background/Background.xml" loadImmediate="false" itemID="5fddab2b-000005f9" lastModified="1608363888"/>
           <Include href="PluginExplorer/_LeftPane/_Background/BackgroundBase.xml" loadImmediate="false" itemID="5fddab21-000005f5" lastModified="1608599343"/>
           <Include href="PluginExplorer/_LeftPane/_Background/BackgroundTrim.xml" loadImmediate="false" itemID="5fddabfb-0000069a" lastModified="1608599356"/>
-          <Include href="PluginExplorer/_LeftPane/_PluginList/PluginList.xml" itemID="5fddb617-00000884" lastModified="1608599327"/>
+          <Include href="PluginExplorer/_LeftPane/_PluginList/PluginList.xml" itemID="5fddb617-00000884" lastModified="1620593710"/>
           <Include href="PluginExplorer/_LeftPane/_PluginList/PluginListBorder.xml" loadImmediate="false" itemID="5fddb69a-00000958" lastModified="1608599011"/>
-          <Include href="PluginExplorer/_LeftPane/_PluginList/PluginListEntry/PluginListEntry.xml" itemID="5fddb7be-00000aea" lastModified="1608388229"/>
+          <Include href="PluginExplorer/_LeftPane/_PluginList/PluginListEntry/PluginListEntry.xml" itemID="5fddb7be-00000aea" lastModified="1620594076"/>
           <Include href="PluginExplorer/_LeftPane/_PluginList/PluginListEntry/PluginListEntryBorder.xml" loadImmediate="false" itemID="5fddb7cd-00000aee" lastModified="1608388192"/>
           <Include href="PluginExplorer/_LeftPane/_Search/Background.xml" loadImmediate="false" itemID="5fe16340-000013a1" lastModified="1608606846"/>
           <Include href="PluginExplorer/_LeftPane/_Search/Border.xml" loadImmediate="false" itemID="5fe16342-000013a2" lastModified="1608606829"/>
@@ -81,7 +61,7 @@
           <Include href="PluginExplorer/_RightPane/_Background/Background.xml" loadImmediate="false" itemID="5fddaf8f-00000812" lastModified="1608363888"/>
           <Include href="PluginExplorer/_RightPane/_Background/BackgroundBase.xml" loadImmediate="false" itemID="5fddaf8f-00000815" lastModified="1608377004"/>
           <Include href="PluginExplorer/_RightPane/_Background/BackgroundTrim.xml" loadImmediate="false" itemID="5fddaf8f-00000814" lastModified="1608377020"/>
-          <Include href="PluginExplorer/_RightPane/_ItemList/ItemList.xml" itemID="5fddbbe1-00000c43" lastModified="1608599319"/>
+          <Include href="PluginExplorer/_RightPane/_ItemList/ItemList.xml" itemID="5fddbbe1-00000c43" lastModified="1620593740"/>
           <Include href="PluginExplorer/_RightPane/_ItemList/ItemListBorder.xml" loadImmediate="false" itemID="5fddbbe4-00000c44" lastModified="1608599016"/>
           <Include href="PluginExplorer/_RightPane/_ItemList/ItemListEntry/ItemListEntry.xml" itemID="5fddbc03-00000c47" lastModified="1608388622"/>
           <Include href="PluginExplorer/_RightPane/_ItemList/ItemListEntry/ItemListEntryBorder.xml" loadImmediate="false" itemID="5fddbc5f-00000cc8" lastModified="1608388177"/>
@@ -89,26 +69,16 @@
           <Include href="PluginExplorer/_RightPane/_Search/Border.xml" loadImmediate="false" itemID="5fe16410-000014c6" lastModified="1608606891"/>
           <Include href="PluginExplorer/_RightPane/_Search/ItemListSearch.xml" itemID="5fe163ef-00001494" lastModified="1608606951"/>
           <Include href="PluginExplorer/_RightPane/RightPane.xml" loadImmediate="false" itemID="5fddaf9a-00000818" lastModified="1608363930"/>
-          <Include href="PluginExplorer/_TopPane/_Background/Background.xml" loadImmediate="false" itemID="5fdde486-00001bf1" lastModified="1608563434"/>
-          <Include href="PluginExplorer/_TopPane/_Background/BackgroundBase.xml" loadImmediate="false" itemID="5fdde47a-00001bec" lastModified="1608563426"/>
-          <Include href="PluginExplorer/_TopPane/_Background/BackgroundTrim.xml" loadImmediate="false" itemID="5fdde483-00001bef" lastModified="1608377643"/>
-          <Include href="PluginExplorer/_TopPane/LabelItem.xml" itemID="5fddef7d-00001dde" lastModified="1608383776"/>
-          <Include href="PluginExplorer/_TopPane/LabelSelection.xml" loadImmediate="false" itemID="5fde0020-00000a7d" lastModified="1608384544"/>
-          <Include href="PluginExplorer/_TopPane/LabelSelector.xml" itemID="5fddf256-000002b0" lastModified="1608563493"/>
-          <Include href="PluginExplorer/ScrollbarNew/Scrollbar.xml" itemID="5fe1374c-00000433" lastModified="1608599504"/>
-          <Include href="PluginExplorer/ScrollbarNew/ScrollbarArrow.xml" loadImmediate="false" itemID="5fe13d0b-00000648" lastModified="1608598345"/>
-          <Include href="PluginExplorer/ScrollbarNew/ScrollbarFill.xml" loadImmediate="false" itemID="5fe136d9-0000042e" lastModified="1608598813"/>
-          <Include href="PluginExplorer/ScrollbarNew/ScrollbarMarker.xml" loadImmediate="false" itemID="5fe13710-00000431" lastModified="1608598169"/>
-          <Include href="PluginExplorerMenu.xml" itemID="5fdda179-00000153" lastModified="1608617761"/>
+          <Include href="PluginExplorerMenu.xml" itemID="5fdda179-00000153" lastModified="1620593658"/>
      </symbols>
      <timelines>
-          <DOMTimeline name="Scene 1" layerDepthEnabled="true">
+          <DOMTimeline name="Scene 1">
                <layers>
                     <DOMLayer name="Layer_1" color="#00FFFF" current="true" isSelected="true">
                          <frames>
                               <DOMFrame index="0" keyMode="9728">
                                    <elements>
-                                        <DOMSymbolInstance libraryItemName="PluginExplorerMenu" name="Menu_mc" selected="true" hasAccessibleData="true">
+                                        <DOMSymbolInstance libraryItemName="PluginExplorerMenu" name="Menu_mc" selected="true" hasAccessibleData="true" centerPoint3DX="960" centerPoint3DY="549">
                                              <transformationPoint>
                                                   <Point/>
                                              </transformationPoint>
@@ -123,25 +93,25 @@
      <scripts/>
      <PrinterSettings/>
      <publishHistory>
+          <PublishItem publishSize="41686" publishTime="1620594065"/>
+          <PublishItem publishSize="41688" publishTime="1620593947"/>
+          <PublishItem publishSize="42005" publishTime="1620530687"/>
+          <PublishItem publishSize="41971" publishTime="1620530237"/>
+          <PublishItem publishSize="41961" publishTime="1620530220"/>
+          <PublishItem publishSize="41960" publishTime="1620530161"/>
+          <PublishItem publishSize="41952" publishTime="1620530100"/>
+          <PublishItem publishSize="41958" publishTime="1620529962"/>
+          <PublishItem publishSize="41947" publishTime="1620529942"/>
+          <PublishItem publishSize="41948" publishTime="1620529563"/>
+          <PublishItem publishSize="41951" publishTime="1620529194"/>
+          <PublishItem publishSize="41998" publishTime="1620529120"/>
+          <PublishItem publishSize="46803" publishTime="1620529067"/>
+          <PublishItem publishSize="49023" publishTime="1610505273"/>
           <PublishItem publishSize="43345" publishTime="1608617660"/>
           <PublishItem publishSize="43840" publishTime="1608617290"/>
           <PublishItem publishSize="43859" publishTime="1608617193"/>
           <PublishItem publishSize="43850" publishTime="1608616854"/>
           <PublishItem publishSize="43736" publishTime="1608608481"/>
           <PublishItem publishSize="43734" publishTime="1608608362"/>
-          <PublishItem publishSize="43671" publishTime="1608608060"/>
-          <PublishItem publishSize="43664" publishTime="1608607881"/>
-          <PublishItem publishSize="43674" publishTime="1608607747"/>
-          <PublishItem publishSize="43285" publishTime="1608607719"/>
-          <PublishItem publishSize="43279" publishTime="1608607596"/>
-          <PublishItem publishSize="43169" publishTime="1608607579"/>
-          <PublishItem publishSize="43132" publishTime="1608607432"/>
-          <PublishItem publishSize="43103" publishTime="1608607225"/>
-          <PublishItem publishSize="43103" publishTime="1608607140"/>
-          <PublishItem publishSize="2184" publishTime="1608607003"/>
-          <PublishItem publishSize="41507" publishTime="1608605068"/>
-          <PublishItem publishSize="41433" publishTime="1608604725"/>
-          <PublishItem publishSize="41433" publishTime="1608604378"/>
-          <PublishItem publishSize="41532" publishTime="1608603963"/>
      </publishHistory>
 </DOMDocument>

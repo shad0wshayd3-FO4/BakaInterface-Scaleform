@@ -31,7 +31,6 @@
         public var ItemSearch_mc:ItemListSearch;
         public var PluginList_mc:PluginList;
         public var PluginSearch_mc:PluginListSearch;
-        public var ItemCard_mc:ItemCard;
 
         private var CancelButton:BSButtonHintData;
         private var SearchButton:BSButtonHintData;
@@ -143,12 +142,6 @@
             this.PluginList_mc.InvalidateData();
             this.PluginList_mc.selectedIndex = 0;
             this.UpdateItemList();
-        }
-
-        public function onUpdateItemCardInfoList(param1:Array):*
-        {
-            this.ItemCard_mc.InfoObj = param1;
-            this.ItemCard_mc.onDataChange();
         }
 
         public function onKeyDown(param1:KeyboardEvent):*
@@ -293,6 +286,12 @@
                         break;
 
                     case 1:
+						var entry = this.ItemList_mc.selectedEntry;
+						if (entry != null)
+						{
+							// GetQuantity
+							this.BGSCodeObj.AddItem(entry.FormID, 1);
+						}
                         break;
                 }
             }
@@ -306,10 +305,6 @@
                     break;
 
                 case 1:
-                    if (this.uiMenuIndex == 9 && this.ItemList_mc.selectedEntry != null)
-                    {
-                        this.BGSCodeObj.TestItemCardInfoList(this.ItemList_mc.selectedEntry.FormID);
-                    }
                     break;
             }
 
@@ -472,7 +467,7 @@
 
                 if (!this.CategoryBar_mc.GetLabel(this.uiMenuIndex).selectable)
                 {
-                    if (!bDonePrevious)
+                    if (!this.bDonePrevious)
                     {
                         this.bDonePrevious = true;
                         this.onPrevCategory();

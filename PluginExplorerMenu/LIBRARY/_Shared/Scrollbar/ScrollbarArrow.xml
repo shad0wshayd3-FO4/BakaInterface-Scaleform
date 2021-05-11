@@ -1,6 +1,6 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="PluginExplorer/ScrollbarNew/ScrollbarArrow" itemID="5fe13d0b-00000648" lastModified="1608598345">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_Shared/Scrollbar/ScrollbarArrow" itemID="60984bd2-000010a9" sourceFlashFilepath="../_Shared/_Shared.xfl" sourceLibraryItemHRef="_Shared/Scrollbar/ScrollbarArrow" sourceLastModified="1608598345" sourceAutoUpdate="true" lastModified="1608598345" sourceItemID="00000000-ffffffff">
   <timeline>
-    <DOMTimeline name="ScrollbarArrow" layerDepthEnabled="true">
+    <DOMTimeline name="ScrollbarArrow">
       <layers>
         <DOMLayer name="Layer_1" color="#00FFFF" current="true" isSelected="true">
           <frames>

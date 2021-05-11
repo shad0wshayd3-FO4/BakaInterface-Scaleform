@@ -1,6 +1,6 @@
 <DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="PluginExplorer/_LeftPane/LeftPane" itemID="5fddaaf8-000005af" lastModified="1608362919">
   <timeline>
-    <DOMTimeline name="LeftPane" layerDepthEnabled="true">
+    <DOMTimeline name="LeftPane">
       <layers>
         <DOMLayer name="Background" color="#00FFFF" current="true" isSelected="true" autoNamed="false">
           <frames>

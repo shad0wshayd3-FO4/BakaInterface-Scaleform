@@ -1,6 +1,6 @@
 <DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="PluginExplorer/_LeftPane/_PluginList/PluginListEntry/PluginListEntryBorder" itemID="5fddb7cd-00000aee" lastModified="1608388192">
   <timeline>
-    <DOMTimeline name="PluginListEntryBorder" layerDepthEnabled="true">
+    <DOMTimeline name="PluginListEntryBorder">
       <layers>
         <DOMLayer name="Layer_1" color="#00FFFF" current="true" isSelected="true">
           <frames>
@@ -13,7 +13,7 @@
                     </FillStyle>
                   </fills>
                   <edges>
-                    <Edge fillStyle1="1" edges="!0 0|8000 0!8000 0|8000 800!8000 800|0 800!0 800|0 0"/>
+                    <Edge fillStyle1="1" edges="!8000 800|0 800!0 800|0 0!0 0|8000 0!8000 0|8000 800"/>
                   </edges>
                 </DOMShape>
               </elements>

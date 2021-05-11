@@ -1,12 +1,12 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="PluginExplorer/_TopPane/_Background/Background" itemID="5fdde486-00001bf1" lastModified="1608563434">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_Shared/LabelSelector/_Background/Background" itemID="60984bb1-00000fad" sourceFlashFilepath="../_Shared/_Shared.xfl" sourceLibraryItemHRef="_Shared/LabelSelector/_Background/Background" sourceLastModified="1608563434" sourceAutoUpdate="true" lastModified="1608563434" sourceItemID="00000000-ffffffff">
   <timeline>
-    <DOMTimeline name="Background" layerDepthEnabled="true">
+    <DOMTimeline name="Background">
       <layers>
         <DOMLayer name="Layer_3" color="#FF800A">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="PluginExplorer/_TopPane/_Background/BackgroundTrim">
+                <DOMSymbolInstance libraryItemName="_Shared/LabelSelector/_Background/BackgroundTrim">
                   <transformationPoint>
                     <Point x="5" y="25"/>
                   </transformationPoint>
@@ -19,7 +19,7 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="PluginExplorer/_TopPane/_Background/BackgroundTrim">
+                <DOMSymbolInstance libraryItemName="_Shared/LabelSelector/_Background/BackgroundTrim">
                   <matrix>
                     <Matrix a="-1" tx="1720"/>
                   </matrix>
@@ -35,7 +35,7 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="PluginExplorer/_TopPane/_Background/BackgroundBase">
+                <DOMSymbolInstance libraryItemName="_Shared/LabelSelector/_Background/BackgroundBase">
                   <transformationPoint>
                     <Point x="625" y="25"/>
                   </transformationPoint>

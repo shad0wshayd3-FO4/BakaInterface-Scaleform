@@ -1,6 +1,6 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="PluginExplorer/_TopPane/_Background/BackgroundTrim" itemID="5fdde483-00001bef" lastModified="1608377643">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_Shared/LabelSelector/_Background/BackgroundTrim" itemID="60984bb1-00000faf" sourceFlashFilepath="../_Shared/_Shared.xfl" sourceLibraryItemHRef="_Shared/LabelSelector/_Background/BackgroundTrim" sourceLastModified="1608377643" sourceAutoUpdate="true" lastModified="1608377643" sourceItemID="00000000-ffffffff">
   <timeline>
-    <DOMTimeline name="BackgroundTrim" layerDepthEnabled="true">
+    <DOMTimeline name="BackgroundTrim">
       <layers>
         <DOMLayer name="Layer_3" color="#FF800A">
           <frames>
@@ -35,7 +35,7 @@
                     </FillStyle>
                   </fills>
                   <edges>
-                    <Edge fillStyle1="1" edges="!0 940|260 940!260 940|260 1000!260 1000|0 1000!0 1000|0 940"/>
+                    <Edge fillStyle1="1" edges="!260 940|260 1000!260 1000|0 1000!0 1000|0 940!0 940|260 940"/>
                     <Edge cubics="!0 1000(;0,1000 0,940 0,940q0 1000 0 940);"/>
                     <Edge cubics="!260 940(;260,940 260,1000 260,1000q260 940 260 1000);"/>
                     <Edge cubics="!0 940(;0,940 260,940 260,940q0 940 260 940);"/>
@@ -57,7 +57,7 @@
                     </FillStyle>
                   </fills>
                   <edges>
-                    <Edge fillStyle1="1" edges="!0 0|60 0!60 0|60 1000!60 1000|0 1000!0 1000|0 0"/>
+                    <Edge fillStyle1="1" edges="!60 0|60 1000!60 1000|0 1000!0 1000|0 0!0 0|60 0"/>
                   </edges>
                 </DOMShape>
               </elements>

@@ -1,6 +1,6 @@
 <DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="PluginExplorer/_RightPane/_ItemList/ItemListEntry/ItemListEntryBorder" itemID="5fddbc5f-00000cc8" lastModified="1608388177">
   <timeline>
-    <DOMTimeline name="ItemListEntryBorder" layerDepthEnabled="true">
+    <DOMTimeline name="ItemListEntryBorder">
       <layers>
         <DOMLayer name="Layer_1" color="#00FFFF" current="true" isSelected="true">
           <frames>
@@ -8,7 +8,7 @@
               <elements>
                 <DOMShape selected="true" isFloating="true">
                   <matrix>
-                    <Matrix a="1.07691955566406"/>
+                    <Matrix a="1.076904296875"/>
                   </matrix>
                   <fills>
                     <FillStyle index="1">
@@ -16,7 +16,7 @@
                     </FillStyle>
                   </fills>
                   <edges>
-                    <Edge fillStyle1="1" edges="!0 0S2|13000 0!13000 0|13000 800!13000 800|0 800!0 800|0 0"/>
+                    <Edge fillStyle1="1" edges="!13000 800S2|0 800!0 800|0 0!0 0|13000 0!13000 0|13000 800"/>
                   </edges>
                 </DOMShape>
               </elements>

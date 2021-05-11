@@ -1,6 +1,6 @@
 <DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="PluginExplorer/_LeftPane/_PluginList/PluginListBorder" itemID="5fddb69a-00000958" lastModified="1608599011">
   <timeline>
-    <DOMTimeline name="PluginListBorder" layerDepthEnabled="true">
+    <DOMTimeline name="PluginListBorder">
       <layers>
         <DOMLayer name="Layer_1" color="#00FFFF" current="true" isSelected="true">
           <frames>

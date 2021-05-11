@@ -1,6 +1,6 @@
 <DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="PluginExplorer/_RightPane/_Background/BackgroundTrim" itemID="5fddaf8f-00000814" lastModified="1608377020">
   <timeline>
-    <DOMTimeline name="BackgroundTrim" layerDepthEnabled="true">
+    <DOMTimeline name="BackgroundTrim">
       <layers>
         <DOMLayer name="Layer_3" color="#FF800A" current="true" isSelected="true">
           <frames>
@@ -49,7 +49,7 @@
                     </FillStyle>
                   </fills>
                   <edges>
-                    <Edge fillStyle1="1" edges="!0 0|25000 0!25000 0|25000 60!25000 60|0 60!0 60|0 0"/>
+                    <Edge fillStyle1="1" edges="!25000 60|0 60!0 60|0 0!0 0|25000 0!25000 0|25000 60"/>
                   </edges>
                 </DOMShape>
               </elements>

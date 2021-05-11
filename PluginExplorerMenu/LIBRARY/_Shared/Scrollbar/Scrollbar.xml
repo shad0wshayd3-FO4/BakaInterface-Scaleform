@@ -1,12 +1,12 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="PluginExplorer/ScrollbarNew/Scrollbar" itemID="5fe1374c-00000433" linkageExportForAS="true" linkageClassName="Shared.AS3.BSSlider" lastModified="1608599504">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_Shared/Scrollbar/Scrollbar" itemID="60984bd2-000010a7" linkageExportForAS="true" linkageClassName="Shared.AS3.BSSlider" sourceFlashFilepath="../_Shared/_Shared.xfl" sourceLibraryItemHRef="_Shared/Scrollbar/Scrollbar" sourceLastModified="1620593307" sourceAutoUpdate="true" lastModified="1620593307" sourceItemID="00000000-ffffffff">
   <timeline>
-    <DOMTimeline name="Scrollbar" layerDepthEnabled="true">
+    <DOMTimeline name="Scrollbar">
       <layers>
         <DOMLayer name="Arrows" color="#669900" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="PluginExplorer/ScrollbarNew/ScrollbarArrow" name="LeftArrow_mc">
+                <DOMSymbolInstance libraryItemName="_Shared/Scrollbar/ScrollbarArrow" name="LeftArrow_mc">
                   <matrix>
                     <Matrix tx="-2.5" ty="4.6"/>
                   </matrix>
@@ -14,9 +14,9 @@
                     <Point x="10" y="2.85"/>
                   </transformationPoint>
                 </DOMSymbolInstance>
-                <DOMSymbolInstance libraryItemName="PluginExplorer/ScrollbarNew/ScrollbarArrow" name="RightArrow_mc">
+                <DOMSymbolInstance libraryItemName="_Shared/Scrollbar/ScrollbarArrow" name="RightArrow_mc">
                   <matrix>
-                    <Matrix d="-1" tx="-2.5" ty="675.4"/>
+                    <Matrix d="-1" tx="-2.5" ty="535.4"/>
                   </matrix>
                   <transformationPoint>
                     <Point x="10" y="2.85"/>
@@ -26,11 +26,11 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Marker" color="#9933CC" autoNamed="false">
+        <DOMLayer name="Marker" color="#9933CC" locked="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="PluginExplorer/ScrollbarNew/ScrollbarMarker" name="Marker_mc">
+                <DOMSymbolInstance libraryItemName="_Shared/Scrollbar/ScrollbarMarker" name="Marker_mc">
                   <matrix>
                     <Matrix ty="20"/>
                   </matrix>
@@ -42,11 +42,11 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Fill" color="#00FFFF" locked="true" autoNamed="false">
+        <DOMLayer name="Fill" color="#00FFFF" current="true" isSelected="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="PluginExplorer/ScrollbarNew/ScrollbarFill" name="Fill_mc" selected="true">
+                <DOMSymbolInstance libraryItemName="_Shared/Scrollbar/ScrollbarFill" name="Fill_mc">
                   <matrix>
                     <Matrix ty="20"/>
                   </matrix>
@@ -61,11 +61,11 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="SliderBackground_mc" color="#FF4FFF" current="true" isSelected="true" autoNamed="false">
+        <DOMLayer name="SliderBackground_mc" color="#FF4FFF" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="PluginExplorer/ScrollbarNew/ScrollbarFill" name="SliderBackground_mc" selected="true">
+                <DOMSymbolInstance libraryItemName="_Shared/Scrollbar/ScrollbarFill" name="SliderBackground_mc">
                   <matrix>
                     <Matrix ty="20"/>
                   </matrix>

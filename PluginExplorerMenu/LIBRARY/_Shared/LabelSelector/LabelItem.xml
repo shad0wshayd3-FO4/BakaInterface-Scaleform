@@ -1,6 +1,6 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="PluginExplorer/_TopPane/LabelItem" itemID="5fddef7d-00001dde" linkageExportForAS="true" linkageClassName="Shared.AS3.LabelItem" lastModified="1608383776">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_Shared/LabelSelector/LabelItem" itemID="60984bb1-00000fb1" linkageExportForAS="true" linkageClassName="Shared.AS3.LabelItem" sourceFlashFilepath="../_Shared/_Shared.xfl" sourceLibraryItemHRef="_Shared/LabelSelector/LabelItem" sourceLastModified="1608383776" sourceAutoUpdate="true" lastModified="1608383776" sourceItemID="00000000-ffffffff">
   <timeline>
-    <DOMTimeline name="LabelItem" layerDepthEnabled="true">
+    <DOMTimeline name="LabelItem">
       <layers>
         <DOMLayer name="Layer_1" color="#00FFFF" current="true" isSelected="true">
           <frames>

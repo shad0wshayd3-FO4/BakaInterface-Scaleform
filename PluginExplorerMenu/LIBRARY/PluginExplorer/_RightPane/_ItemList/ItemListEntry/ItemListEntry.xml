@@ -1,6 +1,6 @@
 <DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="PluginExplorer/_RightPane/_ItemList/ItemListEntry/ItemListEntry" itemID="5fddbc03-00000c47" linkageExportForAS="true" linkageClassName="Menu.PluginExplorerMenu.ItemListEntry" lastModified="1608388622" lastUniqueIdentifier="1">
   <timeline>
-    <DOMTimeline name="ItemListEntry" layerDepthEnabled="true">
+    <DOMTimeline name="ItemListEntry">
       <layers>
         <DOMLayer name="Layer_3" color="#FF800A">
           <frames>

@@ -1,6 +1,6 @@
 <DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="PluginExplorer/_LeftPane/_Background/Background" itemID="5fddab2b-000005f9" lastModified="1608363888">
   <timeline>
-    <DOMTimeline name="Background" layerDepthEnabled="true">
+    <DOMTimeline name="Background">
       <layers>
         <DOMLayer name="BracketTop" color="#FF800A" current="true" isSelected="true" autoNamed="false">
           <frames>
