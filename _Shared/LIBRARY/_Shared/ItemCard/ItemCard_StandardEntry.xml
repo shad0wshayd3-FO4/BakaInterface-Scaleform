@@ -50,7 +50,7 @@
               <elements>
                 <DOMSymbolInstance libraryItemName="_Shared/ItemCard/_Components/ItemCard_BG_Dark" centerPoint3DX="-236.8" centerPoint3DY="53.5">
                   <matrix>
-                    <Matrix a="2.99996948242188" d="0.349990844726562" tx="-300"/>
+                    <Matrix a="2.99996948242188" d="0.3499755859375" tx="-300"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
@@ -64,7 +64,7 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_Shared/ItemCard/_Components/ItemCard_Comparison" name="Comparison_mc" selected="true" centerPoint3DX="31.5" centerPoint3DY="23">
+                <DOMSymbolInstance libraryItemName="_Shared/ItemCard/_Components/ItemCard_Comparison" name="Comparison_mc" centerPoint3DX="31.5" centerPoint3DY="23">
                   <matrix>
                     <Matrix tx="10" ty="17.5"/>
                   </matrix>

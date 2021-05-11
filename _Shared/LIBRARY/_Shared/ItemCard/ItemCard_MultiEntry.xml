@@ -45,7 +45,7 @@
               <elements>
                 <DOMSymbolInstance libraryItemName="_Shared/ItemCard/_Components/ItemCard_BG_Light" name="Background_mc" selected="true" centerPoint3DX="-239.85" centerPoint3DY="53.5">
                   <matrix>
-                    <Matrix a="1.94996643066406" d="0.349990844726562" tx="-300"/>
+                    <Matrix a="1.949951171875" d="0.3499755859375" tx="-300"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>

@@ -1,13 +1,13 @@
 ﻿package Shared.AS3
 {
-    import Shared.AS3.Events.CustomEvent;
-    import Shared.GlobalFunc;
     import flash.display.MovieClip;
     import flash.events.Event;
     import flash.events.KeyboardEvent;
     import flash.events.MouseEvent;
     import flash.geom.Rectangle;
     import flash.ui.Keyboard;
+	import Shared.AS3.Events.CustomEvent;
+    import Shared.GlobalFunc;
 
     public class BSSlider extends BSUIComponent
     {
@@ -73,6 +73,28 @@
         {
             return this._bDispatchOnValueChange;
         }
+		
+		public function forceResize(param1:Number):void
+		{
+			if (this._bVertical)
+			{
+				var diff:Number = param1 - this.SliderBackground_mc.height;
+				this.SliderBackground_mc.height = param1;
+				this.Fill_mc.height = param1;
+				this.RightArrow_mc.y = this.RightArrow_mc.y + diff;
+			}
+			else
+			{
+				var diff:Number = param1 - this.SliderBackground_mc.width;
+				this.SliderBackground_mc.width = param1;
+				this.Fill_mc.width = param1;
+				this.RightArrow_mc.x = this.RightArrow_mc.x + diff;
+			}
+			
+			this._fillBaseSizePos = new Rectangle(this.Fill_mc.x, this.Fill_mc.y, this.Fill_mc.width, this.Fill_mc.height);
+			this._MarkerBaseSizePos = new Rectangle(this.Marker_mc.x, this.Marker_mc.y, this.Marker_mc.width, this.Marker_mc.height);
+			this.updateConstraints();
+		}
 
         public function updateConstraints():void
         {

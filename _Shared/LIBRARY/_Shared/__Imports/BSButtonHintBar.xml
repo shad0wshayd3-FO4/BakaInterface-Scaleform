@@ -1,6 +1,6 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_Shared/BSButtonHintBar/Template" itemID="5fe01194-000001b6" lastModified="1608520084">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_Shared/__Imports/BSButtonHintBar" itemID="609847e8-0000058b" lastModified="1620592616">
   <timeline>
-    <DOMTimeline name="Template">
+    <DOMTimeline name="BSButtonHintBar">
       <layers>
         <DOMLayer name="Layer_1" color="#00FFFF" current="true" isSelected="true">
           <frames>

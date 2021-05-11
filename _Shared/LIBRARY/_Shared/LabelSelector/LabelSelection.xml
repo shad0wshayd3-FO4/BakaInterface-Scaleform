@@ -1,6 +1,6 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_Shared/BSButtonHintBar/SizerBase" itemID="5fe050d7-0000118f" lastModified="1608536279">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_Shared/LabelSelector/LabelSelection" itemID="5fde0020-00000a7d" lastModified="1608384544">
   <timeline>
-    <DOMTimeline name="SizerBase">
+    <DOMTimeline name="LabelSelection">
       <layers>
         <DOMLayer name="Layer_1" color="#00FFFF" current="true" isSelected="true">
           <frames>
@@ -13,7 +13,7 @@
                     </FillStyle>
                   </fills>
                   <edges>
-                    <Edge fillStyle1="1" edges="!1000 300S2|0 300!0 300|0 0!0 0|1000 0!1000 0|1000 300"/>
+                    <Edge fillStyle1="1" edges="!3000 900|0 900!0 900|0 100!0 100|3000 100!3000 100|3000 900"/>
                   </edges>
                 </DOMShape>
               </elements>
