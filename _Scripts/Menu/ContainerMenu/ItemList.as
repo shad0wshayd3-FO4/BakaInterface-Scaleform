@@ -1,12 +1,13 @@
 ﻿package Menu.ContainerMenu
 {
-    import Shared.AS3.BSScrollingList;
+    import Shared.AS3.BSScrollbarList;
 
-    public class ItemList extends BSScrollingList
+    public class ItemList extends BSScrollbarList
     {
         public function ItemList()
         {
             super();
+			this.Scrollbar.forceResize(580);
         }
     }
 }

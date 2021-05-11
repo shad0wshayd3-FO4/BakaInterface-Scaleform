@@ -45,7 +45,7 @@
               <elements>
                 <DOMSymbolInstance libraryItemName="_Shared/ItemCard/_Components/Components_EntryBorder" name="border" selected="true" centerPoint3DX="75.75" centerPoint3DY="50.5">
                   <matrix>
-                    <Matrix a="2.99989318847656" d="0.400009155273438"/>
+                    <Matrix a="2.9998779296875" d="0.400009155273438"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>

@@ -1,0 +1,61 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_Shared/LabelSelector/LabelSelector" itemID="6098487a-00000867" linkageExportForAS="true" linkageClassName="Shared.AS3.LabelSelector" sourceFlashFilepath="../_Shared/_Shared.xfl" sourceLibraryItemHRef="_Shared/LabelSelector/LabelSelector" sourceLastModified="1620592465" lastModified="1620592465" sourceItemID="5fddf256-000002b0">
+  <timeline>
+    <DOMTimeline name="LabelSelector">
+      <layers>
+        <DOMLayer name="ButtonHints" color="#FF800A" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_Shared/BSButtonHintBar/BSButtonHintBar" name="ButtonLeft_mc" centerPoint3DX="50" centerPoint3DY="24">
+                  <matrix>
+                    <Matrix tx="50"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="24"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="_Shared/BSButtonHintBar/BSButtonHintBar" name="ButtonRight_mc" selected="true" centerPoint3DX="1670" centerPoint3DY="24">
+                  <matrix>
+                    <Matrix tx="1670"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="24"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Selector" color="#9933CC" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_Shared/LabelSelector/LabelSelection" name="Selector_mc">
+                  <matrix>
+                    <Matrix tx="200"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="75" y="25"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Background" color="#00FFFF" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_Shared/LabelSelector/_Background/Background" name="BackerBar_mc" centerPoint3DX="860" centerPoint3DY="25">
+                  <transformationPoint>
+                    <Point x="625" y="25"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

@@ -1,6 +1,6 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="ContainerMenu/_QuantityMenu/_BracketSide" itemID="5fc863ae-000005f5" lastModified="1620620465">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="ContainerMenu/_QuantityMenu/_Background/BracketSide" itemID="6098bc1d-00002cc8" lastModified="1620700692">
   <timeline>
-    <DOMTimeline name="_BracketSide">
+    <DOMTimeline name="BracketSide">
       <layers>
         <DOMLayer name="Layer 1" color="#4467EE">
           <frames>
@@ -13,7 +13,7 @@
                     </FillStyle>
                   </fills>
                   <edges>
-                    <Edge fillStyle1="1" edges="!0 0|60 0!60 0|60 2000!60 2000|0 2000!0 2000|0 0"/>
+                    <Edge fillStyle1="1" edges="!0 0|100 0!100 0|100 4000!100 4000|0 4000!0 4000|0 0"/>
                   </edges>
                 </DOMShape>
               </elements>
@@ -31,7 +31,7 @@
                     </FillStyle>
                   </fills>
                   <edges>
-                    <Edge fillStyle1="1" edges="!0 0|600 0!600 0|600 60!600 60|0 60!0 60|0 0"/>
+                    <Edge fillStyle1="1" edges="!0 0|1500 0!1500 0|1500 100!1500 100|0 100!0 100|0 0"/>
                   </edges>
                 </DOMShape>
               </elements>

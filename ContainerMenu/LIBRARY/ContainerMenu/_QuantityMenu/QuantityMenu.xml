@@ -1,36 +1,57 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="ContainerMenu/_QuantityMenu/QuantityMenu" itemID="5fc86398-000005f1" linkageExportForAS="true" linkageClassName="Shared.AS3.QuantityMenu" lastModified="1606968216">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="ContainerMenu/_QuantityMenu/QuantityMenu" itemID="5fc86398-000005f1" linkageExportForAS="true" linkageClassName="Shared.AS3.QuantityMenu" lastModified="1620700821">
   <timeline>
     <DOMTimeline name="QuantityMenu">
       <layers>
-        <DOMLayer name="Layer 1" color="#5CFFDF" current="true" isSelected="true">
+        <DOMLayer name="Label" color="#E6DE2E" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="ContainerMenu/_QuantityMenu/Scrollbar" name="QuantityScrollbar_mc" selected="true" centerPoint3DX="257.4" centerPoint3DY="223.1">
+                <DOMDynamicText name="Label_tf" width="296" height="60.2" isSelectable="false" renderAsHTML="true">
                   <matrix>
-                    <Matrix a="1.95803833007813" d="1.95416259765625" tx="221.6" ty="216.05"/>
+                    <Matrix tx="-148" ty="-48"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>$QUANTITY</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" rotation="true" lineHeight="60.2" size="46" bitmapSize="920" face="$MAIN_Font_Bold*" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="ScrollBar" color="#5CFFDF" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="ContainerMenu/_QuantityMenu/_Scrollbar/Scrollbar" name="Scrollbar_mc">
+                  <matrix>
+                    <Matrix ty="140"/>
                   </matrix>
                   <transformationPoint>
-                    <Point/>
+                    <Point y="8.95"/>
                   </transformationPoint>
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Layer 2" color="#C605E2">
+        <DOMLayer name="Quantity" color="#C605E2" current="true" isSelected="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMDynamicText name="Value_tf" width="161" height="41.4" isSelectable="false" renderAsHTML="true">
+                <DOMDynamicText name="Value_tf" width="346" height="103.5" isSelectable="false" renderAsHTML="true">
                   <matrix>
-                    <Matrix tx="203.6" ty="190.35"/>
+                    <Matrix tx="-173" ty="24.5"/>
                   </matrix>
                   <textRuns>
                     <DOMTextRun>
                       <characters>00000</characters>
                       <textAttrs>
-                        <DOMTextAttrs alignment="center" aliasText="false" rotation="true" lineHeight="41.4" size="32" bitmapSize="640" face="$MAIN_Font*" fillColor="#FFFFFF"/>
+                        <DOMTextAttrs alignment="center" aliasText="false" rotation="true" lineHeight="97.05" size="75" bitmapSize="1500" face="$MAIN_Font*" fillColor="#FFFFFF"/>
                       </textAttrs>
                     </DOMTextRun>
                   </textRuns>
@@ -39,34 +60,13 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Layer 3" color="#E6DE2E">
+        <DOMLayer name="Border" color="#BB73B8" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMDynamicText name="Label_tf" width="161" height="28.8" isSelectable="false" renderAsHTML="true">
+                <DOMSymbolInstance libraryItemName="ContainerMenu/_QuantityMenu/_Background/Bracket" name="QuantityBracketHolder_mc" centerPoint3DX="-97.5" centerPoint3DY="47.35">
                   <matrix>
-                    <Matrix tx="203.6" ty="154"/>
-                  </matrix>
-                  <textRuns>
-                    <DOMTextRun>
-                      <characters>$QUANTITY</characters>
-                      <textAttrs>
-                        <DOMTextAttrs alignment="center" aliasText="false" rotation="true" lineHeight="28.8" size="22" bitmapSize="440" face="$MAIN_Font_Bold*" fillColor="#FFFFFF"/>
-                      </textAttrs>
-                    </DOMTextRun>
-                  </textRuns>
-                </DOMDynamicText>
-              </elements>
-            </DOMFrame>
-          </frames>
-        </DOMLayer>
-        <DOMLayer name="Layer 4" color="#BB73B8">
-          <frames>
-            <DOMFrame index="0" keyMode="9728">
-              <elements>
-                <DOMSymbolInstance libraryItemName="ContainerMenu/_QuantityMenu/_Bracket" name="QuantityBracketHolder_mc" centerPoint3DX="286.5" centerPoint3DY="219.85">
-                  <matrix>
-                    <Matrix tx="209" ty="172.5"/>
+                    <Matrix tx="-175"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>

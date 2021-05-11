@@ -1,6 +1,6 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_Shared/BSButtonHintBar/SizerBase" itemID="5fe050d7-0000118f" sourceFlashFilepath="../_Shared/_Shared.xfl" lastModified="1608536279" sourceItemID="00000000-ffffffff">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_Shared/Scrollbar/ScrollbarFill" itemID="5fe136d9-0000042e" sourceFlashFilepath="../_Shared/_Shared.xfl" sourceLibraryItemHRef="_Shared/Scrollbar/ScrollbarFill" sourceLastModified="1620593248" sourceAutoUpdate="true" lastModified="1620593248" sourceItemID="5fe136d9-0000042e">
   <timeline>
-    <DOMTimeline name="SizerBase">
+    <DOMTimeline name="ScrollbarFill">
       <layers>
         <DOMLayer name="Layer_1" color="#00FFFF" current="true" isSelected="true">
           <frames>
@@ -13,7 +13,7 @@
                     </FillStyle>
                   </fills>
                   <edges>
-                    <Edge fillStyle1="1" edges="!1000 300S2|0 300!0 300|0 0!0 0|1000 0!1000 0|1000 300"/>
+                    <Edge fillStyle1="1" edges="!325 0|325 10000!325 10000|75 10000!75 10000|75 0!75 0|325 0"/>
                   </edges>
                 </DOMShape>
               </elements>

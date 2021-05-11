@@ -1,17 +1,17 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="ContainerMenu/ContainerMenu" itemID="5fc853d5-000002fe" linkageExportForAS="true" linkageClassName="ContainerMenu" lastModified="1608623396">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="ContainerMenu/ContainerMenu" itemID="5fc853d5-000002fe" linkageExportForAS="true" linkageClassName="ContainerMenu" lastModified="1620699491" lastUniqueIdentifier="1">
   <timeline>
     <DOMTimeline name="ContainerMenu">
       <layers>
-        <DOMLayer name="QuantityMenu" color="#F5A584" locked="true" autoNamed="false">
+        <DOMLayer name="QuantityMenu" color="#F5A584" current="true" isSelected="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="ContainerMenu/_QuantityMenu/QuantityMenu" name="QuantityMenu_mc" centerPoint3DX="438.3" centerPoint3DY="301.95">
+                <DOMSymbolInstance libraryItemName="ContainerMenu/_QuantityMenu/QuantityMenu" name="QuantityMenu_mc" selected="true">
                   <matrix>
-                    <Matrix tx="355.8" ty="244.35"/>
+                    <Matrix tx="960" ty="550"/>
                   </matrix>
                   <transformationPoint>
-                    <Point/>
+                    <Point y="39"/>
                   </transformationPoint>
                   <color>
                     <Color alphaMultiplier="0"/>
@@ -21,7 +21,7 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="PlayerInventory" color="#EB53C7" autoNamed="false">
+        <DOMLayer name="PlayerInventory" color="#EB53C7" locked="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
@@ -37,13 +37,13 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="ContainerList" color="#0F95FC" autoNamed="false">
+        <DOMLayer name="ContainerList" color="#0F95FC" locked="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="ContainerMenu/_Inventory/_List/_Container/ContainerList" name="ContainerList_mc" centerPoint3DX="1458.55" centerPoint3DY="416.75">
                   <matrix>
-                    <Matrix a="0.999954223632812" tx="1290" ty="260"/>
+                    <Matrix a="0.99993896484375" tx="1290" ty="260"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
@@ -53,7 +53,7 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="ContainerInventory" color="#2BD7AD" autoNamed="false">
+        <DOMLayer name="ContainerInventory" color="#2BD7AD" locked="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
@@ -85,7 +85,7 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="ItemCard" color="#22FD76" autoNamed="false">
+        <DOMLayer name="ItemCard" color="#22FD76" locked="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
@@ -101,7 +101,7 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="ButtonHintBar" color="#867AAD" current="true" isSelected="true" autoNamed="false">
+        <DOMLayer name="ButtonHintBar" color="#867AAD" locked="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
@@ -111,6 +111,14 @@
                   </matrix>
                   <transformationPoint>
                     <Point y="24"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="_Shared/LabelSelector/LabelSelector" name="CategoryBar_mc" centerPoint3DX="960" centerPoint3DY="125">
+                  <matrix>
+                    <Matrix tx="100" ty="100"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="860" y="25"/>
                   </transformationPoint>
                 </DOMSymbolInstance>
               </elements>

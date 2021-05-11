@@ -91,7 +91,7 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="ContainerMenu/_Inventory/_List/ListEntry_Border_Alt" name="border">
+                <DOMSymbolInstance libraryItemName="ContainerMenu/_Inventory/_List/ListEntry_Border_Alt" name="border" selected="true">
                   <transformationPoint>
                     <Point x="265" y="20"/>
                   </transformationPoint>

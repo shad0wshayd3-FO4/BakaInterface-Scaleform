@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_Shared/ItemCard/ItemCard_AmmoEntry" itemID="5fc84eb0-000001c1" linkageExportForAS="true" linkageClassName="Components.ItemCard_AmmoEntry" sourceFlashFilepath="../_Shared/_Shared.xfl" sourceLibraryItemHRef="_Shared/ItemCard/ItemCard_AmmoEntry" sourceLastModified="1608624331" sourceAutoUpdate="true" lastModified="1608624465" sourceItemID="00000000-ffffffff">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_Shared/ItemCard/ItemCard_AmmoEntry" itemID="5fc84eb0-000001c1" linkageExportForAS="true" linkageClassName="Components.ItemCard_AmmoEntry" sourceFlashFilepath="../_Shared/_Shared.xfl" sourceLibraryItemHRef="_Shared/ItemCard/ItemCard_AmmoEntry" sourceLastModified="1608624331" sourceAutoUpdate="true" lastModified="1608624331" sourceItemID="00000000-ffffffff">
   <timeline>
     <DOMTimeline name="ItemCard_AmmoEntry">
       <layers>

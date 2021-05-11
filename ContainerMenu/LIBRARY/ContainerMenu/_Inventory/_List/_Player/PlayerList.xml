@@ -1,15 +1,15 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="ContainerMenu/_Inventory/_List/_Player/PlayerList" itemID="5fc86090-00000596" linkageExportForAS="true" linkageClassName="Menu.ContainerMenu.PlayerList" lastModified="1608622201">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="ContainerMenu/_Inventory/_List/_Player/PlayerList" itemID="5fc86090-00000596" linkageExportForAS="true" linkageClassName="Menu.ContainerMenu.PlayerList" lastModified="1620594659">
   <timeline>
     <DOMTimeline name="PlayerList">
       <layers>
-        <DOMLayer name="ScrollBar" color="#FF4FFF" current="true" isSelected="true" autoNamed="false">
+        <DOMLayer name="ScrollBar" color="#FF4FFF" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements/>
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="border" color="#E5953F" autoNamed="false">
+        <DOMLayer name="border" color="#E5953F" current="true" isSelected="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
@@ -20,6 +20,14 @@
                   <color>
                     <Color alphaMultiplier="0"/>
                   </color>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="_Shared/Scrollbar/Scrollbar" name="Scrollbar">
+                  <matrix>
+                    <Matrix tx="500"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="10" y="270"/>
+                  </transformationPoint>
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>

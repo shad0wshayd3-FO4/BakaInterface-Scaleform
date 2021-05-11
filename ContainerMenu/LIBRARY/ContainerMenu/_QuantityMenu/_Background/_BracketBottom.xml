@@ -1,14 +1,14 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="ContainerMenu/_Inventory/_List/List_Border" itemID="5fc87405-0000089f" lastModified="1620594647">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="ContainerMenu/_QuantityMenu/_Background/_BracketBottom" itemID="5fc863ac-000005f4" lastModified="1620620499">
   <timeline>
-    <DOMTimeline name="List_Border">
+    <DOMTimeline name="_BracketBottom">
       <layers>
-        <DOMLayer name="Layer 1" color="#D9B746" current="true" isSelected="true">
+        <DOMLayer name="Layer 1" color="#8DE1ED" current="true" isSelected="true">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
                 <DOMShape selected="true" isFloating="true">
                   <matrix>
-                    <Matrix a="1.04347229003906"/>
+                    <Matrix a="3.33332824707031" d="3"/>
                   </matrix>
                   <fills>
                     <FillStyle index="1">
@@ -16,7 +16,7 @@
                     </FillStyle>
                   </fills>
                   <edges>
-                    <Edge fillStyle1="1" edges="!9200 0S2|9200 12600!9200 12600|0 12600!0 12600|0 0!0 0|9200 0"/>
+                    <Edge fillStyle1="1" edges="!1200 20S2|0 20!0 20|0 0!0 0|1200 0!1200 0|1200 20"/>
                   </edges>
                 </DOMShape>
               </elements>

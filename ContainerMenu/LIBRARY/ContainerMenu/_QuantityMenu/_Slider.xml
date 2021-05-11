@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="ContainerMenu/_QuantityMenu/_Slider" itemID="5fc863b1-000005f6" lastModified="1606968241">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="ContainerMenu/_QuantityMenu/_Slider" itemID="5fc863b1-000005f6" lastModified="1620620953">
   <timeline>
     <DOMTimeline name="_Slider">
       <layers>
@@ -9,7 +9,7 @@
                 <DOMShape>
                   <strokes>
                     <StrokeStyle index="1">
-                      <SolidStroke scaleMode="normal">
+                      <SolidStroke scaleMode="normal" weight="3">
                         <fill>
                           <SolidColor color="#FFFFFF"/>
                         </fill>
@@ -17,7 +17,7 @@
                     </StrokeStyle>
                   </strokes>
                   <edges>
-                    <Edge strokeStyle="1" edges="!1220 160|0 160!0 160|0 0!0 0|1220 0!1220 0|1220 160"/>
+                    <Edge strokeStyle="1" edges="!3000 360S4|0 360!0 360|0 0!0 0|3000 0!3000 0|3000 360"/>
                   </edges>
                 </DOMShape>
               </elements>

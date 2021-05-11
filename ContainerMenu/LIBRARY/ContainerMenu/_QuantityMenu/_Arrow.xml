@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="ContainerMenu/_QuantityMenu/_Arrow" itemID="5fc86407-0000063f" lastModified="1606968327">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="ContainerMenu/_QuantityMenu/_Arrow" itemID="5fc86407-0000063f" lastModified="1620621134">
   <timeline>
     <DOMTimeline name="_Arrow">
       <layers>
@@ -6,14 +6,14 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMShape selected="true" isFloating="true">
+                <DOMShape>
                   <fills>
                     <FillStyle index="1">
                       <SolidColor color="#FFFFFF"/>
                     </FillStyle>
                   </fills>
                   <edges>
-                    <Edge fillStyle0="1" edges="!175 175|0 0!0 0|0 350!0 350|175 175"/>
+                    <Edge fillStyle0="1" edges="!200 200|0 0!0 0|0 400!0 400|200 200"/>
                   </edges>
                 </DOMShape>
               </elements>

@@ -1,8 +1,8 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="ContainerMenu/_QuantityMenu/_BracketSide" itemID="5fc863ae-000005f5" lastModified="1620620465">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="ContainerMenu/_QuantityMenu/_Scrollbar/Fill" itemID="6098bc41-00002cd4" lastModified="1620699583">
   <timeline>
-    <DOMTimeline name="_BracketSide">
+    <DOMTimeline name="Fill">
       <layers>
-        <DOMLayer name="Layer 1" color="#4467EE">
+        <DOMLayer name="Sides" color="#9933CC" current="true" isSelected="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
@@ -13,14 +13,14 @@
                     </FillStyle>
                   </fills>
                   <edges>
-                    <Edge fillStyle1="1" edges="!0 0|60 0!60 0|60 2000!60 2000|0 2000!0 2000|0 0"/>
+                    <Edge fillStyle1="1" edges="!4900 0|5000 0!5000 0|5000 600!5000 600|4900 600!4900 600|4900 0!0 0|100 0!100 0|100 600!100 600|0 600!0 600|0 0"/>
                   </edges>
                 </DOMShape>
               </elements>
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Layer_2" color="#9933CC" current="true" isSelected="true">
+        <DOMLayer name="TopBot" color="#A551B9" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
@@ -31,7 +31,7 @@
                     </FillStyle>
                   </fills>
                   <edges>
-                    <Edge fillStyle1="1" edges="!0 0|600 0!600 0|600 60!600 60|0 60!0 60|0 0"/>
+                    <Edge fillStyle1="1" edges="!0 500|5000 500!5000 500|5000 600!5000 600|0 600!0 600|0 500!0 0|5000 0!5000 0|5000 100!5000 100|0 100!0 100|0 0"/>
                   </edges>
                 </DOMShape>
               </elements>

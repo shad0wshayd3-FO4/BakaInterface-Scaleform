@@ -1,12 +1,12 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="ContainerMenu/_QuantityMenu/_Bracket" itemID="5fc863a9-000005f3" lastModified="1620620575">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="ContainerMenu/_QuantityMenu/_Background/Bracket" itemID="6098bc1a-00002cc7" lastModified="1620700243">
   <timeline>
-    <DOMTimeline name="_Bracket">
+    <DOMTimeline name="Bracket">
       <layers>
         <DOMLayer name="Left" color="#489BE4" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="ContainerMenu/_QuantityMenu/_BracketSide" name="LeftBracket_mc">
+                <DOMSymbolInstance libraryItemName="ContainerMenu/_QuantityMenu/_Background/BracketSide" name="LeftBracket_mc">
                   <transformationPoint>
                     <Point x="10" y="50"/>
                   </transformationPoint>
@@ -15,13 +15,13 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Right" color="#F391E3" autoNamed="false">
+        <DOMLayer name="Right" color="#F391E3" current="true" isSelected="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="ContainerMenu/_QuantityMenu/_BracketSide" name="RightBracket_mc">
+                <DOMSymbolInstance libraryItemName="ContainerMenu/_QuantityMenu/_Background/BracketSide" name="RightBracket_mc">
                   <matrix>
-                    <Matrix a="-1" tx="200" ty="3"/>
+                    <Matrix a="-1" tx="350"/>
                   </matrix>
                   <transformationPoint>
                     <Point x="10" y="50"/>
@@ -31,13 +31,13 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Bottom" color="#35CDE9" current="true" isSelected="true" autoNamed="false">
+        <DOMLayer name="Bottom" color="#35CDE9" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="ContainerMenu/_QuantityMenu/_BracketBottom" name="BottomBracket_mc">
+                <DOMSymbolInstance libraryItemName="ContainerMenu/_QuantityMenu/_Background/BracketBottom" name="BottomBracket_mc">
                   <matrix>
-                    <Matrix ty="100"/>
+                    <Matrix ty="200"/>
                   </matrix>
                   <transformationPoint>
                     <Point x="100" y="1.5"/>

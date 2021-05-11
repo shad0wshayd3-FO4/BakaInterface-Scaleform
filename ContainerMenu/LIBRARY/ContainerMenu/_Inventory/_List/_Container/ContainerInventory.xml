@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="ContainerMenu/_Inventory/_List/_Container/ContainerInventory" itemID="5fc88dba-000017f0" linkageExportForAS="true" linkageClassName="Menu.ContainerMenu.ContainerInventory" lastModified="1606987528">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="ContainerMenu/_Inventory/_List/_Container/ContainerInventory" itemID="5fc88dba-000017f0" linkageExportForAS="true" linkageClassName="Menu.ContainerMenu.ContainerInventory" lastModified="1620595488">
   <timeline>
     <DOMTimeline name="ContainerInventory">
       <layers>
@@ -18,11 +18,11 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Switch" color="#81DFB5" current="true" isSelected="true" autoNamed="false">
+        <DOMLayer name="Switch" color="#81DFB5" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMDynamicText name="ContainerSwitchButton_tf" selected="true" width="36" height="26" isSelectable="false" renderAsHTML="true">
+                <DOMDynamicText name="ContainerSwitchButton_tf" width="36" height="26" isSelectable="false" renderAsHTML="true">
                   <matrix>
                     <Matrix tx="477" ty="-28"/>
                   </matrix>
@@ -30,11 +30,27 @@
                     <DOMTextRun>
                       <characters>X</characters>
                       <textAttrs>
-                        <DOMTextAttrs alignment="right" aliasText="false" rotation="true" letterSpacing="0.5" lineSpacing="5" lineHeight="23.9" size="20" bitmapSize="400" face="$Controller_Buttons_inverted*" fillColor="#FFFFFF"/>
+                        <DOMTextAttrs alignment="right" aliasText="false" rotation="true" letterSpacing="0.5" lineSpacing="5" lineHeight="23.85" size="20" bitmapSize="400" face="$Controller_Buttons_inverted*" fillColor="#FFFFFF"/>
                       </textAttrs>
                     </DOMTextRun>
                   </textRuns>
                 </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="BottomBar" color="#9933CC" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="ContainerMenu/_Inventory/_List/List_BottomBarBackground">
+                  <matrix>
+                    <Matrix a="5.22747802734375" d="0.399993896484375" tx="10" ty="650"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="50" y="50.15"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
               </elements>
             </DOMFrame>
           </frames>

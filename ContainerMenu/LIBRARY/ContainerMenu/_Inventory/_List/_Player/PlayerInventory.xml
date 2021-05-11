@@ -1,8 +1,8 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="ContainerMenu/_Inventory/_List/_Player/PlayerInventory" itemID="5fc88dbf-000017f1" linkageExportForAS="true" linkageClassName="Menu.ContainerMenu.PlayerInventory" lastModified="1606987520">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="ContainerMenu/_Inventory/_List/_Player/PlayerInventory" itemID="5fc88dbf-000017f1" linkageExportForAS="true" linkageClassName="Menu.ContainerMenu.PlayerInventory" lastModified="1620620193">
   <timeline>
     <DOMTimeline name="PlayerInventory">
       <layers>
-        <DOMLayer name="Header" color="#AA6BCF" autoNamed="false">
+        <DOMLayer name="Header" color="#AA6BCF" locked="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
@@ -18,7 +18,7 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Switch" color="#37A8D3" autoNamed="false">
+        <DOMLayer name="Switch" color="#37A8D3" locked="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
@@ -30,7 +30,7 @@
                     <DOMTextRun>
                       <characters>Y</characters>
                       <textAttrs>
-                        <DOMTextAttrs aliasText="false" rotation="true" letterSpacing="0.5" lineSpacing="5" lineHeight="23.9" size="20" bitmapSize="400" face="$Controller_Buttons_inverted*" fillColor="#FFFFFF"/>
+                        <DOMTextAttrs aliasText="false" rotation="true" letterSpacing="0.5" lineSpacing="5" lineHeight="23.85" size="20" bitmapSize="400" face="$Controller_Buttons_inverted*" fillColor="#FFFFFF"/>
                       </textAttrs>
                     </DOMTextRun>
                   </textRuns>
@@ -39,11 +39,11 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="List" color="#88E458" current="true" isSelected="true" autoNamed="false">
+        <DOMLayer name="List" color="#88E458" locked="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="ContainerMenu/_Inventory/_List/_Player/PlayerList" name="PlayerList_mc" selected="true" centerPoint3DX="192.8" centerPoint3DY="172.7">
+                <DOMSymbolInstance libraryItemName="ContainerMenu/_Inventory/_List/_Player/PlayerList" name="PlayerList_mc" centerPoint3DX="192.8" centerPoint3DY="172.7">
                   <matrix>
                     <Matrix tx="10" ty="25"/>
                   </matrix>
@@ -55,19 +55,19 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="CapsText" color="#F7F06C" locked="true" autoNamed="false">
+        <DOMLayer name="CapsText" color="#F7F06C" locked="true" current="true" isSelected="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMDynamicText name="PlayerCaps_tf" selected="true" width="127.6" height="34.05" isSelectable="false">
+                <DOMDynamicText name="PlayerCaps_tf" width="127.6" height="39.25" isSelectable="false">
                   <matrix>
-                    <Matrix a="0.740676879882812" d="0.739761352539062" tx="200.2" ty="661.35"/>
+                    <Matrix a="0.74066162109375" d="0.73974609375" tx="309.25" ty="658.5"/>
                   </matrix>
                   <textRuns>
                     <DOMTextRun>
                       <characters>110</characters>
                       <textAttrs>
-                        <DOMTextAttrs aliasText="false" rotation="true" lineHeight="34.05" size="26" bitmapSize="520" face="$MAIN_Font_Bold*" fillColor="#FFFFFF"/>
+                        <DOMTextAttrs aliasText="false" rotation="true" lineHeight="39.25" size="30" bitmapSize="600" face="$MAIN_Font_Bold*" fillColor="#FFFFFF"/>
                       </textAttrs>
                     </DOMTextRun>
                   </textRuns>
@@ -80,9 +80,9 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="Icon_Caps" centerPoint3DX="198.15" centerPoint3DY="689.2">
+                <DOMSymbolInstance libraryItemName="Icon_Caps" centerPoint3DX="305.7" centerPoint3DY="685">
                   <matrix>
-                    <Matrix a="0.634506225585938" d="0.632125854492188" tx="183.2" ty="674.2"/>
+                    <Matrix a="0.634506225585938" d="0.632125854492188" tx="290.75" ty="670"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
@@ -96,12 +96,12 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="ContainerMenu/_Inventory/_List/List_BottomBarBackground" centerPoint3DX="217.6" centerPoint3DY="709.75">
+                <DOMSymbolInstance libraryItemName="ContainerMenu/_Inventory/_List/List_BottomBarBackground" centerPoint3DX="359.25" centerPoint3DY="718.25">
                   <matrix>
-                    <Matrix a="1.52001953125" d="0.2965087890625" tx="167.1" ty="659.25"/>
+                    <Matrix a="2.59999084472656" d="0.399993896484375" tx="272.75" ty="650"/>
                   </matrix>
                   <transformationPoint>
-                    <Point/>
+                    <Point x="0.05" y="0.25"/>
                   </transformationPoint>
                 </DOMSymbolInstance>
               </elements>
@@ -112,15 +112,15 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMDynamicText name="PlayerWeight_tf" selected="true" width="136" height="34.05" isSelectable="false">
+                <DOMDynamicText name="PlayerWeight_tf" width="136" height="39.25" isSelectable="false">
                   <matrix>
-                    <Matrix a="0.740676879882812" d="0.739761352539062" tx="50.4" ty="661.55"/>
+                    <Matrix a="0.74066162109375" d="0.73974609375" tx="46.5" ty="658.5"/>
                   </matrix>
                   <textRuns>
                     <DOMTextRun>
                       <characters>370/175</characters>
                       <textAttrs>
-                        <DOMTextAttrs aliasText="false" rotation="true" lineHeight="34.05" size="26" bitmapSize="520" face="$MAIN_Font_Bold*" fillColor="#FFFFFF"/>
+                        <DOMTextAttrs aliasText="false" rotation="true" lineHeight="39.25" size="30" bitmapSize="600" face="$MAIN_Font_Bold*" fillColor="#FFFFFF"/>
                       </textAttrs>
                     </DOMTextRun>
                   </textRuns>
@@ -133,9 +133,9 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="Icon_Weight" centerPoint3DX="47.5" centerPoint3DY="689.65">
+                <DOMSymbolInstance libraryItemName="Icon_Weight" centerPoint3DX="43.1" centerPoint3DY="685">
                   <matrix>
-                    <Matrix a="0.630462646484375" d="0.629257202148438" tx="32.4" ty="674.65"/>
+                    <Matrix a="0.630462646484375" d="0.629257202148438" tx="28" ty="670"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
@@ -149,19 +149,19 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="ContainerMenu/_Inventory/_List/List_BottomBarBackground" centerPoint3DX="64.1" centerPoint3DY="709.75">
+                <DOMSymbolInstance libraryItemName="ContainerMenu/_Inventory/_List/List_BottomBarBackground" centerPoint3DX="96.6" centerPoint3DY="718.2">
                   <matrix>
-                    <Matrix a="1.52000427246094" d="0.2965087890625" tx="13.6" ty="659.25"/>
+                    <Matrix a="2.59999084472656" d="0.399993896484375" tx="10" ty="650"/>
                   </matrix>
                   <transformationPoint>
-                    <Point/>
+                    <Point x="0.1" y="0.25"/>
                   </transformationPoint>
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Bracket" color="#FA3CAB" autoNamed="false">
+        <DOMLayer name="Bracket" color="#FA3CAB" locked="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>

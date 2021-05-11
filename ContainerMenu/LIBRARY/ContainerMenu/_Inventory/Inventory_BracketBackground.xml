@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="ContainerMenu/_Inventory/Inventory_BracketBackground" itemID="5fc862ae-000005e9" lastModified="1606986009">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="ContainerMenu/_Inventory/Inventory_BracketBackground" itemID="5fc862ae-000005e9" lastModified="1620592133">
   <timeline>
     <DOMTimeline name="Inventory_BracketBackground">
       <layers>
@@ -6,13 +6,10 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="Symbol 1" selected="true">
+                <DOMSymbolInstance libraryItemName="ContainerMenu/_Inventory/Inventory_Background" selected="true" isVisible="false">
                   <transformationPoint>
                     <Point x="250" y="350"/>
                   </transformationPoint>
-                  <color>
-                    <Color alphaMultiplier="0"/>
-                  </color>
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>

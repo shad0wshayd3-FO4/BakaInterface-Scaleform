@@ -14,7 +14,7 @@
                     <DOMTextRun>
                       <characters>A</characters>
                       <textAttrs>
-                        <DOMTextAttrs aliasText="false" rotation="true" lineHeight="33.45" size="28" bitmapSize="560" face="$Controller_Buttons_inverted*" fillColor="#FFFFFF"/>
+                        <DOMTextAttrs aliasText="false" rotation="true" lineHeight="33.4" size="28" bitmapSize="560" face="$Controller_Buttons_inverted*" fillColor="#FFFFFF"/>
                       </textAttrs>
                     </DOMTextRun>
                   </textRuns>

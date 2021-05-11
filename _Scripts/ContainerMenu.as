@@ -18,13 +18,16 @@
 	import Shared.AS3.Events.CustomEvent;
 	import Shared.AS3.Events.PlatformChangeEvent;
     import Shared.AS3.IMenu;
+	import Shared.AS3.LabelSelector;
 	import Shared.AS3.QuantityMenu;
 	import Shared.AS3.StyleSheet;
 	import Shared.GlobalFunc;
 
     public class ContainerMenu extends IMenu
     {
+		private static const MAX_INDEX = 12;
         private static const NUM_FILTERS:uint = 8;
+
         private static const CM_LOOT = 0;
         private static const CM_STEALING_FROM_CONTAINER = 1;
         private static const CM_PICKPOCKET = 2;
@@ -37,16 +40,18 @@
         public var ContainerInventory_mc:ContainerInventory;
         public var ContainerList_mc:ContainerList;
         public var PlayerInventory_mc:PlayerInventory;
+		public var CategoryBar_mc:LabelSelector;
         public var ItemCard_mc:ItemCard;
         public var PickpocketInfo_mc:MovieClip;
-        public var QuantityMenu_mc:MovieClip;
+        public var QuantityMenu_mc:QuantityMenu;
         public var PlayerHasJunk:Boolean = false;
         public var BGSCodeObj:Object;
 
+		private var strContainerName:String = "Container";
+		private var FilterFlags:Array;
+        private var bCancelPressed:Boolean;
+
         private var PlayFocusSounds:Boolean = true;
-        private var FilterInfoA:Array;
-        private var uiPlayerFilterIndex:uint;
-        private var uiContainerFilterIndex:uint;
         private var uiUpperBracketPlayerLineMaxX:uint;
         private var uiUpperBracketContainerLineMaxX:uint;
         private var uiMode:uint = 0;
@@ -70,65 +75,43 @@
         {
             this.SwitchToPlayerButton = new BSButtonHintData("$TransferPlayerLabel", "LT", "PSN_L2_Alt", "Xenon_L2_Alt", 1, this.SwitchToPlayerList);
             this.SwitchToContainerButton = new BSButtonHintData("$TransferContainerLabel", "RT", "PSN_R2_Alt", "Xenon_R2_Alt", 1, this.SwitchToContainerList);
-            this.AcceptButton = new BSButtonHintData("$STORE", "Enter", "PSN_A", "Xenon_A", 1, this.onAccept);
-            this.TakeAllButton = new BSButtonHintData("$TAKE ALL", "R", "PSN_X", "Xenon_X", 1, this.onTakeAll);
-            this.EquipOrStoreButton = new BSButtonHintData("$EQUIP", "T", "PSN_Y", "Xenon_Y", 1, this.onEquipOrStore);
-            this.SortButton = new BSButtonHintData("$SORT", "Z", "PSN_L3", "Xenon_L3", 1, this.requestSort);
-            this.InspectButton = new BSButtonHintData("$INSPECT", "X", "PSN_R3", "Xenon_R3", 1, this.onInspect);
-            this.ExitButton = new BSButtonHintData("$EXIT", "TAB", "PSN_B", "Xenon_B", 1, this.onExitMenu);
-            this.QuantityAcceptButton = new BSButtonHintData("$ACCEPT", "E", "PSN_A", "Xenon_A", 1, this.onQuantityAccepted);
+            this.AcceptButton = new BSButtonHintData("$STORE", "Enter", "PSN_A", "Xenon_A", 1, this.onAcceptPressed);
+            this.TakeAllButton = new BSButtonHintData("$TAKE ALL", "R", "PSN_X", "Xenon_X", 1, this.onTakeAllPressed);
+            this.EquipOrStoreButton = new BSButtonHintData("$EQUIP", "T", "PSN_Y", "Xenon_Y", 1, this.onEquipOrStorePressed);
+            this.SortButton = new BSButtonHintData("$SORT", "Q", "PSN_L3", "Xenon_L3", 1, this.onSortPressed);
+            this.InspectButton = new BSButtonHintData("$INSPECT", "X", "PSN_R3", "Xenon_R3", 1, this.onInspectPressed);
+            this.ExitButton = new BSButtonHintData("$EXIT", "TAB", "PSN_B", "Xenon_B", 1, this.onExitPressed);
+            this.QuantityAcceptButton = new BSButtonHintData("$ACCEPT", "Enter", "PSN_A", "Xenon_A", 1, this.onQuantityAccepted);
             this.QuantityCancelButton = new BSButtonHintData("$CANCEL", "TAB", "PSN_B", "Xenon_B", 1, this.onQuantityCanceled);
 
             super();
 
             this.BGSCodeObj = new Object();
-			
+
 			StyleSheet.apply(this.PlayerInventory_mc.PlayerList_mc, false, Menu.ContainerMenu.PlayerListStyle);
 			StyleSheet.apply(this.ContainerList_mc, false, Menu.ContainerMenu.ContainerListStyle);
-			
+            this.bCancelPressed = false;
+
             this.PopulateButtonBar();
+			this.PopulateCategoryBar();
             stage.stageFocusRect = false;
 
             this.PlayerInventory_mc.PlayerSwitchButton_tf.visible = false;
             this.ContainerInventory_mc.ContainerSwitchButton_tf.visible = false;
 
-            this.FilterInfoA = new Array();
-            this.FilterInfoA.push({"text": "$INVENTORY",
-                    "flag": 4294967295});
-            this.FilterInfoA.push({"text": "$InventoryCategoryWeapons",
-                    "flag": 1 << 1});
-            this.FilterInfoA.push({"text": "$InventoryCategoryApparel",
-                    "flag": 1 << 2});
-            this.FilterInfoA.push({"text": "$InventoryCategoryAid",
-                    "flag": 1 << 3});
-            this.FilterInfoA.push({"text": "$InventoryCategoryMisc",
-                    "flag": 1 << 9});
-            this.FilterInfoA.push({"text": "$InventoryCategoryJunk",
-                    "flag": 1 << 10});
-            this.FilterInfoA.push({"text": "$InventoryCategoryMods",
-                    "flag": 1 << 11});
-            this.FilterInfoA.push({"text": "$InventoryCategoryAmmo",
-                    "flag": 1 << 12});
-
-            this.uiPlayerFilterIndex = 0;
-            this.uiContainerFilterIndex = 0;
             addEventListener(FocusEvent.FOCUS_OUT, this.onFocusChange);
             addEventListener(KeyboardEvent.KEY_UP, this.onKeyUp);
             addEventListener(BSScrollingList.ITEM_PRESS, this.onItemPress);
             addEventListener(BSScrollingList.SELECTION_CHANGE, this.onSelectionChange);
 			addEventListener(BSScrollingList.MOUSE_OVER, this.onListMouseOver);
-            addEventListener(QuantityMenu.CONFIRM, this.onQuantityConfirm);
-
-            this.SwitchToContainerList(false);
-            this.UpdateButtonHints();
-            this.UpdateHeaderText(this.PlayerInventory_mc.PlayerList_mc);
-            this.UpdateHeaderText(this.ContainerList_mc);
 
             if (this.PickpocketInfo_mc != null)
             {
                 this.PickpocketInfo_mc.Caption_tf.visible = false;
                 this.PickpocketInfo_mc.Percent_tf.visible = false;
             }
+			
+			this.UpdateButtonHints();
         }
 
         public function get containerIsSelected():Boolean
@@ -180,6 +163,28 @@
             this.ButtonHintBar_mc.SetButtonHintData(buttonHintDataV);
         }
 
+		public function PopulateCategoryBar():void
+		{
+			this.FilterFlags = new Array(0xFFFFFFFF, 0x2, 0x4, 0x8, 0x200, 0x400, 0x800, 0x10, 0x20, 0x40, 0x1000);
+
+			this.CategoryBar_mc.Clear();
+			this.CategoryBar_mc.maxVisible = MAX_INDEX + 1;
+			this.CategoryBar_mc.AddLabel("$INVENTORY", 0, true);
+			this.CategoryBar_mc.AddLabel("$InventoryCategoryWeapons", 1, true);
+            this.CategoryBar_mc.AddLabel("$InventoryCategoryApparel", 2, true);
+            this.CategoryBar_mc.AddLabel("$InventoryCategoryAid", 3, true);
+            this.CategoryBar_mc.AddLabel("$InventoryCategoryMisc", 4, true);
+            this.CategoryBar_mc.AddLabel("$InventoryCategoryJunk", 5, true);
+            this.CategoryBar_mc.AddLabel("$InventoryCategoryMods", 6, true);
+            this.CategoryBar_mc.AddLabel("$InventoryCategoryHolo", 7, true);
+            this.CategoryBar_mc.AddLabel("$InventoryCategoryNote", 8, true);
+            this.CategoryBar_mc.AddLabel("$InventoryCategoryKeys", 9, true);
+            this.CategoryBar_mc.AddLabel("$InventoryCategoryAmmo", 10, true);
+
+            this.CategoryBar_mc.Finalize();
+            this.CategoryBar_mc.SetSelection(0, true, false);
+		}
+
         public function onIntroAnimComplete():*
         {
             this.BGSCodeObj.onIntroAnimComplete();
@@ -187,71 +192,79 @@
 
         protected function get AcceptButtonText():String
         {
-            var bjunkJet:* = this.uiMode == CM_JUNK_JET_RELOAD;
-            var bcontainerListIsFocus:* = stage.focus == this.ContainerList_mc;
-            if (bjunkJet)
-            {
-                return !!bcontainerListIsFocus ? "$UNLOAD" : "$LOAD";
-            }
-            return !!bcontainerListIsFocus ? this.uiMode == CM_PICKPOCKET || this.uiMode == CM_STEALING_FROM_CONTAINER ? "$STEAL" : "$TAKE" : this.uiMode == CM_PICKPOCKET ? "$PLACE" : "$STORE";
+			var bContainerListIsFocus:* = stage.focus == this.ContainerList_mc;
+			switch (this.uiMode)
+			{
+				case CM_STEALING_FROM_CONTAINER:
+				case CM_PICKPOCKET:
+					return !!bContainerListIsFocus ? "$STEAL" : "$PLACE";
+				case CM_JUNK_JET_RELOAD:
+					return !!bContainerListIsFocus ? "$UNLOAD" : "$LOAD";
+				default:
+					break;
+			}
+
+			return !!bContainerListIsFocus ? "$TAKE" : "$STORE";
         }
 
         protected function get TakeAllText():String
         {
-            var bjunkJet:* = this.uiMode == CM_JUNK_JET_RELOAD;
-            return !!bjunkJet ? "$UNLOAD ALL" : "$TAKE ALL";
+            var bJunkJet:* = this.uiMode == CM_JUNK_JET_RELOAD;
+            return !!bJunkJet ? "$UNLOAD ALL" : "$TAKE ALL";
         }
 
         protected function UpdateButtonHints():void
-        {
-            var index:int = 0;
-            var inContainer:* = false;
-            var currentItemList:ItemList = null;
-            var bcurrentListIsEmpty:* = undefined;
-            var quantityMenuIsActive:* = stage.focus == this.QuantityMenu_mc;
-            var modalMenuIsActive:Boolean = quantityMenuIsActive || this.MessageBoxIsActive;
-            this.SwitchToPlayerButton.ButtonVisible = stage.focus == this.ContainerList_mc && this.PlayerInventory_mc.PlayerList_mc.itemsShown && uiPlatform != PlatformChangeEvent.PLATFORM_PC_KB_MOUSE;
-            this.SwitchToContainerButton.ButtonVisible = stage.focus == this.PlayerInventory_mc.PlayerList_mc && this.ContainerList_mc.itemsShown && uiPlatform != PlatformChangeEvent.PLATFORM_PC_KB_MOUSE;
-            this.EquipOrStoreButton.ButtonVisible = this.uiMode == CM_TEAMMATE && stage.focus != this.PlayerInventory_mc.PlayerList_mc;
-            if (this.EquipOrStoreButton.ButtonVisible && !modalMenuIsActive)
-            {
-                index = (stage.focus as ItemList).selectedIndex;
-                inContainer = stage.focus == this.ContainerList_mc;
-                this.EquipOrStoreButton.ButtonVisible = this.BGSCodeObj.getSelectedItemEquippable(index, inContainer);
-                this.EquipOrStoreButton.ButtonText = !!this.BGSCodeObj.getSelectedItemEquipped(index, inContainer) ? "$UNEQUIP" : "$EQUIP";
-            }
-            else if (this.uiMode == CM_WORKBENCH)
-            {
-                this.EquipOrStoreButton.ButtonVisible = true;
-                this.EquipOrStoreButton.ButtonText = "$StoreAllJunk";
-                this.EquipOrStoreButton.ButtonDisabled = !this.PlayerHasJunk;
-            }
-            this.QuantityAcceptButton.ButtonVisible = quantityMenuIsActive;
-            this.QuantityCancelButton.ButtonVisible = quantityMenuIsActive;
-            this.AcceptButton.ButtonVisible = !modalMenuIsActive;
-            this.TakeAllButton.ButtonVisible = !modalMenuIsActive;
-            this.EquipOrStoreButton.ButtonVisible = this.EquipOrStoreButton.ButtonVisible && !modalMenuIsActive;
-            this.ExitButton.ButtonVisible = !modalMenuIsActive;
-            this.InspectButton.ButtonVisible = !modalMenuIsActive;
-            this.SortButton.ButtonVisible = !modalMenuIsActive;
-            if (!modalMenuIsActive)
-            {
-                currentItemList = stage.focus as ItemList;
-                bcurrentListIsEmpty = !currentItemList || currentItemList.entryList.length == 0;
-                this.AcceptButton.ButtonText = this.AcceptButtonText;
-                this.AcceptButton.ButtonDisabled = bcurrentListIsEmpty;
-                this.TakeAllButton.ButtonText = this.TakeAllText;
-                this.TakeAllButton.ButtonDisabled = bcurrentListIsEmpty;
-                this.InspectButton.ButtonDisabled = bcurrentListIsEmpty;
-            }
-        }
+		{
+			var bPlayerListIsFocus:Boolean = (stage.focus == this.PlayerInventory_mc.PlayerList);
+			var bQuantityMenuIsActive:Boolean = (stage.focus == this.QuantityMenu_mc);
+			var bModalMenuIsActive:Boolean = (bQuantityMenuIsActive || this.MessageBoxIsActive);
+			var bIsController:Boolean = (uiPlatform != PlatformChangeEvent.PLATFORM_PC_KB_MOUSE);
+
+			this.SwitchToPlayerButton.ButtonVisible = bIsController && !bPlayerListIsFocus && (this.PlayerInventory_mc.PlayerList_mc.itemsShown > 0);
+			this.SwitchToContainerButton.ButtonVisible = bIsController && bPlayerListIsFocus && (this.ContainerList_mc.itemsShown > 0);
+			this.EquipOrStoreButton.ButtonVisible = !bPlayerListIsFocus && (this.uiMode == CM_TEAMMATE);
+
+			if (this.EquipOrStoreButton.ButtonVisible && !bModalMenuIsActive)
+			{
+				var index:int = (stage.focus as ItemList).selectedIndex;
+				var inContainer:Boolean = stage.focus == this.ContainerList_mc;
+				this.EquipOrStoreButton.ButtonVisible = this.BGSCodeObj.getSelectedItemEquippable(index, inContainer);
+				this.EquipOrStoreButton.ButtonText = !!this.BGSCodeObj.getSelectedItemEquipped(index, inContainer) ? "$UNEQUIP" : "$EQUIP";
+			}
+			else if (this.uiMode == CM_WORKBENCH)
+			{
+				this.EquipOrStoreButton.ButtonVisible = true;
+				this.EquipOrStoreButton.ButtonText = "$StoreAllJunk";
+				this.EquipOrStoreButton.ButtonDisabled = !this.PlayerHasJunk;
+			}
+
+			this.QuantityAcceptButton.ButtonVisible = bQuantityMenuIsActive;
+			this.QuantityCancelButton.ButtonVisible = bQuantityMenuIsActive;
+			this.AcceptButton.ButtonVisible = !bModalMenuIsActive;
+			this.TakeAllButton.ButtonVisible = !bModalMenuIsActive;
+			this.EquipOrStoreButton.ButtonVisible = this.EquipOrStoreButton.ButtonVisible && !bModalMenuIsActive;
+			this.ExitButton.ButtonVisible = !bModalMenuIsActive;
+			this.InspectButton.ButtonVisible = !bModalMenuIsActive;
+			this.SortButton.ButtonVisible = !bModalMenuIsActive;
+
+			if (!bModalMenuIsActive)
+			{
+				var currentItemList:ItemList = stage.focus as ItemList;
+				var bCurrentListIsEmpty:Boolean = !currentItemList || currentItemList.entryList.length == 0;
+				this.AcceptButton.ButtonText = this.AcceptButtonText;
+				this.AcceptButton.ButtonDisabled = bCurrentListIsEmpty;
+				this.TakeAllButton.ButtonText = this.TakeAllText;
+				this.TakeAllButton.ButtonDisabled = bCurrentListIsEmpty;
+				this.InspectButton.ButtonDisabled = bCurrentListIsEmpty;
+			}
+		}
 
         public function SetContainerInfo(strName:String, auiMode:uint):*
         {
             this.uiMode = auiMode;
-            this.FilterInfoA[0].containerText = strName.toUpperCase();
-            this.UpdateHeaderText(this.ContainerList_mc);
-            this.SwitchToContainerButton.ButtonText = this.FilterInfoA[this.uiContainerFilterIndex].containerText.toUpperCase();
+			this.strContainerName = strName.toUpperCase();
+			this.UpdateHeaderText();
+            this.SwitchToContainerButton.ButtonText = this.strContainerName;
         }
 
         public function get playerListArray():Array
@@ -268,62 +281,36 @@
         {
             this.PlayerInventory_mc.PlayerList_mc.InvalidateData();
             this.ContainerList_mc.InvalidateData();
+			
+			if (stage.focus == null)
+			{
+				this.SwitchToContainerList(false);
+			}
+			
             this.UpdateItemDisplay(stage.focus as ItemList, false);
             this.ValidateListHighlight();
-            if (this.PlayerInventory_mc.PlayerListHeader.headerText.length == 0)
-            {
-                this.UpdateHeaderText(this.PlayerInventory_mc.PlayerList_mc);
-                this.UpdateHeaderText(this.ContainerList_mc);
-            }
             this.UpdateButtonHints();
         }
 
+		private function AreFiltersEmpty(aiFilter:int):Boolean
+		{
+			return (this.PlayerInventory_mc.PlayerList_mc.filterer.IsFilterEmpty(aiFilter) && this.ContainerList_mc.filterer.IsFilterEmpty(aiFilter));
+		}
+
         private function ValidateListHighlight():*
         {
-            var itemList:ItemList = null;
-            if (this.PlayerInventory_mc.PlayerList_mc.itemsShown == 0 && this.ContainerList_mc.itemsShown == 0)
-            {
-                this.PlayerInventory_mc.PlayerList_mc.selectedIndex = -1;
-                this.ContainerList_mc.selectedIndex = -1;
-                this.PlayerInventory_mc.PlayerSwitchButton_tf.visible = false;
-                this.ContainerInventory_mc.ContainerSwitchButton_tf.visible = false;
-            }
-            else if (this.ContainerList_mc.itemsShown == 0 && stage.focus == this.ContainerList_mc || this.PlayerInventory_mc.PlayerList_mc.itemsShown == 0 && stage.focus == this.PlayerInventory_mc.PlayerList_mc)
-            {
-                itemList = stage.focus as ItemList;
-                if (itemList.entryList.length > 0)
-                {
-                    this.changeItemFilter(itemList, 1);
-                }
-                else
-                {
-                    if (itemList == this.ContainerList_mc)
-                    {
-                        this.uiContainerFilterIndex = 0;
-                        this.SwitchToPlayerList(!this.InitialValidation);
-                        this.ContainerInventory_mc.ContainerSwitchButton_tf.visible = false;
-                    }
-                    else
-                    {
-                        this.uiPlayerFilterIndex = 0;
-                        this.SwitchToContainerList(!this.InitialValidation);
-                        this.PlayerInventory_mc.PlayerSwitchButton_tf.visible = false;
-                    }
-                    itemList.filterer.itemFilter = this.FilterInfoA[0].flag;
-                    this.UpdateHeaderText(itemList);
-                }
-            }
-            else if (stage.focus == null)
-            {
-                if (this.ContainerList_mc.itemsShown == 0)
-                {
-                    this.SwitchToPlayerList(!this.InitialValidation);
-                }
-                else
-                {
-                    this.SwitchToContainerList(!this.InitialValidation);
-                }
-            }
+			this.CategoryBar_mc.SetSelectable(0, !AreFiltersEmpty(this.FilterFlags[0]));
+			this.CategoryBar_mc.SetSelectable(1, !AreFiltersEmpty(this.FilterFlags[1]));
+			this.CategoryBar_mc.SetSelectable(2, !AreFiltersEmpty(this.FilterFlags[2]));
+			this.CategoryBar_mc.SetSelectable(3, !AreFiltersEmpty(this.FilterFlags[3]));
+			this.CategoryBar_mc.SetSelectable(4, !AreFiltersEmpty(this.FilterFlags[4]));
+			this.CategoryBar_mc.SetSelectable(5, !AreFiltersEmpty(this.FilterFlags[5]));
+			this.CategoryBar_mc.SetSelectable(6, !AreFiltersEmpty(this.FilterFlags[6]));
+			this.CategoryBar_mc.SetSelectable(7, !AreFiltersEmpty(this.FilterFlags[7]));
+			this.CategoryBar_mc.SetSelectable(8, !AreFiltersEmpty(this.FilterFlags[8]));
+			this.CategoryBar_mc.SetSelectable(9, !AreFiltersEmpty(this.FilterFlags[9]));
+			this.CategoryBar_mc.SetSelectable(10, !AreFiltersEmpty(this.FilterFlags[10]));
+
             this.InitialValidation = false;
         }
 
@@ -357,9 +344,50 @@
                 {
                     this.BGSCodeObj.PlaySound("UIBarterHorizontalRight");
                 }
-                this.BGSCodeObj.updateSortButtonLabel(true, this.uiContainerFilterIndex);
+                this.BGSCodeObj.updateSortButtonLabel(this.CategoryBar_mc.selectedIndex);
             }
             return bres;
+        }
+
+		protected function SwitchToPlayerList(aPlaySound:Boolean = true):Boolean
+        {
+            var bres:Boolean = this.SwitchLists(this.ContainerList_mc, this.PlayerInventory_mc.PlayerList_mc);
+            if (bres)
+            {
+                if (uiPlatform != PlatformChangeEvent.PLATFORM_PC_KB_MOUSE)
+                {
+                    this.ContainerInventory_mc.ContainerSwitchButton_tf.visible = true;
+                }
+                this.PlayerInventory_mc.PlayerSwitchButton_tf.visible = false;
+                this.UpdateButtonHints();
+                this.RepositionUpperBracketBars();
+                if (aPlaySound)
+                {
+                    this.BGSCodeObj.PlaySound("UIBarterHorizontalLeft");
+                }
+                this.BGSCodeObj.updateSortButtonLabel(this.CategoryBar_mc.selectedIndex);
+            }
+            return bres;
+        }
+		
+		private function SwitchLists(fromList:ItemList, toList:ItemList):Boolean
+        {
+            var bSuccess:Boolean = false;
+            if (stage.focus != toList && toList.itemsShown > 0 && !this.QuantityMenu_mc.opened)
+            {
+                stage.focus = toList;
+                if (fromList.selectedEntry == null)
+                {
+                    toList.selectedIndex = toList.GetEntryFromClipIndex(0);
+                }
+                else
+                {
+                    toList.selectedIndex = toList.GetEntryFromClipIndex(fromList.selectedEntry.clipIndex);
+                }
+                fromList.selectedIndex = -1;
+                bsuccess = true;
+            }
+            return bSuccess;
         }
 
         protected function RepositionUpperBracketBars():*
@@ -375,7 +403,7 @@
                     break;
                 }
             }
-			
+
 			for (var i:uint = 0; i < this.ContainerInventory_mc.numChildren; i++)
             {
                 var child:* = this.ContainerInventory_mc.getChildAt(i);
@@ -385,7 +413,7 @@
                     break;
                 }
             }
-			
+
             lines = new Shape();
             lines.name = "lines";
             lines.graphics.lineStyle(2, 0xFFFFFF, 1.0, true, LineScaleMode.NONE);
@@ -419,73 +447,36 @@
             this.ContainerInventory_mc.addChild(lines);
         }
 
-        protected function SwitchToPlayerList(aPlaySound:Boolean = true):Boolean
-        {
-            var bres:Boolean = this.SwitchLists(this.ContainerList_mc, this.PlayerInventory_mc.PlayerList_mc);
-            if (bres)
-            {
-                if (uiPlatform != PlatformChangeEvent.PLATFORM_PC_KB_MOUSE)
-                {
-                    this.ContainerInventory_mc.ContainerSwitchButton_tf.visible = true;
-                }
-                this.PlayerInventory_mc.PlayerSwitchButton_tf.visible = false;
-                this.UpdateButtonHints();
-                this.RepositionUpperBracketBars();
-                if (aPlaySound)
-                {
-                    this.BGSCodeObj.PlaySound("UIBarterHorizontalLeft");
-                }
-                this.BGSCodeObj.updateSortButtonLabel(false, this.uiPlayerFilterIndex);
-            }
-            return bres;
-        }
-
         protected function OpenQuantityMenu(aiCount:int, aiItemValue:int = 0):*
         {
             this.BGSCodeObj.show3D(-1, false);
+			addEventListener(QuantityMenu.QUANTITY_MODIFIED, this.onQuantityModified);
             this.QuantityMenu_mc.OpenMenu(aiCount, stage.focus, "", aiItemValue);
-            addEventListener(QuantityMenu.QUANTITY_CHANGED, this.onQuantityModified);
             stage.focus = this.QuantityMenu_mc;
-            this.PlayerInventory_mc.PlayerList_mc.disableInput = true;
-            this.PlayerInventory_mc.PlayerList_mc.disableSelection = true;
-            this.ContainerList_mc.disableInput = true;
-            this.ContainerList_mc.disableSelection = true;
+
+			this.PlayerInventory_mc.PlayerList_mc.disableInput_Inspectable = true;
+			this.PlayerInventory_mc.PlayerList_mc.disableSelection_Inspectable = true;
+            this.ContainerList_mc.disableInput_Inspectable = true;
+            this.ContainerList_mc.disableSelection_Inspectable = true;
             this.ItemCard_mc.visible = false;
+
             this.UpdateButtonHints();
         }
 
         protected function CloseQuantityMenu():*
         {
-            this.PlayerInventory_mc.PlayerList_mc.disableInput = false;
-            this.PlayerInventory_mc.PlayerList_mc.disableSelection = false;
-            this.ContainerList_mc.disableInput = false;
-            this.ContainerList_mc.disableSelection = false;
-            stage.focus = this.QuantityMenu_mc.prevFocus;
-            this.QuantityMenu_mc.CloseMenu();
-            removeEventListener(QuantityMenu.QUANTITY_CHANGED, this.onQuantityModified);
-            this.UpdateItemDisplay(stage.focus as ItemList, false);
-            this.ItemCard_mc.visible = true;
-            this.UpdateButtonHints();
-        }
+			removeEventListener(QuantityMenu.QUANTITY_MODIFIED, this.onQuantityModified);
+			stage.focus = this.QuantityMenu_mc.prevFocus;
+			this.QuantityMenu_mc.CloseMenu();
 
-        private function SwitchLists(fromList:ItemList, toList:ItemList):Boolean
-        {
-            var bsuccess:Boolean = false;
-            if (stage.focus != toList && toList.itemsShown > 0 && !this.QuantityMenu_mc.opened)
-            {
-                stage.focus = toList;
-                if (fromList.selectedEntry == null)
-                {
-                    toList.selectedIndex = toList.GetEntryFromClipIndex(0);
-                }
-                else
-                {
-                    toList.selectedIndex = toList.GetEntryFromClipIndex(fromList.selectedEntry.clipIndex);
-                }
-                fromList.selectedIndex = -1;
-                bsuccess = true;
-            }
-            return bsuccess;
+            this.PlayerInventory_mc.PlayerList_mc.disableInput_Inspectable = false;
+            this.PlayerInventory_mc.PlayerList_mc.disableSelection_Inspectable = false;
+            this.ContainerList_mc.disableInput_Inspectable = false;
+            this.ContainerList_mc.disableSelection_Inspectable = false;
+            this.UpdateItemDisplay(stage.focus as ItemList, false);
+			this.ItemCard_mc.visible = true;
+
+            this.UpdateButtonHints();
         }
 
         private function onMouseOverPlayerHeader(mouseEvent:MouseEvent):*
@@ -499,7 +490,7 @@
                     this.ContainerList_mc.selectedIndex = -1;
                     this.UpdateButtonHints();
                     this.RepositionUpperBracketBars();
-                    this.BGSCodeObj.updateSortButtonLabel(false, this.uiPlayerFilterIndex);
+                    this.BGSCodeObj.updateSortButtonLabel(this.CategoryBar_mc.selectedIndex);
                 }
             }
         }
@@ -515,7 +506,7 @@
                     this.PlayerInventory_mc.PlayerList_mc.selectedIndex = -1;
                     this.UpdateButtonHints();
                     this.RepositionUpperBracketBars();
-                    this.BGSCodeObj.updateSortButtonLabel(true, this.uiContainerFilterIndex);
+                    this.BGSCodeObj.updateSortButtonLabel(this.CategoryBar_mc.selectedIndex);
                 }
             }
         }
@@ -530,7 +521,7 @@
                     this.ContainerList_mc.selectedIndex = -1;
                     this.UpdateButtonHints();
                     this.RepositionUpperBracketBars();
-                    this.BGSCodeObj.updateSortButtonLabel(false, this.uiPlayerFilterIndex);
+                    this.BGSCodeObj.updateSortButtonLabel(this.CategoryBar_mc.selectedIndex);
                 }
                 else if (event.target == this.ContainerList_mc && stage.focus != this.ContainerList_mc)
                 {
@@ -538,7 +529,7 @@
                     this.PlayerInventory_mc.PlayerList_mc.selectedIndex = -1;
                     this.UpdateButtonHints();
                     this.RepositionUpperBracketBars();
-                    this.BGSCodeObj.updateSortButtonLabel(true, this.uiContainerFilterIndex);
+                    this.BGSCodeObj.updateSortButtonLabel(this.CategoryBar_mc.selectedIndex);
                 }
             }
         }
@@ -553,8 +544,8 @@
 
         private function onItemPress(event:Event):*
         {
-            var iitemCount:int = 0;
-            var iitemValue:* = undefined;
+            var iItemCount:int = 0;
+            var iItemValue:* = undefined;
             if (visible)
             {
                 if (this.InspectingFeaturedItem)
@@ -563,14 +554,14 @@
                 }
                 else
                 {
-                    iitemCount = (event.target as ItemList).selectedEntry.count;
+                    iItemCount = (event.target as ItemList).selectedEntry.count;
                     if ((event.target as ItemList).selectedEntry.suppressQuantityMenu == true)
                     {
-                        this.BGSCodeObj.transferItem((event.target as ItemList).selectedIndex, iitemCount, event.target == this.ContainerList_mc);
+                        this.BGSCodeObj.transferItem((event.target as ItemList).selectedIndex, iItemCount, event.target == this.ContainerList_mc);
                         this.BlockNextListFocusSound = true;
                         this.onTransferItem(stage.focus == this.PlayerInventory_mc.PlayerList_mc ? this.ContainerList_mc : this.PlayerInventory_mc.PlayerList_mc);
                     }
-                    else if (iitemCount <= QuantityMenu.INV_MAX_NUM_BEFORE_QUANTITY_MENU)
+                    else if (iItemCount <= QuantityMenu.INV_MAX_NUM_BEFORE_QUANTITY_MENU)
                     {
                         this.BGSCodeObj.transferItem((event.target as ItemList).selectedIndex, 1, event.target == this.ContainerList_mc);
                         this.BlockNextListFocusSound = true;
@@ -578,57 +569,106 @@
                     }
                     else
                     {
-                        iitemValue = this.BGSCodeObj.getItemValue((event.target as ItemList).selectedIndex, event.target == this.ContainerList_mc);
-                        this.OpenQuantityMenu(iitemCount, iitemValue);
+                        iItemValue = this.BGSCodeObj.getItemValue((event.target as ItemList).selectedIndex, event.target == this.ContainerList_mc);
+                        this.OpenQuantityMenu(iItemCount, iItemValue);
                     }
                 }
             }
         }
 
-        public function onQuantityConfirm(event:Event):*
+        public function onAcceptPressed():*
         {
-            this.CloseQuantityMenu();
-            this.BGSCodeObj.transferItem((stage.focus as ItemList).selectedIndex, this.QuantityMenu_mc.quantity, stage.focus == this.ContainerList_mc);
-            this.onTransferItem(stage.focus == this.PlayerInventory_mc.PlayerList_mc ? this.ContainerList_mc : this.PlayerInventory_mc.PlayerList_mc);
+			if (this.QuantityAcceptButton.ButtonEnabled && this.QuantityAcceptButton.ButtonVisible)
+			{
+				if (stage.focus == this.QuantityMenu_mc)
+				{
+					this.onQuantityAccepted();
+					return;
+				}
+			}
+			
+			if (this.AcceptButton.ButtonEnabled && this.AcceptButton.ButtonVisible)
+			{
+				(stage.focus as ItemList).dispatchEvent(new Event(BSScrollingList.ITEM_PRESS, true, true));
+			}
+        }
+		
+		public function onTakeAllPressed():*
+        {
+			if (this.TakeAllButton.ButtonEnabled && this.TakeAllButton.ButtonVisible)
+			{
+				this.BGSCodeObj.takeAllItems();
+			}
+        }
+		
+		public function onEquipOrStorePressed():*
+        {
+			if (this.EquipOrStoreButton.ButtonEnabled && this.EquipOrStoreButton.ButtonVisible)
+			{
+				this.BGSCodeObj.sendYButton();
+			}
+        }
+		
+		public function onSortPressed():*
+        {
+            if (this.SortButton.ButtonEnabled && this.SortButton.ButtonVisible)
+            {
+				this.BGSCodeObj.sortItems(this.CategoryBar_mc.selectedIndex, true);
+				this.BGSCodeObj.updateSortButtonLabel(this.CategoryBar_mc.selectedIndex);
+            }
+        }
+		
+		public function onInspectPressed():*
+        {
+            if (this.InspectButton.ButtonEnabled && this.InspectButton.ButtonVisible)
+            {
+                (stage.focus as ItemList).disableInput = true;
+                this.BGSCodeObj.inspectItem();
+            }
+        }
+		
+		public function onExitPressed():*
+        {
+			if (this.QuantityCancelButton.ButtonEnabled && this.QuantityCancelButton.ButtonVisible)
+			{
+				if (stage.focus == this.QuantityMenu_mc)
+				{
+					this.onQuantityCanceled();
+					return;
+				}
+			}
+			
+			if (this.ExitButton.ButtonEnabled && this.ExitButton.ButtonVisible)
+            {
+				if (this.bCancelPressed)
+				{
+					this.BGSCodeObj.exitMenu();
+				}
+			}
+			
+			this.bCancelPressed = false;
         }
 
-        public function onAccept():*
+		private function onPrevCategory():*
         {
-            (stage.focus as ItemList).dispatchEvent(new Event(BSScrollingList.ITEM_PRESS, true, true));
+			this.UpdateItemFilter(false);
         }
 
+        private function onNextCategory():*
+        {
+            this.UpdateItemFilter(true);
+        }
+		
         public function onQuantityAccepted():*
         {
-            dispatchEvent(new Event(QuantityMenu.CONFIRM, true, true));
-        }
-
-        public function onTakeAll():*
-        {
-            this.BGSCodeObj.takeAllItems();
-        }
-
-        public function onEquipOrStore():*
-        {
-            this.BGSCodeObj.sendYButton();
-        }
-
-        public function onExitMenu():*
-        {
-            this.BGSCodeObj.exitMenu();
+			this.CloseQuantityMenu();
+            this.BGSCodeObj.transferItem((stage.focus as ItemList).selectedIndex, this.QuantityMenu_mc.quantity, stage.focus == this.ContainerList_mc);
+            this.onTransferItem(stage.focus == this.PlayerInventory_mc.PlayerList_mc ? this.ContainerList_mc : this.PlayerInventory_mc.PlayerList_mc);
         }
 
         public function onQuantityCanceled():*
         {
             this.CloseQuantityMenu();
-        }
-
-        public function onInspect():*
-        {
-            if (this.InspectButton.ButtonVisible)
-            {
-                (stage.focus as ItemList).disableInput = true;
-                this.BGSCodeObj.inspectItem();
-            }
         }
 
         public function onEndInspect():*
@@ -685,111 +725,111 @@
             {
                 if (event.keyCode == Keyboard.LEFT)
                 {
-                    this.changeItemFilter(stage.focus as ItemList, -1);
+                    this.UpdateItemFilter(false);
                 }
                 else if (event.keyCode == Keyboard.RIGHT)
                 {
-                    this.changeItemFilter(stage.focus as ItemList, 1);
+					this.UpdateItemFilter(true);
                 }
             }
         }
 
-        private function changeItemFilter(arItemList:ItemList, aiDelta:int):*
+        private function UpdateItemFilter(doNext:Boolean):*
         {
-            var uiprevFilter:uint = arItemList == this.PlayerInventory_mc.PlayerList_mc ? uint(this.uiPlayerFilterIndex) : uint(this.uiContainerFilterIndex);
-            var uinewFilter:uint = uiprevFilter;
-            do
-            {
-                if (uinewFilter == 0 && aiDelta < 0)
-                {
-                    uinewFilter = NUM_FILTERS - 1;
-                }
-                else if (uinewFilter == NUM_FILTERS - 1 && aiDelta > 0)
-                {
-                    uinewFilter = 0;
-                }
-                else
-                {
-                    uinewFilter = uinewFilter + aiDelta;
-                }
-            } while (uinewFilter != uiprevFilter && arItemList.filterer.IsFilterEmpty(this.FilterInfoA[uinewFilter].flag));
+			var uiOldFilter = this.CategoryBar_mc.selectedIndex;
+			if (doNext)
+			{
+				this.CategoryBar_mc.SelectNext();
+			}
+			else
+			{
+				this.CategoryBar_mc.SelectPrevious();
+			}
 
-            arItemList.filterer.itemFilter = this.FilterInfoA[uinewFilter].flag;
-            var isPlayerInv:* = arItemList == this.PlayerInventory_mc.PlayerList_mc;
-            if (isPlayerInv)
-            {
-                this.uiPlayerFilterIndex = uinewFilter;
-            }
-            else
-            {
-                this.uiContainerFilterIndex = uinewFilter;
-            }
-            if (uinewFilter != uiprevFilter)
-            {
-                this.BGSCodeObj.PlaySound(aiDelta > 0 ? "UIBarterHorizontalRight" : "UIBarterHorizontalLeft");
-                this.BGSCodeObj.sortItems(!isPlayerInv, uinewFilter, false);
-                this.BGSCodeObj.updateSortButtonLabel(!isPlayerInv, uinewFilter);
-                this.UpdateHeaderText(arItemList);
-                arItemList.InvalidateData();
-                if (uiPlatform != PlatformChangeEvent.PLATFORM_PC_KB_MOUSE && arItemList.selectedClipIndex == -1 && !arItemList.filterer.IsFilterEmpty(this.FilterInfoA[uinewFilter].flag))
-                {
-                    arItemList.selectedClipIndex = 0;
-                }
-            }
+			if (this.CategoryBar_mc.selectedIndex != uiOldFilter)
+			{
+				this.PlayerInventory_mc.PlayerList_mc.filterer.itemFilter = this.FilterFlags[this.CategoryBar_mc.selectedIndex];
+				this.ContainerList_mc.filterer.itemFilter = this.FilterFlags[this.CategoryBar_mc.selectedIndex];
+
+				this.BGSCodeObj.PlaySound(doNext ? "UIBarterHorizontalRight" : "UIBarterHorizontalLeft");
+				this.BGSCodeObj.sortItems(this.CategoryBar_mc.selectedIndex, false);
+				this.BGSCodeObj.updateSortButtonLabel(this.CategoryBar_mc.selectedIndex);
+			}
         }
 
-        private function UpdateHeaderText(arItemList:ItemList):*
+        private function UpdateHeaderText():*
         {
-            if (arItemList == this.PlayerInventory_mc.PlayerList_mc)
-            {
-                this.PlayerInventory_mc.PlayerListHeader.headerText = this.FilterInfoA[this.uiPlayerFilterIndex].text + "Mine";
-            }
-            else if (arItemList == this.ContainerList_mc)
-            {
-                if (this.uiContainerFilterIndex == 0)
-                {
-                    this.ContainerInventory_mc.ContainerListHeader.headerText = this.FilterInfoA[this.uiContainerFilterIndex].containerText;
-                }
-                else
-                {
-                    this.ContainerInventory_mc.ContainerListHeader.headerText = this.FilterInfoA[this.uiContainerFilterIndex].text;
-                }
-            }
+            this.PlayerInventory_mc.PlayerListHeader.headerText = "$INVENTORYMine";
+            this.ContainerInventory_mc.ContainerListHeader.headerText = this.strContainerName;
             this.RepositionUpperBracketBars();
         }
 
-        public function ProcessUserEvent(strEventName:String, abPressed:Boolean):Boolean
+        public function ProcessUserEvent(a_event:String, a_keyPressed:Boolean):Boolean
         {
-            var bhandled:Boolean = false;
-            if (visible && !abPressed)
+            if (!a_keyPressed)
             {
-                if (strEventName == "Cancel" && this.QuantityMenu_mc.opened)
+                switch (a_event)
                 {
-                    this.CloseQuantityMenu();
-                    bhandled = true;
-                }
-                if (!bhandled)
-                {
-                    if (this.QuantityMenu_mc.opened)
-                    {
-                        bhandled = this.QuantityMenu_mc.ProcessUserEvent(strEventName, abPressed);
-                    }
-                    if (!bhandled)
-                    {
-                        if (strEventName == "RTrigger")
-                        {
-                            this.SwitchToContainerList();
-                            bhandled = true;
-                        }
-                        else if (strEventName == "LTrigger")
-                        {
-                            this.SwitchToPlayerList();
-                            bhandled = true;
-                        }
-                    }
+                    case "Cancel":
+                        this.onExitPressed();
+                        return true;
+
+                    case "Accept":
+						this.onAcceptPressed();
+                        return true;
+
+                    case "Prev":
+                        this.onPrevCategory();
+                        return true;
+
+                    case "Next":
+                        this.onNextCategory();
+                        return true;
+
+                    case "LTrigger":
+						if (stage.focus == this.QuantityMenu_mc)
+						{
+							return this.QuantityMenu_mc.ProcessUserEvent(a_event, a_keyPressed);
+						}
+						this.SwitchToPlayerList();
+                        return true;
+
+                    case "RTrigger":
+						if (stage.focus == this.QuantityMenu_mc)
+						{
+							return this.QuantityMenu_mc.ProcessUserEvent(a_event, a_keyPressed);
+						}
+						this.SwitchToContainerList();
+                        return true;
+
+                    case "Sort":
+						this.onSortPressed();
+                        return true;
+
+                    case "TakeAll":
+						this.onTakeAllPressed();
+                        return true;
+
+                    case "Equip":
+						this.onEquipOrStorePressed();
+                        return true;
+
+                    case "Inspect":
+						this.onInspectPressed();
+                        return true;
                 }
             }
-            return bhandled;
+            else
+            {
+                switch (a_event)
+                {
+                    case "Cancel":
+                        this.bCancelPressed = true;
+                        break;
+                }
+            }
+
+            return false;
         }
 
         public function UpdateEncumbranceAndCaps(aContainer:Boolean, aCurrWeight:uint, aMaxWeight:uint, aCaps:uint, aIncomingCaps:int):*
@@ -852,7 +892,7 @@
             var itemList:BSScrollingList = this.QuantityMenu_mc.prevFocus as BSScrollingList;
             var count:int = (aEvent as CustomEvent).params as int;
             this.BGSCodeObj.updateItemPickpocketInfo(itemList.selectedIndex, itemList == this.ContainerList_mc, count);
-            this.BGSCodeObj.PlaySound("UIMenuQuantity");
+            // this.BGSCodeObj.PlaySound("UIMenuQuantity");
         }
 
         public function onToggleEquip():*
@@ -864,23 +904,6 @@
                 index = (stage.focus as ItemList).selectedIndex;
                 inContainer = stage.focus == this.ContainerList_mc;
                 this.BGSCodeObj.toggleSelectedItemEquipped(index, inContainer);
-            }
-        }
-
-        public function requestSort():*
-        {
-            if (this.SortButton.ButtonVisible)
-            {
-                if (stage.focus == this.ContainerList_mc)
-                {
-                    this.BGSCodeObj.sortItems(true, this.uiContainerFilterIndex, true);
-                    this.BGSCodeObj.updateSortButtonLabel(true, this.uiContainerFilterIndex);
-                }
-                else
-                {
-                    this.BGSCodeObj.sortItems(false, this.uiPlayerFilterIndex, true);
-                    this.BGSCodeObj.updateSortButtonLabel(false, this.uiPlayerFilterIndex);
-                }
             }
         }
 
