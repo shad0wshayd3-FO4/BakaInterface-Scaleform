@@ -14,7 +14,7 @@
                     <DOMTextRun>
                       <characters></characters>
                       <textAttrs>
-                        <DOMTextAttrs aliasText="false" rotation="true" letterSpacing="0.5" lineSpacing="5" lineHeight="33.65" size="26" bitmapSize="520" face="$MAIN_Font*" fillColor="#FFFFFF"/>
+                        <DOMTextAttrs aliasText="false" rotation="true" letterSpacing="0.5" lineSpacing="5" size="26" bitmapSize="520" face="$MAIN_Font*" fillColor="#FFFFFF"/>
                       </textAttrs>
                     </DOMTextRun>
                   </textRuns>
@@ -47,7 +47,7 @@
                     </FillStyle>
                   </fills>
                   <edges>
-                    <Edge fillStyle1="1" edges="!9100 0|10000 0!10000 0|10000 900!10000 900|9100 900!9100 900|9100 0"/>
+                    <Edge fillStyle1="1" edges="!10000 900|9100 900!9100 900|9100 0!9100 0|10000 0!10000 0|10000 900"/>
                   </edges>
                 </DOMShape>
               </elements>

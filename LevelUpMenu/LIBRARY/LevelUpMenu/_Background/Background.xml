@@ -6,7 +6,7 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="LevelUpMenu/_Background/BackgroundBase" selected="true">
+                <DOMSymbolInstance libraryItemName="LevelUpMenu/_Background/BackgroundBase" selected="true" centerPoint3DX="750" centerPoint3DY="430">
                   <transformationPoint>
                     <Point x="750" y="430"/>
                   </transformationPoint>

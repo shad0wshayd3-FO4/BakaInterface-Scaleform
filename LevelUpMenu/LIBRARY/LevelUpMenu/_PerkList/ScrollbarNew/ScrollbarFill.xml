@@ -1,6 +1,6 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="LevelUpMenu/_PerkListEntry/PerkListEntryBorder" itemID="5fa055dc-0000043d" lastModified="1604451309">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="LevelUpMenu/_PerkList/ScrollbarNew/ScrollbarFill" itemID="5fe136d9-0000042e" lastModified="1620530086">
   <timeline>
-    <DOMTimeline name="PerkListEntryBorder">
+    <DOMTimeline name="ScrollbarFill">
       <layers>
         <DOMLayer name="Layer_1" color="#00FFFF" current="true" isSelected="true">
           <frames>
@@ -8,7 +8,7 @@
               <elements>
                 <DOMShape selected="true" isFloating="true">
                   <matrix>
-                    <Matrix a="0.899993896484375"/>
+                    <Matrix d="1.07691955566406"/>
                   </matrix>
                   <fills>
                     <FillStyle index="1">
@@ -16,7 +16,7 @@
                     </FillStyle>
                   </fills>
                   <edges>
-                    <Edge fillStyle1="1" edges="!10000 900S2|0 900!0 900|0 0!0 0|10000 0!10000 0|10000 900"/>
+                    <Edge fillStyle1="1" edges="!325 0S2|325 13000!325 13000|75 13000!75 13000|75 0!75 0|325 0"/>
                   </edges>
                 </DOMShape>
               </elements>

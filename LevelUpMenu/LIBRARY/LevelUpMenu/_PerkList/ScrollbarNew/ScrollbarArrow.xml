@@ -1,6 +1,6 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="LevelUpMenu/_Search/SearchBoxBorder" itemID="5fa1d587-00000738" lastModified="1604441625">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="LevelUpMenu/_PerkList/ScrollbarNew/ScrollbarArrow" itemID="5fe13d0b-00000648" lastModified="1608598345">
   <timeline>
-    <DOMTimeline name="SearchBoxBorder">
+    <DOMTimeline name="ScrollbarArrow">
       <layers>
         <DOMLayer name="Layer_1" color="#00FFFF" current="true" isSelected="true">
           <frames>
@@ -9,7 +9,7 @@
                 <DOMShape>
                   <strokes>
                     <StrokeStyle index="1">
-                      <SolidStroke scaleMode="normal" weight="3">
+                      <SolidStroke scaleMode="normal" caps="square" weight="4" joints="miter">
                         <fill>
                           <SolidColor color="#FFFFFF"/>
                         </fill>
@@ -17,7 +17,7 @@
                     </StrokeStyle>
                   </strokes>
                   <edges>
-                    <Edge strokeStyle="1" edges="!10000 900|0 900!0 900|0 0!0 0|10000 0!10000 0|10000 900"/>
+                    <Edge strokeStyle="1" edges="!0 144|250 0!250 0|500 144"/>
                   </edges>
                 </DOMShape>
               </elements>

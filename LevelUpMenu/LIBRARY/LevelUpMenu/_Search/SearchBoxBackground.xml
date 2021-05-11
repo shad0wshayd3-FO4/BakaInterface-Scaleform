@@ -13,7 +13,7 @@
                     </FillStyle>
                   </fills>
                   <edges>
-                    <Edge fillStyle1="1" edges="!0 0S2|10000 0!10000 0|10000 900!10000 900|0 900!0 900|0 0"/>
+                    <Edge fillStyle1="1" edges="!10000 900S2|0 900!0 900|0 0!0 0|10000 0!10000 0|10000 900"/>
                   </edges>
                 </DOMShape>
               </elements>

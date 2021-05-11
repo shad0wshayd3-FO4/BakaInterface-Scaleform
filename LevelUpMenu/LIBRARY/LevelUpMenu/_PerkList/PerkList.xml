@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="LevelUpMenu/_PerkList/PerkList" itemID="5fa05523-0000038a" linkageExportForAS="true" linkageBaseClass="Shared.AS3.BSScrollingList" linkageClassName="Menu.LevelUpMenu.PerkList" lastModified="1608526639">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="LevelUpMenu/_PerkList/PerkList" itemID="5fa05523-0000038a" linkageExportForAS="true" linkageBaseClass="Shared.AS3.BSScrollingList" linkageClassName="Menu.LevelUpMenu.PerkList" lastModified="1620530070" lastUniqueIdentifier="1">
   <timeline>
     <DOMTimeline name="PerkList">
       <layers>
@@ -6,12 +6,12 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="LevelUpMenu/_PerkList/ScrollBar/ScrollBar" name="Scrollbar">
+                <DOMSymbolInstance libraryItemName="LevelUpMenu/_PerkList/ScrollbarNew/Scrollbar" name="Scrollbar" selected="true" centerPoint3DX="480" centerPoint3DY="340">
                   <matrix>
-                    <Matrix a="0" b="1" c="-1" d="0" tx="490" ty="25"/>
+                    <Matrix tx="470"/>
                   </matrix>
                   <transformationPoint>
-                    <Point x="56.45" y="14.05"/>
+                    <Point x="10" y="340"/>
                   </transformationPoint>
                 </DOMSymbolInstance>
               </elements>
@@ -22,7 +22,7 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="LevelUpMenu/_PerkList/PerkListBorder" name="border">
+                <DOMSymbolInstance libraryItemName="LevelUpMenu/_PerkList/PerkListBorder" name="border" centerPoint3DX="225" centerPoint3DY="375">
                   <transformationPoint>
                     <Point x="225" y="375"/>
                   </transformationPoint>

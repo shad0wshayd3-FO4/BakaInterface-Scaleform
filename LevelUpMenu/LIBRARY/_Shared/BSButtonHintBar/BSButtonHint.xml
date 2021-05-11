@@ -40,7 +40,7 @@
                     <DOMTextRun>
                       <characters>TEXT</characters>
                       <textAttrs>
-                        <DOMTextAttrs aliasText="false" rotation="true" lineHeight="34.05" size="26" bitmapSize="520" face="$MAIN_Font_Bold*" fillColor="#FFFFFF"/>
+                        <DOMTextAttrs aliasText="false" rotation="true" size="26" bitmapSize="520" face="$MAIN_Font_Bold*" fillColor="#FFFFFF"/>
                       </textAttrs>
                     </DOMTextRun>
                   </textRuns>
