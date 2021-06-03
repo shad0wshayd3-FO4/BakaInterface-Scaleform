@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_Shared/ItemCard/ItemCard_DescriptionEntry" itemID="5fc84e95-000001be" linkageExportForAS="true" linkageClassName="Components.ItemCard_DescriptionEntry" lastModified="1608624305">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_Shared/ItemCard/ItemCard_DescriptionEntry" itemID="5fc84e95-000001be" linkageExportForAS="true" linkageClassName="Components.ItemCard_DescriptionEntry" lastModified="1622279993">
   <timeline>
     <DOMTimeline name="ItemCard_DescriptionEntry">
       <layers>
@@ -6,9 +6,9 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMDynamicText name="Label_tf" width="286" height="28.5" isSelectable="false" renderAsHTML="true" lineType="multiline">
+                <DOMDynamicText name="Label_tf" width="286" height="31" isSelectable="false" renderAsHTML="true" lineType="multiline">
                   <matrix>
-                    <Matrix tx="-293"/>
+                    <Matrix tx="7" ty="2"/>
                   </matrix>
                   <textRuns>
                     <DOMTextRun>
@@ -23,16 +23,32 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Background" color="#BEE1FA" current="true" isSelected="true" autoNamed="false">
+        <DOMLayer name="Background" color="#BEE1FA" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_Shared/ItemCard/_Components/ItemCard_BG_Dark" name="Background_mc" centerPoint3DX="-236.8" centerPoint3DY="50.5">
+                <DOMSymbolInstance libraryItemName="_Shared/ItemCard/_Components/ItemCard_BG_Dark" name="Background_mc" centerPoint3DX="63.2" centerPoint3DY="53.5">
                   <matrix>
-                    <Matrix a="2.99996948242188" d="0.330490112304688" tx="-300"/>
+                    <Matrix a="2.99996948242188" d="0.3499755859375"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Sizer" color="#9933CC" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_Shared/ItemCard/_Components/ItemCard_BG_Dark" name="Sizer_mc" isVisible="false">
+                  <matrix>
+                    <Matrix a="3" d="0.419998168945312" ty="-3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="50" y="49.9"/>
                   </transformationPoint>
                 </DOMSymbolInstance>
               </elements>

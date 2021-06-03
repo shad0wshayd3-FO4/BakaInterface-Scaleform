@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_Shared/ItemCard/ItemCard_StandardEntry" itemID="5fc84e64-000001ba" linkageExportForAS="true" linkageClassName="Components.ItemCard_StandardEntry" sourceFlashFilepath="../_Shared/_Shared.xfl" sourceLibraryItemHRef="_Shared/ItemCard/ItemCard_StandardEntry" sourceLastModified="1608624299" sourceAutoUpdate="true" lastModified="1608624299" sourceItemID="00000000-ffffffff">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_Shared/ItemCard/ItemCard_StandardEntry" itemID="5fc84e64-000001ba" linkageExportForAS="true" linkageClassName="Components.ItemCard_StandardEntry" sourceFlashFilepath="../_Shared/_Shared.xfl" sourceLibraryItemHRef="_Shared/ItemCard/ItemCard_StandardEntry" sourceLastModified="1622273889" sourceAutoUpdate="true" lastModified="1622273889" sourceItemID="00000000-ffffffff">
   <timeline>
     <DOMTimeline name="ItemCard_StandardEntry">
       <layers>
@@ -6,9 +6,9 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMDynamicText name="Label_tf" selected="true" width="191" height="36.25" isSelectable="false" renderAsHTML="true">
+                <DOMDynamicText name="Label_tf" width="191" height="38" isSelectable="false" renderAsHTML="true">
                   <matrix>
-                    <Matrix tx="-293"/>
+                    <Matrix tx="7" ty="-1"/>
                   </matrix>
                   <textRuns>
                     <DOMTextRun>
@@ -27,9 +27,9 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMDynamicText name="Value_tf" width="91" height="36.7" isSelectable="false" renderAsHTML="true">
+                <DOMDynamicText name="Value_tf" width="91" height="38" isSelectable="false" renderAsHTML="true">
                   <matrix>
-                    <Matrix tx="-98"/>
+                    <Matrix tx="202" ty="-1"/>
                   </matrix>
                   <textRuns>
                     <DOMTextRun>
@@ -48,9 +48,9 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_Shared/ItemCard/_Components/ItemCard_BG_Dark" centerPoint3DX="-236.8" centerPoint3DY="53.5">
+                <DOMSymbolInstance libraryItemName="_Shared/ItemCard/_Components/ItemCard_BG_Dark" centerPoint3DX="63.2" centerPoint3DY="53.5">
                   <matrix>
-                    <Matrix a="2.99996948242188" d="0.3499755859375" tx="-300"/>
+                    <Matrix a="2.99996948242188" d="0.3499755859375"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
@@ -60,13 +60,13 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Comparison" color="#3ABDC0" locked="true" autoNamed="false">
+        <DOMLayer name="Comparison" color="#3ABDC0" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_Shared/ItemCard/_Components/ItemCard_Comparison" name="Comparison_mc" centerPoint3DX="31.5" centerPoint3DY="23">
+                <DOMSymbolInstance libraryItemName="_Shared/ItemCard/_Components/ItemCard_Comparison" name="Comparison_mc" centerPoint3DX="331.5" centerPoint3DY="23">
                   <matrix>
-                    <Matrix tx="10" ty="17.5"/>
+                    <Matrix tx="310" ty="17.5"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>

@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="ContainerMenu/_Inventory/_List/List_Border" itemID="5fc87405-0000089f" lastModified="1620594647">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="ContainerMenu/_Inventory/_List/List_Border" itemID="5fc87405-0000089f" lastModified="1622268692">
   <timeline>
     <DOMTimeline name="List_Border">
       <layers>
@@ -8,7 +8,7 @@
               <elements>
                 <DOMShape selected="true" isFloating="true">
                   <matrix>
-                    <Matrix a="1.04347229003906"/>
+                    <Matrix d="1.15873718261719"/>
                   </matrix>
                   <fills>
                     <FillStyle index="1">
@@ -16,7 +16,7 @@
                     </FillStyle>
                   </fills>
                   <edges>
-                    <Edge fillStyle1="1" edges="!9200 0S2|9200 12600!9200 12600|0 12600!0 12600|0 0!0 0|9200 0"/>
+                    <Edge fillStyle1="1" edges="!10600 0S2|10600 12600!10600 12600|0 12600!0 12600|0 0!0 0|10600 0"/>
                   </edges>
                 </DOMShape>
               </elements>

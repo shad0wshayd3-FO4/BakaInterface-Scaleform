@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_Shared/ItemCard/ItemCard_ComponentsEntry" itemID="5fc84e9b-000001bf" linkageExportForAS="true" linkageClassName="Components.ItemCard_ComponentsEntry" sourceFlashFilepath="../_Shared/_Shared.xfl" sourceLibraryItemHRef="_Shared/ItemCard/ItemCard_ComponentsEntry" sourceLastModified="1608624307" sourceAutoUpdate="true" lastModified="1608624307" sourceItemID="00000000-7fffffff">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_Shared/ItemCard/ItemCard_ComponentsEntry" itemID="5fc84e9b-000001bf" linkageExportForAS="true" linkageClassName="Components.ItemCard_ComponentsEntry" sourceFlashFilepath="../_Shared/_Shared.xfl" sourceLibraryItemHRef="_Shared/ItemCard/ItemCard_ComponentsEntry" sourceLastModified="1622279190" sourceAutoUpdate="true" lastModified="1622279190" sourceItemID="5fc84e9b-000001bf">
   <timeline>
     <DOMTimeline name="ItemCard_ComponentsEntry">
       <layers>
@@ -6,10 +6,7 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_Shared/ItemCard/_Components/Components_EntryHolder" name="EntryHolder_mc" selected="true" centerPoint3DX="-300">
-                  <matrix>
-                    <Matrix tx="-300"/>
-                  </matrix>
+                <DOMSymbolInstance libraryItemName="_Shared/ItemCard/_Components/Components_EntryHolder" name="EntryHolder_mc">
                   <transformationPoint>
                     <Point/>
                   </transformationPoint>

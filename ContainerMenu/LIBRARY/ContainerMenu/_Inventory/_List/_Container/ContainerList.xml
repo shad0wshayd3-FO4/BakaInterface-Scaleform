@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="ContainerMenu/_Inventory/_List/_Container/ContainerList" itemID="5fc86089-00000593" linkageExportForAS="true" linkageClassName="Menu.ContainerMenu.ContainerList" lastModified="1620594679">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="ContainerMenu/_Inventory/_List/_Container/ContainerList" itemID="5fc86089-00000593" linkageExportForAS="true" linkageClassName="Menu.ContainerMenu.ContainerList" lastModified="1622268659">
   <timeline>
     <DOMTimeline name="ContainerList">
       <layers>
@@ -8,7 +8,7 @@
               <elements>
                 <DOMSymbolInstance libraryItemName="_Shared/Scrollbar/Scrollbar" name="Scrollbar">
                   <matrix>
-                    <Matrix tx="500"/>
+                    <Matrix tx="550"/>
                   </matrix>
                   <transformationPoint>
                     <Point x="10" y="270"/>

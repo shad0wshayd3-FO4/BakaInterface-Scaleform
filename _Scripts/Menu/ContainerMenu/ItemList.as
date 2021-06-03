@@ -7,7 +7,7 @@
         public function ItemList()
         {
             super();
-			this.Scrollbar.forceResize(580);
+			this.Scrollbar.forceResize(690);
         }
     }
 }

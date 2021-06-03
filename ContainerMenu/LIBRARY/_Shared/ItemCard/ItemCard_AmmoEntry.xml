@@ -1,14 +1,14 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_Shared/ItemCard/ItemCard_AmmoEntry" itemID="5fc84eb0-000001c1" linkageExportForAS="true" linkageClassName="Components.ItemCard_AmmoEntry" sourceFlashFilepath="../_Shared/_Shared.xfl" sourceLibraryItemHRef="_Shared/ItemCard/ItemCard_AmmoEntry" sourceLastModified="1608624331" sourceAutoUpdate="true" lastModified="1608624331" sourceItemID="00000000-ffffffff">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_Shared/ItemCard/ItemCard_AmmoEntry" itemID="5fc84eb0-000001c1" linkageExportForAS="true" linkageClassName="Components.ItemCard_AmmoEntry" sourceFlashFilepath="../_Shared/_Shared.xfl" sourceLibraryItemHRef="_Shared/ItemCard/ItemCard_AmmoEntry" sourceLastModified="1622278364" sourceAutoUpdate="true" lastModified="1622278364" sourceItemID="00000000-ffffffff">
   <timeline>
     <DOMTimeline name="ItemCard_AmmoEntry">
       <layers>
-        <DOMLayer name="Text" color="#A4EFED" autoNamed="false">
+        <DOMLayer name="Text" color="#A4EFED" current="true" isSelected="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMDynamicText name="Label_tf" width="166" height="36.25" isSelectable="false" renderAsHTML="true">
+                <DOMDynamicText name="Label_tf" width="191" height="38" isSelectable="false" renderAsHTML="true">
                   <matrix>
-                    <Matrix tx="-268"/>
+                    <Matrix tx="7" ty="-1"/>
                   </matrix>
                   <textRuns>
                     <DOMTextRun>
@@ -23,13 +23,13 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Value" color="#B5F5B0" current="true" isSelected="true" autoNamed="false">
+        <DOMLayer name="Value" color="#B5F5B0" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMDynamicText name="Value_tf" selected="true" width="91" height="36.7" isSelectable="false" renderAsHTML="true">
+                <DOMDynamicText name="Value_tf" width="91" height="38" isSelectable="false" renderAsHTML="true">
                   <matrix>
-                    <Matrix tx="-98"/>
+                    <Matrix tx="202" ty="-1"/>
                   </matrix>
                   <textRuns>
                     <DOMTextRun>
@@ -48,9 +48,9 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_Shared/ItemCard/_TempIcons/Symbol 65" name="Icon_mc" centerPoint3DX="-275.8" centerPoint3DY="26.75">
+                <DOMSymbolInstance libraryItemName="_Shared/ItemCard/_TempIcons/Symbol 65" name="Icon_mc" centerPoint3DX="259.2" centerPoint3DY="26.75">
                   <matrix>
-                    <Matrix tx="-285" ty="17.5"/>
+                    <Matrix tx="250" ty="17.5"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
@@ -64,9 +64,9 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_Shared/ItemCard/_Components/ItemCard_BG_Light" centerPoint3DX="-236.8" centerPoint3DY="54">
+                <DOMSymbolInstance libraryItemName="_Shared/ItemCard/_Components/ItemCard_BG_Light" centerPoint3DX="63.2" centerPoint3DY="53.55">
                   <matrix>
-                    <Matrix a="2.99996948242188" d="0.3499755859375" tx="-300" ty="0.45"/>
+                    <Matrix a="2.99996948242188" d="0.3499755859375"/>
                   </matrix>
                   <transformationPoint>
                     <Point y="0.15"/>

@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="ContainerMenu/_Inventory/InventoryHeader" itemID="5fc860c4-000005a0" linkageExportForAS="true" linkageClassName="Menu.ContainerMenu.ListHeader" lastModified="1606983246">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="ContainerMenu/_Inventory/InventoryHeader" itemID="5fc860c4-000005a0" linkageExportForAS="true" linkageClassName="Menu.ContainerMenu.ListHeader" lastModified="1620969354">
   <timeline>
     <DOMTimeline name="InventoryHeader">
       <layers>
@@ -6,7 +6,7 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMDynamicText name="textField" width="221" height="46" isSelectable="false" renderAsHTML="true">
+                <DOMDynamicText name="textField" selected="true" width="346" height="46" isSelectable="false" renderAsHTML="true">
                   <matrix>
                     <Matrix tx="2" ty="2"/>
                   </matrix>

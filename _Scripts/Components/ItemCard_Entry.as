@@ -1,4 +1,4 @@
-package Components
+﻿package Components
 {
     import Shared.GlobalFunc;
     import flash.display.MovieClip;
@@ -10,6 +10,7 @@ package Components
     {
         public var Label_tf:TextField;
         public var Value_tf:TextField;
+		public var Comparison_tf:TextField;
         public var Comparison_mc:MovieClip;
         public var Icon_mc:MovieClip;
         public var Sizer_mc:MovieClip;
@@ -123,6 +124,10 @@ package Components
                         this.Comparison_mc.gotoAndStop("None");
                 }
             }
+			if (this.Comparison_tf != null)
+			{
+				GlobalFunc.SetText(this.Comparison_tf, param1.difference.toString(), false);
+			}
         }
     }
 }

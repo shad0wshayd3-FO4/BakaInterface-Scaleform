@@ -48,8 +48,7 @@
         private var ShowDirectionalArrows:Boolean = true;
         private var Enabled = true;
         private var FoundSelection:Boolean = false;
-        private const AnimFrameCount:Number = 5;
-        private var AnimFrameMoveAmount:Array;
+        private var AnimFrameCount:Number = 5;
         private var m_CenterPointOffset:Number = 640;
 
         public function LabelSelector()
@@ -75,11 +74,14 @@
             this.ButtonHintDataLeftV.push(this.LBButtonData);
             this.ButtonLeft_mc.SetButtonHintData(this.ButtonHintDataLeftV);
             this.ButtonLeft_mc.useBackground = false;
+			this.ButtonLeft_mc.ButtonBracket_Left_mc.visible = false;
+			this.ButtonLeft_mc.ButtonBracket_Right_mc.visible = false;
             this.ButtonHintDataRightV = new Vector.<BSButtonHintData>();
             this.ButtonHintDataRightV.push(this.RBButtonData);
             this.ButtonRight_mc.SetButtonHintData(this.ButtonHintDataRightV);
             this.ButtonRight_mc.useBackground = false;
-            this.AnimFrameMoveAmount = new Array(0.343588, 0.248381, 0.175842, 0.127915, 0.104275);
+			this.ButtonRight_mc.ButtonBracket_Left_mc.visible = false;
+			this.ButtonRight_mc.ButtonBracket_Right_mc.visible = false;
         }
 
         public function get lButtonData():BSButtonHintData
@@ -456,8 +458,6 @@
             if (this.SelectedIndex < uint.MAX_VALUE)
             {
                 this.SetSelection(this.SelectedIndex, true, false);
-                this.LBButtonData.ButtonEnabled = this.SelectedIndex > 0;
-                this.RBButtonData.ButtonEnabled = this.SelectedIndex < this.LabelsA.length - 1;
             }
         }
 
@@ -494,8 +494,8 @@
             _loc5_.ID = this.LabelsA[param1].id;
             _loc5_.Source = this;
             _loc5_.HandleSelectionImmediately = param2;
-            this.LBButtonData.ButtonEnabled = param1 > 0;
-            this.RBButtonData.ButtonEnabled = param1 < this.LabelsA.length - 1;
+			this.LBButtonData.ButtonEnabled = param1 > this.GetLeftMost();
+			this.RBButtonData.ButtonEnabled = param1 < this.GetRightMost();
             dispatchEvent(new CustomEvent(LABEL_SELECTED_EVENT, _loc5_, true));
         }
 
@@ -640,5 +640,31 @@
             }
             throw new Error("LabelSelector::GetLabel() - aIndex out of range.");
         }
+		
+		public function GetLeftMost(): int
+		{
+			for (var i:int = 0; i < this.LabelsA.length; i++)
+			{
+				if (this.LabelsA[i].selectable)
+				{
+					return i;
+				}
+			}
+			
+			return -1;
+		}
+		
+		public function GetRightMost(): int
+		{
+			for (var i:int = this.LabelsA.length - 1; i >= 0; i--)
+			{
+				if (this.LabelsA[i].selectable)
+				{
+					return i;
+				}
+			}
+			
+			return int.MAX_VALUE;
+		}
     }
 }

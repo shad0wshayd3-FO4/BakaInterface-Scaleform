@@ -3,7 +3,9 @@
 	import flash.display.InteractiveObject;
 	import flash.display.MovieClip;
 	import flash.events.Event;
+	import flash.events.KeyboardEvent;	
 	import flash.text.TextField;
+	import flash.ui.Keyboard;
 	import Shared.AS3.Events.CustomEvent;
 	import Shared.AS3.QuantityScrollbar;
 	import Shared.GlobalFunc;
@@ -22,49 +24,49 @@
 		public var Scrollbar_mc: QuantityScrollbar;
 		public var QuantityBracketHolder_mc: MovieClip;
 		
-		protected var iQuantity: int;
-		protected var iMaxQuantity: int;
-		protected var bOpened: Boolean;
-		protected var prevFocusObj: InteractiveObject;
-		protected var uiItemValue: uint = 0;
+		protected var _iQuantity: int;
+		protected var _iMaxQuantity: int;
+		protected var _bOpened: Boolean;
+		protected var _prevFocusObj: InteractiveObject;
+		protected var _uiItemValue: uint = 0;
 
 		public function QuantityMenu()
 		{
 			super();
 			
-			this.iQuantity = 1;
-			this.iMaxQuantity = 1;
-			this.bOpened = false;
+			this._iQuantity = 1;
+			this._iMaxQuantity = 1;
+			this._bOpened = false;
 			
 			addEventListener(BSSlider.VALUE_CHANGED, this.onValueChange);
 		}
 
-		public function get opened(): Boolean
+		public function get bOpened(): Boolean
 		{
-			return this.bOpened;
+			return this._bOpened;
 		}
 
-		public function get quantity(): int
+		public function get iQuantity(): int
 		{
-			return this.iQuantity;
+			return this._iQuantity;
 		}
 
 		public function get prevFocus(): InteractiveObject
 		{
-			return this.prevFocusObj;
+			return this._prevFocusObj;
 		}
 
 		public function OpenMenu(aiQuantity: int, aPrevFocusObj: InteractiveObject, asLabelText: String = "", auiItemValue: * = 0): *
 		{
-			this.iMaxQuantity = aiQuantity;
-			this.iQuantity = aiQuantity;
+			this._iMaxQuantity = aiQuantity;
+			this._iQuantity = aiQuantity;
 			
 			this.Scrollbar_mc.minValue = 0;
 			this.Scrollbar_mc.maxValue = aiQuantity;
 			this.Scrollbar_mc.value = aiQuantity;
 			
-			this.uiItemValue = auiItemValue;
-			if (asLabelText.length)
+			this._uiItemValue = auiItemValue;
+			if (asLabelText.length > 0)
 			{
 				GlobalFunc.SetText(this.Label_tf, asLabelText, false);
 			}
@@ -72,16 +74,18 @@
 			this.FitBrackets();
 			this.RefreshText();
 			
-			this.prevFocusObj = aPrevFocusObj;
-			this.alpha = 1;
-			this.bOpened = true;
+			addEventListener(KeyboardEvent.KEY_DOWN, this.onKeyDown);
+			this._prevFocusObj = aPrevFocusObj;
+			this._bOpened = true;
+			this.alpha = 1.0;
 		}
 
 		public function CloseMenu(): *
 		{
-			this.prevFocusObj = null;
-			this.alpha = 0;
-			this.bOpened = false;
+			removeEventListener(KeyboardEvent.KEY_DOWN, this.onKeyDown);
+			this._prevFocusObj = null;
+			this._bOpened = false;
+			this.alpha = 0.0;
 		}
 
 		private function FitBrackets(): *
@@ -90,25 +94,38 @@
 
 		private function RefreshText(): *
 		{
-			GlobalFunc.SetText(this.Value_tf, this.iQuantity.toString(), false);
+			GlobalFunc.SetText(this.Value_tf, this._iQuantity.toString(), false);
 
 			if (this.TotalValue_tf != null)
 			{
-				var uiTotalValue: uint = this.iQuantity * this.uiItemValue;
+				var uiTotalValue: uint = this._iQuantity * this._uiItemValue;
 				GlobalFunc.SetText(this.TotalValue_tf, uiTotalValue.toString(), false);
 			}
 		}
 
 		public function onValueChange(e: Event): void
 		{
-			this.iQuantity = this.Scrollbar_mc.value;
+			this._iQuantity = this.Scrollbar_mc.value;
 			this.RefreshText();
-			dispatchEvent(new CustomEvent(QUANTITY_MODIFIED, this.iQuantity, true, true));
+			dispatchEvent(new CustomEvent(QUANTITY_MODIFIED, this._iQuantity, true, true));
 		}
-
-		public function ProcessUserEvent(asEvent: String, bData: Boolean): Boolean
-		{
-			return this.Scrollbar_mc.ProcessUserEvent(asEvent, bData);
-		}
+		
+		public function onKeyDown(param1:KeyboardEvent):*
+        {
+			switch (param1.keyCode)
+			{
+				case Keyboard.A:
+				case Keyboard.LEFT:
+					this.Scrollbar_mc.valueJump(-1);
+					param1.stopPropagation();
+					break;
+				
+				case Keyboard.D:
+				case Keyboard.RIGHT:
+					this.Scrollbar_mc.valueJump(1);
+					param1.stopPropagation();
+					break;
+			}
+        }
 	}
 }

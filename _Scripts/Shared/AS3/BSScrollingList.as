@@ -88,7 +88,6 @@
             addEventListener(Event.RENDER, this.onRender);
             addEventListener(Event.REMOVED_FROM_STAGE, this.onStageDestruct, false, 0, true);
             addEventListener(KeyboardEvent.KEY_DOWN, this.onKeyDown, false, 0, true);
-            addEventListener(KeyboardEvent.KEY_UP, this.onKeyUp, false, 0, true);
             addEventListener(MouseEvent.MOUSE_WHEEL, this.onMouseWheel, false, 0, true);
             addEventListener(MouseEvent.MOUSE_OVER, this.onMouseOver, false, 0, true);
             if (this.border == null)
@@ -153,7 +152,6 @@
             loaderInfo.removeEventListener(Event.INIT, this.onComponentInit);
             removeEventListener(Event.REMOVED_FROM_STAGE, this.onStageDestruct);
             removeEventListener(KeyboardEvent.KEY_DOWN, this.onKeyDown);
-            removeEventListener(KeyboardEvent.KEY_UP, this.onKeyUp);
             removeEventListener(MouseEvent.MOUSE_WHEEL, this.onMouseWheel);
             removeEventListener(MouseEvent.MOUSE_OVER, this.onMouseOver);
             if (this.ScrollUp)
@@ -269,27 +267,20 @@
 
         public function onKeyDown(param1:KeyboardEvent):*
         {
-            if (!this.bDisableInput)
+            if (!this.bDisableInput && !this.bDisableSelection)
             {
-                if (param1.keyCode == Keyboard.UP)
-                {
-                    this.moveSelectionUp();
-                    param1.stopPropagation();
-                }
-                else if (param1.keyCode == Keyboard.DOWN)
-                {
-                    this.moveSelectionDown();
-                    param1.stopPropagation();
-                }
-            }
-        }
-
-        public function onKeyUp(param1:KeyboardEvent):*
-        {
-            if (!this.bDisableInput && !this.bDisableSelection && param1.keyCode == Keyboard.ENTER)
-            {
-                this.onItemPress();
-                param1.stopPropagation();
+				switch (param1.keyCode)
+				{
+					case Keyboard.UP:
+						this.moveSelectionUp();
+						param1.stopPropagation();
+						break;
+					
+					case Keyboard.DOWN:
+						this.moveSelectionDown();
+						param1.stopPropagation();
+						break;
+				}
             }
         }
 

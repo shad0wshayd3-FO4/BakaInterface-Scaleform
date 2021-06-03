@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_Shared/ItemCard/ItemCard_TimedEntry" itemID="5fc84e6c-000001bb" linkageExportForAS="true" linkageClassName="Components.ItemCard_TimedEntry" lastModified="1608624298">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_Shared/ItemCard/ItemCard_TimedEntry" itemID="5fc84e6c-000001bb" linkageExportForAS="true" linkageClassName="Components.ItemCard_TimedEntry" lastModified="1622273942">
   <timeline>
     <DOMTimeline name="ItemCard_TimedEntry">
       <layers>
@@ -6,9 +6,9 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMDynamicText name="Label_tf" width="191" height="36.25" isSelectable="false" renderAsHTML="true">
+                <DOMDynamicText name="Label_tf" width="191" height="38" isSelectable="false" renderAsHTML="true">
                   <matrix>
-                    <Matrix tx="-293"/>
+                    <Matrix tx="7" ty="-1"/>
                   </matrix>
                   <textRuns>
                     <DOMTextRun>
@@ -27,9 +27,9 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMDynamicText name="Value_tf" width="91" height="36.7" isSelectable="false" renderAsHTML="true">
+                <DOMDynamicText name="Value_tf" width="91" height="38" isSelectable="false" renderAsHTML="true">
                   <matrix>
-                    <Matrix tx="-98"/>
+                    <Matrix tx="202" ty="-1"/>
                   </matrix>
                   <textRuns>
                     <DOMTextRun>
@@ -44,13 +44,13 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="TimedIcon" color="#7894DB" autoNamed="false">
+        <DOMLayer name="TimedIcon" color="#7894DB" current="true" isSelected="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_Shared/ItemCard/_TempIcons/Symbol 28" name="TimerIcon_mc" centerPoint3DX="-39.55" centerPoint3DY="28">
+                <DOMSymbolInstance libraryItemName="_Shared/ItemCard/_TempIcons/Symbol 28" name="TimerIcon_mc" centerPoint3DX="260.45" centerPoint3DY="28">
                   <matrix>
-                    <Matrix tx="-50" ty="17.5"/>
+                    <Matrix tx="250" ty="17.5"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
@@ -60,13 +60,13 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Background" color="#BBA62B" current="true" isSelected="true" autoNamed="false">
+        <DOMLayer name="Background" color="#BBA62B" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_Shared/ItemCard/_Components/ItemCard_BG_Dark" centerPoint3DX="-236.8" centerPoint3DY="53.5">
+                <DOMSymbolInstance libraryItemName="_Shared/ItemCard/_Components/ItemCard_BG_Dark" centerPoint3DX="63.2" centerPoint3DY="53.5">
                   <matrix>
-                    <Matrix a="2.99996948242188" d="0.3499755859375" tx="-300"/>
+                    <Matrix a="2.99996948242188" d="0.3499755859375"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
@@ -80,9 +80,9 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_Shared/ItemCard/_Components/ItemCard_Comparison" name="Comparison_mc" centerPoint3DX="31.5" centerPoint3DY="23">
+                <DOMSymbolInstance libraryItemName="_Shared/ItemCard/_Components/ItemCard_Comparison" name="Comparison_mc" centerPoint3DX="331.5" centerPoint3DY="23">
                   <matrix>
-                    <Matrix tx="10" ty="17.5"/>
+                    <Matrix tx="310" ty="17.5"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>

@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_Shared/__Imports/ItemCard" itemID="609847ed-0000058c" lastModified="1620592621">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_Shared/__Imports/ItemCard" itemID="609847ed-0000058c" lastModified="1622274063">
   <timeline>
     <DOMTimeline name="ItemCard">
       <layers>
@@ -50,7 +50,7 @@
                 </DOMSymbolInstance>
                 <DOMSymbolInstance libraryItemName="_Shared/ItemCard/ItemCard_ComponentEntry_Entry">
                   <matrix>
-                    <Matrix tx="-300" ty="-200"/>
+                    <Matrix ty="-200"/>
                   </matrix>
                   <transformationPoint>
                     <Point x="150" y="20"/>
@@ -64,9 +64,9 @@
                     <Point x="-200.5" y="18.1"/>
                   </transformationPoint>
                 </DOMSymbolInstance>
-                <DOMSymbolInstance libraryItemName="_Shared/ItemCard/ItemCard_MultiEntry_Value">
+                <DOMSymbolInstance libraryItemName="_Shared/ItemCard/ItemCard_MultiEntry_Value" selected="true">
                   <matrix>
-                    <Matrix tx="-100" ty="-120"/>
+                    <Matrix tx="200" ty="-120"/>
                   </matrix>
                   <transformationPoint>
                     <Point x="54.75" y="18.35"/>

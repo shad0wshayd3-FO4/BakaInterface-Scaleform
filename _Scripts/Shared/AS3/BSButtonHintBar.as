@@ -1,4 +1,4 @@
-package Shared.AS3
+﻿package Shared.AS3
 {
     import flash.display.Graphics;
     import flash.display.MovieClip;
@@ -18,6 +18,8 @@ package Shared.AS3
         private static var ALIGN_RIGHT = 2;
 
         public var Sizer_mc:MovieClip;
+		public var ButtonBracket_Left_mc:MovieClip;
+		public var ButtonBracket_Right_mc:MovieClip;
 
         private var Alignment:int = 0;
         private var StartingXPos:int = 0;

@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="ContainerMenu/_Inventory/Inventory_Background" itemID="60984686-00000445" lastModified="1620594780">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="ContainerMenu/_Inventory/Inventory_Background" itemID="60984686-00000445" lastModified="1620970923">
   <timeline>
     <DOMTimeline name="Inventory_Background">
       <layers>
@@ -6,17 +6,14 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMShape selected="true" isFloating="true">
-                  <matrix>
-                    <Matrix a="0.9818115234375"/>
-                  </matrix>
+                <DOMShape>
                   <fills>
                     <FillStyle index="1">
                       <SolidColor color="#FFFFFF"/>
                     </FillStyle>
                   </fills>
                   <edges>
-                    <Edge fillStyle1="1" edges="!0 0S2|11000 0!11000 0|11000 14000!11000 14000|0 14000!0 14000|0 0"/>
+                    <Edge fillStyle1="1" edges="!0 0|12000 0!12000 0|12000 16400!12000 16400|0 16400!0 16400|0 0"/>
                   </edges>
                 </DOMShape>
               </elements>

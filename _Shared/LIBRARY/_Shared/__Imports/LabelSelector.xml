@@ -6,7 +6,7 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_Shared/LabelSelector/LabelSelector">
+                <DOMSymbolInstance libraryItemName="_Shared/LabelSelector/LabelSelector" selected="true">
                   <transformationPoint>
                     <Point x="860" y="25"/>
                   </transformationPoint>

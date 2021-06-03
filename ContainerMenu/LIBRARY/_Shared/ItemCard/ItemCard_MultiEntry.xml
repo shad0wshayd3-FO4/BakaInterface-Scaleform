@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_Shared/ItemCard/ItemCard_MultiEntry" itemID="5fc84e87-000001bd" linkageExportForAS="true" linkageClassName="Components.ItemCard_MultiEntry" sourceFlashFilepath="../_Shared/_Shared.xfl" sourceLibraryItemHRef="_Shared/ItemCard/ItemCard_MultiEntry" sourceLastModified="1608624303" sourceAutoUpdate="true" lastModified="1608624303" sourceItemID="00000000-ffffffff">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_Shared/ItemCard/ItemCard_MultiEntry" itemID="5fc84e87-000001bd" linkageExportForAS="true" linkageClassName="Components.ItemCard_MultiEntry" sourceFlashFilepath="../_Shared/_Shared.xfl" sourceLibraryItemHRef="_Shared/ItemCard/ItemCard_MultiEntry" sourceLastModified="1622273970" sourceAutoUpdate="true" lastModified="1622273970" sourceItemID="00000000-ffffffff">
   <timeline>
     <DOMTimeline name="ItemCard_MultiEntry">
       <layers>
@@ -6,9 +6,9 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_Shared/ItemCard/_Components/Components_EntryHolder" name="EntryHolder_mc" centerPoint3DX="-100">
+                <DOMSymbolInstance libraryItemName="_Shared/ItemCard/_Components/Components_EntryHolder" name="EntryHolder_mc" centerPoint3DX="200">
                   <matrix>
-                    <Matrix tx="-100"/>
+                    <Matrix tx="200"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
@@ -22,9 +22,9 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMDynamicText name="Label_tf" width="186" height="36.25" isSelectable="false" renderAsHTML="true">
+                <DOMDynamicText name="Label_tf" width="186" height="38" isSelectable="false" renderAsHTML="true">
                   <matrix>
-                    <Matrix tx="-293"/>
+                    <Matrix tx="7" ty="-1"/>
                   </matrix>
                   <textRuns>
                     <DOMTextRun>
@@ -43,9 +43,9 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_Shared/ItemCard/_Components/ItemCard_BG_Light" name="Background_mc" selected="true" centerPoint3DX="-239.85" centerPoint3DY="53.5">
+                <DOMSymbolInstance libraryItemName="_Shared/ItemCard/_Components/ItemCard_BG_Light" name="Background_mc" centerPoint3DX="60.15" centerPoint3DY="53.5">
                   <matrix>
-                    <Matrix a="1.949951171875" d="0.3499755859375" tx="-300"/>
+                    <Matrix a="1.949951171875" d="0.3499755859375"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>

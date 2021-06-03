@@ -1,4 +1,4 @@
-package Components
+﻿package Components
 {
     import flash.display.MovieClip;
     import flash.text.TextFieldAutoSize;
@@ -7,20 +7,26 @@ package Components
     public class ItemCard_DescriptionEntry extends ItemCard_Entry
     {
         public var Background_mc:MovieClip;
+		
+		private var _BackgroundHeight:Number;
+		private var _SizerHeight:Number;
 
         public function ItemCard_DescriptionEntry()
         {
             super();
+			
+			this._BackgroundHeight = this.Background_mc.height;
+			this._SizerHeight = this.Sizer_mc.height;
+			
             TextFieldEx.setTextAutoSize(Label_tf, TextFieldEx.TEXTAUTOSZ_NONE);
-            Label_tf.autoSize = TextFieldAutoSize.LEFT;
-            Label_tf.multiline = true;
-            Label_tf.wordWrap = true;
+            this.Label_tf.autoSize = TextFieldAutoSize.LEFT;
+            this.Label_tf.multiline = true;
+            this.Label_tf.wordWrap = true;
         }
 
         override public function PopulateEntry(param1:Object):*
         {
             super.PopulateEntry(param1);
-            this.Background_mc.height = Label_tf.textHeight + 5;
         }
 
         public function PopulateEntries(param1:Array):*
@@ -36,11 +42,13 @@ package Components
                 }
                 else
                 {
-                    _loc2_ = _loc2_ + ("$$ItemCard_DescriptionEntryConcatenator " + _loc3_.text);
+                    _loc2_ = _loc2_ + (", " + _loc3_.text);
                 }
             }
-            PopulateText(_loc2_);
-            this.Background_mc.height = Label_tf.textHeight + 5;
+            this.PopulateText(_loc2_);
+			
+            this.Background_mc.height = Math.max(this.Label_tf.textHeight + 5, this._BackgroundHeight);
+			this.Sizer_mc.height = this._SizerHeight + (this.Background_mc.height - this._BackgroundHeight);
         }
     }
 }

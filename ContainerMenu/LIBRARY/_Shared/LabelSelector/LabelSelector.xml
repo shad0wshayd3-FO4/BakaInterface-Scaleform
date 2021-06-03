@@ -1,8 +1,8 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_Shared/LabelSelector/LabelSelector" itemID="6098487a-00000867" linkageExportForAS="true" linkageClassName="Shared.AS3.LabelSelector" sourceFlashFilepath="../_Shared/_Shared.xfl" sourceLibraryItemHRef="_Shared/LabelSelector/LabelSelector" sourceLastModified="1620592465" lastModified="1620592465" sourceItemID="5fddf256-000002b0">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_Shared/LabelSelector/LabelSelector" itemID="6098487a-00000867" linkageExportForAS="true" linkageClassName="Shared.AS3.LabelSelector" sourceFlashFilepath="../_Shared/_Shared.xfl" sourceLibraryItemHRef="_Shared/LabelSelector/LabelSelector" sourceLastModified="1620970200" sourceAutoUpdate="true" lastModified="1620970200" sourceItemID="5fddf256-000002b0">
   <timeline>
     <DOMTimeline name="LabelSelector">
       <layers>
-        <DOMLayer name="ButtonHints" color="#FF800A" current="true" isSelected="true" autoNamed="false">
+        <DOMLayer name="ButtonHints" color="#FF800A" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
@@ -14,9 +14,17 @@
                     <Point y="24"/>
                   </transformationPoint>
                 </DOMSymbolInstance>
-                <DOMSymbolInstance libraryItemName="_Shared/BSButtonHintBar/BSButtonHintBar" name="ButtonRight_mc" selected="true" centerPoint3DX="1670" centerPoint3DY="24">
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer_2" color="#9933CC" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_Shared/BSButtonHintBar/BSButtonHintBar" name="ButtonRight_mc" centerPoint3DX="1770" centerPoint3DY="24">
                   <matrix>
-                    <Matrix tx="1670"/>
+                    <Matrix tx="1770"/>
                   </matrix>
                   <transformationPoint>
                     <Point y="24"/>

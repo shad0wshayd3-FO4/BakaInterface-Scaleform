@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_Shared/LabelSelector/_Background/BackgroundBase" itemID="6098487a-00000873" sourceFlashFilepath="../_Shared/_Shared.xfl" sourceLibraryItemHRef="_Shared/LabelSelector/_Background/BackgroundBase" sourceLastModified="1608563426" sourceAutoUpdate="true" lastModified="1608563426" sourceItemID="00000000-ffffffff">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_Shared/LabelSelector/_Background/BackgroundBase" itemID="6098487a-00000873" sourceFlashFilepath="../_Shared/_Shared.xfl" sourceLibraryItemHRef="_Shared/LabelSelector/_Background/BackgroundBase" sourceLastModified="1620969727" sourceAutoUpdate="true" lastModified="1620969727" sourceItemID="5fdde47a-00001bec">
   <timeline>
     <DOMTimeline name="BackgroundBase">
       <layers>
@@ -6,14 +6,17 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMShape>
+                <DOMShape selected="true" isFloating="true">
+                  <matrix>
+                    <Matrix a="1.05812072753906"/>
+                  </matrix>
                   <fills>
                     <FillStyle index="1">
                       <SolidColor color="#FFFFFF"/>
                     </FillStyle>
                   </fills>
                   <edges>
-                    <Edge fillStyle1="1" edges="!34400 1000|0 1000!0 1000|0 0!0 0|34400 0!34400 0|34400 1000"/>
+                    <Edge fillStyle1="1" edges="!34400 1000S2|0 1000!0 1000|0 0!0 0|34400 0!34400 0|34400 1000"/>
                   </edges>
                 </DOMShape>
               </elements>

@@ -6,7 +6,7 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMDynamicText name="Label_tf" selected="true" width="146" height="36" isSelectable="false" renderAsHTML="true">
+                <DOMDynamicText name="Label_tf" width="146" height="36" isSelectable="false" renderAsHTML="true">
                   <matrix>
                     <Matrix tx="2" ty="-13"/>
                   </matrix>

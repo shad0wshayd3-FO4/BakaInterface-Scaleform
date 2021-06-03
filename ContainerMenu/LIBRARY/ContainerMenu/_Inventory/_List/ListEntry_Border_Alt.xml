@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="ContainerMenu/_Inventory/_List/ListEntry_Border_Alt" itemID="5fc8aba9-00001b82" lastModified="1606987005">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="ContainerMenu/_Inventory/_List/ListEntry_Border_Alt" itemID="5fc8aba9-00001b82" lastModified="1622269848">
   <timeline>
     <DOMTimeline name="ListEntry_Border_Alt">
       <layers>
@@ -8,7 +8,7 @@
               <elements>
                 <DOMShape selected="true" isFloating="true">
                   <matrix>
-                    <Matrix a="0.979598999023438"/>
+                    <Matrix a="1.08163452148438"/>
                   </matrix>
                   <fills>
                     <FillStyle index="1">
