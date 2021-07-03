@@ -1,0 +1,82 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_Shared/ItemCard/ItemCard_AmmoEntry" itemID="5fc84eb0-000001c1" linkageExportForAS="true" linkageClassName="Components.ItemCard_AmmoEntry" sourceFlashFilepath="../_Shared/_Shared.xfl" sourceLibraryItemHRef="_Shared/ItemCard/ItemCard_AmmoEntry" sourceLastModified="1622278364" sourceAutoUpdate="true" lastModified="1622278364" sourceItemID="5fc84eb0-000001c1">
+  <timeline>
+    <DOMTimeline name="ItemCard_AmmoEntry">
+      <layers>
+        <DOMLayer name="Text" color="#A4EFED" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="Label_tf" width="191" height="38" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="7" ty="-1"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>Shell</characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" rotation="true" lineHeight="36.25" size="28" bitmapSize="560" face="$MAIN_Font*" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Value" color="#B5F5B0" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="Value_tf" width="91" height="38" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="202" ty="-1"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>40</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="right" aliasText="false" rotation="true" lineHeight="36.7" size="28" bitmapSize="560" face="$MAIN_Font_Bold*" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Icon" color="#EBE042" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_Shared/ItemCard/_TempIcons/Symbol 65" name="Icon_mc" centerPoint3DX="259.2" centerPoint3DY="26.75">
+                  <matrix>
+                    <Matrix tx="250" ty="17.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Background" color="#936BEA" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_Shared/ItemCard/_Components/ItemCard_BG_Light" centerPoint3DX="63.2" centerPoint3DY="53.55">
+                  <matrix>
+                    <Matrix a="2.99996948242188" d="0.3499755859375"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="0.15"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

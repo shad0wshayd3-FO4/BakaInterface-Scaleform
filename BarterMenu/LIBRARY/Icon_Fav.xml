@@ -1,0 +1,27 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Icon_Fav" itemID="60df995c-0000272d" sourceFlashFilepath="../ContainerMenu/ContainerMenu.xfl" sourceLibraryItemHRef="Icon_Fav" sourceLastModified="1625301923" sourceAutoUpdate="true" lastModified="1625301923" sourceItemID="5fc86148-000005a7">
+  <timeline>
+    <DOMTimeline name="Icon_Fav">
+      <layers>
+        <DOMLayer name="Layer 1" color="#D4A0A9" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FFFFFF"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="!208 -237[131 -272 57 -212!57 -212|16 -168!16 -168|1 -142!1 -142|-57 -212!-57 -212[-131 -272 -208 -237!-208 -237[-258 -212 -281 -164!-281 -164[-305 -119 -299 -66!-299 -66|-293 -42!-293 -42[-287 -4 -261 27!-261 27[-225 72 -172 87!-172
+ 87[-119 107 -66 158!-66 158[-16 209 -1 260!-1 260[4 213 63 158!63 158|261 27!261 27|296 -42!296 -42|299 -66!299 -66[305 -119 284 -164!284 -164[261 -212 208 -237"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

@@ -1,0 +1,40 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_Shared/BSButtonHintBar/BSButtonHintBar" itemID="60df981e-00001ce9" linkageExportForAS="true" linkageClassName="Shared.AS3.BSButtonHintBar" sourceFlashFilepath="../_Shared/_Shared.xfl" sourceLibraryItemHRef="_Shared/BSButtonHintBar/BSButtonHintBar" sourceLastModified="1620970221" sourceAutoUpdate="true" lastModified="1620970221" sourceItemID="00000000-ffffffff">
+  <timeline>
+    <DOMTimeline name="BSButtonHintBar">
+      <layers>
+        <DOMLayer name="Layer 1" color="#D4A0A9">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_Shared/BSButtonHintBar/HintBarBracket" name="ButtonBracket_Left_mc" centerPoint3DX="-26.75" centerPoint3DY="16">
+                  <matrix>
+                    <Matrix tx="-30"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#BDD3F1" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_Shared/BSButtonHintBar/HintBarBracket" name="ButtonBracket_Right_mc" selected="true">
+                  <matrix>
+                    <Matrix a="-1" tx="30"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="4.9" y="24"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

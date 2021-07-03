@@ -1,0 +1,88 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_Shared/QuantityMenu/_Scrollbar/Scrollbar" itemID="5fc863b5-000005f7" linkageExportForAS="true" linkageClassName="Shared.AS3.QuantityScrollbar" lastModified="1620700709">
+  <timeline>
+    <DOMTimeline name="Scrollbar">
+      <layers>
+        <DOMLayer name="Marker" color="#7E28F9" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_Shared/QuantityMenu/_Scrollbar/Marker" name="Marker_mc" centerPoint3DX="302.3" centerPoint3DY="170.25">
+                  <matrix>
+                    <Matrix a="0.12005615234375" d="0.49993896484375" tx="100" ty="-10"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="2.5" y="-0.3"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Fill" color="#8E6A94" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_Shared/QuantityMenu/_Scrollbar/Fill" name="Fill_mc" centerPoint3DX="-94" centerPoint3DY="4.5">
+                  <matrix>
+                    <Matrix tx="-125"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Left" color="#B0DFFB" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_Shared/QuantityMenu/_Scrollbar/Arrow" name="LeftArrow_mc">
+                  <matrix>
+                    <Matrix a="-1" tx="-135" ty="-2.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="5" y="10"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Right" color="#CFAEAC" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_Shared/QuantityMenu/_Scrollbar/Arrow" name="RightArrow_mc">
+                  <matrix>
+                    <Matrix tx="135" ty="-2.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="5" y="10"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="SliderBkg" color="#669900" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_Shared/QuantityMenu/_Scrollbar/Fill" name="SliderBackground_mc">
+                  <matrix>
+                    <Matrix tx="-125"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="75" y="9"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="ContainerMenu/ContainerMenu" itemID="5fc853d5-000002fe" linkageExportForAS="true" linkageClassName="ContainerMenu" lastModified="1622278517" lastUniqueIdentifier="1">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="ContainerMenu/ContainerMenu" itemID="5fc853d5-000002fe" linkageExportForAS="true" linkageClassName="ContainerMenu" lastModified="1625300166" lastUniqueIdentifier="1">
   <timeline>
     <DOMTimeline name="ContainerMenu">
       <layers>
@@ -18,11 +18,11 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="QuantityMenu" color="#F5A584" locked="true" autoNamed="false">
+        <DOMLayer name="QuantityMenu" color="#F5A584" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="ContainerMenu/_QuantityMenu/QuantityMenu" name="QuantityMenu_mc">
+                <DOMSymbolInstance libraryItemName="_Shared/QuantityMenu/QuantityMenu" name="QuantityMenu_mc">
                   <matrix>
                     <Matrix tx="960" ty="550"/>
                   </matrix>
@@ -37,11 +37,11 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="PlayerInventory" color="#EB53C7" autoNamed="false">
+        <DOMLayer name="PlayerInventory" color="#EB53C7" current="true" isSelected="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="ContainerMenu/_Inventory/_List/_Player/PlayerInventory" name="PlayerInventory_mc" centerPoint3DX="247.95" centerPoint3DY="306.25">
+                <DOMSymbolInstance libraryItemName="ContainerMenu/_Inventory/_Player/PlayerInventory" name="PlayerInventory_mc" selected="true" centerPoint3DX="247.95" centerPoint3DY="306.25">
                   <matrix>
                     <Matrix tx="60" ty="130"/>
                   </matrix>
@@ -57,7 +57,7 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="ContainerMenu/_Inventory/_List/_Container/ContainerList" name="ContainerList_mc" centerPoint3DX="1438.55" centerPoint3DY="311.75">
+                <DOMSymbolInstance libraryItemName="ContainerMenu/_Inventory/_Container/ContainerList" name="ContainerList_mc" centerPoint3DX="1438.55" centerPoint3DY="311.75">
                   <matrix>
                     <Matrix a="0.99993896484375" tx="1270" ty="155"/>
                   </matrix>
@@ -73,7 +73,7 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="ContainerMenu/_Inventory/_List/_Container/ContainerInventory" name="ContainerInventory_mc" centerPoint3DX="1421.75" centerPoint3DY="306.25">
+                <DOMSymbolInstance libraryItemName="ContainerMenu/_Inventory/_Container/ContainerInventory" name="ContainerInventory_mc" centerPoint3DX="1421.75" centerPoint3DY="306.25">
                   <matrix>
                     <Matrix tx="1260" ty="130"/>
                   </matrix>
@@ -85,13 +85,13 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="PickpocketInfo" color="#8D7BFA" locked="true" autoNamed="false">
+        <DOMLayer name="PickpocketInfo" color="#8D7BFA" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="ContainerMenu/PickpocketInfo" name="PickpocketInfo_mc" centerPoint3DX="1103" centerPoint3DY="915.2">
+                <DOMSymbolInstance libraryItemName="ContainerMenu/_PickpocketInfo/PickpocketInfo" name="PickpocketInfo_mc" centerPoint3DX="1103" centerPoint3DY="905.2">
                   <matrix>
-                    <Matrix tx="960" ty="900"/>
+                    <Matrix tx="960" ty="890"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
@@ -101,7 +101,7 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="ItemCard" color="#22FD76" current="true" isSelected="true" autoNamed="false">
+        <DOMLayer name="ItemCard" color="#22FD76" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>

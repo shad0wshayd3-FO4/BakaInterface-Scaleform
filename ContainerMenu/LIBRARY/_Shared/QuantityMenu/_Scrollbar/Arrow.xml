@@ -1,0 +1,29 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_Shared/QuantityMenu/_Scrollbar/Arrow" itemID="60dfcdce-000050bc" sourceFlashFilepath="../_Shared/_Shared.xfl" sourceLibraryItemHRef="_Shared/QuantityMenu/_Scrollbar/Arrow" sourceLastModified="1620700268" sourceAutoUpdate="true" lastModified="1620700268" sourceItemID="6098bc39-00002cd2">
+  <timeline>
+    <DOMTimeline name="Arrow">
+      <layers>
+        <DOMLayer name="Layer 1" color="#AE7BAB" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape selected="true" isFloating="true">
+                  <matrix>
+                    <Matrix a="1.75" d="1.75"/>
+                  </matrix>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FFFFFF"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="!200 200S1|0 0!0 0|0 400!0 400|200 200"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

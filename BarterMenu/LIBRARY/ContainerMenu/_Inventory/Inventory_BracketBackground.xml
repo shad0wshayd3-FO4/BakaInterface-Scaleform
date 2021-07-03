@@ -1,0 +1,21 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="ContainerMenu/_Inventory/Inventory_BracketBackground" itemID="60df9985-000029ee" sourceFlashFilepath="../ContainerMenu/ContainerMenu.xfl" sourceLibraryItemHRef="ContainerMenu/_Inventory/Inventory_BracketBackground" sourceLastModified="1622268880" sourceAutoUpdate="true" lastModified="1622268880" sourceItemID="5fc862ae-000005e9">
+  <timeline>
+    <DOMTimeline name="Inventory_BracketBackground">
+      <layers>
+        <DOMLayer name="Layer 1" color="#57D3A8" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="ContainerMenu/_Inventory/Inventory_Background" selected="true" isVisible="false">
+                  <transformationPoint>
+                    <Point x="250" y="350"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

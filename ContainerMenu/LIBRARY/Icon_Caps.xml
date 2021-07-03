@@ -6,7 +6,7 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMShape isFloating="true">
+                <DOMShape>
                   <fills>
                     <FillStyle index="1">
                       <SolidColor color="#FFFFFF"/>

@@ -1,4 +1,4 @@
-package Shared
+﻿package Shared
 {
     import Shared.AS3.BCGridList;
     import Shared.AS3.BSScrollingList;
@@ -305,7 +305,7 @@ package Shared
             };
         }
 
-        public static function SetText(param1:TextField, param2:String, param3:Boolean = false, param4:Boolean = false, param5:* = false):*
+        public static function SetText(param1:TextField, param2:String, bSetHTML:Boolean = false, bForceUppercase:Boolean = false, bTruncate:Boolean = false):*
         {
             var _loc6_:TextFormat = null;
             var _loc7_:Number = NaN;
@@ -314,11 +314,11 @@ package Shared
             {
                 param2 = " ";
             }
-            if (param4 && param2.charAt(0) != "$")
+            if (bForceUppercase && param2.charAt(0) != "$")
             {
                 param2 = param2.toUpperCase();
             }
-            if (param3)
+            if (bSetHTML)
             {
                 _loc6_ = param1.getTextFormat();
                 _loc7_ = Number(_loc6_.letterSpacing);
@@ -333,7 +333,7 @@ package Shared
             {
                 param1.text = param2;
             }
-            if (param5 && param1.text.length > MAX_TRUNCATED_TEXT_LENGTH)
+            if (bTruncate && param1.text.length > MAX_TRUNCATED_TEXT_LENGTH)
             {
                 param1.text = param1.text.slice(0, MAX_TRUNCATED_TEXT_LENGTH - 3) + "...";
             }

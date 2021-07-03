@@ -1,0 +1,53 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_Shared/LabelSelector/_Background/Background" itemID="5fdde486-00001bf1" sourceFlashFilepath="../_Shared/_Shared.xfl" sourceLibraryItemHRef="_Shared/LabelSelector/_Background/Background" sourceLastModified="1620969759" lastModified="1620969759" sourceItemID="5fdde486-00001bf1">
+  <timeline>
+    <DOMTimeline name="Background">
+      <layers>
+        <DOMLayer name="LBracket" color="#FF800A" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_Shared/LabelSelector/_Background/BackgroundTrim">
+                  <transformationPoint>
+                    <Point x="5" y="25"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="RBracket" color="#9933CC" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_Shared/LabelSelector/_Background/BackgroundTrim">
+                  <matrix>
+                    <Matrix a="-1" tx="1820"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="5" y="25"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Background" color="#00FFFF" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_Shared/LabelSelector/_Background/BackgroundBase" selected="true">
+                  <transformationPoint>
+                    <Point x="625" y="25"/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

@@ -1,0 +1,94 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="BarterMenu/_CapsTransferInfo/CapsTransferInfo" itemID="60e005a3-00009e75" lastModified="1625300244">
+  <timeline>
+    <DOMTimeline name="CapsTransferInfo">
+      <layers>
+        <DOMLayer name="Label" color="#D0DE02" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="CapsIcon" color="#7BA2AD" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Icon_Caps" name="TransferCapsIcon_mc">
+                  <matrix>
+                    <Matrix tx="65" ty="30"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.45"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="CapsText" color="#B68555" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="TransferCaps_tf" width="306" height="57.65" isSelectable="false">
+                  <matrix>
+                    <Matrix tx="2" ty="3"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>80085</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" rotation="true" lineHeight="57.65" size="44" bitmapSize="880" face="$MAIN_Font_Bold*" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="CapsArrowLeft" color="#FA3CAB" locked="true" autoNamed="false" visible="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="BarterMenu/_CapsTransferInfo/_Border/Border" name="CapsArrowLeft_mc">
+                  <matrix>
+                    <Matrix a="-1" tx="310"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="150.05" y="30"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="CapsArrowRight" color="#F5A584" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="BarterMenu/_CapsTransferInfo/_Border/Border" name="CapsArrowRight_mc">
+                  <transformationPoint>
+                    <Point x="150.05" y="30"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Background" color="#9EB2E5" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="BarterMenu/_CapsTransferInfo/_Border/Background" name="Background_mc">
+                  <transformationPoint>
+                    <Point x="145" y="30"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

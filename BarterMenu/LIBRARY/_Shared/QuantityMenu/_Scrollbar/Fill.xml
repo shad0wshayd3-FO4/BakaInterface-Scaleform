@@ -1,0 +1,44 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_Shared/QuantityMenu/_Scrollbar/Fill" itemID="6098bc41-00002cd4" sourceFlashFilepath="../_Shared/_Shared.xfl" sourceLibraryItemHRef="_Shared/QuantityMenu/_Scrollbar/Fill" sourceLastModified="1620699583" sourceAutoUpdate="true" lastModified="1620699583" sourceItemID="6098bc41-00002cd4">
+  <timeline>
+    <DOMTimeline name="Fill">
+      <layers>
+        <DOMLayer name="Sides" color="#9933CC" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FFFFFF"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!4900 0|5000 0!5000 0|5000 600!5000 600|4900 600!4900 600|4900 0!0 0|100 0!100 0|100 600!100 600|0 600!0 600|0 0"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="TopBot" color="#A551B9" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FFFFFF"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!0 500|5000 500!5000 500|5000 600!5000 600|0 600!0 600|0 500!0 0|5000 0!5000 0|5000 100!5000 100|0 100!0 100|0 0"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

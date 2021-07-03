@@ -1,0 +1,139 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="BarterMenu/BarterMenu" itemID="60df9ae2-00003a07" linkageExportForAS="true" linkageClassName="BarterMenu" lastModified="1625297759">
+  <timeline>
+    <DOMTimeline name="BarterMenu">
+      <layers>
+        <DOMLayer name="LabelSelector" color="#FF4F4F" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_Shared/LabelSelector/LabelSelector" name="CategoryBar_mc">
+                  <matrix>
+                    <Matrix tx="50" ty="30"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="910" y="25"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="QuantityMenu" color="#E4C640" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_Shared/QuantityMenu/QuantityMenu" name="QuantityMenu_mc" selected="true">
+                  <matrix>
+                    <Matrix tx="960" ty="550"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="77.5"/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="PlayerInv" color="#48BF9F" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="ContainerMenu/_Inventory/_Player/PlayerInventory" name="PlayerInventory_mc">
+                  <matrix>
+                    <Matrix tx="60" ty="130"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="300" y="390"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="ContainerInv" color="#6D6EC7" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="ContainerMenu/_Inventory/_Container/ContainerInventory" name="ContainerInventory_mc">
+                  <matrix>
+                    <Matrix tx="1260" ty="130"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="300" y="390"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="ContainerList" color="#E0FB44" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="ContainerMenu/_Inventory/_Container/ContainerList" name="ContainerList_mc" selected="true">
+                  <matrix>
+                    <Matrix tx="1270" ty="155"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="287.55" y="365"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="ItemCard" color="#75E72D" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_Shared/ItemCard/ItemCard" name="ItemCard_mc" centerPoint3DX="810" centerPoint3DY="880">
+                  <matrix>
+                    <Matrix tx="810" ty="880"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="CapsTrns" color="#38ECA5" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="BarterMenu/_CapsTransferInfo/CapsTransferInfo" name="CapsTransferInfo_mc">
+                  <matrix>
+                    <Matrix tx="805" ty="890"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="140" y="9.5"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="ButtonHintBar" color="#C2F906" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_Shared/BSButtonHintBar/BSButtonHintBar" name="ButtonHintBar_mc" centerPoint3DX="979.45" centerPoint3DY="996">
+                  <matrix>
+                    <Matrix tx="960" ty="980"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

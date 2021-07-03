@@ -1,0 +1,53 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_Shared/QuantityMenu/_Background/Bracket" itemID="6098bc1a-00002cc7" sourceFlashFilepath="../_Shared/_Shared.xfl" sourceLibraryItemHRef="_Shared/QuantityMenu/_Background/Bracket" sourceLastModified="1620700243" sourceAutoUpdate="true" lastModified="1620700243" sourceItemID="6098bc1a-00002cc7">
+  <timeline>
+    <DOMTimeline name="Bracket">
+      <layers>
+        <DOMLayer name="Left" color="#489BE4" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_Shared/QuantityMenu/_Background/BracketSide" name="LeftBracket_mc">
+                  <transformationPoint>
+                    <Point x="10" y="50"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Right" color="#F391E3" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_Shared/QuantityMenu/_Background/BracketSide" name="RightBracket_mc">
+                  <matrix>
+                    <Matrix a="-1" tx="350"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="10" y="50"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Bottom" color="#35CDE9" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_Shared/QuantityMenu/_Background/BracketBottom" name="BottomBracket_mc">
+                  <matrix>
+                    <Matrix ty="200"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="100" y="1.5"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

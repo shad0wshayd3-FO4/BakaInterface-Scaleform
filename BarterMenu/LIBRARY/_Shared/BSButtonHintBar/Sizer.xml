@@ -1,0 +1,24 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_Shared/BSButtonHintBar/Sizer" itemID="5fe01213-000001c5" sourceFlashFilepath="../_Shared/_Shared.xfl" sourceLibraryItemHRef="_Shared/BSButtonHintBar/Sizer" sourceLastModified="1608562511" sourceAutoUpdate="true" lastModified="1608562511" sourceItemID="00000000-ffffffff">
+  <timeline>
+    <DOMTimeline name="Sizer">
+      <layers>
+        <DOMLayer name="Layer_1" color="#00FFFF" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_Shared/BSButtonHintBar/SizerBase">
+                  <transformationPoint>
+                    <Point x="25" y="7.5"/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

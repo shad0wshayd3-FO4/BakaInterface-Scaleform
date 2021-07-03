@@ -819,46 +819,63 @@
 				incomingCapsString = incomingCapsString + aIncomingCaps.toString();
 				incomingCapsString = incomingCapsString + ")";
 			}
+			
 			if (aContainer)
 			{
-				if (this.ContainerInventory_mc.ContainerCaps_tf != null)
+				var massVisible: Boolean = ((aCurrWeight > 0) || (aMaxWeight > 0));
+				if (this.ContainerInventory_mc.WeightText_tf != null)
 				{
-					GlobalFunc.SetText(this.ContainerInventory_mc.ContainerCaps_tf, aCaps.toString() + incomingCapsString, false);
+					GlobalFunc.SetText(this.ContainerInventory_mc.WeightText_tf, aCurrWeight.toString() + "/" + aMaxWeight.toString());
+					this.ContainerInventory_mc.WeightText_tf.visible = massVisible;
+				}
+				if (this.ContainerInventory_mc.WeightIcon_mc != null)
+				{
+					this.ContainerInventory_mc.WeightIcon_mc.visible = massVisible;
+				}
+				
+				var capsVisible: Boolean = ((aCaps > 0) || (aIncomingCaps > 0));
+				if (this.ContainerInventory_mc.CapsText_tf != null)
+				{
+					GlobalFunc.SetText(this.ContainerInventory_mc.CapsText_tf, aCaps.toString() + incomingCapsString);
+					this.ContainerInventory_mc.CapsText_tf.visible = capsVisible;
+				}
+				if (this.ContainerInventory_mc.CapsIcon_mc != null)
+				{
+					this.ContainerInventory_mc.CapsIcon_mc.visible = capsVisible;
 				}
 			}
 			else
 			{
-				if (this.PlayerInventory_mc.PlayerWeight_tf != null)
+				if (this.PlayerInventory_mc.WeightText_tf != null)
 				{
-					GlobalFunc.SetText(this.PlayerInventory_mc.PlayerWeight_tf, aCurrWeight.toString() + "/" + aMaxWeight.toString(), false);
+					GlobalFunc.SetText(this.PlayerInventory_mc.WeightText_tf, aCurrWeight.toString() + "/" + aMaxWeight.toString());
 				}
-				if (this.PlayerInventory_mc.PlayerCaps_tf != null)
+				
+				if (this.PlayerInventory_mc.CapsText_tf != null)
 				{
-					GlobalFunc.SetText(this.PlayerInventory_mc.PlayerCaps_tf, aCaps.toString() + incomingCapsString, false);
+					GlobalFunc.SetText(this.PlayerInventory_mc.CapsText_tf, aCaps.toString() + incomingCapsString);
 				}
 			}
 		}
 
 		public function UpdatePickpocketInfo(aShow: Boolean, aTaking: Boolean, aSuccessPercent: uint): *
 		{
-			var totalTextWidth: * = undefined;
-			this.PickpocketInfo_mc.Caption_tf.visible = aShow;
-			this.PickpocketInfo_mc.Percent_tf.visible = aShow;
-			if (aShow)
+			if (this.PickpocketInfo_mc != null)
 			{
-				GlobalFunc.SetText(this.PickpocketInfo_mc.Percent_tf, aSuccessPercent.toString() + "% ", false);
-				GlobalFunc.SetText(this.PickpocketInfo_mc.Caption_tf, !! aTaking ? "$TO STEAL" : "$TO PLACE", false);
-				this.PickpocketInfo_mc.Caption_tf.x = this.PickpocketInfo_mc.Percent_tf.textWidth;
-				totalTextWidth = this.PickpocketInfo_mc.Caption_tf.textWidth + this.PickpocketInfo_mc.Percent_tf.textWidth;
-				this.PickpocketInfo_mc.x = (stage.stageWidth - totalTextWidth) / 2;
+				this.PickpocketInfo_mc.Caption_tf.visible = aShow;
+				if (aShow)
+				{
+					GlobalFunc.SetText(this.PickpocketInfo_mc.Caption_tf, aTaking ? "$TO STEAL" : "$TO PLACE");
+					GlobalFunc.SetText(this.PickpocketInfo_mc.Caption_tf, aSuccessPercent.toString() + "% " + this.PickpocketInfo_mc.Caption_tf.text);
+				}
 			}
 		}
 
 		override public function SetPlatform(auiPlatform: uint, abPS3Switch: Boolean): *
 		{
 			super.SetPlatform(auiPlatform, abPS3Switch);
-			GlobalFunc.SetText(this.PlayerInventory_mc.PlayerSwitchButton_tf, uiPlatform == PlatformChangeEvent.PLATFORM_PS4 ? "y" : "Y", false);
-			GlobalFunc.SetText(this.ContainerInventory_mc.ContainerSwitchButton_tf, uiPlatform == PlatformChangeEvent.PLATFORM_PS4 ? "x" : "X", false);
+			GlobalFunc.SetText(this.PlayerInventory_mc.PlayerSwitchButton_tf, uiPlatform == PlatformChangeEvent.PLATFORM_PS4 ? "y" : "Y");
+			GlobalFunc.SetText(this.ContainerInventory_mc.ContainerSwitchButton_tf, uiPlatform == PlatformChangeEvent.PLATFORM_PS4 ? "x" : "X");
 		}
 
 		public function onQuantityModified(aEvent: Event): *

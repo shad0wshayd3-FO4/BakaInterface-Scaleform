@@ -1,0 +1,34 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="ContainerMenu/_Inventory/__ListEntry/ListEntry_Icons" itemID="60e0253b-0000daba" sourceFlashFilepath="../ContainerMenu/ContainerMenu.xfl" sourceLibraryItemHRef="ContainerMenu/_Inventory/__ListEntry/ListEntry_Icons" sourceLastModified="1625303323" lastModified="1625303323" sourceItemID="5fc8600c-0000058a">
+  <timeline>
+    <DOMTimeline name="ListEntry_Icons">
+      <layers>
+        <DOMLayer name="Barter" color="#7F42FB" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="ContainerMenu/_Inventory/__ListEntry/ListEntry_Icon_Barter" name="BarterIcon_mc" selected="true">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Equip" color="#666FF0" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="ContainerMenu/_Inventory/__ListEntry/ListEntry_Icon_Equip" name="EquipIcon_mc" centerPoint3DX="4" centerPoint3DY="4">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

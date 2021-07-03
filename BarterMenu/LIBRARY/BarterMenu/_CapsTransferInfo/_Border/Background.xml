@@ -1,0 +1,21 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="BarterMenu/_CapsTransferInfo/_Border/Background" itemID="60e00788-00009e97" lastModified="1625295242">
+  <timeline>
+    <DOMTimeline name="Background">
+      <layers>
+        <DOMLayer name="Layer_1" color="#00FFFF" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="BarterMenu/_CapsTransferInfo/_Border/BackgroundBase" selected="true" isVisible="false">
+                  <transformationPoint>
+                    <Point x="145" y="30"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

@@ -1,0 +1,26 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_Shared/QuantityMenu/_Scrollbar/Marker" itemID="60df9640-00000cca" sourceFlashFilepath="../_Shared/_Shared.xfl" sourceLibraryItemHRef="_Shared/QuantityMenu/_Scrollbar/Marker" sourceLastModified="1620699737" sourceAutoUpdate="true" lastModified="1620699737" sourceItemID="6098bc3f-00002cd3">
+  <timeline>
+    <DOMTimeline name="Marker">
+      <layers>
+        <DOMLayer name="Layer 1" color="#D9B746" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FFFFFF"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!1000 0|1000 2000!1000 2000|-1000 2000!-1000 2000|-1000 0!-1000 0|1000 0"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

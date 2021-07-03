@@ -1,0 +1,27 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="BarterMenu/_CapsTransferInfo/_Border/CapsTransferArrow" itemID="60e005ac-00009e76" lastModified="1625297970">
+  <timeline>
+    <DOMTimeline name="CapsTransferArrow">
+      <layers>
+        <DOMLayer name="Layer 1" color="#ED9EB0" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FFFFFF"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="!216 601|13 1140!13 1140|-5940 1140!-5940 1140|-5940 60!-5940 60|13 60!13 60|216 601!557 601|331 1200!331 1200|416 1200!416 1200|642 601!642 601|416 0!416 0|331 0!331 0|557 601!-6000 1200|261 1200!261 1200|487 601!487 601|261 0!261 0
+|-6000 0!-6000 0|-6000 1200"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

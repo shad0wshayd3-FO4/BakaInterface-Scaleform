@@ -1,0 +1,98 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_Shared/ItemCard/ItemCard_TimedEntry" itemID="5fc84e6c-000001bb" linkageExportForAS="true" linkageClassName="Components.ItemCard_TimedEntry" sourceFlashFilepath="../_Shared/_Shared.xfl" sourceLibraryItemHRef="_Shared/ItemCard/ItemCard_TimedEntry" sourceLastModified="1622273942" sourceAutoUpdate="true" lastModified="1622273942" sourceItemID="5fc84e6c-000001bb">
+  <timeline>
+    <DOMTimeline name="ItemCard_TimedEntry">
+      <layers>
+        <DOMLayer name="Text" color="#8DBFCB" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="Label_tf" width="191" height="38" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="7" ty="-1"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>HP</characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" rotation="true" lineHeight="36.25" size="28" bitmapSize="560" face="$MAIN_Font*" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Value" color="#8AF640" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="Value_tf" width="91" height="38" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="202" ty="-1"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>50</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="right" aliasText="false" rotation="true" lineHeight="36.7" size="28" bitmapSize="560" face="$MAIN_Font_Bold*" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="TimedIcon" color="#7894DB" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_Shared/ItemCard/_TempIcons/Symbol 28" name="TimerIcon_mc" centerPoint3DX="260.45" centerPoint3DY="28">
+                  <matrix>
+                    <Matrix tx="250" ty="17.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Background" color="#BBA62B" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_Shared/ItemCard/_Components/ItemCard_BG_Dark" centerPoint3DX="63.2" centerPoint3DY="53.5">
+                  <matrix>
+                    <Matrix a="2.99996948242188" d="0.3499755859375"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Comparison" color="#E9C4A0" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_Shared/ItemCard/_Components/ItemCard_Comparison" name="Comparison_mc" centerPoint3DX="331.5" centerPoint3DY="23">
+                  <matrix>
+                    <Matrix tx="310" ty="17.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

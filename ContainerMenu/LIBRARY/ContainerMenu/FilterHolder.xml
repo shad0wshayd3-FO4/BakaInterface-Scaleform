@@ -1,12 +1,12 @@
 <DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="ContainerMenu/FilterHolder" itemID="5fc853c0-000002fd" linkageExportForAS="true" linkageClassName="Menu.ContainerMenu.FilterHolder" lastModified="1620535112" lastUniqueIdentifier="3">
   <timeline>
-    <DOMTimeline name="FilterHolder">
+    <DOMTimeline name="FilterHolder" currentFrame="9">
       <layers>
         <DOMLayer name="Layer 1" color="#AAE09E" current="true" isSelected="true">
           <frames>
             <DOMFrame index="0" duration="9" tweenType="motion" motionTweenSnap="true" keyMode="22017">
               <elements>
-                <DOMSymbolInstance libraryItemName="ContainerMenu/ContainerMenu" name="Menu_mc" selected="true" centerPoint3DX="469.2" centerPoint3DY="269.55">
+                <DOMSymbolInstance libraryItemName="ContainerMenu/ContainerMenu" name="Menu_mc" centerPoint3DX="469.2" centerPoint3DY="269.55">
                   <matrix>
                     <Matrix ty="10"/>
                   </matrix>

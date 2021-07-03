@@ -1,0 +1,122 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="ContainerMenu/_Inventory/_Player/PlayerListEntry" itemID="5fc8608d-00000595" linkageExportForAS="true" linkageClassName="Menu.ContainerMenu.PlayerListEntry" lastModified="1625303851">
+  <timeline>
+    <DOMTimeline name="PlayerListEntry">
+      <layers>
+        <DOMLayer name="Barter" color="#9933CC" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="ContainerMenu/_Inventory/__ListEntry/ListEntry_Icon_Barter" name="BarterIcon_mc" selected="true">
+                  <matrix>
+                    <Matrix tx="18" ty="20"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Equip" color="#09BDC1" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="ContainerMenu/_Inventory/__ListEntry/ListEntry_Icon_Equip" name="EquipIcon_mc" selected="true">
+                  <matrix>
+                    <Matrix tx="18" ty="20"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Text" color="#7CFB1F" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="textField" width="446" height="36.25" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="42" ty="2"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>Item</characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" rotation="true" letterSpacing="0.5" lineSpacing="5" lineHeight="36.25" size="28" bitmapSize="560" face="$MAIN_Font*" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Legendary" color="#F76FB9" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Icon_Legendary" name="LegendaryIcon_mc">
+                  <matrix>
+                    <Matrix a="0.933334350585938" d="0.93170166015625" tx="350" ty="20"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-0.7"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Favorite" color="#83C998" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Icon_Fav" name="FavoriteIcon_mc">
+                  <matrix>
+                    <Matrix a="0.933334350585938" d="0.933334350585938" tx="380" ty="20"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Search" color="#BDD3F1" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Icon_Search" name="TaggedForSearchIcon_mc">
+                  <matrix>
+                    <Matrix a="0.931777954101562" d="0.931671142578125" tx="410" ty="20"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="0.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Border" color="#33C2FF" locked="true" autoNamed="false" visible="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="ContainerMenu/_Inventory/__ListEntry/ListEntry_Border_Alt" name="border" selected="true">
+                  <transformationPoint>
+                    <Point x="245" y="20"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

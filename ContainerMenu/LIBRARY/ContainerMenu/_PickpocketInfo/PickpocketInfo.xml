@@ -1,0 +1,29 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="ContainerMenu/_PickpocketInfo/PickpocketInfo" itemID="5fc86027-0000058c" lastModified="1625300160">
+  <timeline>
+    <DOMTimeline name="PickpocketInfo">
+      <layers>
+        <DOMLayer name="Caption" color="#8E66DD" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="Caption_tf" width="396" height="57.65" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="-198" ty="3"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>35% TO STEAL</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" rotation="true" lineHeight="57.65" size="44" bitmapSize="880" face="$MAIN_Font_Bold*" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

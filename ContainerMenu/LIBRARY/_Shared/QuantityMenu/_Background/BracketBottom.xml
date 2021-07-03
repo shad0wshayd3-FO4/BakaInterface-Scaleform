@@ -1,0 +1,29 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_Shared/QuantityMenu/_Background/BracketBottom" itemID="60df9640-00000cd2" sourceFlashFilepath="../_Shared/_Shared.xfl" sourceLibraryItemHRef="_Shared/QuantityMenu/_Background/BracketBottom" sourceLastModified="1620699685" sourceAutoUpdate="true" lastModified="1620699685" sourceItemID="6098bc1e-00002cc9">
+  <timeline>
+    <DOMTimeline name="BracketBottom">
+      <layers>
+        <DOMLayer name="Layer 1" color="#8DE1ED" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape selected="true" isFloating="true">
+                  <matrix>
+                    <Matrix a="5.83329772949219" d="5.00001525878906"/>
+                  </matrix>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FFFFFF"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!1200 20S2|0 20!0 20|0 0!0 0|1200 0!1200 0|1200 20"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

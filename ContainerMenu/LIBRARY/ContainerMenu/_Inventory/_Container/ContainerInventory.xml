@@ -1,0 +1,164 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="ContainerMenu/_Inventory/_Container/ContainerInventory" itemID="5fc88dba-000017f0" linkageExportForAS="true" linkageClassName="Menu.ContainerMenu.ContainerInventory" lastModified="1625301062">
+  <timeline>
+    <DOMTimeline name="ContainerInventory">
+      <layers>
+        <DOMLayer name="Header" color="#D25A5A" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="ContainerMenu/_Inventory/InventoryHeader" name="ContainerListHeader" centerPoint3DX="155.25" centerPoint3DY="-21.8">
+                  <matrix>
+                    <Matrix tx="35" ty="-40"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Switch" color="#81DFB5" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="ContainerSwitchButton_tf" width="56" height="36" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="527" ty="-38"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>X</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" rotation="true" letterSpacing="0.5" lineSpacing="5" lineHeight="33.4" size="28" bitmapSize="560" face="$Controller_Buttons_inverted*" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="CapsText" color="#F7F06C" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="CapsText_tf" width="320" height="47.15" isSelectable="false">
+                  <matrix>
+                    <Matrix a="0.74066162109375" d="0.73974609375" tx="351.5" ty="773.5"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>110</characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" rotation="true" lineHeight="47.15" size="36" bitmapSize="720" face="$MAIN_Font_Bold*" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="CapsIcon" color="#E1FA9F" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Icon_Caps" name="CapsIcon_mc">
+                  <matrix>
+                    <Matrix tx="330" ty="790"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.45"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="CapsBackground" color="#F301A3" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="ContainerMenu/_Inventory/__List/List_BottomBarBackground" centerPoint3DX="399.9" centerPoint3DY="838.25">
+                  <matrix>
+                    <Matrix a="2.84992980957031" d="0.399993896484375" tx="305" ty="770"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="0.1" y="0.25"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="WeightText" color="#DD04C3" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="WeightText_tf" width="320" height="47.15" isSelectable="false">
+                  <matrix>
+                    <Matrix a="0.74066162109375" d="0.73974609375" tx="56.5" ty="773.5"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>370/175</characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" rotation="true" lineHeight="47.15" size="36" bitmapSize="720" face="$MAIN_Font_Bold*" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="WeightIcon" color="#DF3790" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Icon_Weight" name="WeightIcon_mc">
+                  <matrix>
+                    <Matrix tx="35" ty="790"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="WeightBackground" color="#80ECB6" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="ContainerMenu/_Inventory/__List/List_BottomBarBackground" centerPoint3DX="105" centerPoint3DY="838.2">
+                  <matrix>
+                    <Matrix a="2.84992980957031" d="0.399993896484375" tx="10" ty="770"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="0.1" y="0.25"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Bracket" color="#F54BF5" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="ContainerMenu/_Inventory/Inventory_BracketBackground" name="ContainerBracketBackground_mc">
+                  <transformationPoint>
+                    <Point x="250" y="400"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

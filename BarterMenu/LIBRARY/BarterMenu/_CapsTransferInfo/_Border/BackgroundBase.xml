@@ -1,0 +1,57 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="BarterMenu/_CapsTransferInfo/_Border/BackgroundBase" itemID="60e00772-00009e93" lastModified="1625297571">
+  <timeline>
+    <DOMTimeline name="BackgroundBase">
+      <layers>
+        <DOMLayer name="Layer 1" color="#CF3980" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FFFFFF"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!6200 0|6260 0!6260 0|6260 1200!6260 1200|6200 1200!6200 1200|6200 0"/>
+                  </edges>
+                </DOMShape>
+                <DOMShape selected="true" isFloating="true">
+                  <matrix>
+                    <Matrix a="0.600006103515625"/>
+                  </matrix>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FFFFFF"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!0 0S2|100 0!100 0|100 1200!100 1200|0 1200!0 1200|0 0"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#9933CC" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FFFFFF"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!0 0|6200 0!6200 0|6200 60!6200 60|0 60!0 60|0 0!0 1140|6200 1140!6200 1140|6200 1200!6200 1200|0 1200!0 1200|0 1140"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

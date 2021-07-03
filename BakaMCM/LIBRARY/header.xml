@@ -1,0 +1,47 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="header" itemID="60cf0921-0000000a" linkageExportForAS="true" linkageClassName="header" lastModified="1624181592">
+  <timeline>
+    <DOMTimeline name="header" layerDepthEnabled="true">
+      <layers>
+        <DOMLayer name="Layer_2" color="#9933CC">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer_1" color="#00FFFF" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="baka.svg" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="1.20317077636719" d="1.20338439941406" tx="410" ty="100"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="203.75" y="207.85"/>
+                  </transformationPoint>
+                  <color>
+                    <Color brightness="1"/>
+                  </color>
+                </DOMSymbolInstance>
+                <DOMDynamicText width="896" height="81" isSelectable="false">
+                  <matrix>
+                    <Matrix tx="2" ty="22"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>BakaWaitAnywhere</characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" lineHeight="78.6" size="60" bitmapSize="1200" face="RobotoCondensed-Bold" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

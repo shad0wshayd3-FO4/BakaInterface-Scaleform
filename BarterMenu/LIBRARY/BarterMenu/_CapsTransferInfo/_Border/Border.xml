@@ -1,0 +1,24 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="BarterMenu/_CapsTransferInfo/_Border/Border" itemID="60e005c0-00009e7d" lastModified="1625297857">
+  <timeline>
+    <DOMTimeline name="Border">
+      <layers>
+        <DOMLayer name="Arrow" color="#9437B7" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="BarterMenu/_CapsTransferInfo/_Border/CapsTransferArrow" name="DirectionalArrow_mc" centerPoint3DX="322.7" centerPoint3DY="42.5">
+                  <matrix>
+                    <Matrix tx="300"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

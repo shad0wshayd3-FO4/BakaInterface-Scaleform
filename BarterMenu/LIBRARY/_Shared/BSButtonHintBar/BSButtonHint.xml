@@ -1,0 +1,68 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_Shared/BSButtonHintBar/BSButtonHint" itemID="5f97b58a-00000042" linkageExportForAS="true" linkageClassName="Shared.AS3.BSButtonHint" sourceFlashFilepath="../_Shared/_Shared.xfl" sourceLibraryItemHRef="_Shared/BSButtonHintBar/BSButtonHint" sourceLastModified="1608521139" sourceAutoUpdate="true" lastModified="1608521139" sourceItemID="00000000-ffffffff">
+  <timeline>
+    <DOMTimeline name="BSButtonHint">
+      <layers>
+        <DOMLayer name="IconHolderInstance" color="#AECB44" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_Shared/BSButtonHintBar/IconHolder" name="IconHolderInstance" centerPoint3DX="50" centerPoint3DY="12.4">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="SecondaryIconHolder" color="#EEDFAD" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_Shared/BSButtonHintBar/IconHolder" name="SecondaryIconHolderInstance" centerPoint3DX="50" centerPoint3DY="12.4">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="textField" color="#7F42FB" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="textField_tf" selected="true" width="196" height="34.05" isSelectable="false" renderAsHTML="true" lineType="multiline no wrap">
+                  <matrix>
+                    <Matrix tx="2" ty="2"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>TEXT</characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" rotation="true" lineHeight="34.05" size="26" bitmapSize="520" face="$MAIN_Font_Bold*" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Sizer_mc" color="#009999" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_Shared/BSButtonHintBar/Sizer" name="Sizer_mc">
+                  <transformationPoint>
+                    <Point x="25" y="7.5"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

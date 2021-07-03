@@ -7,9 +7,10 @@
 
     public class ItemListEntry extends BSScrollingListEntry
     {
-        public var LeftIcon_mc:MovieClip;
+        public var BarterIcon_mc:MovieClip;
+		public var EquipIcon_mc:MovieClip;
+		public var LegendaryIcon_mc:MovieClip;
         public var FavoriteIcon_mc:MovieClip;
-        public var LegendaryIcon_mc:MovieClip;
         public var TaggedForSearchIcon_mc:MovieClip;
 
         private var BaseTextFieldWidth;
@@ -22,23 +23,25 @@
 
         override public function SetEntryText(aEntryObject:Object, astrTextOption:String):*
         {
-            this.TaggedForSearchIcon_mc.visible = aEntryObject.taggedForSearch == true;
-            this.FavoriteIcon_mc.visible = aEntryObject.favorite > 0;
             this.LegendaryIcon_mc.visible = aEntryObject.isLegendary == true;
-            var textFieldWidthDelta:* = 0;
+			this.FavoriteIcon_mc.visible = aEntryObject.favorite > 0;
+			this.TaggedForSearchIcon_mc.visible = aEntryObject.taggedForSearch == true;
+			
+            var textFieldWidthDelta:Number = 0;
+			if (this.LegendaryIcon_mc.visible && this.FavoriteIcon_mc.visible)
+            {
+                textFieldWidthDelta = textFieldWidthDelta + (this.LegendaryIcon_mc.width / 2.0) + 10;
+            }
             if (this.FavoriteIcon_mc.visible && this.TaggedForSearchIcon_mc.visible)
             {
-                textFieldWidthDelta = textFieldWidthDelta + (this.FavoriteIcon_mc.width / 2 + 10);
+                textFieldWidthDelta = textFieldWidthDelta + (this.FavoriteIcon_mc.width / 2.0) + 10;
             }
-            if (this.LegendaryIcon_mc.visible && this.FavoriteIcon_mc.visible)
-            {
-                textFieldWidthDelta = textFieldWidthDelta + (this.LegendaryIcon_mc.width / 2 + 10);
-            }
+			
             textField.width = this.BaseTextFieldWidth - textFieldWidthDelta;
             super.SetEntryText(aEntryObject, astrTextOption);
 
             var barterCount:int = 0;
-            if (aEntryObject.barterCount != undefined)
+            if (aEntryObject.hasOwnProperty("barterCount"))
             {
                 barterCount = aEntryObject.barterCount;
             }
@@ -49,17 +52,19 @@
             {
                 textField.appendText(" (" + displayCount + ")");
             }
-            GlobalFunc.SetText(textField, textField.text, false);
-
-            this.SetColorTransform(this.LeftIcon_mc, this.selected);
+			
+            GlobalFunc.SetText(textField, textField.text);
+            this.SetColorTransform(this.BarterIcon_mc, this.selected);
+			this.SetColorTransform(this.EquipIcon_mc, this.selected);
+			this.SetColorTransform(this.LegendaryIcon_mc, this.selected);
             this.SetColorTransform(this.FavoriteIcon_mc, this.selected);
             this.SetColorTransform(this.TaggedForSearchIcon_mc, this.selected);
-            this.SetColorTransform(this.LegendaryIcon_mc, this.selected);
 
-            this.LeftIcon_mc.EquipIcon_mc.visible = aEntryObject.equipState != 0;
-            if (this.LeftIcon_mc.BarterIcon_mc != undefined)
+            this.EquipIcon_mc.visible = aEntryObject.equipState != 0;
+            if (this.BarterIcon_mc != null)
             {
-                this.LeftIcon_mc.BarterIcon_mc.visible = barterCount < 0;
+                this.BarterIcon_mc.visible = barterCount < 0;
+				this.EquipIcon_mc.visible = this.BarterIcon_mc.visible ? false : this.EquipIcon_mc.visible;
             }
 
             this.TaggedForSearchIcon_mc.x = this.textField.getLineMetrics(0).width + this.textField.x + 10;
