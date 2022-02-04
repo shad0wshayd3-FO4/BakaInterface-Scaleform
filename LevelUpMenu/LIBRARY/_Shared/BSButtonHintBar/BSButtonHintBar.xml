@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_Shared/BSButtonHintBar/BSButtonHintBar" itemID="5f97b598-00000044" linkageExportForAS="true" linkageClassName="Shared.AS3.BSButtonHintBar" sourceFlashFilepath="../_Shared/_Shared.xfl" sourceLibraryItemHRef="_Shared/BSButtonHintBar/BSButtonHintBar" sourceLastModified="1608562526" sourceAutoUpdate="true" lastModified="1608562526" sourceItemID="5f97b598-00000044">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_Shared/BSButtonHintBar/BSButtonHintBar" itemID="5f97b598-00000044" linkageExportForAS="true" linkageClassName="Shared.AS3.BSButtonHintBar" sourceFlashFilepath="../_Shared/_Shared.xfl" sourceLibraryItemHRef="_Shared/BSButtonHintBar/BSButtonHintBar" sourceLastModified="1620970221" sourceAutoUpdate="true" lastModified="1620970221" sourceItemID="5f97b598-00000044">
   <timeline>
     <DOMTimeline name="BSButtonHintBar">
       <layers>
@@ -6,7 +6,7 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_Shared/BSButtonHintBar/HintBarBracket" name="ButtonBracket_Left_mc" centerPoint3DX="-26.75" centerPoint3DY="16" isVisible="false">
+                <DOMSymbolInstance libraryItemName="_Shared/BSButtonHintBar/HintBarBracket" name="ButtonBracket_Left_mc" centerPoint3DX="-26.75" centerPoint3DY="16">
                   <matrix>
                     <Matrix tx="-30"/>
                   </matrix>
@@ -22,7 +22,7 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_Shared/BSButtonHintBar/HintBarBracket" name="ButtonBracket_Right_mc" isVisible="false">
+                <DOMSymbolInstance libraryItemName="_Shared/BSButtonHintBar/HintBarBracket" name="ButtonBracket_Right_mc" selected="true">
                   <matrix>
                     <Matrix a="-1" tx="30"/>
                   </matrix>

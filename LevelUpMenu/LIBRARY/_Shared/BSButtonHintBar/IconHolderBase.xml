@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_Shared/BSButtonHintBar/IconHolderBase" itemID="5fe011f8-000001c2" sourceFlashFilepath="../_Shared/_Shared.xfl" sourceLibraryItemHRef="_Shared/BSButtonHintBar/IconHolderBase" sourceLastModified="1608520184" sourceAutoUpdate="true" lastModified="1608520184" sourceItemID="5fe011f8-000001c2">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_Shared/BSButtonHintBar/IconHolderBase" itemID="5fe011f8-000001c2" sourceFlashFilepath="../_Shared/_Shared.xfl" sourceLibraryItemHRef="_Shared/BSButtonHintBar/IconHolderBase" sourceLastModified="1608520184" sourceAutoUpdate="true" lastModified="1608520184" sourceItemID="00000000-ffffffff">
   <timeline>
     <DOMTimeline name="IconHolderBase">
       <layers>
@@ -14,7 +14,7 @@
                     <DOMTextRun>
                       <characters>A</characters>
                       <textAttrs>
-                        <DOMTextAttrs aliasText="false" rotation="true" size="28" bitmapSize="560" face="$Controller_Buttons_inverted*" fillColor="#FFFFFF"/>
+                        <DOMTextAttrs aliasText="false" rotation="true" lineHeight="33.4" size="28" bitmapSize="560" face="$Controller_Buttons_inverted*" fillColor="#FFFFFF"/>
                       </textAttrs>
                     </DOMTextRun>
                   </textRuns>

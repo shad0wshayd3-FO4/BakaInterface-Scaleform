@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_Shared/BSButtonHintBar/BSButtonHint" itemID="5f97b58a-00000042" linkageExportForAS="true" linkageClassName="Shared.AS3.BSButtonHint" sourceFlashFilepath="../_Shared/_Shared.xfl" sourceLibraryItemHRef="_Shared/BSButtonHintBar/BSButtonHint" sourceLastModified="1608521139" sourceAutoUpdate="true" lastModified="1608521139" sourceItemID="5f97b58a-00000042">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_Shared/BSButtonHintBar/BSButtonHint" itemID="5f97b58a-00000042" linkageExportForAS="true" linkageClassName="Shared.AS3.BSButtonHint" sourceFlashFilepath="../_Shared/_Shared.xfl" sourceLibraryItemHRef="_Shared/BSButtonHintBar/BSButtonHint" sourceLastModified="1608521139" sourceAutoUpdate="true" lastModified="1608521139" sourceItemID="00000000-ffffffff">
   <timeline>
     <DOMTimeline name="BSButtonHint">
       <layers>
@@ -40,7 +40,7 @@
                     <DOMTextRun>
                       <characters>TEXT</characters>
                       <textAttrs>
-                        <DOMTextAttrs aliasText="false" rotation="true" size="26" bitmapSize="520" face="$MAIN_Font_Bold*" fillColor="#FFFFFF"/>
+                        <DOMTextAttrs aliasText="false" rotation="true" lineHeight="34.05" size="26" bitmapSize="520" face="$MAIN_Font_Bold*" fillColor="#FFFFFF"/>
                       </textAttrs>
                     </DOMTextRun>
                   </textRuns>

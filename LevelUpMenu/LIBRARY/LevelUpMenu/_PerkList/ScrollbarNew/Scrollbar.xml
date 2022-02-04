@@ -46,7 +46,7 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="LevelUpMenu/_PerkList/ScrollbarNew/ScrollbarFill" name="Fill_mc" selected="true" centerPoint3DX="10" centerPoint3DY="365">
+                <DOMSymbolInstance libraryItemName="LevelUpMenu/_PerkList/ScrollbarNew/ScrollbarFill" name="Fill_mc" centerPoint3DX="10" centerPoint3DY="365">
                   <matrix>
                     <Matrix ty="20"/>
                   </matrix>
