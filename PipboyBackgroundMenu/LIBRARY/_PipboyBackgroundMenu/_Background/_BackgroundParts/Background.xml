@@ -1,0 +1,21 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_PipboyBackgroundMenu/_Background/_BackgroundParts/Background" itemID="64cc13ba-000005e9" lastModified="1691117323">
+  <timeline>
+    <DOMTimeline name="Background">
+      <layers>
+        <DOMLayer name="Background" color="#00FFFF" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_PipboyBackgroundMenu/_Background/_BackgroundParts/BackgroundBase" name="BackgroundFill_mc" selected="true">
+                  <transformationPoint>
+                    <Point x="200" y="350"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

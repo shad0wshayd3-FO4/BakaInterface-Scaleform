@@ -1,0 +1,55 @@
+<DOMDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" backgroundColor="#00FFFF" width="1920" height="1080" frameRate="30" currentTimeline="1" xflVersion="23.0" creatorInfo="Adobe Animate" platform="Windows" versionInfo="Saved by Animate Windows 23.0 build 70" majorVersion="23" buildNumber="70" viewAngle3D="122.353661987282" vanishingPoint3DX="960" vanishingPoint3DY="540" nextSceneIdentifier="2" playOptionsPlayLoop="false" playOptionsPlayPages="false" playOptionsPlayFrameActions="false" autoSaveEnabled="true" autoSaveHasPrompted="true" filetypeGUID="DD0DDBBF-5BEF-45B2-9F24-A3048D2A676F" fileGUID="F0DD817DDD4A98499610641895C9E6E4" hasAccessibleData="true">
+     <folders>
+          <DOMFolderItem name="_PipboyBackgroundMenu" itemID="64cc1087-000005da" isExpanded="true"/>
+          <DOMFolderItem name="_PipboyBackgroundMenu/_Background" itemID="64cc1097-000005dc" isExpanded="true"/>
+          <DOMFolderItem name="_PipboyBackgroundMenu/_Background/_BackgroundParts" itemID="64cc1094-000005db" isExpanded="true"/>
+     </folders>
+     <symbols>
+          <Include href="_PipboyBackgroundMenu/_Background/_BackgroundParts/Background.xml" loadImmediate="false" itemID="64cc13ba-000005e9" lastModified="1691117323"/>
+          <Include href="_PipboyBackgroundMenu/_Background/_BackgroundParts/BackgroundBase.xml" loadImmediate="false" itemID="5fddaf8f-00000815" lastModified="1691117064"/>
+          <Include href="PipboyBackgroundMenu.xml" itemID="64cc1031-000005d8" lastModified="1691099418"/>
+     </symbols>
+     <timelines>
+          <DOMTimeline name="Scene 1">
+               <layers>
+                    <DOMLayer name="Layer_1" color="#00FFFF" current="true" isSelected="true">
+                         <frames>
+                              <DOMFrame index="0" keyMode="9728">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="PipboyBackgroundMenu" name="Menu_mc" selected="true" hasAccessibleData="true" centerPoint3DX="960" centerPoint3DY="549">
+                                             <transformationPoint>
+                                                  <Point/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+               </layers>
+          </DOMTimeline>
+     </timelines>
+     <scripts/>
+     <PrinterSettings/>
+     <publishHistory>
+          <PublishItem publishSize="27796" publishTime="1691117126"/>
+          <PublishItem publishSize="27796" publishTime="1691117122"/>
+          <PublishItem publishSize="28050" publishTime="1691099875"/>
+          <PublishItem publishSize="28042" publishTime="1691099837"/>
+          <PublishItem publishSize="28048" publishTime="1691099662"/>
+          <PublishItem publishSize="28038" publishTime="1691099437"/>
+          <PublishItem publishSize="28035" publishTime="1691098847"/>
+          <PublishItem publishSize="27803" publishTime="1691098100"/>
+          <PublishItem publishSize="28093" publishTime="1691097632"/>
+          <PublishItem publishSize="28081" publishTime="1691097460"/>
+          <PublishItem publishSize="28091" publishTime="1691096768"/>
+          <PublishItem publishSize="28096" publishTime="1691096390"/>
+          <PublishItem publishSize="28086" publishTime="1691096263"/>
+          <PublishItem publishSize="27896" publishTime="1691095859"/>
+          <PublishItem publishSize="27887" publishTime="1691095770"/>
+          <PublishItem publishSize="27895" publishTime="1691095511"/>
+          <PublishItem publishSize="283" publishTime="1691095482"/>
+          <PublishItem publishSize="41686" publishTime="1620594065"/>
+          <PublishItem publishSize="41688" publishTime="1620593947"/>
+          <PublishItem publishSize="42005" publishTime="1620530687"/>
+     </publishHistory>
+</DOMDocument>

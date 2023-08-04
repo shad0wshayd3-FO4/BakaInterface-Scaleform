@@ -1,0 +1,53 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_PipboyBackgroundMenu/_Background/Background_mc" itemID="64cc1077-000005d9" lastModified="1691095984">
+  <timeline>
+    <DOMTimeline name="Background_mc">
+      <layers>
+        <DOMLayer name="BracketTop" color="#FF800A" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_PipboyBackgroundMenu/_Background/_BackgroundParts/BackgroundTrim" name="BracketTop_mc">
+                  <transformationPoint>
+                    <Point x="200" y="10"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="BracketBottom" color="#9933CC" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_PipboyBackgroundMenu/_Background/_BackgroundParts/BackgroundTrim" name="BracketBot_mc" selected="true">
+                  <matrix>
+                    <Matrix d="-1" ty="950"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="200" y="10"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Background" color="#00FFFF" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_PipboyBackgroundMenu/_Background/_BackgroundParts/BackgroundBase" name="BackgroundFill_mc">
+                  <transformationPoint>
+                    <Point x="200" y="350"/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>
