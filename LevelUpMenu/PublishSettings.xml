@@ -11,7 +11,7 @@
     <png>0</png>
     <swc>0</swc>
     <oam>0</oam>
-    <flashDefaultName>0</flashDefaultName>
+    <flashDefaultName>1</flashDefaultName>
     <projectorWinDefaultName>1</projectorWinDefaultName>
     <projectorMacDefaultName>1</projectorMacDefaultName>
     <htmlDefaultName>1</htmlDefaultName>
@@ -20,7 +20,7 @@
     <pngDefaultName>1</pngDefaultName>
     <swcDefaultName>1</swcDefaultName>
     <oamDefaultName>0</oamDefaultName>
-    <flashFileName>D:/SteamLibrary/steamapps/common/Fallout 4/Data/Interface/LevelUpMenu.swf</flashFileName>
+    <flashFileName>LevelUpMenu.swf</flashFileName>
     <projectorWinFileName>LevelUpMenu.exe</projectorWinFileName>
     <projectorMacFileName>LevelUpMenu.app</projectorMacFileName>
     <htmlFileName>LevelUpMenu.html</htmlFileName>
@@ -57,7 +57,7 @@
     <WindowMode>0</WindowMode>
     <DisplayMenu>1</DisplayMenu>
     <DeviceFont>0</DeviceFont>
-    <TemplateFileName>C:\Users\admin\AppData\Local\Adobe\Animate CC 2019\en_US\Configuration\HTML\Default.html</TemplateFileName>
+    <TemplateFileName>C:\Users\admin\AppData\Local\Adobe\Animate 2023\en_US\Configuration\HTML\Default.html</TemplateFileName>
     <showTagWarnMsg>1</showTagWarnMsg>
   </PublishHtmlProperties>
   <PublishFlashProperties enabled="true">
@@ -159,7 +159,7 @@
     <Property name="copy">true</Property>
     <Property name="default">true</Property>
     <Property name="embed">false</Property>
-    <Property name="filename">Untitled-1.svg</Property>
+    <Property name="filename">LevelUpMenu.svg</Property>
     <Property name="imagesPath">images</Property>
     <Property name="includeHiddenLayers">true</Property>
     <Property name="optimizeForCH">false</Property>
@@ -167,11 +167,11 @@
   </PublishProperties>
   <PublishProperties id="BBC1F806-66F2-4339-9306-FA48C7549E59" name="Mac Projector" otf="true" enabled="true">
     <Property name="default">true</Property>
-    <Property name="filename">Untitled-1.app</Property>
+    <Property name="filename">LevelUpMenu.app</Property>
   </PublishProperties>
   <PublishProperties id="BBC2F906-78F3-4239-9305-FA48C8549E59" name="Win Projector" otf="true" enabled="true">
     <Property name="default">true</Property>
-    <Property name="filename">Untitled-1.exe</Property>
+    <Property name="filename">LevelUpMenu.exe</Property>
   </PublishProperties>
 </flash_profile>
 </flash_profiles>

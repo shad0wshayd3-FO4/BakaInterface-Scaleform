@@ -1,12 +1,10 @@
-package Shared.AS3
+﻿package Shared.AS3
 {
     import Shared.GlobalFunc;
     import flash.display.MovieClip;
     import flash.geom.ColorTransform;
     import flash.text.TextField;
     import flash.text.TextFieldAutoSize;
-    import scaleform.gfx.Extensions;
-    import scaleform.gfx.TextFieldEx;
 
     public class BSScrollingListEntry extends MovieClip
     {
@@ -30,7 +28,6 @@ package Shared.AS3
         public function BSScrollingListEntry()
         {
             super();
-            Extensions.enabled = true;
             this.ORIG_BORDER_HEIGHT = this.border != null ? Number(this.border.height) : Number(0);
             this.ORIG_BORDER_WIDTH = this.border != null ? Number(this.border.width) : Number(0);
             this.ORIG_TEXT_COLOR = this.textField != null ? Number(this.textField.textColor) : Number(16777163);
@@ -141,11 +138,7 @@ package Shared.AS3
             var _loc3_:Number = NaN;
             if (this.textField != null && param1 != null && param1.hasOwnProperty("text"))
             {
-                if (param2 == BSScrollingList.TEXT_OPTION_SHRINK_TO_FIT)
-                {
-                    TextFieldEx.setTextAutoSize(this.textField, "shrink");
-                }
-                else if (param2 == BSScrollingList.TEXT_OPTION_MULTILINE)
+				if (param2 == BSScrollingList.TEXT_OPTION_MULTILINE)
                 {
                     this.textField.autoSize = TextFieldAutoSize.LEFT;
                     this.textField.multiline = true;

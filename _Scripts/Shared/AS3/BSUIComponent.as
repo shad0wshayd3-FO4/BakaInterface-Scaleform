@@ -1,9 +1,8 @@
-package Shared.AS3
+﻿package Shared.AS3
 {
     import Shared.AS3.Events.PlatformChangeEvent;
     import Shared.AS3.Events.PlatformRequestEvent;
     import flash.events.Event;
-    import scaleform.gfx.Extensions;
 
     public dynamic class BSUIComponent extends BSDisplayObject
     {
@@ -21,7 +20,6 @@ package Shared.AS3
             this._uiKeyboard = PlatformChangeEvent.PLATFORM_INVALID;
             this._bPS3Switch = false;
             this._bAcquiredByNativeCode = false;
-            Extensions.enabled = true;
         }
 
         public function get uiPlatform():uint

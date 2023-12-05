@@ -6,7 +6,7 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_PipboyBackgroundMenu/_Background/_BackgroundParts/Background" name="Background_mc">
+                <DOMSymbolInstance libraryItemName="_PipboyBackgroundMenu/_Background/_BackgroundParts/Background" name="Background_mc" selected="true">
                   <transformationPoint>
                     <Point x="635" y="399"/>
                   </transformationPoint>

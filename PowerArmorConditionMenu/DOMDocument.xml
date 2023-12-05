@@ -1,0 +1,72 @@
+<DOMDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" backgroundColor="#00FFFF" width="1280" height="720" frameRate="30" currentTimeline="1" xflVersion="23.0" creatorInfo="Adobe Animate" platform="Windows" versionInfo="Saved by Animate Windows 23.0 build 70" majorVersion="23" buildNumber="70" viewAngle3D="100.925968316201" vanishingPoint3DX="640" vanishingPoint3DY="360" nextSceneIdentifier="2" playOptionsPlayLoop="false" playOptionsPlayPages="false" playOptionsPlayFrameActions="false" filetypeGUID="DD0DDBBF-5BEF-45B2-9F24-A3048D2A676F" fileGUID="33E030C48412A04785D7048816DCC539">
+     <folders>
+          <DOMFolderItem name="_ConditionMeter" itemID="64d832fc-00000128" isExpanded="true"/>
+          <DOMFolderItem name="_ConditionMeter/_Battery" itemID="64d8397a-0000081f" isExpanded="true"/>
+          <DOMFolderItem name="_ConditionMeter/_Meter" itemID="64d83983-00000823" isExpanded="true"/>
+          <DOMFolderItem name="_Shared" itemID="5fc8556c-0000031d"/>
+          <DOMFolderItem name="_Shared/_Fonts" itemID="5f97a2fc-00000035" isExpanded="true"/>
+     </folders>
+     <fonts>
+          <DOMFontItem name="_Shared/_Fonts/$BRODY" itemID="5f97a2f3-0000002d" linkageImportForRS="true" linkageExportInFirstFrame="false" linkageClassName="$BRODY" linkageURL="fonts_en.swf" font="Brody-Regular" size="0" id="1" sourceLastImported="1603773171" embedRanges="9999"/>
+          <DOMFontItem name="_Shared/_Fonts/$CClub_Font" itemID="5f97a2f3-0000002f" linkageImportForRS="true" linkageExportInFirstFrame="false" linkageClassName="$CClub_Font" linkageURL="fonts_en.swf" font="CreationClub-Regular" size="0" id="2" sourceLastImported="1603773171" embedRanges="9999"/>
+          <DOMFontItem name="_Shared/_Fonts/$CClub_Font_Bold" itemID="5f97a2f3-00000031" linkageImportForRS="true" linkageExportInFirstFrame="false" linkageClassName="$CClub_Font_Bold" linkageURL="fonts_en.swf" font="CreationClub-Bold" size="0" id="3" sourceLastImported="1603773171" embedRanges="9999"/>
+          <DOMFontItem name="_Shared/_Fonts/$Controller_Buttons" itemID="5f97a2f3-00000029" linkageImportForRS="true" linkageExportInFirstFrame="false" linkageClassName="$Controller_Buttons" linkageURL="fonts_en.swf" font="ControllerButtons-Regular" size="0" id="4" sourceLastImported="1603773171" embedRanges="9999"/>
+          <DOMFontItem name="_Shared/_Fonts/$Controller_Buttons_inverted" itemID="5f97a2f3-0000002b" linkageImportForRS="true" linkageExportInFirstFrame="false" linkageClassName="$Controller_Buttons_inverted" linkageURL="fonts_en.swf" font="ControllerButtons-Bold" size="0" id="5" sourceLastImported="1603773171" embedRanges="9999"/>
+          <DOMFontItem name="_Shared/_Fonts/$HandwrittenFont" itemID="5f97a12b-0000001b" linkageImportForRS="true" linkageExportInFirstFrame="false" linkageClassName="$HandwrittenFont" linkageURL="fonts_en.swf" font="HandwrittenInstitute-Regular" size="0" id="6" sourceLastImported="1603772715" embeddedCharacters=" &#xD;¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿĀāĂăĄąĆćĈĉĊċČčĎďĐđĒēĔĕĖėĘęĚěĜĝĞğĠġĢģĤĥĦħĨĩĪīĬĭĮįİıĲĳĴĵĶķĸĹĺĻļĽľĿŀŁłŃńŅņŇňŉŊŋŌōŎŏŐőŒœŔŕŖŗŘřŚśŜŝŞşŠšŢţŤťŦŧŨũŪūŬŭŮůŰűŲųŴŵŶŷŸŹźŻżŽžſƒƠơƯưǰǺǻǼǽǾǿȘșȚțȷˆˇˉ˘˙˚˛˜˝΄΅Ά·ΈΉΊΌΎΏΐΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩΪΫάέήίΰαβγδεζηθικλμνξοπρςστυφχψωϊϋόύώϑϒϖЀЁЂЃЄЅІЇЈЉЊЋЌЍЎЏАБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдежзийклмнопрстуфхцчшщъыьэюяѐёђѓєѕіїјљњћќѝўџѠѡѢѣѤѥѦѧѨѩѪѫѬѭѮѯѰѱѲѳѴѵѶѷѸѹѺѻѼѽѾѿҀҁ҂҃҄҅҆҈҉ҊҋҌҍҎҏҐґҒғҔҕҖҗҘҙҚқҜҝҞҟҠҡҢңҤҥҦҧҨҩҪҫҬҭҮүҰұҲҳҴҵҶҷҸҹҺһҼҽҾҿӀӁӂӃӄӅӆӇӈӉӊӋӌӍӎḀḁḾḿẀẁẂẃẄẅẠạẢảẤấẦầẨẩẪẫẬậẮắẰằẲẳẴẵẶặẸẹẺẻẼẽẾếỀềỂểỄễỆệỈỉỊịỌọỎỏỐốỒồỔổỖỗỘộỚớỜờỞởỠỡỢợỤụỦủỨứỪừỬửỮữỰựỲỳỴỵỶỷỸỹὍ           ​–—―‗‘’‚‛“”„†‡•‥…‰′″‹›‼⁄⁴ⁿ₣₤₧₫€℅ℓ№™Ω℮⅛⅜⅝⅞∂∏∑√∞∫≠≤≥﻿￼" embedRanges="9999|1|2|3|4|5"/>
+          <DOMFontItem name="_Shared/_Fonts/$MAIN_Font" itemID="5f97a2f3-00000023" linkageImportForRS="true" linkageExportInFirstFrame="false" linkageClassName="$MAIN_Font" linkageURL="fonts_en.swf" font="RobotoCondensed-Regular" size="0" id="7" sourceLastImported="1603773171" embedRanges="9999"/>
+          <DOMFontItem name="_Shared/_Fonts/$MAIN_Font_Bold" itemID="5f97a2f3-00000025" linkageImportForRS="true" linkageExportInFirstFrame="false" linkageClassName="$MAIN_Font_Bold" linkageURL="fonts_en.swf" font="RobotoCondensed-Bold" size="0" id="8" sourceLastImported="1603773171" embedRanges="9999"/>
+          <DOMFontItem name="_Shared/_Fonts/$Terminal_Font" itemID="5f97a2f3-00000027" linkageImportForRS="true" linkageExportInFirstFrame="false" linkageClassName="$Terminal_Font" linkageURL="fonts_en.swf" font="TerminalFont-Regular" size="0" id="9" sourceLastImported="1603773171" embedRanges="9999"/>
+     </fonts>
+     <symbols>
+          <Include href="_ConditionMeter/_Battery/BatteryRed.xml" loadImmediate="false" itemID="64d83765-00000521" lastModified="1691891569"/>
+          <Include href="_ConditionMeter/_Meter/BatteryWhite.xml" loadImmediate="false" itemID="64d83767-00000522" lastModified="1691891573"/>
+          <Include href="_ConditionMeter/_Meter/Bracket.xml" loadImmediate="false" itemID="64d8389a-00000817" lastModified="1691914430"/>
+          <Include href="_ConditionMeter/_Meter/MeterBar.xml" itemID="64d83b05-0000083a" lastModified="1691902307"/>
+          <Include href="_ConditionMeter/_Meter/MeterBarInternal.xml" loadImmediate="false" itemID="64d83d64-0000086f" lastModified="1691914410"/>
+          <Include href="_ConditionMeter/ConditionMeter.xml" itemID="64d83b23-0000083e" lastModified="1691915424"/>
+          <Include href="PowerArmorConditionMenu.xml" itemID="64d82e62-00000122" lastModified="1691909741"/>
+     </symbols>
+     <timelines>
+          <DOMTimeline name="Scene 1" layerDepthEnabled="true">
+               <layers>
+                    <DOMLayer name="Layer_1" color="#00FFFF" current="true" isSelected="true">
+                         <frames>
+                              <DOMFrame index="0" keyMode="9728">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="PowerArmorConditionMenu" name="Menu_mc" selected="true">
+                                             <transformationPoint>
+                                                  <Point/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+               </layers>
+          </DOMTimeline>
+     </timelines>
+     <scripts/>
+     <PrinterSettings/>
+     <publishHistory>
+          <PublishItem publishSize="26020" publishTime="1691915338"/>
+          <PublishItem publishSize="26020" publishTime="1691915211"/>
+          <PublishItem publishSize="26019" publishTime="1691915077"/>
+          <PublishItem publishSize="26021" publishTime="1691914948"/>
+          <PublishItem publishSize="26025" publishTime="1691914732"/>
+          <PublishItem publishSize="26015" publishTime="1691914539"/>
+          <PublishItem publishSize="26015" publishTime="1691914530"/>
+          <PublishItem publishSize="25963" publishTime="1691909748"/>
+          <PublishItem publishSize="25998" publishTime="1691903075"/>
+          <PublishItem publishSize="25999" publishTime="1691902922"/>
+          <PublishItem publishSize="25999" publishTime="1691902471"/>
+          <PublishItem publishSize="25995" publishTime="1691902332"/>
+          <PublishItem publishSize="949" publishTime="1691902314"/>
+          <PublishItem publishSize="26130" publishTime="1691902071"/>
+          <PublishItem publishSize="1304" publishTime="1691902017"/>
+          <PublishItem publishSize="26120" publishTime="1691901727"/>
+          <PublishItem publishSize="26134" publishTime="1691901640"/>
+          <PublishItem publishSize="26116" publishTime="1691901418"/>
+          <PublishItem publishSize="26026" publishTime="1691900438"/>
+          <PublishItem publishSize="949" publishTime="1691900423"/>
+     </publishHistory>
+</DOMDocument>

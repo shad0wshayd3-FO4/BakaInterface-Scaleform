@@ -56,7 +56,7 @@
         public function LevelUpMenu()
         {
             this.CancelButton = new BSButtonHintData("$CLOSE", "Tab", "PSN_B", "Xenon_B", 1, this.onCancelPressed);
-            this.SearchButton = new BSButtonHintData("$SEARCH", "Z", "PSN_L3", "Xenon_L3", 1, this.onSearchPressed);
+            this.SearchButton = new BSButtonHintData("$BakaLUM_SEARCH", "Z", "PSN_L3", "Xenon_L3", 1, this.onSearchPressed);
             this.ResetButton = new BSButtonHintData("$RESET", "T", "PSN_Y", "Xenon_Y", 1, this.onResetPressed);
             this.SelectButton = new BSButtonHintData("$SELECT", "Enter", "PSN_A", "Xenon_A", 1, this.onSelectPressed);
             this.PrevPerkButton = new BSButtonHintData("$PREV PERK", "Ctrl", "PSN_L1", "Xenon_L1", 1, this.onPrevPerk);

@@ -1,0 +1,84 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_ConditionMeter/ConditionMeter" itemID="64d83b23-0000083e" linkageExportForAS="true" linkageClassName="Menu.PowerArmorConditionMenu.ConditionMeter" lastModified="1691915424">
+  <timeline>
+    <DOMTimeline name="ConditionMeter" layerDepthEnabled="true">
+      <layers>
+        <DOMLayer name="Bracket" color="#EC875B" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_ConditionMeter/_Meter/Bracket" name="Bracket_mc" centerPoint3DX="102" centerPoint3DY="4">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Label" color="#F43DAA" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="Label_tf" fontRenderingMode="standard" width="36" height="28.8" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="155" ty="-11"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>999</characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" rotation="true" lineSpacing="0" lineHeight="24" size="20" bitmapSize="400" face="$MAIN_Font_Bold*" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+                <DOMDynamicText fontRenderingMode="standard" width="16" height="28.8" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="138" ty="-11"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>x</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="right" aliasText="false" rotation="true" lineSpacing="0" lineHeight="24" size="20" face="$MAIN_Font_Bold*" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="MeterBar" color="#C5BF46" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_ConditionMeter/_Meter/MeterBar" name="MeterBar_mc" centerPoint3DX="100" centerPoint3DY="3">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Battery" color="#FF0000" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_ConditionMeter/_Meter/BatteryWhite">
+                  <matrix>
+                    <Matrix a="0.873336791992188" d="0.873336791992188" tx="125" ty="-12"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="11.55" y="11.35"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

@@ -1,0 +1,24 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="PowerArmorConditionMenu" itemID="64d82e62-00000122" linkageExportForAS="true" linkageClassName="PowerArmorConditionMenu" lastModified="1691909741">
+  <timeline>
+    <DOMTimeline name="PowerArmorConditionMenu" layerDepthEnabled="true">
+      <layers>
+        <DOMLayer name="Layer_1" color="#00FFFF" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_ConditionMeter/ConditionMeter" name="ConditionMeter_mc" selected="true">
+                  <matrix>
+                    <Matrix tx="136" ty="675"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="63.5" y="17"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

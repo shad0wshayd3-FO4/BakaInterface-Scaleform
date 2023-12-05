@@ -1,8 +1,24 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="LevelUpMenu/_Search/SearchBox" itemID="5fa1d3e0-000006dc" linkageExportForAS="true" linkageClassName="Menu.LevelUpMenu.SearchBox" lastModified="1604471846">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="LevelUpMenu/_Search/SearchBox" itemID="5fa1d3e0-000006dc" linkageExportForAS="true" linkageClassName="Menu.LevelUpMenu.SearchBox" lastModified="1691809340">
   <timeline>
     <DOMTimeline name="SearchBox">
       <layers>
-        <DOMLayer name="TextBox" color="#9933CC" current="true" isSelected="true" autoNamed="false">
+        <DOMLayer name="Layer_2" color="#9933CC" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_Shared/ItemCard/_TempIcons/Symbol 15">
+                  <matrix>
+                    <Matrix tx="477.5" ty="22.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="TextBox" color="#9933CC" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
@@ -14,7 +30,7 @@
                     <DOMTextRun>
                       <characters></characters>
                       <textAttrs>
-                        <DOMTextAttrs aliasText="false" rotation="true" letterSpacing="0.5" lineSpacing="5" lineHeight="33.65" size="26" bitmapSize="520" face="$MAIN_Font*" fillColor="#FFFFFF"/>
+                        <DOMTextAttrs aliasText="false" rotation="true" letterSpacing="0.5" lineSpacing="5" lineHeight="31.2" size="26" bitmapSize="520" face="$MAIN_Font*" fillColor="#FFFFFF"/>
                       </textAttrs>
                     </DOMTextRun>
                   </textRuns>

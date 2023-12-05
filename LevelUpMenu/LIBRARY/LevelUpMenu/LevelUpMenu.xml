@@ -1,12 +1,12 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="LevelUpMenu/LevelUpMenu" itemID="5f97d64a-000006ae" linkageExportForAS="true" linkageClassName="LevelUpMenu" lastModified="1620529705" lastUniqueIdentifier="6">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="LevelUpMenu/LevelUpMenu" itemID="5f97d64a-000006ae" linkageExportForAS="true" linkageClassName="LevelUpMenu" lastModified="1691809275" lastUniqueIdentifier="6">
   <timeline>
     <DOMTimeline name="LevelUpMenu">
       <layers>
-        <DOMLayer name="PerkList" color="#9933CC" current="true" isSelected="true" autoNamed="false">
+        <DOMLayer name="PerkList" color="#9933CC" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="LevelUpMenu/_PerkList/PerkList" name="PerkList_mc" selected="true" centerPoint3DX="505" centerPoint3DY="475">
+                <DOMSymbolInstance libraryItemName="LevelUpMenu/_PerkList/PerkList" name="PerkList_mc" centerPoint3DX="505" centerPoint3DY="475">
                   <matrix>
                     <Matrix tx="260" ty="100"/>
                   </matrix>
@@ -62,7 +62,7 @@
                     <DOMTextRun>
                       <characters>Ranks: 1&#xD;Reqs: Blah, Blah</characters>
                       <textAttrs>
-                        <DOMTextAttrs aliasText="false" rotation="true" letterSpacing="0.5" lineSpacing="5" lineHeight="33.65" size="26" bitmapSize="520" face="$MAIN_Font*" fillColor="#FFFFFF"/>
+                        <DOMTextAttrs aliasText="false" rotation="true" letterSpacing="0.5" lineSpacing="5" lineHeight="31.2" size="26" bitmapSize="520" face="$MAIN_Font*" fillColor="#FFFFFF"/>
                       </textAttrs>
                     </DOMTextRun>
                   </textRuns>
@@ -87,7 +87,7 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="PerkCount" color="#9933CC" autoNamed="false">
+        <DOMLayer name="PerkCount" color="#9933CC" current="true" isSelected="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
@@ -97,9 +97,9 @@
                   </matrix>
                   <textRuns>
                     <DOMTextRun>
-                      <characters>$Perk Points Remaining</characters>
+                      <characters>$BakaLUM_PerkPointsRemaining</characters>
                       <textAttrs>
-                        <DOMTextAttrs alignment="right" aliasText="false" rotation="true" letterSpacing="0.5" lineSpacing="5" lineHeight="44" size="34" bitmapSize="680" face="$MAIN_Font*" fillColor="#FFFFFF"/>
+                        <DOMTextAttrs alignment="right" aliasText="false" rotation="true" letterSpacing="0.5" lineSpacing="5" lineHeight="40.8" size="34" bitmapSize="680" face="$MAIN_Font*" fillColor="#FFFFFF"/>
                       </textAttrs>
                     </DOMTextRun>
                   </textRuns>
@@ -112,7 +112,7 @@
                     <DOMTextRun>
                       <characters>100</characters>
                       <textAttrs>
-                        <DOMTextAttrs alignment="center" aliasText="false" rotation="true" letterSpacing="0.5" lineSpacing="5" lineHeight="44.55" size="34" bitmapSize="680" face="$MAIN_Font_Bold*" fillColor="#FFFFFF"/>
+                        <DOMTextAttrs alignment="center" aliasText="false" rotation="true" letterSpacing="0.5" lineSpacing="5" lineHeight="40.8" size="34" bitmapSize="680" face="$MAIN_Font_Bold*" fillColor="#FFFFFF"/>
                       </textAttrs>
                     </DOMTextRun>
                   </textRuns>
@@ -133,7 +133,7 @@
                     <DOMTextRun>
                       <characters>WELCOME TO LEVEL 2</characters>
                       <textAttrs>
-                        <DOMTextAttrs aliasText="false" lineHeight="52.4" size="40" bitmapSize="800" face="$MAIN_Font_Bold*" fillColor="#FFFFFF"/>
+                        <DOMTextAttrs aliasText="false" lineHeight="48" size="40" bitmapSize="800" face="$MAIN_Font_Bold*" fillColor="#FFFFFF"/>
                       </textAttrs>
                     </DOMTextRun>
                   </textRuns>

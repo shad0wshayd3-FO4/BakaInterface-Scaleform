@@ -1,0 +1,21 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_ConditionMeter/_Meter/MeterBar" itemID="64d83b05-0000083a" linkageExportForAS="true" linkageClassName="Menu.PowerArmorConditionMenu.MeterBar" lastModified="1691902307" lastUniqueIdentifier="1">
+  <timeline>
+    <DOMTimeline name="MeterBar" layerDepthEnabled="true">
+      <layers>
+        <DOMLayer name="Layer_1" color="#BA2B9C" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_ConditionMeter/_Meter/MeterBarInternal" name="MeterBarInternal_mc" selected="true">
+                  <transformationPoint>
+                    <Point x="80" y="3"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

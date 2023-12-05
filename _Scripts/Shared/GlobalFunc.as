@@ -1,6 +1,5 @@
 ﻿package Shared
 {
-    import Shared.AS3.BCGridList;
     import Shared.AS3.BSScrollingList;
     import Shared.AS3.Events.CustomEvent;
     import Shared.AS3.SWFLoaderClip;
@@ -15,7 +14,6 @@
     import flash.utils.ByteArray;
     import flash.utils.describeType;
     import flash.utils.getQualifiedClassName;
-    import scaleform.gfx.Extensions;
 
     public class GlobalFunc
     {
@@ -339,40 +337,6 @@
             }
         }
 
-        public static function LockToSafeRect(param1:DisplayObject, param2:String, param3:Number = 0, param4:Number = 0):*
-        {
-            var _loc5_:Rectangle = Extensions.visibleRect;
-            var _loc6_:Point = new Point(_loc5_.x + param3, _loc5_.y + param4);
-            var _loc7_:Point = new Point(_loc5_.x + _loc5_.width - param3, _loc5_.y + _loc5_.height - param4);
-            var _loc8_:Point = param1.parent.globalToLocal(_loc6_);
-            var _loc9_:Point = param1.parent.globalToLocal(_loc7_);
-            var _loc10_:Point = Point.interpolate(_loc8_, _loc9_, 0.5);
-            if (param2 == "T" || param2 == "TL" || param2 == "TR" || param2 == "TC")
-            {
-                param1.y = _loc8_.y;
-            }
-            if (param2 == "CR" || param2 == "CC" || param2 == "CL")
-            {
-                param1.y = _loc10_.y;
-            }
-            if (param2 == "B" || param2 == "BL" || param2 == "BR" || param2 == "BC")
-            {
-                param1.y = _loc9_.y;
-            }
-            if (param2 == "L" || param2 == "TL" || param2 == "BL" || param2 == "CL")
-            {
-                param1.x = _loc8_.x;
-            }
-            if (param2 == "TC" || param2 == "CC" || param2 == "BC")
-            {
-                param1.x = _loc10_.x;
-            }
-            if (param2 == "R" || param2 == "TR" || param2 == "BR" || param2 == "CR")
-            {
-                param1.x = _loc9_.x;
-            }
-        }
-
         public static function AddMovieExploreFunctions():*
         {
             MovieClip.prototype.getMovieClips = function():Array
@@ -520,55 +484,6 @@
             };
         }
 
-        public static function updateConditionMeter(param1:MovieClip, param2:Number, param3:Number, param4:Number):void
-        {
-            var _loc5_:MovieClip = null;
-            if (param3 > 0)
-            {
-                param1.visible = true;
-                _loc5_ = param1.MeterClip_mc;
-                param1.gotoAndStop(GlobalFunc.Lerp(param1.totalFrames, 1, 0, DURABILITY_MAX, param4, true));
-                if (param2 > 0)
-                {
-                    _loc5_.gotoAndStop(GlobalFunc.Lerp(_loc5_.totalFrames, 2, 0, param3 * 2, param2, true));
-                }
-                else
-                {
-                    _loc5_.gotoAndStop(1);
-                }
-            }
-            else
-            {
-                param1.visible = false;
-            }
-        }
-
-        public static function quickMultiLineShrinkToFit(param1:TextField, param2:Number = 0, param3:Number = 0):void
-        {
-            var _loc4_:TextFormat = param1.getTextFormat();
-            if (param2 == 0)
-            {
-                param2 = _loc4_.size as Number;
-            }
-            _loc4_.size = param2;
-            _loc4_.leading = param3;
-            param1.setTextFormat(_loc4_);
-            var _loc5_:Boolean = false;
-            if (getTextfieldSize(param1) > param1.height)
-            {
-                _loc4_.size = TEXT_SIZE_VERYSMALL;
-                _loc4_.leading = TEXT_LEADING_MIN;
-                param1.setTextFormat(_loc4_);
-                _loc5_ = true;
-            }
-            if (_loc5_ && getTextfieldSize(param1) > param1.height)
-            {
-                _loc4_.size = TEXT_SIZE_MIN;
-                _loc4_.leading = TEXT_LEADING_MIN;
-                param1.setTextFormat(_loc4_);
-            }
-        }
-
         public static function shrinkMultiLineTextToFit(param1:TextField, param2:Number = 0):void
         {
             var _loc3_:TextFormat = param1.getTextFormat();
@@ -611,10 +526,6 @@
             {
                 return (param1 as BSScrollingList).shownItemsHeight;
             }
-            if (param1 is BCGridList)
-            {
-                return (param1 as BCGridList).displayHeight;
-            }
             if (param1 is MovieClip)
             {
                 if (param1["Sizer_mc"] != undefined && param1["Sizer_mc"] != null)
@@ -636,65 +547,6 @@
                 return getTextfieldSize(param1 as TextField, param2);
             }
             throw new Error("GlobalFunc.getDisplayObjectSize: unsupported object type");
-        }
-
-        public static function arrangeItems(param1:Array, param2:Boolean, param3:uint = 0, param4:Number = 0, param5:Boolean = false, param6:Number = 0):Number
-        {
-            var _loc9_:Number = NaN;
-            var _loc10_:Number = NaN;
-            var _loc11_:uint = 0;
-            var _loc12_:Object = null;
-            var _loc13_:Array = null;
-            var _loc14_:uint = 0;
-            var _loc7_:uint = param1.length;
-            var _loc8_:Number = 0;
-            if (_loc7_ > 0)
-            {
-                _loc9_ = 0;
-                _loc10_ = !!param5 ? Number(-1) : Number(1);
-                _loc13_ = [];
-                _loc14_ = param1.length;
-                _loc11_ = 0;
-                while (_loc11_ < _loc14_)
-                {
-                    if (_loc11_ > 0)
-                    {
-                        _loc8_ = _loc8_ + param4;
-                    }
-                    _loc13_[_loc11_] = getDisplayObjectSize(param1[_loc11_], param2);
-                    _loc8_ = _loc8_ + _loc13_[_loc11_];
-                    _loc11_++;
-                }
-                if (param3 == ALIGN_CENTER)
-                {
-                    _loc9_ = _loc8_ * -0.5;
-                }
-                else if (param3 == ALIGN_RIGHT)
-                {
-                    _loc9_ = -_loc8_ - _loc13_[0];
-                }
-                if (param5)
-                {
-                    param1.reverse();
-                    _loc13_.reverse();
-                }
-                _loc9_ = _loc9_ + param6;
-                _loc11_ = 0;
-                while (_loc11_ < _loc14_)
-                {
-                    if (param2)
-                    {
-                        param1[_loc11_].y = _loc9_;
-                    }
-                    else
-                    {
-                        param1[_loc11_].x = _loc9_;
-                    }
-                    _loc9_ = _loc9_ + (_loc13_[_loc11_] + param4);
-                    _loc11_++;
-                }
-            }
-            return _loc8_;
         }
 
         public static function StringTrim(param1:String):String

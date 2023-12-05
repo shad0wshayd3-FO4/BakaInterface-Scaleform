@@ -1,6 +1,6 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_PipboyBackgroundMenu/_Background/_BackgroundParts/BackgroundBase" itemID="5fddaf8f-00000815" lastModified="1691796209">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_ConditionMeter/_Meter/MeterBarInternal" itemID="64d83d64-0000086f" lastModified="1691914410">
   <timeline>
-    <DOMTimeline name="BackgroundBase">
+    <DOMTimeline name="MeterBarInternal" layerDepthEnabled="true">
       <layers>
         <DOMLayer name="Layer_1" color="#00FFFF" current="true" isSelected="true">
           <frames>
@@ -13,7 +13,7 @@
                     </FillStyle>
                   </fills>
                   <edges>
-                    <Edge fillStyle1="1" edges="!51200 21600|0 21600!0 21600|0 0!0 0|51200 0!51200 0|51200 21600"/>
+                    <Edge fillStyle1="1" edges="!0 0|2400 0!2400 0|2400 120!2400 120|0 120!0 120|0 0"/>
                   </edges>
                 </DOMShape>
               </elements>
